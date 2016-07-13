@@ -26,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-101" y="-243"/>
+            <point key="canvasLocation" x="369" y="-161"/>
         </scene>
         <!--Data View Controller-->
         <scene sceneID="snT-py-3hH">
@@ -43,6 +43,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bike" translatesAutoresizingMaskIntoConstraints="NO" id="FNM-9o-0cy">
                                 <rect key="frame" x="174" y="224" width="676" height="320"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-gs-bVj">
+                                <rect key="frame" x="20" y="718" width="72" height="30"/>
+                                <state key="normal" title="&lt; previous">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADe-jG-ewD">
+                                <rect key="frame" x="961" y="718" width="43" height="30"/>
+                                <state key="normal" title="next &gt;"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97826086960000003" green="0.88867739838097759" blue="0.87817984571710672" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -53,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="-189"/>
+            <point key="canvasLocation" x="1631" y="-161"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9Nc-N3-oYj">
@@ -70,6 +80,14 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="tractor" translatesAutoresizingMaskIntoConstraints="NO" id="qR3-wv-lXA">
                                 <rect key="frame" x="205" y="130" width="615" height="507"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lz-sK-KVL">
+                                <rect key="frame" x="20" y="718" width="72" height="30"/>
+                                <state key="normal" title="&lt; previous"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb3-A5-bvJ">
+                                <rect key="frame" x="961" y="718" width="43" height="30"/>
+                                <state key="normal" title="next &gt;"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78800262934362819" green="1" blue="0.84988205630963409" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -96,13 +114,21 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="helicopter" translatesAutoresizingMaskIntoConstraints="NO" id="NvS-Ej-3gY">
                                 <rect key="frame" x="116" y="218" width="792" height="331"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WL-Jn-pJU">
+                                <rect key="frame" x="20" y="718" width="72" height="30"/>
+                                <state key="normal" title="&lt; previous"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npS-NJ-Q1v">
+                                <rect key="frame" x="961" y="718" width="43" height="30"/>
+                                <state key="normal" title="next &gt;"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.67514503750239796" green="0.83558068862127322" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UoU-Qc-v5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3997" y="-168"/>
+            <point key="canvasLocation" x="4083" y="-161"/>
         </scene>
     </scenes>
     <resources>
