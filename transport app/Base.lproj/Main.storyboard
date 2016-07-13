@@ -53,6 +53,10 @@
                                 <rect key="frame" x="961" y="718" width="43" height="30"/>
                                 <state key="normal" title="next &gt;"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-3z-lbr">
+                                <rect key="frame" x="517" y="636" width="55" height="30"/>
+                                <state key="normal" title="animate"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97826086960000003" green="0.88867739838097759" blue="0.87817984571710672" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
