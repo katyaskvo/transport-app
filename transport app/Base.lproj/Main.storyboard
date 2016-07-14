@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S4R-Ja-viH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S4R-Ja-viH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -108,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="2855" y="-161"/>
         </scene>
-        <!--View Controller-->
+        <!--Helicopter View Controller-->
         <scene sceneID="idE-1d-q5Z">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="4se-pa-4cI" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="4se-pa-4cI" customClass="HelicopterViewController" customModule="transport_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f8l-Cj-vZ7"/>
                         <viewControllerLayoutGuide type="bottom" id="akU-QG-TMs"/>
@@ -137,6 +137,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-T0-90T">
                                 <rect key="frame" x="490" y="704" width="44" height="44"/>
                                 <state key="normal" image="button"/>
+                                <connections>
+                                    <action selector="startAnimation" destination="4se-pa-4cI" eventType="touchUpInside" id="pMA-W3-Xaj"/>
+                                </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="heli-body" translatesAutoresizingMaskIntoConstraints="NO" id="rnz-zz-Dxn">
                                 <rect key="frame" x="144" y="233" width="736" height="302"/>
@@ -147,6 +150,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.67514503750239796" green="0.83558068862127322" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="heliTailView" destination="v2V-sd-zmY" id="laX-Yf-8Iq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UoU-Qc-v5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,8 +171,8 @@
         <image name="tractor-small-weel" width="203" height="204"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mWE-XR-pIO"/>
-        <segue reference="iJd-I6-ByO"/>
         <segue reference="VjF-JU-9aB"/>
+        <segue reference="iJd-I6-ByO"/>
+        <segue reference="mWE-XR-pIO"/>
     </inferredMetricsTieBreakers>
 </document>
