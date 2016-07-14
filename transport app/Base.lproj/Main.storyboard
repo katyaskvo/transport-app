@@ -56,7 +56,6 @@
         <!--Tractor View Controller-->
         <scene sceneID="9Nc-N3-oYj">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bV0-Xa-IFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" id="BDY-SG-CIy" customClass="TractorViewController" customModule="transport_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KJN-Oc-o3G"/>
@@ -92,6 +91,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-Iu-Sf1">
                                 <rect key="frame" x="490" y="704" width="44" height="44"/>
                                 <state key="normal" image="button"/>
+                                <connections>
+                                    <action selector="startAnimation" destination="BDY-SG-CIy" eventType="touchUpInside" id="hK7-fy-1sV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78800262934362819" green="1" blue="0.84988205630963409" alpha="1" colorSpace="calibratedRGB"/>
@@ -102,6 +104,7 @@
                         <segue destination="4se-pa-4cI" kind="show" identifier="to third picture" id="1dZ-oU-kli"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bV0-Xa-IFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2855" y="-161"/>
         </scene>
