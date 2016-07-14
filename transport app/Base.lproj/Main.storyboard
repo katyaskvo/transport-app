@@ -81,9 +81,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="tractor" translatesAutoresizingMaskIntoConstraints="NO" id="qR3-wv-lXA">
-                                <rect key="frame" x="205" y="130" width="615" height="507"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb3-A5-bvJ">
                                 <rect key="frame" x="960" y="704" width="44" height="44"/>
                                 <state key="normal" image="arrow-right"/>
@@ -96,6 +93,15 @@
                                 <rect key="frame" x="20" y="704" width="44" height="44"/>
                                 <state key="normal" image="arrow-left"/>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tractor-body" translatesAutoresizingMaskIntoConstraints="NO" id="ETZ-N4-RU3">
+                                <rect key="frame" x="244" y="190" width="521" height="317"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tractor-big-weel" translatesAutoresizingMaskIntoConstraints="NO" id="0cj-Kv-UdK">
+                                <rect key="frame" x="202" y="319" width="257" height="258"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tractor-small-weel" translatesAutoresizingMaskIntoConstraints="NO" id="1eq-x9-gcz">
+                                <rect key="frame" x="620" y="373" width="203" height="204"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.78800262934362819" green="1" blue="0.84988205630963409" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -149,6 +155,8 @@
         <image name="bike" width="676" height="320"/>
         <image name="button" width="44" height="44"/>
         <image name="helicopter" width="601" height="251"/>
-        <image name="tractor" width="348" height="287"/>
+        <image name="tractor-big-weel" width="257" height="258"/>
+        <image name="tractor-body" width="521" height="317"/>
+        <image name="tractor-small-weel" width="203" height="204"/>
     </resources>
 </document>
