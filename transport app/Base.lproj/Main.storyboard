@@ -84,10 +84,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb3-A5-bvJ">
                                 <rect key="frame" x="960" y="704" width="44" height="44"/>
                                 <state key="normal" image="arrow-right"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-Iu-Sf1">
-                                <rect key="frame" x="490" y="704" width="44" height="44"/>
-                                <state key="normal" image="button"/>
+                                <connections>
+                                    <segue destination="4se-pa-4cI" kind="show" id="iJd-I6-ByO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lz-sK-KVL">
                                 <rect key="frame" x="20" y="704" width="44" height="44"/>
@@ -102,6 +101,10 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tractor-small-weel" translatesAutoresizingMaskIntoConstraints="NO" id="1eq-x9-gcz">
                                 <rect key="frame" x="620" y="373" width="203" height="204"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-Iu-Sf1">
+                                <rect key="frame" x="490" y="704" width="44" height="44"/>
+                                <state key="normal" image="button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78800262934362819" green="1" blue="0.84988205630963409" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -159,4 +162,7 @@
         <image name="tractor-body" width="521" height="317"/>
         <image name="tractor-small-weel" width="203" height="204"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="iJd-I6-ByO"/>
+    </inferredMetricsTieBreakers>
 </document>
