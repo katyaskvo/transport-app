@@ -8,7 +8,7 @@
         <!--Data View Controller-->
         <scene sceneID="snT-py-3hH">
             <objects>
-                <viewController storyboardIdentifier="DataViewController" id="S4R-Ja-viH" customClass="DataViewController" customModule="transport_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DataViewController" modalTransitionStyle="crossDissolve" id="S4R-Ja-viH" customClass="DataViewController" customModule="transport_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fXf-Jd-eTc"/>
                         <viewControllerLayoutGuide type="bottom" id="EPS-s9-h4K"/>
@@ -56,7 +56,7 @@
         <!--View Controller-->
         <scene sceneID="9Nc-N3-oYj">
             <objects>
-                <viewController id="BDY-SG-CIy" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" id="BDY-SG-CIy" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KJN-Oc-o3G"/>
                         <viewControllerLayoutGuide type="bottom" id="apB-jx-yjS"/>
@@ -106,7 +106,7 @@
         <!--View Controller-->
         <scene sceneID="idE-1d-q5Z">
             <objects>
-                <viewController id="4se-pa-4cI" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="4se-pa-4cI" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f8l-Cj-vZ7"/>
                         <viewControllerLayoutGuide type="bottom" id="akU-QG-TMs"/>
@@ -156,8 +156,8 @@
         <image name="tractor-small-weel" width="203" height="204"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="VjF-JU-9aB"/>
+        <segue reference="iJd-I6-ByO"/>
         <segue reference="mWE-XR-pIO"/>
-        <segue reference="MaC-j8-bmz"/>
-        <segue reference="eAs-q5-aYq"/>
     </inferredMetricsTieBreakers>
 </document>
