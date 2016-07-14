@@ -25,6 +25,9 @@
                                 <state key="normal" image="arrow-left">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4se-pa-4cI" kind="show" id="MaC-j8-bmz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADe-jG-ewD">
                                 <rect key="frame" x="960" y="704" width="44" height="44"/>
@@ -72,6 +75,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lz-sK-KVL">
                                 <rect key="frame" x="20" y="704" width="44" height="44"/>
                                 <state key="normal" image="arrow-left"/>
+                                <connections>
+                                    <segue destination="S4R-Ja-viH" kind="show" id="jyw-zy-5b2"/>
+                                </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tractor-body" translatesAutoresizingMaskIntoConstraints="NO" id="ETZ-N4-RU3">
                                 <rect key="frame" x="244" y="190" width="521" height="317"/>
@@ -115,6 +121,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WL-Jn-pJU">
                                 <rect key="frame" x="20" y="704" width="44" height="44"/>
                                 <state key="normal" image="arrow-left"/>
+                                <connections>
+                                    <segue destination="BDY-SG-CIy" kind="show" id="VjF-JU-9aB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npS-NJ-Q1v">
                                 <rect key="frame" x="960" y="704" width="44" height="44"/>
@@ -147,7 +156,8 @@
         <image name="tractor-small-weel" width="203" height="204"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="mWE-XR-pIO"/>
+        <segue reference="MaC-j8-bmz"/>
         <segue reference="eAs-q5-aYq"/>
-        <segue reference="iJd-I6-ByO"/>
     </inferredMetricsTieBreakers>
 </document>
