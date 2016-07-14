@@ -29,6 +29,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADe-jG-ewD">
                                 <rect key="frame" x="960" y="704" width="44" height="44"/>
                                 <state key="normal" image="arrow-right"/>
+                                <connections>
+                                    <segue destination="BDY-SG-CIy" kind="show" id="eAs-q5-aYq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-3z-lbr">
                                 <rect key="frame" x="490" y="704" width="44" height="44"/>
@@ -116,6 +119,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npS-NJ-Q1v">
                                 <rect key="frame" x="960" y="704" width="44" height="44"/>
                                 <state key="normal" image="arrow-right"/>
+                                <connections>
+                                    <segue destination="S4R-Ja-viH" kind="show" id="mWE-XR-pIO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-T0-90T">
                                 <rect key="frame" x="490" y="704" width="44" height="44"/>
@@ -141,6 +147,7 @@
         <image name="tractor-small-weel" width="203" height="204"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="eAs-q5-aYq"/>
         <segue reference="iJd-I6-ByO"/>
     </inferredMetricsTieBreakers>
 </document>
