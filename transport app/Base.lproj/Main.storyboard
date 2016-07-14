@@ -53,10 +53,11 @@
             </objects>
             <point key="canvasLocation" x="1631" y="-161"/>
         </scene>
-        <!--View Controller-->
+        <!--Tractor View Controller-->
         <scene sceneID="9Nc-N3-oYj">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" id="BDY-SG-CIy" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bV0-Xa-IFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" id="BDY-SG-CIy" customClass="TractorViewController" customModule="transport_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KJN-Oc-o3G"/>
                         <viewControllerLayoutGuide type="bottom" id="apB-jx-yjS"/>
@@ -96,10 +97,11 @@
                         <color key="backgroundColor" red="0.78800262934362819" green="1" blue="0.84988205630963409" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="bigWheelView" destination="0cj-Kv-UdK" id="cSo-iT-Hs1"/>
+                        <outlet property="smallWheelView" destination="1eq-x9-gcz" id="pae-31-3Rn"/>
                         <segue destination="4se-pa-4cI" kind="show" identifier="to third picture" id="1dZ-oU-kli"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bV0-Xa-IFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2855" y="-161"/>
         </scene>
@@ -156,8 +158,8 @@
         <image name="tractor-small-weel" width="203" height="204"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VjF-JU-9aB"/>
+        <segue reference="eAs-q5-aYq"/>
+        <segue reference="jyw-zy-5b2"/>
         <segue reference="iJd-I6-ByO"/>
-        <segue reference="mWE-XR-pIO"/>
     </inferredMetricsTieBreakers>
 </document>
