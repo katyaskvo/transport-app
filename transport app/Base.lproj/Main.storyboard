@@ -43,19 +43,19 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bike" translatesAutoresizingMaskIntoConstraints="NO" id="FNM-9o-0cy">
                                 <rect key="frame" x="174" y="224" width="676" height="320"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-gs-bVj">
-                                <rect key="frame" x="20" y="718" width="72" height="30"/>
-                                <state key="normal" title="&lt; previous">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-gs-bVj">
+                                <rect key="frame" x="20" y="704" width="44" height="44"/>
+                                <state key="normal" image="arrow-left">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADe-jG-ewD">
-                                <rect key="frame" x="961" y="718" width="43" height="30"/>
-                                <state key="normal" title="next &gt;"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADe-jG-ewD">
+                                <rect key="frame" x="960" y="704" width="44" height="44"/>
+                                <state key="normal" image="arrow-right"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-3z-lbr">
-                                <rect key="frame" x="517" y="636" width="55" height="30"/>
-                                <state key="normal" title="animate"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-3z-lbr">
+                                <rect key="frame" x="490" y="704" width="44" height="44"/>
+                                <state key="normal" image="button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97826086960000003" green="0.88867739838097759" blue="0.87817984571710672" alpha="1" colorSpace="calibratedRGB"/>
@@ -84,13 +84,17 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="tractor" translatesAutoresizingMaskIntoConstraints="NO" id="qR3-wv-lXA">
                                 <rect key="frame" x="205" y="130" width="615" height="507"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lz-sK-KVL">
-                                <rect key="frame" x="20" y="718" width="72" height="30"/>
-                                <state key="normal" title="&lt; previous"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb3-A5-bvJ">
+                                <rect key="frame" x="960" y="704" width="44" height="44"/>
+                                <state key="normal" image="arrow-right"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb3-A5-bvJ">
-                                <rect key="frame" x="961" y="718" width="43" height="30"/>
-                                <state key="normal" title="next &gt;"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-Iu-Sf1">
+                                <rect key="frame" x="490" y="704" width="44" height="44"/>
+                                <state key="normal" image="button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lz-sK-KVL">
+                                <rect key="frame" x="20" y="704" width="44" height="44"/>
+                                <state key="normal" image="arrow-left"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78800262934362819" green="1" blue="0.84988205630963409" alpha="1" colorSpace="calibratedRGB"/>
@@ -118,13 +122,17 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="helicopter" translatesAutoresizingMaskIntoConstraints="NO" id="NvS-Ej-3gY">
                                 <rect key="frame" x="116" y="218" width="792" height="331"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WL-Jn-pJU">
-                                <rect key="frame" x="20" y="718" width="72" height="30"/>
-                                <state key="normal" title="&lt; previous"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WL-Jn-pJU">
+                                <rect key="frame" x="20" y="704" width="44" height="44"/>
+                                <state key="normal" image="arrow-left"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npS-NJ-Q1v">
-                                <rect key="frame" x="961" y="718" width="43" height="30"/>
-                                <state key="normal" title="next &gt;"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npS-NJ-Q1v">
+                                <rect key="frame" x="960" y="704" width="44" height="44"/>
+                                <state key="normal" image="arrow-right"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-T0-90T">
+                                <rect key="frame" x="490" y="704" width="44" height="44"/>
+                                <state key="normal" image="button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.67514503750239796" green="0.83558068862127322" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -136,7 +144,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow-left" width="44" height="44"/>
+        <image name="arrow-right" width="44" height="44"/>
         <image name="bike" width="676" height="320"/>
+        <image name="button" width="44" height="44"/>
         <image name="helicopter" width="601" height="251"/>
         <image name="tractor" width="348" height="287"/>
     </resources>
