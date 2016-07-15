@@ -26,7 +26,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4se-pa-4cI" kind="show" id="MaC-j8-bmz"/>
+                                    <segue destination="980-jK-LUk" kind="show" id="fDO-cg-zsL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADe-jG-ewD">
@@ -45,13 +45,10 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
-                    <connections>
-                        <segue destination="BDY-SG-CIy" kind="show" identifier="to second picture" id="50P-cU-XhG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1631" y="-161"/>
+            <point key="canvasLocation" x="2123" y="-697"/>
         </scene>
         <!--Tractor View Controller-->
         <scene sceneID="9Nc-N3-oYj">
@@ -101,12 +98,11 @@
                     <connections>
                         <outlet property="bigWheelView" destination="0cj-Kv-UdK" id="cSo-iT-Hs1"/>
                         <outlet property="smallWheelView" destination="1eq-x9-gcz" id="pae-31-3Rn"/>
-                        <segue destination="4se-pa-4cI" kind="show" identifier="to third picture" id="1dZ-oU-kli"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bV0-Xa-IFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2855" y="-161"/>
+            <point key="canvasLocation" x="3191" y="471"/>
         </scene>
         <!--Helicopter View Controller-->
         <scene sceneID="idE-1d-q5Z">
@@ -131,7 +127,7 @@
                                 <rect key="frame" x="960" y="704" width="44" height="44"/>
                                 <state key="normal" image="arrow-right"/>
                                 <connections>
-                                    <segue destination="S4R-Ja-viH" kind="show" id="mWE-XR-pIO"/>
+                                    <segue destination="980-jK-LUk" kind="show" id="JPX-cz-51P"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-T0-90T">
@@ -156,7 +152,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UoU-Qc-v5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4083" y="-161"/>
+            <point key="canvasLocation" x="2103" y="1687"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="um1-jE-RXd">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="980-jK-LUk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7gt-yM-fSU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ra9-dx-ITY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GJo-3Q-mgL">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck" translatesAutoresizingMaskIntoConstraints="NO" id="vhk-Pp-PGN">
+                                <rect key="frame" x="105" y="248" width="814" height="271"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVr-ZO-ACk">
+                                <rect key="frame" x="960" y="704" width="44" height="44"/>
+                                <state key="normal" backgroundImage="arrow-right"/>
+                                <connections>
+                                    <segue destination="S4R-Ja-viH" kind="show" id="Nk2-wp-lay"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3Z-pR-V7z">
+                                <rect key="frame" x="490" y="704" width="44" height="44"/>
+                                <state key="normal" backgroundImage="button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnP-4P-AzR">
+                                <rect key="frame" x="20" y="704" width="44" height="44"/>
+                                <state key="normal" backgroundImage="arrow-left"/>
+                                <connections>
+                                    <segue destination="4se-pa-4cI" kind="show" id="CPH-ZX-OBR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.97309123880037196" blue="0.76624659087791847" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lSc-nA-mDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095" y="496"/>
         </scene>
     </scenes>
     <resources>
@@ -164,6 +201,7 @@
         <image name="arrow-right" width="44" height="44"/>
         <image name="bike" width="676" height="320"/>
         <image name="button" width="44" height="44"/>
+        <image name="firetruck" width="814" height="271"/>
         <image name="heli-body" width="736" height="302"/>
         <image name="helitail" width="142" height="129"/>
         <image name="tractor-big-weel" width="257" height="258"/>
@@ -171,8 +209,9 @@
         <image name="tractor-small-weel" width="203" height="204"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="iJd-I6-ByO"/>
         <segue reference="eAs-q5-aYq"/>
-        <segue reference="mWE-XR-pIO"/>
-        <segue reference="MaC-j8-bmz"/>
+        <segue reference="jyw-zy-5b2"/>
+        <segue reference="JPX-cz-51P"/>
     </inferredMetricsTieBreakers>
 </document>
