@@ -206,13 +206,16 @@
 					00AA0F671D36B115005BEF28 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 3NYRYBXD9K;
+						LastSwiftMigration = 0800;
 					};
 					00AA0F7F1D36B115005BEF28 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = 00AA0F671D36B115005BEF28;
 					};
 					00AA0F8A1D36B115005BEF28 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = 00AA0F671D36B115005BEF28;
 					};
 				};
@@ -425,6 +428,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.katyaskvo.transport-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -439,6 +443,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.katyaskvo.transport-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -450,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.katyaskvo.transport-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/transport app.app/transport app";
 			};
 			name = Debug;
@@ -462,6 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.katyaskvo.transport-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/transport app.app/transport app";
 			};
 			name = Release;
@@ -473,6 +480,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.katyaskvo.transport-appUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "transport app";
 			};
 			name = Debug;
@@ -484,6 +492,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.katyaskvo.transport-appUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "transport app";
 			};
 			name = Release;

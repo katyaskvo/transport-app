@@ -5,12 +5,12 @@ class HelicopterViewController: UIViewController {
     @IBOutlet var heliTailView: UIImageView!
     
     @IBAction func startAnimation() {
-        heliTailView.transform = CGAffineTransformIdentity
-        UIView.animateWithDuration(0.75,
+        heliTailView.transform = CGAffineTransform.identity
+        UIView.animate(withDuration: 0.75,
                                    delay: 0,
-                                   options: [.CurveLinear],
+                                   options: [.curveLinear],
                                    animations: {
-                                    self.heliTailView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
+                                    self.heliTailView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
             }, completion: nil)
     }
 }

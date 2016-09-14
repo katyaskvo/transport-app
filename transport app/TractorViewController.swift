@@ -5,14 +5,14 @@ class TractorViewController: UIViewController {
     @IBOutlet var smallWheelView: UIImageView!
 
     @IBAction func startAnimation() {
-        bigWheelView.transform = CGAffineTransformIdentity
-        smallWheelView.transform = CGAffineTransformIdentity
-        UIView.animateWithDuration(0.75,
+        bigWheelView.transform = CGAffineTransform.identity
+        smallWheelView.transform = CGAffineTransform.identity
+        UIView.animate(withDuration: 0.75,
                                    delay: 0,
-                                   options: [.CurveLinear],
+                                   options: [.curveLinear],
                                    animations: {
-                                    self.bigWheelView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
-                                    self.smallWheelView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
+                                    self.bigWheelView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
+                                    self.smallWheelView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
             }, completion: nil)
     }
 }
