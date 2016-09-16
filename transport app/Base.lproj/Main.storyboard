@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S4R-Ja-viH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="S4R-Ja-viH">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Data View Controller-->
@@ -18,33 +19,35 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bike" translatesAutoresizingMaskIntoConstraints="NO" id="FNM-9o-0cy">
-                                <rect key="frame" x="174" y="224" width="676" height="320"/>
+                                <frame key="frameInset" minX="174" minY="224" width="676" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-gs-bVj">
-                                <rect key="frame" x="20" y="704" width="44" height="44"/>
+                                <frame key="frameInset" minX="20" minY="704" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow-left">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="980-jK-LUk" kind="show" id="fDO-cg-zsL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADe-jG-ewD">
-                                <rect key="frame" x="960" y="704" width="44" height="44"/>
+                                <frame key="frameInset" minX="960" minY="704" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow-right"/>
                                 <connections>
                                     <segue destination="BDY-SG-CIy" kind="show" id="eAs-q5-aYq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-3z-lbr">
-                                <rect key="frame" x="490" y="704" width="44" height="44"/>
+                                <frame key="frameInset" minX="490" minY="704" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="button"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.97826086960000003" green="0.88867739838097759" blue="0.87817984571710672" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.97826086960000003" green="0.88867739838097759" blue="0.87817984571710672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,37 +66,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb3-A5-bvJ">
-                                <rect key="frame" x="960" y="704" width="44" height="44"/>
+                                <frame key="frameInset" minX="960" minY="704" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow-right"/>
                                 <connections>
                                     <segue destination="4se-pa-4cI" kind="show" id="iJd-I6-ByO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lz-sK-KVL">
-                                <rect key="frame" x="20" y="704" width="44" height="44"/>
+                                <frame key="frameInset" minX="20" minY="704" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow-left"/>
                                 <connections>
                                     <segue destination="S4R-Ja-viH" kind="show" id="jyw-zy-5b2"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tractor-body" translatesAutoresizingMaskIntoConstraints="NO" id="ETZ-N4-RU3">
-                                <rect key="frame" x="244" y="190" width="521" height="317"/>
+                                <frame key="frameInset" minX="244" minY="190" width="521" height="317"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tractor-big-weel" translatesAutoresizingMaskIntoConstraints="NO" id="0cj-Kv-UdK">
-                                <rect key="frame" x="202" y="319" width="257" height="258"/>
+                                <frame key="frameInset" minX="202" minY="319" width="257" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tractor-small-weel" translatesAutoresizingMaskIntoConstraints="NO" id="1eq-x9-gcz">
-                                <rect key="frame" x="620" y="373" width="203" height="204"/>
+                                <frame key="frameInset" minX="620" minY="373" width="203" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-Iu-Sf1">
-                                <rect key="frame" x="490" y="704" width="44" height="44"/>
+                                <frame key="frameInset" minX="490" minY="704" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="button"/>
                                 <connections>
                                     <action selector="startAnimation" destination="BDY-SG-CIy" eventType="touchUpInside" id="hK7-fy-1sV"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.78800262934362819" green="1" blue="0.84988205630963409" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.78800262934362819" green="1" blue="0.84988205630963409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="bigWheelView" destination="0cj-Kv-UdK" id="cSo-iT-Hs1"/>
@@ -117,34 +126,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WL-Jn-pJU">
-                                <rect key="frame" x="20" y="704" width="44" height="44"/>
+                                <frame key="frameInset" minX="20" minY="704" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow-left"/>
                                 <connections>
                                     <segue destination="BDY-SG-CIy" kind="show" id="VjF-JU-9aB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npS-NJ-Q1v">
-                                <rect key="frame" x="960" y="704" width="44" height="44"/>
+                                <frame key="frameInset" minX="960" minY="704" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow-right"/>
                                 <connections>
                                     <segue destination="980-jK-LUk" kind="show" id="JPX-cz-51P"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-T0-90T">
-                                <rect key="frame" x="490" y="704" width="44" height="44"/>
+                                <frame key="frameInset" minX="490" minY="704" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="button"/>
                                 <connections>
                                     <action selector="startAnimation" destination="4se-pa-4cI" eventType="touchUpInside" id="pMA-W3-Xaj"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="heli-body" translatesAutoresizingMaskIntoConstraints="NO" id="rnz-zz-Dxn">
-                                <rect key="frame" x="144" y="233" width="736" height="302"/>
+                                <frame key="frameInset" minX="144" minY="233" width="736" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="helitail" translatesAutoresizingMaskIntoConstraints="NO" id="v2V-sd-zmY">
-                                <rect key="frame" x="140" y="285" width="142" height="129"/>
+                                <frame key="frameInset" minX="140" minY="285" width="142" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.67514503750239796" green="0.83558068862127322" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.67514503750239796" green="0.83558068862127322" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="heliTailView" destination="v2V-sd-zmY" id="laX-Yf-8Iq"/>
@@ -152,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UoU-Qc-v5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2103" y="1687"/>
+            <point key="canvasLocation" x="2179" y="1743"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="um1-jE-RXd">
@@ -167,28 +181,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck" translatesAutoresizingMaskIntoConstraints="NO" id="vhk-Pp-PGN">
-                                <rect key="frame" x="105" y="248" width="814" height="271"/>
+                                <frame key="frameInset" minX="105" minY="248" width="814" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVr-ZO-ACk">
-                                <rect key="frame" x="960" y="704" width="44" height="44"/>
+                                <frame key="frameInset" minX="960" minY="704" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="arrow-right"/>
                                 <connections>
                                     <segue destination="S4R-Ja-viH" kind="show" id="Nk2-wp-lay"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3Z-pR-V7z">
-                                <rect key="frame" x="490" y="704" width="44" height="44"/>
+                                <frame key="frameInset" minX="490" minY="704" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnP-4P-AzR">
-                                <rect key="frame" x="20" y="704" width="44" height="44"/>
+                                <frame key="frameInset" minX="20" minY="704" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="arrow-left"/>
                                 <connections>
                                     <segue destination="4se-pa-4cI" kind="show" id="CPH-ZX-OBR"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.97309123880037196" blue="0.76624659087791847" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.97309123880037196" blue="0.76624659087791847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSc-nA-mDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -210,7 +228,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="iJd-I6-ByO"/>
-        <segue reference="eAs-q5-aYq"/>
+        <segue reference="VjF-JU-9aB"/>
         <segue reference="jyw-zy-5b2"/>
         <segue reference="JPX-cz-51P"/>
     </inferredMetricsTieBreakers>
