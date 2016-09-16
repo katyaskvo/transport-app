@@ -81,6 +81,10 @@
                                     <segue destination="S4R-Ja-viH" kind="show" id="jyw-zy-5b2"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="uBg-S9-SuS">
+                                <frame key="frameInset" minX="587" minY="226" width="15" height="14"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tractor-body" translatesAutoresizingMaskIntoConstraints="NO" id="ETZ-N4-RU3">
                                 <frame key="frameInset" minX="244" minY="190" width="521" height="317"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -106,12 +110,13 @@
                     </view>
                     <connections>
                         <outlet property="bigWheelView" destination="0cj-Kv-UdK" id="cSo-iT-Hs1"/>
+                        <outlet property="cloudView" destination="uBg-S9-SuS" id="YpV-kV-fXj"/>
                         <outlet property="smallWheelView" destination="1eq-x9-gcz" id="pae-31-3Rn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bV0-Xa-IFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3191" y="471"/>
+            <point key="canvasLocation" x="3190.4296875" y="470.3125"/>
         </scene>
         <!--Helicopter View Controller-->
         <scene sceneID="idE-1d-q5Z">
@@ -219,6 +224,7 @@
         <image name="arrow-right" width="44" height="44"/>
         <image name="bike" width="676" height="320"/>
         <image name="button" width="44" height="44"/>
+        <image name="cloud" width="24" height="18"/>
         <image name="firetruck" width="814" height="271"/>
         <image name="heli-body" width="736" height="302"/>
         <image name="helitail" width="142" height="129"/>
