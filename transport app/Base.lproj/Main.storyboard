@@ -233,12 +233,17 @@
                                 <frame key="frameInset" minX="287" minY="421" width="80" height="87"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="syren-shine" translatesAutoresizingMaskIntoConstraints="NO" id="8XX-ir-uOd">
+                                <frame key="frameInset" minX="840" minY="245" width="50" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.97309123880037196" blue="0.76624659087791847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="backWheelView" destination="jwF-zd-uGN" id="YcG-z0-hNe"/>
                         <outlet property="frontWheelView" destination="mkv-j6-K5f" id="GqS-NL-2oA"/>
+                        <outlet property="syrenShineView" destination="8XX-ir-uOd" id="wjB-Lx-Xdj"/>
                         <outlet property="syrenView" destination="XAF-m1-z2W" id="0aI-iq-PUo"/>
                     </connections>
                 </viewController>
@@ -258,6 +263,7 @@
         <image name="firetruck-wheel" width="101" height="102"/>
         <image name="heli-body" width="736" height="302"/>
         <image name="helitail" width="142" height="129"/>
+        <image name="syren-shine" width="50" height="24"/>
         <image name="tractor-big-weel" width="257" height="258"/>
         <image name="tractor-body" width="521" height="317"/>
         <image name="tractor-small-weel" width="203" height="204"/>

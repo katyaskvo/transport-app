@@ -4,24 +4,23 @@ class FiretruckViewController: UIViewController {
     @IBOutlet var frontWheelView: UIImageView!
     @IBOutlet var backWheelView: UIImageView!
     @IBOutlet var syrenView: UIImageView!
-
+    @IBOutlet var syrenShineView: UIImageView!
     @IBAction func startAnimation() {
         frontWheelView.transform = CGAffineTransform.identity
         backWheelView.transform = CGAffineTransform.identity
-        syrenView.transform = CGAffineTransform.identity
-        syrenView.alpha = 1
-        UIView.animate(withDuration: 2,
+        syrenShineView.transform = CGAffineTransform.identity
+        syrenShineView.alpha = 1
+        UIView.animate(withDuration: 1,
                        delay: 0,
-                       options: [.curveEaseIn],
+                       options: [.curveLinear],
                        animations: {
-                        UIView.setAnimationRepeatCount(5)
-                        self.syrenView.transform = CGAffineTransform(translationX: 100, y: -100).scaledBy(x: 5, y: 5)
+                        UIView.setAnimationRepeatCount(15)
 
-                        self.syrenView.alpha = 0
-                        UIView.setAnimationDuration(4)
-                        UIView.setAnimationRepeatCount(3)
-                        self.frontWheelView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI * 2 / 3))
-                        self.backWheelView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
+                        self.syrenShineView.alpha = 0
+                        UIView.setAnimationDuration(0.4)
+                        UIView.setAnimationRepeatCount(30)
+                        self.frontWheelView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI * 2 / 5))
+                        self.backWheelView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI * 2 / 5))
             }, completion: nil)
     }
 }
