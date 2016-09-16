@@ -173,10 +173,10 @@
             </objects>
             <point key="canvasLocation" x="2123" y="1409"/>
         </scene>
-        <!--View Controller-->
+        <!--Firetruck View Controller-->
         <scene sceneID="um1-jE-RXd">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="980-jK-LUk" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="980-jK-LUk" customClass="FiretruckViewController" customModule="transport_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7gt-yM-fSU"/>
                         <viewControllerLayoutGuide type="bottom" id="Ra9-dx-ITY"/>
@@ -201,6 +201,9 @@
                                 <frame key="frameInset" minX="490" minY="704" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="button"/>
+                                <connections>
+                                    <action selector="startAnimation" destination="980-jK-LUk" eventType="touchUpInside" id="NX7-Qc-veF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnP-4P-AzR">
                                 <frame key="frameInset" minX="20" minY="704" width="44" height="44"/>
@@ -210,9 +213,34 @@
                                     <segue destination="4se-pa-4cI" kind="show" id="CPH-ZX-OBR"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck-wheel" translatesAutoresizingMaskIntoConstraints="NO" id="mkv-j6-K5f">
+                                <frame key="frameInset" minX="690" minY="414" width="101" height="102"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck-wheel" translatesAutoresizingMaskIntoConstraints="NO" id="jwF-zd-uGN">
+                                <frame key="frameInset" minX="277" minY="414" width="101" height="102"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck-top-syren" translatesAutoresizingMaskIntoConstraints="NO" id="XAF-m1-z2W">
+                                <frame key="frameInset" minX="846" minY="250" width="39" height="12"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wheel-shine" translatesAutoresizingMaskIntoConstraints="NO" id="zDV-NH-ZWH">
+                                <frame key="frameInset" minX="701" minY="422" width="80" height="87"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wheel-shine" translatesAutoresizingMaskIntoConstraints="NO" id="TkO-vn-W0M">
+                                <frame key="frameInset" minX="287" minY="421" width="80" height="87"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.97309123880037196" blue="0.76624659087791847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="backWheelView" destination="jwF-zd-uGN" id="YcG-z0-hNe"/>
+                        <outlet property="frontWheelView" destination="mkv-j6-K5f" id="GqS-NL-2oA"/>
+                        <outlet property="syrenView" destination="XAF-m1-z2W" id="0aI-iq-PUo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSc-nA-mDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -225,17 +253,20 @@
         <image name="bike" width="676" height="320"/>
         <image name="button" width="44" height="44"/>
         <image name="cloud" width="24" height="18"/>
-        <image name="firetruck" width="814" height="271"/>
+        <image name="firetruck" width="889" height="271"/>
+        <image name="firetruck-top-syren" width="39" height="12"/>
+        <image name="firetruck-wheel" width="101" height="102"/>
         <image name="heli-body" width="736" height="302"/>
         <image name="helitail" width="142" height="129"/>
         <image name="tractor-big-weel" width="257" height="258"/>
         <image name="tractor-body" width="521" height="317"/>
         <image name="tractor-small-weel" width="203" height="204"/>
+        <image name="wheel-shine" width="80" height="87"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iJd-I6-ByO"/>
-        <segue reference="VjF-JU-9aB"/>
-        <segue reference="jyw-zy-5b2"/>
         <segue reference="JPX-cz-51P"/>
+        <segue reference="CPH-ZX-OBR"/>
+        <segue reference="VjF-JU-9aB"/>
+        <segue reference="Nk2-wp-lay"/>
     </inferredMetricsTieBreakers>
 </document>
