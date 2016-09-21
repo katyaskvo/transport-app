@@ -81,10 +81,6 @@
                                     <segue destination="S4R-Ja-viH" kind="show" id="jyw-zy-5b2"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="uBg-S9-SuS">
-                                <frame key="frameInset" minX="579" minY="245" width="15" height="14"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-Iu-Sf1">
                                 <frame key="frameInset" minX="490" minY="704" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -117,6 +113,10 @@
                                 <frame key="frameInset" minX="383" minY="249" width="103" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="cjM-fl-t4b">
+                                <frame key="frameInset" minX="583" minY="247" width="10" height="12"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="truba" translatesAutoresizingMaskIntoConstraints="NO" id="xK9-ra-E2w">
                                 <frame key="frameInset" minX="568" minY="243" width="25" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -126,7 +126,7 @@
                     </view>
                     <connections>
                         <outlet property="bigWheelView" destination="4Kf-Mq-Ny2" id="wbl-ow-8pe"/>
-                        <outlet property="cloudView" destination="uBg-S9-SuS" id="YpV-kV-fXj"/>
+                        <outlet property="cloudView" destination="cjM-fl-t4b" id="GDI-Ff-Ghh"/>
                         <outlet property="smallWheelView" destination="EW8-Wz-G1U" id="tWt-Rh-zG7"/>
                     </connections>
                 </viewController>
