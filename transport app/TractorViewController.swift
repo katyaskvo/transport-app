@@ -11,8 +11,8 @@ class TractorViewController: UIViewController {
         if soundId == 0 {
             let soundUrl = Bundle.main.url(forResource: "tractor", withExtension: "caf")
             AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
+            AudioServicesPlaySystemSound(soundId)
         }
-        AudioServicesPlaySystemSound(soundId)
     }
 
     override func viewDidDisappear(_ animated: Bool) {
