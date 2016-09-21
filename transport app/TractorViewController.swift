@@ -1,12 +1,23 @@
 import UIKit
+import AudioToolbox
 
 class TractorViewController: UIViewController {
     @IBOutlet var bigWheelView: UIImageView!
     @IBOutlet var smallWheelView: UIImageView!
     @IBOutlet var cloudView: UIImageView!
     
+    func playSound() {
+        let mainBundle = Bundle.main
+
+        let soundUrl = mainBundle.url(forResource: "tractor", withExtension: "caf")
+        var soundId : SystemSoundID = 0
+        AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
+
+        AudioServicesPlaySystemSound(soundId)
+    }
 
     @IBAction func startAnimation() {
+        playSound()
         bigWheelView.transform = CGAffineTransform.identity
         smallWheelView.transform = CGAffineTransform.identity
         cloudView.transform = CGAffineTransform.identity
