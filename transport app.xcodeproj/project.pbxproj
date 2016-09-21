@@ -18,6 +18,7 @@
 		00AA0F901D36B115005BEF28 /* transport_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA0F8F1D36B115005BEF28 /* transport_appUITests.swift */; };
 		4B2831561D382A0200377A83 /* TractorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2831551D382A0200377A83 /* TractorViewController.swift */; };
 		4B2831581D38337D00377A83 /* HelicopterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2831571D38337D00377A83 /* HelicopterViewController.swift */; };
+		4B753F7C1D9327AA003A4A43 /* tractor.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4B753F7B1D9327AA003A4A43 /* tractor.caf */; };
 		4B8D68CB1D8C7B8C00C7F9A1 /* FiretruckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D68CA1D8C7B8C00C7F9A1 /* FiretruckViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		00AA0F911D36B115005BEF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B2831551D382A0200377A83 /* TractorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TractorViewController.swift; sourceTree = "<group>"; };
 		4B2831571D38337D00377A83 /* HelicopterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelicopterViewController.swift; sourceTree = "<group>"; };
+		4B753F7B1D9327AA003A4A43 /* tractor.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tractor.caf; sourceTree = "<group>"; };
 		4B8D68CA1D8C7B8C00C7F9A1 /* FiretruckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiretruckViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 			children = (
 				00AA0F6B1D36B115005BEF28 /* AppDelegate.swift */,
 				4B2831551D382A0200377A83 /* TractorViewController.swift */,
+				4B753F7B1D9327AA003A4A43 /* tractor.caf */,
 				4B8D68CA1D8C7B8C00C7F9A1 /* FiretruckViewController.swift */,
 				4B2831571D38337D00377A83 /* HelicopterViewController.swift */,
 				00AA0F6D1D36B115005BEF28 /* RootViewController.swift */,
@@ -249,6 +252,7 @@
 			files = (
 				00AA0F7A1D36B115005BEF28 /* LaunchScreen.storyboard in Resources */,
 				00AA0F771D36B115005BEF28 /* Assets.xcassets in Resources */,
+				4B753F7C1D9327AA003A4A43 /* tractor.caf in Resources */,
 				00AA0F751D36B115005BEF28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
