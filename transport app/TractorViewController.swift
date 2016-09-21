@@ -5,15 +5,20 @@ class TractorViewController: UIViewController {
     @IBOutlet var bigWheelView: UIImageView!
     @IBOutlet var smallWheelView: UIImageView!
     @IBOutlet var cloudView: UIImageView!
-    
+    var soundId : SystemSoundID = 0
+
     func playSound() {
-        let mainBundle = Bundle.main
-
-        let soundUrl = mainBundle.url(forResource: "tractor", withExtension: "caf")
-        var soundId : SystemSoundID = 0
-        AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
-
+        if soundId == 0 {
+            let soundUrl = Bundle.main.url(forResource: "tractor", withExtension: "caf")
+            AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
+        }
         AudioServicesPlaySystemSound(soundId)
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        if soundId != 0 {
+            AudioServicesDisposeSystemSoundID(soundId)
+        }
     }
 
     @IBAction func startAnimation() {
