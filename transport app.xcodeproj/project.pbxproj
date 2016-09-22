@@ -211,6 +211,7 @@
 				TargetAttributes = {
 					00AA0F671D36B115005BEF28 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 35KC7LV9BL;
 						LastSwiftMigration = 0800;
 					};
 					00AA0F7F1D36B115005BEF28 = {
@@ -430,7 +431,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 35KC7LV9BL;
 				INFOPLIST_FILE = "transport app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.katyaskvo.transport-app";
@@ -446,7 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 35KC7LV9BL;
 				INFOPLIST_FILE = "transport app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.katyaskvo.transport-app";
