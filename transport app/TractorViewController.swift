@@ -27,7 +27,7 @@ class TractorViewController: UIViewController {
 
         let path = UIBezierPath()
         path.move(to: CGPoint(x: 583,y: 247))
-        path.addCurve(to: CGPoint(x: 610, y: 28), controlPoint1: CGPoint(x: 136, y: 373), controlPoint2: CGPoint(x: 178, y: 110))
+        path.addCurve(to: CGPoint(x: 610, y: 28), controlPoint1: CGPoint(x: 700, y: 197), controlPoint2: CGPoint(x: 450, y: 121))
 
         // create a new CAKeyframeAnimation that animates the objects position
         let anim = CAKeyframeAnimation(keyPath: "position")
@@ -47,14 +47,14 @@ class TractorViewController: UIViewController {
 //        playSound()
         bigWheelView.transform = CGAffineTransform.identity
         smallWheelView.transform = CGAffineTransform.identity
-        cloudView.transform = CGAffineTransform.identity
+//        cloudView.transform = CGAffineTransform.identity
         cloudView.alpha = 1
-        UIView.animate(withDuration: 2,
+        UIView.animate(withDuration: 5,
                        delay: 0,
                        options: [.curveLinear],
                        animations: {
                         UIView.setAnimationRepeatCount(5)
-                        self.cloudView.transform = CGAffineTransform(translationX: 100, y: -100).scaledBy(x: 5, y: 5)
+//                        self.cloudView.transform = CGAffineTransform(translationX: 100, y: -100).scaledBy(x: 5, y: 5)
 
                         self.cloudView.alpha = 0
                         UIView.setAnimationDuration(5)

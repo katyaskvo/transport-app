@@ -121,8 +121,16 @@
                                 <frame key="frameInset" minX="568" minY="243" width="25" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="g3T-eo-VF3">
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="g3T-eo-VF3">
                                 <frame key="frameInset" minX="610" minY="28" width="64" height="48"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="XWG-kN-6z2">
+                                <frame key="frameInset" minX="624" minY="197" width="21" height="23"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="YHy-Bp-ym1">
+                                <frame key="frameInset" minX="555" minY="121" width="38" height="32"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
