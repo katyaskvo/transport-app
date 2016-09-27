@@ -18,10 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bike" translatesAutoresizingMaskIntoConstraints="NO" id="FNM-9o-0cy">
-                                <frame key="frameInset" minX="174" minY="224" width="676" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-gs-bVj">
                                 <frame key="frameInset" minX="20" minY="704" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -45,6 +41,42 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="button"/>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wheel" translatesAutoresizingMaskIntoConstraints="NO" id="f6k-RT-oiC">
+                                <frame key="frameInset" minX="591" minY="351" width="191" height="192"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wheel" translatesAutoresizingMaskIntoConstraints="NO" id="lNK-zH-P4j">
+                                <frame key="frameInset" minX="266" minY="351" width="191" height="192"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="shadow" translatesAutoresizingMaskIntoConstraints="NO" id="TuU-rZ-8mX">
+                                <frame key="frameInset" minX="604" minY="356" width="108" height="56"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="71i-SW-Wc6">
+                                <frame key="frameInset" minX="263" minY="233" width="447" height="238"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bell" translatesAutoresizingMaskIntoConstraints="NO" id="AIi-UV-cA0">
+                                <frame key="frameInset" minX="585" minY="224" width="32" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="gear" translatesAutoresizingMaskIntoConstraints="NO" id="GaG-5m-pfz">
+                                <frame key="frameInset" minX="472" minY="431" width="64" height="67"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pedal" translatesAutoresizingMaskIntoConstraints="NO" id="dm3-Cb-v1d">
+                                <frame key="frameInset" minX="525" minY="488" width="26" height="12"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="shadow" translatesAutoresizingMaskIntoConstraints="NO" id="Ej9-3i-ldu">
+                                <frame key="frameInset" minX="279" minY="356" width="108" height="56"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="chain" translatesAutoresizingMaskIntoConstraints="NO" id="KrC-Jv-Mm4">
+                                <frame key="frameInset" minX="346" minY="427" width="187" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97826086960000003" green="0.88867739838097759" blue="0.87817984571710672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -283,28 +315,34 @@
     <resources>
         <image name="arrow-left" width="44" height="44"/>
         <image name="arrow-right" width="44" height="44"/>
+        <image name="bell" width="32" height="17"/>
         <image name="big-wheel" width="214" height="215"/>
-        <image name="bike" width="676" height="320"/>
         <image name="body" width="435" height="265"/>
         <image name="button" width="44" height="44"/>
+        <image name="chain" width="187" height="65"/>
         <image name="cloud" width="64" height="48"/>
         <image name="firetruck" width="889" height="271"/>
         <image name="firetruck-top-syren" width="39" height="12"/>
         <image name="firetruck-wheel" width="101" height="102"/>
+        <image name="frame" width="447" height="238"/>
+        <image name="gear" width="64" height="67"/>
         <image name="heli-body" width="736" height="302"/>
         <image name="helitail" width="142" height="129"/>
+        <image name="pedal" width="26" height="12"/>
+        <image name="shadow" width="108" height="56"/>
         <image name="small-wheel" width="169" height="170"/>
         <image name="small-wheel-reflection" width="109" height="118"/>
         <image name="syren-shine" width="50" height="24"/>
         <image name="truba" width="25" height="88"/>
+        <image name="wheel" width="191" height="192"/>
         <image name="wheel-reflections" width="140" height="152"/>
         <image name="wheel-shine" width="80" height="87"/>
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iJd-I6-ByO"/>
-        <segue reference="eAs-q5-aYq"/>
-        <segue reference="jyw-zy-5b2"/>
         <segue reference="fDO-cg-zsL"/>
+        <segue reference="jyw-zy-5b2"/>
+        <segue reference="eAs-q5-aYq"/>
+        <segue reference="iJd-I6-ByO"/>
     </inferredMetricsTieBreakers>
 </document>
