@@ -28,6 +28,20 @@ class BicycleViewController: UIViewController {
         super.viewWillAppear(animated)
 //        self.dataLabel!.text = dataObject
     }
+    
+    @IBOutlet var wheelBackView: UIImageView!
+    
+    @IBAction func startAnimation() {
+        wheelBackView.transform = CGAffineTransform.identity
+        UIView.animate(
+            withDuration: 2,
+            delay: 0,
+            options: [.curveLinear],
+            animations: {
+                UIView.setAnimationRepeatCount(10)
+                self.wheelBackView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
+        }, completion: nil)
+    }
 
 
 }
