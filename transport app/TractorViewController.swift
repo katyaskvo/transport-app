@@ -43,7 +43,7 @@ class TractorViewController: UIViewController {
         // we add the animation to the squares 'layer' property
         square.layer.add(anim, forKey: "animate position along path")
 
-//        playSound()
+        playSound()
         bigWheelView.transform = CGAffineTransform.identity
         smallWheelView.transform = CGAffineTransform.identity
         cloudView.transform = CGAffineTransform.identity
