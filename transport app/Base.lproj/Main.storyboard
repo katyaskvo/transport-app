@@ -92,6 +92,7 @@
                     </view>
                     <connections>
                         <outlet property="wheelBackView" destination="dm7-5P-ifM" id="egE-Jr-Cah"/>
+                        <outlet property="wheelFrontView" destination="oN5-nq-jg4" id="FJs-hv-kzv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>

@@ -30,16 +30,19 @@ class BicycleViewController: UIViewController {
     }
     
     @IBOutlet var wheelBackView: UIImageView!
+    @IBOutlet weak var wheelFrontView: UIImageView!
     
     @IBAction func startAnimation() {
         wheelBackView.transform = CGAffineTransform.identity
+        wheelFrontView.transform = CGAffineTransform.identity
         UIView.animate(
-            withDuration: 2,
+            withDuration: 1,
             delay: 0,
             options: [.curveLinear],
             animations: {
                 UIView.setAnimationRepeatCount(10)
                 self.wheelBackView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
+                self.wheelFrontView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
         }, completion: nil)
     }
 
