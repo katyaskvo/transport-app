@@ -13,10 +13,27 @@ class BicycleViewController: UIViewController {
     @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
 
+    @IBOutlet var wheelBackView: UIImageView!
+    @IBOutlet var wheelFrontView: UIImageView!
+    @IBOutlet var chainWheelView: UIImageView!
+    @IBOutlet var chain0View: UIImageView!
+    
+    var chain0: UIImage!
+    var chain1: UIImage!
+
+    var chainImages: [UIImage]!
+    
+    var animatedChain: UIImage!
+    
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,31 +46,35 @@ class BicycleViewController: UIViewController {
 //        self.dataLabel!.text = dataObject
     }
     
-    @IBOutlet var wheelBackView: UIImageView!
-    @IBOutlet var wheelFrontView: UIImageView!
-    @IBOutlet var chainWheelView: UIImageView!
-    @IBOutlet var chain0View: UIImageView!
-    @IBOutlet var chain1View: UIImageView!
-    
     @IBAction func startAnimation() {
         wheelBackView.transform = CGAffineTransform.identity
         wheelFrontView.transform = CGAffineTransform.identity
         chainWheelView.transform = CGAffineTransform.identity
-        chain0View.transform = CGAffineTransform.identity
-        chain1View.transform = CGAffineTransform.identity
+        //        chain0View.transform = CGAffineTransform.identity
+        //        chain1View.transform = CGAffineTransform.identity
         
-        self.chain0View.alpha = 0
-        self.chain1View.alpha = 1
+        //        self.chain0View.alpha = 0
+        //        self.chain1View.alpha = 1
+        
+        chain0 = UIImage(named: "chain0")
+        chain1 = UIImage(named: "chain1")
+        
+        chainImages = [chain0, chain1]
+        
         
         UIView.animate(
             withDuration: 1,
             delay: 0,
             options: [.curveLinear],
             animations: {
-                UIView.setAnimationDuration(0.2)
-                UIView.setAnimationRepeatCount(50)
-                self.chain1View.alpha = 0
-                self.chain0View.alpha = 1
+                self.animatedChain = UIImage.animatedImage(with: self.chainImages, duration: 0.2)
+                self.chain0View.image = self.animatedChain
+
+                
+//                UIView.setAnimationDuration(0.2)
+//                UIView.setAnimationRepeatCount(50)
+                //                self.chain1View.alpha = 0
+                //                self.chain0View.alpha = 1
                 
                 UIView.setAnimationDuration(0.77)
                 UIView.setAnimationRepeatCount(13)
@@ -64,7 +85,6 @@ class BicycleViewController: UIViewController {
                 self.chainWheelView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI * 2/5))
         }, completion: nil)
     }
-
 
 }
 

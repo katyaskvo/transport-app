@@ -87,16 +87,11 @@
                                 <rect key="frame" x="346" y="427" width="187" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="chain1" translatesAutoresizingMaskIntoConstraints="NO" id="Bwl-tN-BJg">
-                                <rect key="frame" x="346" y="427" width="187" height="64"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97826086960000003" green="0.88867739838097759" blue="0.87817984571710672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="chain0View" destination="7Mz-Cn-dHf" id="iCk-yZ-56s"/>
-                        <outlet property="chain1View" destination="Bwl-tN-BJg" id="VdL-XY-gos"/>
                         <outlet property="chainWheelView" destination="d7J-qR-I4C" id="xhl-Qv-amc"/>
                         <outlet property="wheelBackView" destination="dm7-5P-ifM" id="egE-Jr-Cah"/>
                         <outlet property="wheelFrontView" destination="oN5-nq-jg4" id="FJs-hv-kzv"/>
@@ -329,7 +324,6 @@
         <image name="body" width="435" height="265"/>
         <image name="button" width="44" height="44"/>
         <image name="chain0" width="187" height="65"/>
-        <image name="chain1" width="187" height="64"/>
         <image name="chain_wheel" width="57" height="57"/>
         <image name="cloud" width="64" height="48"/>
         <image name="firetruck" width="889" height="271"/>
