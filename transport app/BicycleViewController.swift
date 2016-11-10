@@ -1,3 +1,5 @@
+
+
 //
 //  DataViewController.swift
 //  transport app
@@ -26,14 +28,9 @@ class BicycleViewController: UIViewController {
     var animatedChain: UIImage!
     
     
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,36 +47,28 @@ class BicycleViewController: UIViewController {
         wheelBackView.transform = CGAffineTransform.identity
         wheelFrontView.transform = CGAffineTransform.identity
         chainWheelView.transform = CGAffineTransform.identity
-        //        chain0View.transform = CGAffineTransform.identity
-        //        chain1View.transform = CGAffineTransform.identity
-        
-        //        self.chain0View.alpha = 0
-        //        self.chain1View.alpha = 1
         
         chain0 = UIImage(named: "chain0")
         chain1 = UIImage(named: "chain1")
         
         chainImages = [chain0, chain1]
         
-        
         UIView.animate(
             withDuration: 1,
             delay: 0,
             options: [.curveLinear],
             animations: {
-                self.animatedChain = UIImage.animatedImage(with: self.chainImages, duration: 0.2)
-                self.chain0View.image = self.animatedChain
-
                 
-//                UIView.setAnimationDuration(0.2)
-//                UIView.setAnimationRepeatCount(50)
-                //                self.chain1View.alpha = 0
-                //                self.chain0View.alpha = 1
-                
+                self.chain0View.animationImages = self.chainImages
+                self.chain0View.animationDuration = 0.2
+                self.chain0View.animationRepeatCount = 50
+                self.chain0View.startAnimating()
+                                
                 UIView.setAnimationDuration(0.77)
                 UIView.setAnimationRepeatCount(13)
                 self.wheelBackView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
                 self.wheelFrontView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
+                
                 UIView.setAnimationDuration(0.33)
                 UIView.setAnimationRepeatCount(30)
                 self.chainWheelView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI * 2/5))
