@@ -20,6 +20,7 @@ class BicycleViewController: UIViewController {
     @IBOutlet var chainWheelView: UIImageView!
     @IBOutlet var chain0View: UIImageView!
     @IBOutlet var pedalShaftView: UIImageView!
+    @IBOutlet var pedalView: UIImageView!
     
     var chain0: UIImage!
     var chain1: UIImage!
@@ -29,9 +30,13 @@ class BicycleViewController: UIViewController {
     var animatedChain: UIImage!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,16 +54,25 @@ class BicycleViewController: UIViewController {
         wheelFrontView.transform = CGAffineTransform.identity
         chainWheelView.transform = CGAffineTransform.identity
         pedalShaftView.transform = CGAffineTransform.identity
+        pedalView.transform = CGAffineTransform.identity
         
         chain0 = UIImage(named: "chain0")
         chain1 = UIImage(named: "chain1")
         
         chainImages = [chain0, chain1]
         
-        let pedalShaftRotationPoint = CGPoint(x: 0.065, y: 0.5)
-            
+        let pedalShaftRotationPoint = CGPoint(x: 0.077, y: 0.071)
         pedalShaftView.layer.anchorPoint = pedalShaftRotationPoint
         pedalShaftView.layer.position = CGPoint(x: 500.5, y: 459.5)
+        
+        
+        let circlePedalPath = UIBezierPath(arcCenter: CGPoint(x: 500.5,y: 459.5), radius: 49, startAngle: CGFloat(M_PI * 0.26), endAngle:CGFloat(M_PI)*2 + CGFloat(M_PI * 0.26), clockwise: true)
+        let pedalAnimation = CAKeyframeAnimation(keyPath: "position")
+        pedalAnimation.path = circlePedalPath.cgPath
+        pedalAnimation.repeatCount = 10
+        pedalAnimation.duration = 1.0
+        
+        
         
         UIView.animate(
             withDuration: 1,
@@ -78,6 +92,7 @@ class BicycleViewController: UIViewController {
                 
                 self.chainWheelView.rotate360Degrees(duration: 1, repeatCount: 10)
                 self.pedalShaftView.rotate360Degrees(duration: 1, repeatCount: 10)
+                self.pedalView.layer.add(pedalAnimation, forKey: nil)
         }, completion: nil)
     }
 
