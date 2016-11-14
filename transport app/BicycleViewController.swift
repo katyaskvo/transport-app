@@ -22,6 +22,9 @@ class BicycleViewController: UIViewController {
     @IBOutlet var pedalShaftView: UIImageView!
     @IBOutlet var pedalView: UIImageView!
     
+    @IBOutlet var reflectionBackWheelView: UIImageView!
+    @IBOutlet var reflectionFrontWheelView: UIImageView!
+    
     var chain0: UIImage!
     var chain1: UIImage!
 
@@ -49,12 +52,25 @@ class BicycleViewController: UIViewController {
 //        self.dataLabel!.text = dataObject
     }
     
+    
+    
     @IBAction func startAnimation() {
         wheelBackView.transform = CGAffineTransform.identity
         wheelFrontView.transform = CGAffineTransform.identity
         chainWheelView.transform = CGAffineTransform.identity
         pedalShaftView.transform = CGAffineTransform.identity
         pedalView.transform = CGAffineTransform.identity
+        reflectionBackWheelView.transform = CGAffineTransform.identity
+        reflectionFrontWheelView.transform = CGAffineTransform.identity
+        
+        let wheelReflectionAnimation = CAKeyframeAnimation()
+        wheelReflectionAnimation.keyPath = "transform.rotation"
+        wheelReflectionAnimation.values = [M_PI * 0.01, M_PI * (-0.01), M_PI * 0.01, M_PI * (-0.01), M_PI
+            * 0.01 ]
+        wheelReflectionAnimation.keyTimes = [0, 0.25, 0.45, 0.65, 1]
+        wheelReflectionAnimation.duration = 1
+        wheelReflectionAnimation.repeatCount = 10
+        
         
         chain0 = UIImage(named: "chain0")
         chain1 = UIImage(named: "chain1")
@@ -66,11 +82,16 @@ class BicycleViewController: UIViewController {
         pedalShaftView.layer.position = CGPoint(x: 500.5, y: 459.5)
         
         
+        
+        
         let circlePedalPath = UIBezierPath(arcCenter: CGPoint(x: 500.5,y: 459.5), radius: 49, startAngle: CGFloat(M_PI * 0.26), endAngle:CGFloat(M_PI)*2 + CGFloat(M_PI * 0.26), clockwise: true)
         let pedalAnimation = CAKeyframeAnimation(keyPath: "position")
         pedalAnimation.path = circlePedalPath.cgPath
         pedalAnimation.repeatCount = 10
         pedalAnimation.duration = 1.0
+        
+        
+        
         
         
         
@@ -93,6 +114,8 @@ class BicycleViewController: UIViewController {
                 self.chainWheelView.rotate360Degrees(duration: 1, repeatCount: 10)
                 self.pedalShaftView.rotate360Degrees(duration: 1, repeatCount: 10)
                 self.pedalView.layer.add(pedalAnimation, forKey: nil)
+                self.reflectionBackWheelView.layer.add(wheelReflectionAnimation, forKey: "move")
+                self.reflectionFrontWheelView.layer.add(wheelReflectionAnimation, forKey: "move")
         }, completion: nil)
     }
 

@@ -55,7 +55,7 @@
                                 <rect key="frame" x="591" y="350" width="191" height="192"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="revlection_back" translatesAutoresizingMaskIntoConstraints="NO" id="iOK-X3-I1d">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="revlection_back" translatesAutoresizingMaskIntoConstraints="NO" id="iOK-X3-I1d" userLabel="reflection_back">
                                 <rect key="frame" x="280" y="355" width="154" height="181"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -95,6 +95,8 @@
                         <outlet property="chainWheelView" destination="d7J-qR-I4C" id="xhl-Qv-amc"/>
                         <outlet property="pedalShaftView" destination="Nny-PC-leg" id="Abu-yV-yLk"/>
                         <outlet property="pedalView" destination="bcp-ok-7wa" id="abz-Hl-o3r"/>
+                        <outlet property="reflectionBackWheelView" destination="iOK-X3-I1d" id="txJ-ja-5SD"/>
+                        <outlet property="reflectionFrontWheelView" destination="UpI-uC-EFp" id="08I-eL-sBt"/>
                         <outlet property="wheelBackView" destination="dm7-5P-ifM" id="egE-Jr-Cah"/>
                         <outlet property="wheelFrontView" destination="oN5-nq-jg4" id="FJs-hv-kzv"/>
                     </connections>
