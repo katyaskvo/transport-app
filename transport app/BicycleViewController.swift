@@ -19,27 +19,48 @@ class BicycleViewController: UIViewController {
     @IBOutlet var wheelFrontView: UIImageView!
     @IBOutlet var chainWheelView: UIImageView!
     @IBOutlet var chain0View: UIImageView!
+    
     @IBOutlet var pedalShaftView: UIImageView!
     @IBOutlet var pedalView: UIImageView!
     
+    @IBOutlet var bell00View: UIImageView!
     @IBOutlet var reflectionBackWheelView: UIImageView!
     @IBOutlet var reflectionFrontWheelView: UIImageView!
     
     var chain0: UIImage!
     var chain1: UIImage!
-
     var chainImages: [UIImage]!
-    
     var animatedChain: UIImage!
     
+//    var bell00 = UIImage(named: "bike_bell00")
+//    var bell01 = UIImage(named: "bike_bell01")
+//    var bell02 = UIImage(named: "bike_bell02")
+//    var bell03 = UIImage(named: "bike_bell03")
+//    var bell04 = UIImage(named: "bike_bell04")
+//    var bell05 = UIImage(named: "bike_bell05")
+//    var bell06 = UIImage(named: "bike_bell06")
+//    var bell07 = UIImage(named: "bike_bell07")
+//    var bell08 = UIImage(named: "bike_bell08")
+//    var bell09 = UIImage(named: "bike_bell09")
+    
+    var bell00: UIImage!
+    var bell01: UIImage!
+    var bell02: UIImage!
+    var bell03: UIImage!
+    var bell04: UIImage!
+    var bell05: UIImage!
+    var bell06: UIImage!
+    var bell07: UIImage!
+    var bell08: UIImage!
+    var bell09: UIImage!
+
+    var bellImages: [UIImage]!
+    var animatedBell: UIImage!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-        
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,7 +96,20 @@ class BicycleViewController: UIViewController {
         chain0 = UIImage(named: "chain0")
         chain1 = UIImage(named: "chain1")
         
+        bell00 = UIImage(named: "bike_bell00")
+        bell01 = UIImage(named: "bike_bell01")
+        bell02 = UIImage(named: "bike_bell02")
+        bell03 = UIImage(named: "bike_bell03")
+        bell04 = UIImage(named: "bike_bell04")
+        bell05 = UIImage(named: "bike_bell05")
+        bell06 = UIImage(named: "bike_bell06")
+        bell07 = UIImage(named: "bike_bell07")
+        bell08 = UIImage(named: "bike_bell08")
+        bell09 = UIImage(named: "bike_bell09")
+
+        
         chainImages = [chain0, chain1]
+        bellImages = [bell00, bell01, bell02, bell03, bell04, bell05, bell06, bell07, bell08, bell09]
         
         let pedalShaftRotationPoint = CGPoint(x: 0.077, y: 0.071)
         pedalShaftView.layer.anchorPoint = pedalShaftRotationPoint
@@ -90,11 +124,6 @@ class BicycleViewController: UIViewController {
         pedalAnimation.repeatCount = 10
         pedalAnimation.duration = 1.0
         
-        
-        
-        
-        
-        
         UIView.animate(
             withDuration: 1,
             delay: 0,
@@ -105,6 +134,12 @@ class BicycleViewController: UIViewController {
                 self.chain0View.animationDuration = 0.1
                 self.chain0View.animationRepeatCount = 100
                 self.chain0View.startAnimating()
+                
+                self.bell00View.animationImages = self.bellImages
+                self.bell00View.animationDuration = 0.5
+                self.bell00View.animationRepeatCount = 20
+                
+                self.bell00View.startAnimating()
                 
                 UIView.setAnimationDuration(0.77)
                 UIView.setAnimationRepeatCount(13)
@@ -117,6 +152,7 @@ class BicycleViewController: UIViewController {
                 self.reflectionBackWheelView.layer.add(wheelReflectionAnimation, forKey: "move")
                 self.reflectionFrontWheelView.layer.add(wheelReflectionAnimation, forKey: "move")
         }, completion: nil)
+        
     }
 
 }
