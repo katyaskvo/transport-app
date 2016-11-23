@@ -126,7 +126,7 @@ class BicycleViewController: UIViewController {
                 
                 let bellAnimation = CAAnimationGroup()
                 bellAnimation.duration = 2.5
-                bellAnimation.repeatCount = 5
+                bellAnimation.repeatCount = 4
                 
                 bellAnimation.animations = [bellViewAnimation]
                 
