@@ -85,16 +85,16 @@ class BicycleViewController: UIViewController {
         
         let wheelReflectionAnimation = CAKeyframeAnimation()
         wheelReflectionAnimation.keyPath = "transform.rotation"
-        wheelReflectionAnimation.values = [M_PI * 0.01, M_PI * (-0.01), M_PI * 0.01, M_PI * (-0.01), M_PI
+        wheelReflectionAnimation.values = [M_PI * 0.02, M_PI * (-0.025), M_PI * 0.005, M_PI * (-0.025), M_PI
             * 0.01 ]
         wheelReflectionAnimation.keyTimes = [0, 0.25, 0.45, 0.65, 1]
-        wheelReflectionAnimation.duration = 1
-        wheelReflectionAnimation.repeatCount = 10
+        wheelReflectionAnimation.duration = 0.83
+        wheelReflectionAnimation.repeatCount = 12
         
         let bellViewAnimation = CAKeyframeAnimation(keyPath: "contents")
         bellViewAnimation.calculationMode = kCAAnimationDiscrete
         bellViewAnimation.values = bellImages.map {$0.cgImage as AnyObject}
-        bellViewAnimation.duration = 0.3
+        bellViewAnimation.duration = 0.25
         bellViewAnimation.repeatCount = 2
 
 
