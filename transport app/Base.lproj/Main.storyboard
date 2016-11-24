@@ -47,6 +47,14 @@
                                     <action selector="startAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="3cJ-mY-LLK"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pedal" translatesAutoresizingMaskIntoConstraints="NO" id="djp-O1-jc6">
+                                <rect key="frame" x="455" y="417" width="26" height="12"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pedal_shaft" translatesAutoresizingMaskIntoConstraints="NO" id="pBM-m9-VT8">
+                                <rect key="frame" x="464" y="421" width="40" height="43"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wheel_back" translatesAutoresizingMaskIntoConstraints="NO" id="dm7-5P-ifM">
                                 <rect key="frame" x="267" y="350" width="191" height="192"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -71,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="70E6ADE5-73AB-4BFA-A7F9-269A5A878851" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="ADDEEAD2-F338-4EF0-9216-73211EE143B1" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -112,6 +120,8 @@
                         <outlet property="bell00View" destination="0qf-GI-WSg" id="TnN-if-6Ni"/>
                         <outlet property="chain0View" destination="7Mz-Cn-dHf" id="iCk-yZ-56s"/>
                         <outlet property="chainWheelView" destination="d7J-qR-I4C" id="xhl-Qv-amc"/>
+                        <outlet property="pedal2View" destination="djp-O1-jc6" id="DIw-oP-MEh"/>
+                        <outlet property="pedalShaft2View" destination="pBM-m9-VT8" id="kfS-aF-d0Y"/>
                         <outlet property="pedalShaftView" destination="Nny-PC-leg" id="Abu-yV-yLk"/>
                         <outlet property="pedalView" destination="bcp-ok-7wa" id="abz-Hl-o3r"/>
                         <outlet property="reflectionBackWheelView" destination="iOK-X3-I1d" id="txJ-ja-5SD"/>
@@ -342,7 +352,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="70E6ADE5-73AB-4BFA-A7F9-269A5A878851" width="32" height="17">
+        <image name="ADDEEAD2-F338-4EF0-9216-73211EE143B1" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGSUpYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEAcI
 ERYbHCUmJysyNzo9Q0ZVJG51bGzUCQoLDA0ODxBWJGNsYXNzXE5TSW1hZ2VGbGFnc1ZOU1JlcHNXTlND

@@ -22,6 +22,8 @@ class BicycleViewController: UIViewController {
     
     @IBOutlet var pedalShaftView: UIImageView!
     @IBOutlet var pedalView: UIImageView!
+    @IBOutlet var pedal2View: UIImageView!
+    @IBOutlet var pedalShaft2View: UIImageView!
     
     @IBOutlet var bell00View: UIImageView!
     @IBOutlet var reflectionBackWheelView: UIImageView!
@@ -94,6 +96,9 @@ class BicycleViewController: UIViewController {
         chainWheelView.transform = CGAffineTransform.identity
         pedalShaftView.transform = CGAffineTransform.identity
         pedalView.transform = CGAffineTransform.identity
+        pedalShaft2View.transform = CGAffineTransform.identity
+        pedal2View.transform = CGAffineTransform.identity
+
         reflectionBackWheelView.transform = CGAffineTransform.identity
         reflectionFrontWheelView.transform = CGAffineTransform.identity
         bell00View.transform = CGAffineTransform.identity
@@ -119,12 +124,23 @@ class BicycleViewController: UIViewController {
         pedalShaftView.layer.anchorPoint = pedalShaftRotationPoint
         pedalShaftView.layer.position = CGPoint(x: 500.5, y: 459.5)
         
+        let pedalShaft2RotationPoint = CGPoint(x: 0.923, y: 0.929)
+        pedalShaft2View.layer.anchorPoint = pedalShaft2RotationPoint
+        pedalShaft2View.layer.position = CGPoint(x: 500.5, y: 459.5)
+
+        
         
         let circlePedalPath = UIBezierPath(arcCenter: CGPoint(x: 500.5,y: 459.5), radius: 49, startAngle: CGFloat(M_PI * 0.26), endAngle:CGFloat(M_PI)*2 + CGFloat(M_PI * 0.26), clockwise: true)
         let pedalAnimation = CAKeyframeAnimation(keyPath: "position")
         pedalAnimation.path = circlePedalPath.cgPath
         pedalAnimation.repeatCount = 10
         pedalAnimation.duration = 1.0
+        
+        let circlePedalPath2 = UIBezierPath(arcCenter: CGPoint(x: 500.5,y: 459.5), radius: 49, startAngle: CGFloat(M_PI * 0.74 + M_PI/2), endAngle:CGFloat(M_PI)*2 + CGFloat(M_PI * 0.74 + M_PI/2), clockwise: true)
+        let pedalAnimation2 = CAKeyframeAnimation(keyPath: "position")
+        pedalAnimation2.path = circlePedalPath2.cgPath
+        pedalAnimation2.repeatCount = 10
+        pedalAnimation2.duration = 1.0
         
         UIView.animate(
             withDuration: 1,
@@ -144,15 +160,24 @@ class BicycleViewController: UIViewController {
                 bellAnimation.animations = [bellViewAnimation]
                 
                 
+
+                self.animateTheRoad()
+                
                 UIView.setAnimationDuration(0.77)
                 UIView.setAnimationRepeatCount(13)
-                self.animateTheRoad()
                 self.wheelBackView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
                 self.wheelFrontView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
                 
                 self.chainWheelView.rotate360Degrees(duration: 1, repeatCount: 10)
+                
+                
                 self.pedalShaftView.rotate360Degrees(duration: 1, repeatCount: 10)
                 self.pedalView.layer.add(pedalAnimation, forKey: nil)
+                
+                self.pedalShaft2View.rotate360Degrees(duration: 1, repeatCount: 10)
+                self.pedal2View.layer.add(pedalAnimation2, forKey: nil)
+                
+                
                 self.reflectionBackWheelView.layer.add(wheelReflectionAnimation, forKey: "move")
                 self.reflectionFrontWheelView.layer.add(wheelReflectionAnimation, forKey: "move")
                 self.bell00View.layer.add(bellAnimation, forKey: "contents")
