@@ -26,6 +26,9 @@ class BicycleViewController: UIViewController {
     @IBOutlet var bell00View: UIImageView!
     @IBOutlet var reflectionBackWheelView: UIImageView!
     @IBOutlet var reflectionFrontWheelView: UIImageView!
+    @IBOutlet var road1View: UIImageView!
+    @IBOutlet var road2View: UIImageView!
+
     
     var chain0: UIImage!
     var chain1: UIImage!
@@ -51,12 +54,8 @@ class BicycleViewController: UIViewController {
         let bell08 = UIImage(named: "bike_bell08")
         let bell09 = UIImage(named: "bike_bell09")
 
-        
-        
-
         chainImages = [chain0, chain1]
         bellImages = [bell00!, bell01!, bell02!, bell03!, bell04!, bell05!, bell06!, bell07!, bell08!, bell09!]
-        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -70,6 +69,22 @@ class BicycleViewController: UIViewController {
         super.viewWillAppear(animated)
 //        self.dataLabel!.text = dataObject
     }
+
+    
+    
+    
+    
+    func animateTheRoad() {
+        let animationOptions = UIViewAnimationOptions.curveLinear
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: animationOptions, animations: {
+            UIView.setAnimationRepeatCount(10)
+            UIView.setAnimationDuration(1)
+            self.road1View.frame = self.road1View.frame.offsetBy(dx: -1 * self.road1View.frame.size.width, dy: 0.0)
+            self.road2View.frame = self.road2View.frame.offsetBy(dx: -1 * self.road2View.frame.size.width, dy: 0.0)
+        }, completion: nil)
+    }
+    
+    
     
     
     
@@ -82,6 +97,8 @@ class BicycleViewController: UIViewController {
         reflectionBackWheelView.transform = CGAffineTransform.identity
         reflectionFrontWheelView.transform = CGAffineTransform.identity
         bell00View.transform = CGAffineTransform.identity
+        road1View.transform = CGAffineTransform.identity
+        road2View.transform = CGAffineTransform.identity
         
         let wheelReflectionAnimation = CAKeyframeAnimation()
         wheelReflectionAnimation.keyPath = "transform.rotation"
@@ -97,14 +114,10 @@ class BicycleViewController: UIViewController {
         bellViewAnimation.duration = 0.25
         bellViewAnimation.repeatCount = 2
 
-
-        
         
         let pedalShaftRotationPoint = CGPoint(x: 0.077, y: 0.071)
         pedalShaftView.layer.anchorPoint = pedalShaftRotationPoint
         pedalShaftView.layer.position = CGPoint(x: 500.5, y: 459.5)
-        
-        
         
         
         let circlePedalPath = UIBezierPath(arcCenter: CGPoint(x: 500.5,y: 459.5), radius: 49, startAngle: CGFloat(M_PI * 0.26), endAngle:CGFloat(M_PI)*2 + CGFloat(M_PI * 0.26), clockwise: true)
@@ -133,6 +146,7 @@ class BicycleViewController: UIViewController {
                 
                 UIView.setAnimationDuration(0.77)
                 UIView.setAnimationRepeatCount(13)
+                self.animateTheRoad()
                 self.wheelBackView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
                 self.wheelFrontView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
                 
