@@ -13,4 +13,20 @@ extension UIView {
         }
         self.layer.add(rotateAnimation, forKey: nil)
     }
+    
+    func animateWheelReflection( values: [Double], keyTimes: [NSNumber
+        ], animatedImageView: UIImageView, duration: CFTimeInterval, animationDuration: CFTimeInterval) {
+        let wheelReflectionAnimation = CAKeyframeAnimation()
+        let repeatCount = Float(animationDuration / duration)
+        UIView.animate(withDuration: 0.83, delay: 0.0, animations: {
+            wheelReflectionAnimation.keyPath = "transform.rotation"
+            wheelReflectionAnimation.values = values
+            wheelReflectionAnimation.keyTimes = keyTimes
+            wheelReflectionAnimation.duration = duration
+            wheelReflectionAnimation.repeatCount = repeatCount
+            
+            animatedImageView.layer.add(wheelReflectionAnimation, forKey: "move")
+        }, completion: nil)
+    }
+
 }

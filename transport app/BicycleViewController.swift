@@ -39,6 +39,8 @@ class BicycleViewController: UIViewController {
     var bellImages: [UIImage]!
     var animatedBell: UIImage!
     
+    let animationDuration = CFTimeInterval(10.0)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,10 +88,6 @@ class BicycleViewController: UIViewController {
         }, completion: nil)
     }
     
-    
-    
-    
-    
     @IBAction func startAnimation() {
         wheelBackView.transform = CGAffineTransform.identity
         wheelFrontView.transform = CGAffineTransform.identity
@@ -104,14 +102,6 @@ class BicycleViewController: UIViewController {
         bell00View.transform = CGAffineTransform.identity
         road1View.transform = CGAffineTransform.identity
         road2View.transform = CGAffineTransform.identity
-        
-        let wheelReflectionAnimation = CAKeyframeAnimation()
-        wheelReflectionAnimation.keyPath = "transform.rotation"
-        wheelReflectionAnimation.values = [M_PI * 0.02, M_PI * (-0.025), M_PI * 0.005, M_PI * (-0.025), M_PI
-            * 0.01 ]
-        wheelReflectionAnimation.keyTimes = [0, 0.25, 0.45, 0.65, 1]
-        wheelReflectionAnimation.duration = 0.83
-        wheelReflectionAnimation.repeatCount = 12
         
         let bellViewAnimation = CAKeyframeAnimation(keyPath: "contents")
         bellViewAnimation.calculationMode = kCAAnimationDiscrete
@@ -178,8 +168,11 @@ class BicycleViewController: UIViewController {
                 self.pedal2View.layer.add(pedalAnimation2, forKey: nil)
                 
                 
-                self.reflectionBackWheelView.layer.add(wheelReflectionAnimation, forKey: "move")
-                self.reflectionFrontWheelView.layer.add(wheelReflectionAnimation, forKey: "move")
+    //Wheel Reflection
+                self.reflectionBackWheelView.animateWheelReflection(values: [M_PI * 0.02, M_PI * (-0.025), M_PI * 0.005, M_PI * (-0.025), M_PI * 0.01 ], keyTimes: [0, 0.25, 0.45, 0.65, 1], animatedImageView: self.reflectionBackWheelView, duration: 0.83, animationDuration: self.animationDuration)
+                self.reflectionFrontWheelView.animateWheelReflection(values: [M_PI * 0.02, M_PI * (-0.025), M_PI * 0.005, M_PI * (-0.025), M_PI * 0.01 ], keyTimes: [0, 0.25, 0.45, 0.65, 1], animatedImageView: self.reflectionFrontWheelView, duration: 0.83, animationDuration: self.animationDuration)
+
+                
                 self.bell00View.layer.add(bellAnimation, forKey: "contents")
         }, completion: nil)
         
