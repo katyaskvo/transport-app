@@ -35,12 +35,8 @@ class TractorViewController: UIViewController {
                         self.cloudView.transform = CGAffineTransform(translationX: 100, y: -100).scaledBy(x: 5, y: 5)
 
                         self.cloudView.alpha = 0
-                        UIView.setAnimationDuration(5)
-                        UIView.setAnimationRepeatCount(3)
-                        self.bigWheelView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI * 2 / 3))
-                        UIView.setAnimationDuration(3)
-                        UIView.setAnimationRepeatCount(5)
-                        self.smallWheelView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI * 2 / 3))
+                        self.smallWheelView.rotate360Degrees(duration: 3.33, repeatCount: 3)
+                        self.bigWheelView.rotate360Degrees(duration: 5, repeatCount: 2)
                        
             }, completion: nil)
     }
