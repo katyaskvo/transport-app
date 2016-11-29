@@ -35,6 +35,22 @@ class TractorViewController: UIViewController {
         }
     }
     
+    func stretchY(duration: CFTimeInterval) {
+        let pipeStretchAnimation = CAKeyframeAnimation()
+        let repeatCount = Float(animationDuration / duration)
+        UIView.animate(withDuration: duration, delay: 0.0, animations: {
+            pipeStretchAnimation.keyPath = "transform.scale.y"
+            pipeStretchAnimation.values = [1, 1.07, 1, 1.07, 1]
+            pipeStretchAnimation.keyTimes = [0, 0.25, 0.5, 0.75, 1]
+            pipeStretchAnimation.duration = duration
+            pipeStretchAnimation.repeatCount = repeatCount
+            
+            self.exhaustPipeView.layer.add(pipeStretchAnimation, forKey: "move")
+            
+        }, completion: nil)
+    }
+
+    
     @IBAction func startAnimation() {
         playSound()
         bigWheelView.transform = CGAffineTransform.identity
@@ -54,7 +70,7 @@ class TractorViewController: UIViewController {
         //Shake
                         self.tractorBodyView.shake(values: [1, -2, 1, -2, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.tractorBodyView, duration: 0.75, animationDuration: self.animationDuration)
                         self.whindowReflectionView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.whindowReflectionView, duration: 0.75, animationDuration: self.animationDuration)
-                        self.exhaustPipeView.shake(values: [1, -2, 1, -2, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.exhaustPipeView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.exhaustPipeView.shake(values: [1, -5, 1, -5, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.exhaustPipeView, duration: 0.75, animationDuration: self.animationDuration)
                         self.fenderBackView.shake(values: [0, 1, -2, 1, -2, 0], keyTimes: [0, 0.1, 0.35, 0.6, 0.85, 1], animatedImageView: self.fenderBackView, duration: 0.75, animationDuration: self.animationDuration)
                         self.fenderFrontView.shake(values: [0, 1, -2, 1, -2, 0], keyTimes: [0, 0.1, 0.35, 0.6, 0.85, 1], animatedImageView: self.fenderFrontView, duration: 0.75, animationDuration: self.animationDuration)
         //Wheels
@@ -65,6 +81,9 @@ class TractorViewController: UIViewController {
                         
         //Road
                         self.roadBoxView.moveTheRoad(road1View: self.road1View, road2View: self.road2View, duration: 5, animationDuration: self.animationDuration)
+                        
+        //Pipe
+                        self.stretchY(duration: 0.75)
                        
             }, completion: nil)
     }
