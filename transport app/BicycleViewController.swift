@@ -30,7 +30,7 @@ class BicycleViewController: UIViewController {
     @IBOutlet var reflectionFrontWheelView: UIImageView!
     @IBOutlet var road1View: UIImageView!
     @IBOutlet var road2View: UIImageView!
-
+    @IBOutlet var roadBoxView: UIView!
     
     var chain0: UIImage!
     var chain1: UIImage!
@@ -62,30 +62,6 @@ class BicycleViewController: UIViewController {
         bellImages = [bell00!, bell01!, bell02!, bell03!, bell04!, bell05!, bell06!, bell07!, bell08!, bell09!]
         
         // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-//        self.dataLabel!.text = dataObject
-    }
-
-    
-    
-    
-    
-    func animateTheRoad() {
-        let animationOptions = UIViewAnimationOptions.curveLinear
-        UIView.animate(withDuration: 1.0, delay: 0.0, options: animationOptions, animations: {
-            UIView.setAnimationRepeatCount(10)
-            UIView.setAnimationDuration(1)
-            self.road1View.frame = self.road1View.frame.offsetBy(dx: -1 * self.road1View.frame.size.width, dy: 0.0)
-            self.road2View.frame = self.road2View.frame.offsetBy(dx: -1 * self.road2View.frame.size.width, dy: 0.0)
-        }, completion: nil)
     }
     
     @IBAction func startAnimation() {
@@ -151,7 +127,7 @@ class BicycleViewController: UIViewController {
                 
                 
 
-                self.animateTheRoad()
+                self.roadBoxView.moveTheRoad(road1View: self.road1View, road2View: self.road2View, duration: 1.5, animationDuration: self.animationDuration)
                 
                 UIView.setAnimationDuration(0.77)
                 UIView.setAnimationRepeatCount(13)

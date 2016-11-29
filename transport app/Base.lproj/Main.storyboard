@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="D43DA77F-9E43-4013-BB74-1B44DAA5676D" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="7923D24F-1C86-43BE-B819-581705CCF095" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -132,6 +132,7 @@
                         <outlet property="reflectionFrontWheelView" destination="UpI-uC-EFp" id="08I-eL-sBt"/>
                         <outlet property="road1View" destination="JFa-U2-Bjq" id="h5k-An-IQL"/>
                         <outlet property="road2View" destination="s3o-cc-dE9" id="Qvd-Tc-o4P"/>
+                        <outlet property="roadBoxView" destination="YHt-o4-2gV" id="ahA-4O-hBk"/>
                         <outlet property="wheelBackView" destination="dm7-5P-ifM" id="egE-Jr-Cah"/>
                         <outlet property="wheelFrontView" destination="oN5-nq-jg4" id="FJs-hv-kzv"/>
                     </connections>
@@ -209,13 +210,27 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="truba" translatesAutoresizingMaskIntoConstraints="NO" id="xK9-ra-E2w">
-                                <rect key="frame" x="568" y="243" width="25" height="88"/>
+                                <rect key="frame" x="568" y="247" width="25" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="fender_back" translatesAutoresizingMaskIntoConstraints="NO" id="SQF-ui-Ruw">
                                 <rect key="frame" x="294" y="311" width="208" height="115"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZi-Lv-CXW">
+                                <rect key="frame" x="161.14758269871254" y="135" width="700" height="467"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="1Fy-JJ-Utr">
+                                        <rect key="frame" x="0.0" y="404" width="700" height="2"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="zUD-M0-4s9">
+                                        <rect key="frame" x="700" y="404" width="700" height="2"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.78800262934362819" green="1" blue="0.84988205630963409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -227,8 +242,12 @@
                         <outlet property="fenderFrontView" destination="IV6-JT-HYT" id="oq8-rI-dBt"/>
                         <outlet property="reflectionBackWheelView" destination="Ya9-UP-dpd" id="2vK-LZ-IZx"/>
                         <outlet property="reflectionFrontWheelView" destination="Ulk-FD-C30" id="AYx-2t-qwp"/>
+                        <outlet property="road1View" destination="1Fy-JJ-Utr" id="w0k-pn-wbn"/>
+                        <outlet property="road2View" destination="zUD-M0-4s9" id="em8-IF-Ajz"/>
+                        <outlet property="roadBoxView" destination="DZi-Lv-CXW" id="YnI-bT-Qmj"/>
                         <outlet property="smallWheelView" destination="EW8-Wz-G1U" id="tWt-Rh-zG7"/>
                         <outlet property="tractorBodyView" destination="zjp-9I-jbD" id="KGT-wc-aCU"/>
+                        <outlet property="whindowReflectionView" destination="nYD-Jg-mhZ" id="Iwi-Ui-L5I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bV0-Xa-IFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -370,7 +389,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="D43DA77F-9E43-4013-BB74-1B44DAA5676D" width="32" height="17">
+        <image name="7923D24F-1C86-43BE-B819-581705CCF095" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGQkNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QDwcI
 ERYbHCUmJygwMzY8P1UkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dOU0Nv
@@ -493,9 +512,9 @@ AAAAAAAAAgEAAAAAAAAARgAAAAAAAAAAAAAAAAAAEyQ
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iJd-I6-ByO"/>
-        <segue reference="eAs-q5-aYq"/>
         <segue reference="jyw-zy-5b2"/>
+        <segue reference="eAs-q5-aYq"/>
+        <segue reference="iJd-I6-ByO"/>
         <segue reference="fDO-cg-zsL"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,6 +12,11 @@ class TractorViewController: UIViewController {
     @IBOutlet var fenderFrontView: UIImageView!
     @IBOutlet var fenderBackView: UIImageView!
     @IBOutlet var exhaustPipeView: UIImageView!
+    @IBOutlet var whindowReflectionView: UIImageView!
+    
+    @IBOutlet var road2View: UIImageView!
+    @IBOutlet var road1View: UIImageView!
+    @IBOutlet var roadBoxView: UIView!
     
     var soundId : SystemSoundID = 0
     let animationDuration = CFTimeInterval(10.0)
@@ -48,6 +53,7 @@ class TractorViewController: UIViewController {
                         
         //Shake
                         self.tractorBodyView.shake(values: [1, -2, 1, -2, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.tractorBodyView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.whindowReflectionView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.whindowReflectionView, duration: 0.75, animationDuration: self.animationDuration)
                         self.exhaustPipeView.shake(values: [1, -2, 1, -2, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.exhaustPipeView, duration: 0.75, animationDuration: self.animationDuration)
                         self.fenderBackView.shake(values: [0, 1, -2, 1, -2, 0], keyTimes: [0, 0.1, 0.35, 0.6, 0.85, 1], animatedImageView: self.fenderBackView, duration: 0.75, animationDuration: self.animationDuration)
                         self.fenderFrontView.shake(values: [0, 1, -2, 1, -2, 0], keyTimes: [0, 0.1, 0.35, 0.6, 0.85, 1], animatedImageView: self.fenderFrontView, duration: 0.75, animationDuration: self.animationDuration)
@@ -56,6 +62,9 @@ class TractorViewController: UIViewController {
                         self.bigWheelView.rotate360Degrees(duration: 5, repeatCount: 2)
                         self.reflectionBackWheelView.animateWheelReflection(values: [0, M_PI * 0.04, 0, 0, M_PI * (-0.06), 0 ], keyTimes: [0, 0.15, 0.35, 0.65, 0.85, 1], animatedImageView: self.reflectionBackWheelView, duration: 0.8, animationDuration: self.animationDuration)
                         self.reflectionFrontWheelView.animateWheelReflection(values: [0, M_PI * 0.04, 0, 0, M_PI * (-0.06), 0 ], keyTimes: [0, 0.15, 0.35, 0.65, 0.85, 1], animatedImageView: self.reflectionFrontWheelView, duration: 0.8, animationDuration: self.animationDuration)
+                        
+        //Road
+                        self.roadBoxView.moveTheRoad(road1View: self.road1View, road2View: self.road2View, duration: 5, animationDuration: self.animationDuration)
                        
             }, completion: nil)
     }
