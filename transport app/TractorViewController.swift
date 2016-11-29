@@ -47,10 +47,10 @@ class TractorViewController: UIViewController {
                         
                         
         //Shake
-                        self.tractorBodyView.shake(values: [1, -1, 2, -2, 1], keyTimes: [0, 0.15, 0.4, 0.65, 1], animatedImageView: self.tractorBodyView, duration: 1, animationDuration: self.animationDuration)
-                        self.exhaustPipeView.shake(values: [1, -1, 2, -2, 1], keyTimes: [0, 0.15, 0.4, 0.65, 1], animatedImageView: self.exhaustPipeView, duration: 1, animationDuration: self.animationDuration)
-                        self.fenderBackView.shake(values: [1, -1, 2, -2, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.fenderBackView, duration: 1, animationDuration: self.animationDuration)
-                        self.fenderFrontView.shake(values: [1, -1, 2, -2, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.fenderFrontView, duration: 1, animationDuration: self.animationDuration)
+                        self.tractorBodyView.shake(values: [1, -2, 1, -2, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.tractorBodyView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.exhaustPipeView.shake(values: [1, -2, 1, -2, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.exhaustPipeView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.fenderBackView.shake(values: [0, 1, -2, 1, -2, 0], keyTimes: [0, 0.1, 0.35, 0.6, 0.85, 1], animatedImageView: self.fenderBackView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.fenderFrontView.shake(values: [0, 1, -2, 1, -2, 0], keyTimes: [0, 0.1, 0.35, 0.6, 0.85, 1], animatedImageView: self.fenderFrontView, duration: 0.75, animationDuration: self.animationDuration)
         //Wheels
                         self.smallWheelView.rotate360Degrees(duration: 4, repeatCount: 2.5)
                         self.bigWheelView.rotate360Degrees(duration: 5, repeatCount: 2)
