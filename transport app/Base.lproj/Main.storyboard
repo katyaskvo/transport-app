@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="DA4F92D1-79E7-4EC5-B497-058469E18B3A" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="5557E2E7-A13B-4986-87CF-95BB930F22D5" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -177,7 +177,7 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="body" translatesAutoresizingMaskIntoConstraints="NO" id="zjp-9I-jbD">
-                                <rect key="frame" x="295" y="216" width="435" height="265"/>
+                                <rect key="frame" x="307" y="217" width="435" height="265"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="big-wheel" translatesAutoresizingMaskIntoConstraints="NO" id="4Kf-Mq-Ny2">
@@ -217,6 +217,7 @@
                         <outlet property="reflectionBackWheelView" destination="Ya9-UP-dpd" id="2vK-LZ-IZx"/>
                         <outlet property="reflectionFrontWheelView" destination="Ulk-FD-C30" id="AYx-2t-qwp"/>
                         <outlet property="smallWheelView" destination="EW8-Wz-G1U" id="tWt-Rh-zG7"/>
+                        <outlet property="tractorBodyView" destination="zjp-9I-jbD" id="KGT-wc-aCU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bV0-Xa-IFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -358,7 +359,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DA4F92D1-79E7-4EC5-B497-058469E18B3A" width="32" height="17">
+        <image name="5557E2E7-A13B-4986-87CF-95BB930F22D5" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGSUpYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEAcI
 ERYbHCUmJysyNzo9Q0ZVJG51bGzUCQoLDA0ODxBWJGNsYXNzXE5TSW1hZ2VGbGFnc1ZOU1JlcHNXTlND
@@ -452,7 +453,7 @@ AAAAAAAAAgEAAAAAAAAATQAAAAAAAAAAAAAAAAAAE1I
         <image name="arrow-right" width="44" height="44"/>
         <image name="big-wheel" width="214" height="215"/>
         <image name="bike_bell00" width="55" height="45"/>
-        <image name="body" width="435" height="265"/>
+        <image name="body" width="403" height="264"/>
         <image name="button" width="44" height="44"/>
         <image name="chain0" width="187" height="65"/>
         <image name="chain_wheel" width="57" height="57"/>
