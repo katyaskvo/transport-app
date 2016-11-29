@@ -44,4 +44,16 @@ extension UIView {
         }, completion: nil)
     }
 
+    
+    func moveTheRoad(road1View: UIImageView, road2View: UIImageView, duration: CFTimeInterval, animationDuration: CFTimeInterval) {
+        let animationOptions = UIViewAnimationOptions.curveLinear
+        let repeatCount = Float(animationDuration / duration)
+        UIView.animate(withDuration: duration, delay: 0.0, options: animationOptions, animations: {
+            UIView.setAnimationRepeatCount(repeatCount)
+            UIView.setAnimationDuration(duration)
+            road1View.frame = road1View.frame.offsetBy(dx: -1 * road1View.frame.size.width, dy: 0.0)
+            road2View.frame = road2View.frame.offsetBy(dx: -1 * road2View.frame.size.width, dy: 0.0)
+        }, completion: nil)
+    }
+
 }
