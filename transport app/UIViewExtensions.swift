@@ -29,7 +29,8 @@ extension UIView {
         }, completion: nil)
     }
 
-    func shake( values: [Double], animatedImageView: UIImageView, duration: CFTimeInterval, animationDuration: CFTimeInterval) {
+    func shake( values: [Double], keyTimes: [NSNumber
+        ], animatedImageView: UIImageView, duration: CFTimeInterval, animationDuration: CFTimeInterval) {
         let repeatCount = Float(animationDuration / duration)
         
         let shakeAnimation = CAKeyframeAnimation(keyPath: "transform.translation.y")
@@ -37,6 +38,7 @@ extension UIView {
             shakeAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
             shakeAnimation.duration = duration
             shakeAnimation.values = values
+            shakeAnimation.keyTimes = keyTimes
             shakeAnimation.repeatCount = repeatCount
             animatedImageView.layer.add(shakeAnimation, forKey: "shake")
         }, completion: nil)
