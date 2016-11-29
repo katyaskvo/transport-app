@@ -7,6 +7,8 @@ class TractorViewController: UIViewController {
     @IBOutlet var cloudView: UIImageView!
     @IBOutlet var reflectionBackWheelView: UIImageView!
     @IBOutlet var reflectionFrontWheelView: UIImageView!
+    @IBOutlet var tractorBodyView: UIImageView!
+    
     
     var soundId : SystemSoundID = 0
     let animationDuration = CFTimeInterval(10.0)
@@ -24,7 +26,7 @@ class TractorViewController: UIViewController {
             AudioServicesDisposeSystemSoundID(soundId)
         }
     }
-
+    
     @IBAction func startAnimation() {
         playSound()
         bigWheelView.transform = CGAffineTransform.identity
@@ -39,6 +41,10 @@ class TractorViewController: UIViewController {
                         self.cloudView.transform = CGAffineTransform(translationX: 100, y: -100).scaledBy(x: 5, y: 5)
 
                         self.cloudView.alpha = 0
+                        
+                        
+                        self.tractorBodyView.shake(values: [1, -1, 2, -2, 1], animatedImageView: self.tractorBodyView, duration: 1, animationDuration: self.animationDuration)
+        //Wheels
                         self.smallWheelView.rotate360Degrees(duration: 4, repeatCount: 2.5)
                         self.bigWheelView.rotate360Degrees(duration: 5, repeatCount: 2)
                         self.reflectionBackWheelView.animateWheelReflection(values: [0, M_PI * 0.04, 0, 0, M_PI * (-0.06), 0 ], keyTimes: [0, 0.15, 0.35, 0.65, 0.85, 1], animatedImageView: self.reflectionBackWheelView, duration: 0.8, animationDuration: self.animationDuration)
