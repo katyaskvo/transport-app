@@ -49,22 +49,38 @@ class TractorViewController: UIViewController {
             
         }, completion: nil)
     }
-
+    
     
     @IBAction func startAnimation() {
-        playSound()
+//        playSound()
         bigWheelView.transform = CGAffineTransform.identity
         smallWheelView.transform = CGAffineTransform.identity
         cloudView.transform = CGAffineTransform.identity
         cloudView.alpha = 1
-        UIView.animate(withDuration: 2,
+        
+        let cloud = cloudView
+        let cloudPath = UIBezierPath()
+        cloudPath.move(to: CGPoint(x: 583,y: 255))
+        cloudPath.addCurve(to: CGPoint(x: 200, y: -28), controlPoint1: CGPoint(x: 650, y: 260), controlPoint2: CGPoint(x: 700, y: -30))
+        
+        
+        let cloudAnimation = CAKeyframeAnimation(keyPath: "position")
+        let options = UIViewKeyframeAnimationOptions.calculationModeLinear
+        cloudAnimation.path = cloudPath.cgPath
+        cloudAnimation.repeatCount = Float.infinity
+        cloudAnimation.duration = 4.0
+        cloudView.transform = CGAffineTransform.identity
+        cloudView.alpha = 1
+        UIView.animate(withDuration: 4,
                        delay: 0,
                        options: [.curveLinear],
                        animations: {
-                        UIView.setAnimationRepeatCount(5)
-                        self.cloudView.transform = CGAffineTransform(translationX: 100, y: -100).scaledBy(x: 5, y: 5)
-
-                        self.cloudView.alpha = 0
+                        UIView.setAnimationRepeatCount(3)
+                        cloud?.transform = CGAffineTransform(scaleX: 5, y: 5)
+                        
+                        cloud?.alpha = 0
+                        
+                        cloud?.layer.add(cloudAnimation, forKey: "animate cloud position")
                         
                         
         //Shake

@@ -55,5 +55,11 @@ extension UIView {
             road2View.frame = road2View.frame.offsetBy(dx: -1 * road2View.frame.size.width, dy: 0.0)
         }, completion: nil)
     }
-
+}
+extension UIViewKeyframeAnimationOptions {
+    
+    init(animationOptions: UIViewAnimationOptions) {
+        rawValue = animationOptions.rawValue
+    }
+    
 }
