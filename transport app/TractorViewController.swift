@@ -4,7 +4,8 @@ import AudioToolbox
 class TractorViewController: UIViewController {
     @IBOutlet var bigWheelView: UIImageView!
     @IBOutlet var smallWheelView: UIImageView!
-    @IBOutlet var cloudView: UIImageView!
+    @IBOutlet var cloud1View: UIImageView!
+    @IBOutlet var cloud2View: UIImageView!
     @IBOutlet var reflectionBackWheelView: UIImageView!
     @IBOutlet var reflectionFrontWheelView: UIImageView!
     @IBOutlet var tractorBodyView: UIImageView!
@@ -55,33 +56,57 @@ class TractorViewController: UIViewController {
 //        playSound()
         bigWheelView.transform = CGAffineTransform.identity
         smallWheelView.transform = CGAffineTransform.identity
-        cloudView.transform = CGAffineTransform.identity
-        cloudView.alpha = 1
+        cloud1View.transform = CGAffineTransform.identity
+        cloud1View.alpha = 1
+        cloud2View.transform = CGAffineTransform.identity
+        cloud2View.alpha = 1
+
         
-        let cloud = cloudView
+        let cloud = cloud1View
+        let cloud2 = cloud2View
+
         let cloudPath = UIBezierPath()
         cloudPath.move(to: CGPoint(x: 583,y: 255))
-        cloudPath.addCurve(to: CGPoint(x: 200, y: -28), controlPoint1: CGPoint(x: 650, y: 260), controlPoint2: CGPoint(x: 700, y: -30))
+        cloudPath.addCurve(to: CGPoint(x: 400, y: -0), controlPoint1: CGPoint(x: 650, y: 260), controlPoint2: CGPoint(x: 700, y: 0))
         
+        let cloudScaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
+        cloudScaleAnimation.duration = 3.33
+        cloudScaleAnimation.repeatCount = Float.infinity
+        cloudScaleAnimation.keyTimes = [0, 0.1, 0.2, 0.3, 0.4, 1]
+        cloudScaleAnimation.values = [0, 3, 6, 9, 12, 14]
         
-        let cloudAnimation = CAKeyframeAnimation(keyPath: "position")
-        let options = UIViewKeyframeAnimationOptions.calculationModeLinear
-        cloudAnimation.path = cloudPath.cgPath
-        cloudAnimation.repeatCount = Float.infinity
-        cloudAnimation.duration = 4.0
-        cloudView.transform = CGAffineTransform.identity
-        cloudView.alpha = 1
+        let cloudTransparencyAnimation = CAKeyframeAnimation(keyPath: "opacity")
+        cloudTransparencyAnimation.duration = 3.33
+        cloudTransparencyAnimation.repeatCount = Float.infinity
+        cloudTransparencyAnimation.keyTimes = [0, 0.3, 1]
+        cloudTransparencyAnimation.values = [1, 1, 0]
+
+        let cloudPathAnimation = CAKeyframeAnimation(keyPath: "position")
+        cloudPathAnimation.calculationMode = kCAAnimationPaced
+        cloudPathAnimation.path = cloudPath.cgPath
+        cloudPathAnimation.repeatCount = Float.infinity
+        cloudPathAnimation.duration = 3.33
+        
+        let cloudAnimation = CAAnimationGroup()
+        cloudAnimation.duration = 3.33
+        cloudAnimation.repeatCount = 3
+        cloudAnimation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloudPathAnimation]
+        
+        let cloud2Animation = CAAnimationGroup()
+        cloud2Animation.duration = 3.33
+        cloud2Animation.repeatCount = 3
+        cloud2Animation.beginTime = CACurrentMediaTime()+0.7
+        cloud2Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloudPathAnimation]
+        
+
         UIView.animate(withDuration: 4,
                        delay: 0,
                        options: [.curveLinear],
                        animations: {
-                        UIView.setAnimationRepeatCount(3)
-                        cloud?.transform = CGAffineTransform(scaleX: 5, y: 5)
                         
-                        cloud?.alpha = 0
-                        
+        //Clouds
                         cloud?.layer.add(cloudAnimation, forKey: "animate cloud position")
-                        
+                        cloud2?.layer.add(cloud2Animation, forKey: "animate cloud position")
                         
         //Shake
                         self.tractorBodyView.shake(values: [1, -2, 1, -2, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.tractorBodyView, duration: 0.75, animationDuration: self.animationDuration)
