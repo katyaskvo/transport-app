@@ -10,7 +10,8 @@ class HelicopterViewController: UIViewController {
                                    delay: 0,
                                    options: [.curveLinear],
                                    animations: {
-                                    self.heliTailView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
+                                    self.heliTailView.rotate360Degrees(duration: 0.2, repeatCount: 50)
+//                                    self.heliTailView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
             }, completion: nil)
     }
 }
