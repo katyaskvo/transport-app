@@ -50,8 +50,8 @@ class FiretruckViewController: UIViewController {
 //                        self.syrenShineView.alpha = 0
                         UIView.setAnimationDuration(0.4)
                         UIView.setAnimationRepeatCount(30)
-                        self.frontWheelView.rotate360Degrees(duration: 1, repeatCount: 10)
-                        self.backWheelView.rotate360Degrees(duration: 1, repeatCount: 10)
+                        self.frontWheelView.rotate360Degrees(duration: 0.8, repeatCount: 12.5)
+                        self.backWheelView.rotate360Degrees(duration: 0.8, repeatCount: 12.5)
                         self.roadBoxView.moveTheRoad(road1View: self.road1View, road2View: self.road2View, duration: 1, animationDuration: self.animationDuration)
                         
                         //Wheel Reflection
