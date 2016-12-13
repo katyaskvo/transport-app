@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="B20ED1E7-01A7-4B14-8277-CA715EC14A83" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="3F6DE2A9-5FC8-4654-930C-7D8352DCCF30" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -350,7 +350,7 @@
                                     <segue destination="4se-pa-4cI" kind="show" id="CPH-ZX-OBR"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_body" translatesAutoresizingMaskIntoConstraints="NO" id="kOI-XR-hqS">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_body" translatesAutoresizingMaskIntoConstraints="NO" id="F5x-TR-gea">
                                 <rect key="frame" x="111" y="249" width="802" height="238"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -437,13 +437,20 @@
                     </view>
                     <connections>
                         <outlet property="backWheelView" destination="LWN-TR-FYZ" id="i1R-Eb-bbD"/>
+                        <outlet property="firetruckBodyView" destination="F5x-TR-gea" id="gOM-sx-pcd"/>
+                        <outlet property="firetruckHoldersView" destination="R1S-o5-tDC" id="QJh-dl-zlF"/>
                         <outlet property="frontWheelView" destination="F3g-ia-pKI" id="eHT-oe-Rqe"/>
+                        <outlet property="light1View" destination="6WV-a2-aAg" id="xeh-Ck-zo7"/>
+                        <outlet property="light2View" destination="pyn-q7-bzE" id="Ozb-vM-lz4"/>
+                        <outlet property="light3View" destination="Cgg-Iq-77O" id="sAs-ue-Ap5"/>
+                        <outlet property="light4View" destination="Gge-pc-1Go" id="yFF-gU-sd9"/>
+                        <outlet property="light5View" destination="su3-TC-FWl" id="HOJ-6b-JyS"/>
                         <outlet property="reflectionBackWheelView" destination="V4V-n9-Lga" id="F3g-iV-4Lk"/>
                         <outlet property="reflectionFrontWheelView" destination="1zf-jh-Yee" id="bc9-fs-Hgf"/>
                         <outlet property="road1View" destination="WRs-Mu-B8f" id="hrl-7L-wPY"/>
                         <outlet property="road2View" destination="Hng-cq-MqG" id="TdM-Xb-vcx"/>
                         <outlet property="roadBoxView" destination="6bb-mA-4g7" id="Rvs-bL-jIL"/>
-                        <outlet property="syrenView" destination="L4u-ti-BUa" id="lLa-cx-Ny5"/>
+                        <outlet property="syrenView" destination="L4u-ti-BUa" id="HDy-v4-TGd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSc-nA-mDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -452,7 +459,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="B20ED1E7-01A7-4B14-8277-CA715EC14A83" width="32" height="17">
+        <image name="3F6DE2A9-5FC8-4654-930C-7D8352DCCF30" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGQkNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QDwcI
 ERYbHCUmJygwMzY8P1UkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dOU0Nv
