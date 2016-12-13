@@ -16,6 +16,13 @@ class FiretruckViewController: UIViewController {
     @IBOutlet var light5View: UIImageView!
     @IBOutlet var syrenView: UIImageView!
     
+    @IBOutlet var ladderView: UIImageView!
+    @IBOutlet var garpunView: UIImageView!
+    @IBOutlet var axeView: UIImageView!
+    @IBOutlet var windowReflectionView: UIImageView!
+    
+    
+    
     
     @IBOutlet var reflectionBackWheelView: UIImageView!
     @IBOutlet var reflectionFrontWheelView: UIImageView!
@@ -60,6 +67,12 @@ class FiretruckViewController: UIViewController {
                         self.light2View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light2View, duration: 0.7, animationDuration: self.animationDuration)
                         self.light1View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light1View, duration: 0.7, animationDuration: self.animationDuration)
                         self.syrenView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.syrenView, duration: 0.7, animationDuration: self.animationDuration)
+                        self.windowReflectionView.shake(values: [0, -1, 0, -1, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.windowReflectionView, duration: 0.7, animationDuration: self.animationDuration)
+                        
+                        //parts shake
+                        self.ladderView.shake(values: [0, 0.1, -0.3, 0, -0.1, 0], keyTimes: [0, 0.1, 0.35, 0.6, 0.85, 1], animatedImageView: self.ladderView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.garpunView.shake(values: [0, 1.2, -0.5, 0.5, -0.5, 0], keyTimes: [0, 0.1, 0.35, 0.6, 0.85, 1], animatedImageView: self.garpunView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.axeView.shake(values: [0, 0.5, -1.2, 1, -0.5, 0], keyTimes: [0, 0.1, 0.35, 0.6, 0.85, 1], animatedImageView: self.axeView, duration: 0.75, animationDuration: self.animationDuration)
                         
                         
         }, completion: nil)
