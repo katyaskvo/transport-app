@@ -21,13 +21,35 @@ class FiretruckViewController: UIViewController {
     @IBOutlet var axeView: UIImageView!
     @IBOutlet var windowReflectionView: UIImageView!
     
-    
-    
-    
     @IBOutlet var reflectionBackWheelView: UIImageView!
     @IBOutlet var reflectionFrontWheelView: UIImageView!
     
     let animationDuration = CFTimeInterval(10.0)
+    
+    var light1Images: [UIImage]!
+    var animatedLight1: UIImage!
+    var light2Images: [UIImage]!
+    var animatedLight2: UIImage!
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+            let light1_00 = UIImage(named: "lightOne00")
+            let light1_01 = UIImage(named: "lightOne01")
+            let light1_02 = UIImage(named: "lightOne02")
+            let light1_03 = UIImage(named: "lightOne03")
+            light1Images = [light1_00!, light1_01!, light1_02!, light1_03!, light1_01!, light1_02!, light1_03!, light1_01!, light1_02!, light1_03!, light1_02!, light1_01!]
+        
+            let light2_00 = UIImage(named: "lightTwo00")
+            let light2_01 = UIImage(named: "lightTwo01")
+            let light2_02 = UIImage(named: "lightTwo02")
+            let light2_03 = UIImage(named: "lightTwo03")
+            light2Images = [light2_00!, light2_01!, light2_02!, light2_03!, light2_01!, light2_02!, light2_03!, light2_01!, light2_02!, light2_03!, light2_02!, light2_01!]
+
+    
+    }
+    
+    
     
     @IBAction func startAnimation() {
         frontWheelView.transform = CGAffineTransform.identity
@@ -39,15 +61,27 @@ class FiretruckViewController: UIViewController {
         
         road1View.transform = CGAffineTransform.identity
         road2View.transform = CGAffineTransform.identity
-//        syrenShineView.transform = CGAffineTransform.identity
-//        syrenShineView.alpha = 1
+        
+        let lightOneViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+        lightOneViewAnimation.calculationMode = kCAAnimationDiscrete
+        lightOneViewAnimation.values = light1Images.map {$0.cgImage as AnyObject}
+        lightOneViewAnimation.duration = 1
+        lightOneViewAnimation.repeatCount = 1
+       
+
+        let lightTwoViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+        lightTwoViewAnimation.calculationMode = kCAAnimationDiscrete
+        lightTwoViewAnimation.values = light2Images.map {$0.cgImage as AnyObject}
+        lightTwoViewAnimation.duration = 1
+        lightTwoViewAnimation.repeatCount = 1
+        
+        
         UIView.animate(withDuration: 1,
                        delay: 0,
                        options: [.curveLinear],
                        animations: {
                         UIView.setAnimationRepeatCount(15)
 
-//                        self.syrenShineView.alpha = 0
                         UIView.setAnimationDuration(0.4)
                         UIView.setAnimationRepeatCount(30)
                         self.frontWheelView.rotate360Degrees(duration: 0.8, repeatCount: 12.5)
@@ -74,6 +108,21 @@ class FiretruckViewController: UIViewController {
                         self.garpunView.shake(values: [0, 1.2, -0.5, 0.5, -0.5, 0], keyTimes: [0, 0.1, 0.35, 0.6, 0.85, 1], animatedImageView: self.garpunView, duration: 0.75, animationDuration: self.animationDuration)
                         self.axeView.shake(values: [0, 0.5, -1.2, 1, -0.5, 0], keyTimes: [0, 0.1, 0.35, 0.6, 0.85, 1], animatedImageView: self.axeView, duration: 0.75, animationDuration: self.animationDuration)
                         
+                        
+                        //Syren Shine1
+                        let SyrenOneAnimation = CAAnimationGroup()
+                        SyrenOneAnimation.duration = 1.25
+                        SyrenOneAnimation.repeatCount = 8
+                        
+                        SyrenOneAnimation.animations = [lightOneViewAnimation]
+                        self.light1View.layer.add(SyrenOneAnimation, forKey: "contents")
+                        //Syren Shine2
+                        let SyrenTwoAnimation = CAAnimationGroup()
+                        SyrenTwoAnimation.duration = 1.25
+                        SyrenTwoAnimation.repeatCount = 8
+                        
+                        SyrenTwoAnimation.animations = [lightTwoViewAnimation]
+                        self.light2View.layer.add(SyrenTwoAnimation, forKey: "contents")
                         
         }, completion: nil)
     }
