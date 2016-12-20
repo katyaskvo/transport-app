@@ -4,6 +4,7 @@ class HelicopterViewController: UIViewController {
 
     @IBOutlet var heliTailView: UIImageView!
     @IBOutlet var helixView: UIImageView!
+    @IBOutlet var helixStillView: UIImageView!
     
     var helixImages: [UIImage]!
     var animatedHelix: UIImage!
@@ -17,10 +18,20 @@ class HelicopterViewController: UIViewController {
         let helix_04 = UIImage(named: "helicopter_helix04")
         let helix_05 = UIImage(named: "helicopter_helix05")
         helixImages = [helix_00!, helix_01!, helix_02!, helix_03!, helix_04!, helix_05!]
-        }
+    }
+    
     
     @IBAction func startAnimation() {
+        
         heliTailView.transform = CGAffineTransform.identity
+        helixStillView.transform = CGAffineTransform.identity
+        
+        let helixOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
+        helixOpacityAnimation.duration = 10
+        helixOpacityAnimation.repeatCount = 1
+        helixOpacityAnimation.keyTimes = [0, 0.01, 0.99, 1]
+        helixOpacityAnimation.values = [1, 0, 0, 1]
+        
         
         let helixViewAnimation = CAKeyframeAnimation(keyPath: "contents")
         helixViewAnimation.calculationMode = kCAAnimationDiscrete
@@ -34,8 +45,8 @@ class HelicopterViewController: UIViewController {
                                    animations: {
                                     self.heliTailView.rotate360Degrees(duration: 0.2, repeatCount: 50)
                                     
-        self.helixView.layer.add(helixViewAnimation, forKey: "contents")
-//                                    self.heliTailView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
-            }, completion: nil)
+                                    self.helixStillView.layer.add(helixOpacityAnimation, forKey: "opacity")
+                                    self.helixView.layer.add(helixViewAnimation, forKey: "helix on")
+        }, completion: nil)
     }
 }
