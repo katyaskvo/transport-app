@@ -6,8 +6,13 @@ class HelicopterViewController: UIViewController {
     @IBOutlet var helixView: UIImageView!
     @IBOutlet var helixStillView: UIImageView!
     @IBOutlet var heliTailRotatingView: UIImageView!
+    @IBOutlet var helicopterBodyView: UIImageView!
+    @IBOutlet var pimpochkaView: UIImageView!
+    @IBOutlet var reflectionFrontView: UIImageView!
+    @IBOutlet var reflectionSideView: UIImageView!
     
     
+    let animationDuration = CFTimeInterval(10.0)
     var helixImages: [UIImage]!
     var animatedHelix: UIImage!
     
@@ -42,26 +47,43 @@ class HelicopterViewController: UIViewController {
         heliTailAppearAnimation.keyTimes = [0, 0.01, 0.99, 1]
         heliTailAppearAnimation.values = [0, 1, 1, 0]
         
-        
-        
         let helixViewAnimation = CAKeyframeAnimation(keyPath: "contents")
         helixViewAnimation.calculationMode = kCAAnimationDiscrete
         helixViewAnimation.values = helixImages.map {$0.cgImage as AnyObject}
         helixViewAnimation.duration = 0.5
         helixViewAnimation.repeatCount = 20
         
+        let reflectionRotationAnimation = CAKeyframeAnimation(keyPath: "transform.rotation")
+        reflectionRotationAnimation.duration = 5
+        reflectionRotationAnimation.repeatCount = 2
+        reflectionRotationAnimation.keyTimes = [0, 0.2, 0.55, 0.85, 1]
+        reflectionRotationAnimation.values = [0, CGFloat(M_PI_2 * -0.02), CGFloat(M_PI_2 * ( 0.04)), CGFloat(M_PI_2 * -0.02), 0]
+
+        
         UIView.animate(withDuration: 0.75,
                                    delay: 0,
                                    options: [.curveLinear],
                                    animations: {
                                     
-//                                    heliTailRotatingView.alpha = 1
+                                    //helix
                                     self.heliTailView.layer.add(stillViewDisappearAnimation, forKey: "opacity")
-                                    
                                     self.helixStillView.layer.add(stillViewDisappearAnimation, forKey: "opacity")
-                                    self.helixView.layer.add(helixViewAnimation, forKey: "helix on")
+                                    
+                                    //helitail
                                     self.heliTailRotatingView.rotate360Degrees(duration: 2, repeatCount: 5)
                                     self.heliTailRotatingView.layer.add(heliTailAppearAnimation, forKey: "opacity")
+                                    self.helixView.layer.add(helixViewAnimation, forKey: "helix on")
+                                    
+                                    //Shake
+                                    self.helicopterBodyView.shake(values: [0, 15, -20, 10, 0], keyTimes: [0, 0.2, 0.55, 0.85, 1], animatedImageView: self.helicopterBodyView, duration: 5, animationDuration: self.animationDuration)
+                                    self.helixView.shake(values: [0, 15, -20, 10, 0], keyTimes: [0, 0.2, 0.55, 0.85, 1], animatedImageView: self.helixView, duration: 5, animationDuration: self.animationDuration)
+                                    self.heliTailRotatingView.shake(values: [0, 15, -20, 10, 0], keyTimes: [0, 0.2, 0.55, 0.85, 1], animatedImageView:
+                                        self.heliTailRotatingView, duration: 5, animationDuration: self.animationDuration)
+                                    self.pimpochkaView.shake(values: [0, 15, -20, 10, 0], keyTimes: [0, 0.2, 0.55, 0.85, 1], animatedImageView: self.pimpochkaView, duration: 5, animationDuration: self.animationDuration)
+                                    self.reflectionFrontView.shake(values: [0, 12, -17, 7, 0], keyTimes: [0, 0.2, 0.55, 0.85, 1], animatedImageView: self.reflectionFrontView, duration: 5, animationDuration: self.animationDuration)
+                                    self.reflectionFrontView.layer.add(reflectionRotationAnimation, forKey: "rotation")
+                                    self.reflectionSideView.shake(values: [0, 13, -17, 8, 0], keyTimes: [0, 0.2, 0.55, 0.85, 1], animatedImageView: self.reflectionSideView, duration: 5, animationDuration: self.animationDuration)
+                                    
         }, completion: nil)
     }
 }

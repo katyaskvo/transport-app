@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="12008EEF-A7F2-4840-A5A3-F67960F96AAB" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="DBEC0933-6A63-45EA-B844-5A5045C32B81" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -320,7 +320,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="helicopter_side_window_reflection" translatesAutoresizingMaskIntoConstraints="NO" id="QeR-i8-DK9">
-                                <rect key="frame" x="592" y="363" width="120" height="55"/>
+                                <rect key="frame" x="592" y="369" width="120" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="helicopter_tail" translatesAutoresizingMaskIntoConstraints="NO" id="fkk-uP-do3">
@@ -333,8 +333,12 @@
                     <connections>
                         <outlet property="heliTailRotatingView" destination="fkk-uP-do3" id="aLE-Mn-ra5"/>
                         <outlet property="heliTailView" destination="v2V-sd-zmY" id="laX-Yf-8Iq"/>
+                        <outlet property="helicopterBodyView" destination="rnz-zz-Dxn" id="Tgw-rq-8Fl"/>
                         <outlet property="helixStillView" destination="DAI-Fe-IjQ" id="8GH-s1-Mth"/>
                         <outlet property="helixView" destination="DUg-R0-6MQ" id="M0r-y5-b8O"/>
+                        <outlet property="pimpochkaView" destination="bx0-Xv-Gwr" id="NOp-5N-G0y"/>
+                        <outlet property="reflectionFrontView" destination="xgu-RL-sib" id="Okn-ar-zAS"/>
+                        <outlet property="reflectionSideView" destination="QeR-i8-DK9" id="3pI-3E-hav"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UoU-Qc-v5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -490,7 +494,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="12008EEF-A7F2-4840-A5A3-F67960F96AAB" width="32" height="17">
+        <image name="DBEC0933-6A63-45EA-B844-5A5045C32B81" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGQkNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QDwcI
 ERYbHCUmJygwMzY8P1UkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dOU0Nv
