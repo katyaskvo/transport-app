@@ -5,6 +5,8 @@ class HelicopterViewController: UIViewController {
     @IBOutlet var heliTailView: UIImageView!
     @IBOutlet var helixView: UIImageView!
     @IBOutlet var helixStillView: UIImageView!
+    @IBOutlet var heliTailRotatingView: UIImageView!
+    
     
     var helixImages: [UIImage]!
     var animatedHelix: UIImage!
@@ -18,19 +20,28 @@ class HelicopterViewController: UIViewController {
         let helix_04 = UIImage(named: "helicopter_helix04")
         let helix_05 = UIImage(named: "helicopter_helix05")
         helixImages = [helix_00!, helix_01!, helix_02!, helix_03!, helix_04!, helix_05!]
+        
+        
+        heliTailRotatingView.alpha = 0
     }
     
     
     @IBAction func startAnimation() {
-        
         heliTailView.transform = CGAffineTransform.identity
         helixStillView.transform = CGAffineTransform.identity
         
-        let helixOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
-        helixOpacityAnimation.duration = 10
-        helixOpacityAnimation.repeatCount = 1
-        helixOpacityAnimation.keyTimes = [0, 0.01, 0.99, 1]
-        helixOpacityAnimation.values = [1, 0, 0, 1]
+        let stillViewDisappearAnimation = CAKeyframeAnimation(keyPath: "opacity")
+        stillViewDisappearAnimation.duration = 10
+        stillViewDisappearAnimation.repeatCount = 1
+        stillViewDisappearAnimation.keyTimes = [0, 0.01, 0.99, 1]
+        stillViewDisappearAnimation.values = [1, 0, 0, 1]
+        
+        let heliTailAppearAnimation = CAKeyframeAnimation(keyPath: "opacity")
+        heliTailAppearAnimation.duration = 10
+        heliTailAppearAnimation.repeatCount = 1
+        heliTailAppearAnimation.keyTimes = [0, 0.01, 0.99, 1]
+        heliTailAppearAnimation.values = [0, 1, 1, 0]
+        
         
         
         let helixViewAnimation = CAKeyframeAnimation(keyPath: "contents")
@@ -43,10 +54,14 @@ class HelicopterViewController: UIViewController {
                                    delay: 0,
                                    options: [.curveLinear],
                                    animations: {
-                                    self.heliTailView.rotate360Degrees(duration: 0.2, repeatCount: 50)
                                     
-                                    self.helixStillView.layer.add(helixOpacityAnimation, forKey: "opacity")
+//                                    heliTailRotatingView.alpha = 1
+                                    self.heliTailView.layer.add(stillViewDisappearAnimation, forKey: "opacity")
+                                    
+                                    self.helixStillView.layer.add(stillViewDisappearAnimation, forKey: "opacity")
                                     self.helixView.layer.add(helixViewAnimation, forKey: "helix on")
+                                    self.heliTailRotatingView.rotate360Degrees(duration: 2, repeatCount: 5)
+                                    self.heliTailRotatingView.layer.add(heliTailAppearAnimation, forKey: "opacity")
         }, completion: nil)
     }
 }
