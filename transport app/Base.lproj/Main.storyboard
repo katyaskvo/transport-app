@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="98E4526C-A93B-45A8-9401-0DA632ECCEFA" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="E86CCB96-5205-43EC-8E91-EBCE4EF5A9B5" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -429,8 +429,8 @@
                                 <rect key="frame" x="611" y="301" width="237" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_light3" translatesAutoresizingMaskIntoConstraints="NO" id="Cgg-Iq-77O">
-                                <rect key="frame" x="711.5" y="256" width="19" height="13"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="lightThree00" translatesAutoresizingMaskIntoConstraints="NO" id="Cgg-Iq-77O">
+                                <rect key="frame" x="680.5" y="223" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="lightTwo00" translatesAutoresizingMaskIntoConstraints="NO" id="pyn-q7-bzE">
@@ -494,7 +494,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="98E4526C-A93B-45A8-9401-0DA632ECCEFA" width="32" height="17">
+        <image name="E86CCB96-5205-43EC-8E91-EBCE4EF5A9B5" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGSUpYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEAcI
 ERYbHCUmJysyNzo9Q0ZVJG51bGzUCQoLDA0ODxBWJGNsYXNzXE5TSW1hZ2VGbGFnc1ZOU1JlcHNXTlND
@@ -601,7 +601,6 @@ AAAAAAAAAgEAAAAAAAAATQAAAAAAAAAAAAAAAAAAE1I
         <image name="firetruck_garpun" width="268" height="13"/>
         <image name="firetruck_holders" width="293" height="178"/>
         <image name="firetruck_ladder" width="380" height="57"/>
-        <image name="firetruck_light3" width="19" height="13"/>
         <image name="firetruck_light4" width="10" height="14"/>
         <image name="firetruck_light5" width="11" height="14"/>
         <image name="firetruck_syren1" width="39" height="14"/>
@@ -618,6 +617,7 @@ AAAAAAAAAgEAAAAAAAAATQAAAAAAAAAAAAAAAAAAE1I
         <image name="helicopter_tail_still" width="150" height="136"/>
         <image name="large_road" width="889" height="2"/>
         <image name="lightOne00" width="612" height="792"/>
+        <image name="lightThree00" width="612" height="792"/>
         <image name="lightTwo00" width="60" height="60"/>
         <image name="pedal" width="26" height="12"/>
         <image name="pedal_shaft" width="40" height="43"/>
