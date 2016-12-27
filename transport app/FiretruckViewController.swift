@@ -10,8 +10,11 @@ class FiretruckViewController: UIViewController {
     
     @IBOutlet var firetruckHoldersView: UIImageView!
     @IBOutlet var light1View: UIImageView!
+    @IBOutlet var light1OffView: UIImageView!
     @IBOutlet var light2View: UIImageView!
+    @IBOutlet var light2OffView: UIImageView!
     @IBOutlet var light3View: UIImageView!
+    @IBOutlet var light3OffView: UIImageView!
     @IBOutlet var light4View: UIImageView!
     @IBOutlet var light5View: UIImageView!
     @IBOutlet var syrenView: UIImageView!
@@ -74,13 +77,6 @@ class FiretruckViewController: UIViewController {
             let light3_01 = UIImage(named: "lightThree01")
             let light3_02 = UIImage(named: "lightThree02")
             light3Images = [light3_00!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_00!]
-        
-
-//            let light4_00 = UIImage(named: "lightFour00")
-//            let light4_01 = UIImage(named: "lightFour01")
-//            let light4_02 = UIImage(named: "lightFour02")
-//            light4Images = [light4_00!, light4_01!, light4_02!, light4_01!, light4_02!, light4_01!, light4_02!, light4_01!, light4_00!]
-    
     }
     
     
@@ -113,12 +109,6 @@ class FiretruckViewController: UIViewController {
         lightThreeViewAnimation.duration = 0.5
         lightThreeViewAnimation.repeatCount = 1
         
-//        let lightFourViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-//        lightFourViewAnimation.calculationMode = kCAAnimationDiscrete
-//        lightFourViewAnimation.values = light4Images.map {$0.cgImage as AnyObject}
-//        lightFourViewAnimation.duration = 0.5
-//        lightFourViewAnimation.repeatCount = 1
-        
         
         UIView.animate(withDuration: 1,
                        delay: 0,
@@ -146,6 +136,11 @@ class FiretruckViewController: UIViewController {
                         self.light1View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light1View, duration: 0.7, animationDuration: self.animationDuration)
                         self.syrenView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.syrenView, duration: 0.7, animationDuration: self.animationDuration)
                         self.windowReflectionView.shake(values: [0, -1, 0, -1, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.windowReflectionView, duration: 0.7, animationDuration: self.animationDuration)
+                        
+                        self.light3OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light3OffView, duration: 0.7, animationDuration: self.animationDuration)
+                        self.light2OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light2OffView, duration: 0.7, animationDuration: self.animationDuration)
+                        self.light1OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light1OffView, duration: 0.7, animationDuration: self.animationDuration)
+
                         
                         //parts shake
                         self.ladderView.shake(values: [0, 0.1, -0.3, 0, -0.1, 0], keyTimes: [0, 0.1, 0.35, 0.6, 0.85, 1], animatedImageView: self.ladderView, duration: 0.75, animationDuration: self.animationDuration)

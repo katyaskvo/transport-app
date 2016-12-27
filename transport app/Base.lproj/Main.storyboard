@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="E15CB472-86AD-4DCF-8317-399A73E20AAF" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="B5EBBF73-BA05-4F90-A246-4F1C5281E4E0" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -521,9 +521,17 @@
                                 <rect key="frame" x="684" y="249" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U20-Ji-CxX">
+                                <rect key="frame" x="684" y="249" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="lightTwo00" translatesAutoresizingMaskIntoConstraints="NO" id="pyn-q7-bzE">
                                 <rect key="frame" x="680" y="267" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f1E-Se-P8P">
+                                <rect key="frame" x="680" y="267" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6bb-mA-4g7">
                                 <rect key="frame" x="68" y="521" width="889.99999999999977" height="42"/>
@@ -566,9 +574,12 @@
                         <outlet property="frontWheelView" destination="F3g-ia-pKI" id="eHT-oe-Rqe"/>
                         <outlet property="garpunView" destination="d8c-1X-4s2" id="zJw-wz-A79"/>
                         <outlet property="ladderView" destination="aQl-ut-z9e" id="Qhn-lm-fLr"/>
-                        <outlet property="light1View" destination="6WV-a2-aAg" id="RZ7-yz-O0z"/>
-                        <outlet property="light2View" destination="pyn-q7-bzE" id="Ozb-vM-lz4"/>
-                        <outlet property="light3View" destination="Cgg-Iq-77O" id="sAs-ue-Ap5"/>
+                        <outlet property="light1OffView" destination="6WV-a2-aAg" id="5tE-xZ-D6E"/>
+                        <outlet property="light1View" destination="n12-Vq-Iip" id="Fht-12-FaV"/>
+                        <outlet property="light2OffView" destination="pyn-q7-bzE" id="UtE-Wi-gfV"/>
+                        <outlet property="light2View" destination="f1E-Se-P8P" id="Wqp-gh-lP9"/>
+                        <outlet property="light3OffView" destination="Cgg-Iq-77O" id="lUZ-iR-5Tp"/>
+                        <outlet property="light3View" destination="U20-Ji-CxX" id="met-4V-GPm"/>
                         <outlet property="light4View" destination="Gge-pc-1Go" id="yFF-gU-sd9"/>
                         <outlet property="light5View" destination="su3-TC-FWl" id="HOJ-6b-JyS"/>
                         <outlet property="reflectionBackWheelView" destination="V4V-n9-Lga" id="F3g-iV-4Lk"/>
@@ -586,7 +597,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="E15CB472-86AD-4DCF-8317-399A73E20AAF" width="32" height="17">
+        <image name="B5EBBF73-BA05-4F90-A246-4F1C5281E4E0" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGSUpYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEAcI
 ERYbHCUmJysyNzo9Q0ZVJG51bGzUCQoLDA0ODxBWJGNsYXNzXE5TSW1hZ2VGbGFnc1ZOU1JlcHNXTlND
@@ -715,7 +726,7 @@ AAAAAAAAAgEAAAAAAAAATQAAAAAAAAAAAAAAAAAAE1I
         <image name="large_road" width="889" height="2"/>
         <image name="lightOne00" width="80" height="80"/>
         <image name="lightThree00" width="80" height="80"/>
-        <image name="lightTwo00" width="23" height="21"/>
+        <image name="lightTwo00" width="90" height="90"/>
         <image name="pedal" width="26" height="12"/>
         <image name="pedal_shaft" width="40" height="43"/>
         <image name="pimpochka" width="14" height="11"/>
