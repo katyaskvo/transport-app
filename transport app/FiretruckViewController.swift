@@ -47,11 +47,11 @@ class FiretruckViewController: UIViewController {
                        options: [.curveLinear],
                        animations: {
                         lightTwoViewAnimation.values = self.light2Images.map {$0.cgImage as AnyObject}
-                        lightTwoViewAnimation.duration = 0.5
+                        lightTwoViewAnimation.duration = 1
                         lightTwoViewAnimation.repeatCount = 1
                         
                         let SyrenTwoAnimation = CAAnimationGroup()
-                        SyrenTwoAnimation.duration = 0.75
+                        SyrenTwoAnimation.duration = 1
                         SyrenTwoAnimation.repeatCount = 10
                         
                         SyrenTwoAnimation.animations = [lightTwoViewAnimation]
@@ -71,7 +71,7 @@ class FiretruckViewController: UIViewController {
             let light2_00 = UIImage(named: "lightTwo00")
             let light2_01 = UIImage(named: "lightTwo01")
             let light2_02 = UIImage(named: "lightTwo02")
-            light2Images = [light2_00!, light2_01!, light2_02!, light2_01!, light2_02!, light2_01!, light2_02!, light2_02!, light2_01!]
+            light2Images = [light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!, light2_01!, light2_02!, light2_01!, light2_02!, light2_01!, light2_02!, light2_02!, light2_01!]
         
             let light3_00 = UIImage(named: "lightThree00")
             let light3_01 = UIImage(named: "lightThree01")
