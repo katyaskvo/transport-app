@@ -35,6 +35,28 @@ class FiretruckViewController: UIViewController {
     var light4Images: [UIImage]!
     var animatedLight4: UIImage!
 
+    func animateSyren2() {
+        let lightTwoViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+        lightTwoViewAnimation.calculationMode = kCAAnimationDiscrete
+        
+        UIView.animate(withDuration: 1,
+                       delay: 5,
+                       options: [.curveLinear],
+                       animations: {
+                        lightTwoViewAnimation.values = self.light2Images.map {$0.cgImage as AnyObject}
+                        lightTwoViewAnimation.duration = 0.5
+                        lightTwoViewAnimation.repeatCount = 1
+                        
+                        let SyrenTwoAnimation = CAAnimationGroup()
+                        SyrenTwoAnimation.duration = 0.75
+                        SyrenTwoAnimation.repeatCount = 10
+                        
+                        SyrenTwoAnimation.animations = [lightTwoViewAnimation]
+                        self.light2View.layer.add(SyrenTwoAnimation, forKey: "contents")
+        }, completion: nil)
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,8 +69,7 @@ class FiretruckViewController: UIViewController {
             let light2_00 = UIImage(named: "lightTwo00")
             let light2_01 = UIImage(named: "lightTwo01")
             let light2_02 = UIImage(named: "lightTwo02")
-            let light2_03 = UIImage(named: "lightTwo03")
-            light2Images = [light2_00!, light2_01!, light2_02!, light2_03!, light2_01!, light2_02!, light2_03!, light2_01!, light2_02!, light2_03!, light2_02!, light2_01!]
+            light2Images = [light2_00!, light2_01!, light2_02!, light2_01!, light2_02!, light2_01!, light2_02!, light2_02!, light2_01!]
         
             let light3_00 = UIImage(named: "lightThree00")
             let light3_01 = UIImage(named: "lightThree01")
@@ -83,11 +104,9 @@ class FiretruckViewController: UIViewController {
         lightOneViewAnimation.repeatCount = 1
        
 
-        let lightTwoViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightTwoViewAnimation.calculationMode = kCAAnimationDiscrete
-        lightTwoViewAnimation.values = light2Images.map {$0.cgImage as AnyObject}
-        lightTwoViewAnimation.duration = 1
-        lightTwoViewAnimation.repeatCount = 1
+        
+
+
  
         let lightThreeViewAnimation = CAKeyframeAnimation(keyPath: "contents")
         lightThreeViewAnimation.calculationMode = kCAAnimationDiscrete
@@ -153,19 +172,20 @@ class FiretruckViewController: UIViewController {
                         
                         //Syren Shine3 var2
                         let SyrenThreeAnimation = CAAnimationGroup()
-                        SyrenThreeAnimation.duration = 0.75
-                        SyrenThreeAnimation.repeatCount = 13
+                        SyrenThreeAnimation.duration = 1
+                        SyrenThreeAnimation.repeatCount = 10
                         
                         SyrenThreeAnimation.animations = [lightThreeViewAnimation]
                         self.light3View.layer.add(SyrenThreeAnimation, forKey: "contents")
                         
                         //Syren Shine2
-                        let SyrenTwoAnimation = CAAnimationGroup()
-                        SyrenTwoAnimation.duration = 1.25
-                        SyrenTwoAnimation.repeatCount = 8
-                        
-                        SyrenTwoAnimation.animations = [lightTwoViewAnimation]
-                        self.light2View.layer.add(SyrenTwoAnimation, forKey: "contents")
+//                        let SyrenTwoAnimation = CAAnimationGroup()
+//                        SyrenTwoAnimation.duration = 1
+//                        SyrenTwoAnimation.repeatCount = 10
+//                        
+//                        SyrenTwoAnimation.animations = [lightTwoViewAnimation]
+//                        self.light2View.layer.add(SyrenTwoAnimation, forKey: "contents")
+                        self.animateSyren2()
                         
         }, completion: nil)
     }
