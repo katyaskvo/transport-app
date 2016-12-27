@@ -28,7 +28,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="980-jK-LUk" kind="show" id="fDO-cg-zsL"/>
+                                    <segue destination="FDj-u8-mBC" kind="show" id="v2T-s6-0b7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADe-jG-ewD">
@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="38260A46-D5CB-4AC9-A650-E02E56BD2112" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="54DB8A90-BC4A-4437-B204-FEF745BB49EE" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -139,12 +139,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122.8515625" y="-697.65625"/>
+            <point key="canvasLocation" x="3119" y="-595"/>
         </scene>
         <!--Beetle View Controller-->
         <scene sceneID="NNQ-rg-kWZ">
             <objects>
-                <viewController id="FDj-u8-mBC" userLabel="Beetle View Controller" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="FDj-u8-mBC" userLabel="Beetle View Controller" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h06-3w-osl"/>
                         <viewControllerLayoutGuide type="bottom" id="JZ7-R1-VsF"/>
@@ -159,11 +159,17 @@
                                 <state key="normal" image="arrow-left">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="980-jK-LUk" kind="show" id="31R-Pj-w8V"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oR7-Rn-Zmf">
                                 <rect key="frame" x="960" y="704" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow-right"/>
+                                <connections>
+                                    <segue destination="S4R-Ja-viH" kind="show" id="nYK-5n-H5w"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hV-Nf-zf1">
                                 <rect key="frame" x="490" y="704" width="44" height="44"/>
@@ -174,35 +180,35 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="beetle_pipe" translatesAutoresizingMaskIntoConstraints="NO" id="cav-Ml-eAc">
-                                <rect key="frame" x="176" y="445" width="80" height="17"/>
+                                <rect key="frame" x="174" y="470" width="80" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="beetle_body" translatesAutoresizingMaskIntoConstraints="NO" id="Dgc-mq-ife">
-                                <rect key="frame" x="176" y="249" width="672" height="221"/>
+                                <rect key="frame" x="174" y="274" width="672" height="221"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="beetle_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="dab-1y-dpi">
-                                <rect key="frame" x="246" y="394" width="123" height="124"/>
+                                <rect key="frame" x="245" y="419" width="123" height="124"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="beetle_wheel_reflection" translatesAutoresizingMaskIntoConstraints="NO" id="C2P-pZ-Qid">
-                                <rect key="frame" x="269" y="411" width="81" height="91"/>
+                                <rect key="frame" x="267" y="436" width="81" height="91"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="beetle_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="qxX-da-JXx">
-                                <rect key="frame" x="683" y="394" width="123" height="124"/>
+                                <rect key="frame" x="683" y="419" width="123" height="124"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="beetle_wheel_reflection" translatesAutoresizingMaskIntoConstraints="NO" id="YhJ-R9-RIm">
-                                <rect key="frame" x="706" y="411" width="81" height="91"/>
+                                <rect key="frame" x="706" y="436" width="81" height="91"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="beetle_window_reflections" translatesAutoresizingMaskIntoConstraints="NO" id="g9Y-AB-jV1">
-                                <rect key="frame" x="396" y="286" width="143" height="40"/>
+                                <rect key="frame" x="385" y="312" width="143" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ur-LE-UJf">
-                                <rect key="frame" x="162" y="515.5" width="700" height="2"/>
+                                <rect key="frame" x="162" y="541" width="700" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="Got-qC-eoU">
@@ -221,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hIh-o6-kqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3449" y="-542"/>
+            <point key="canvasLocation" x="2360" y="-595"/>
         </scene>
         <!--Tractor View Controller-->
         <scene sceneID="9Nc-N3-oYj">
@@ -339,7 +345,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bV0-Xa-IFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3190.4296875" y="470.3125"/>
+            <point key="canvasLocation" x="3745" y="163"/>
         </scene>
         <!--Helicopter View Controller-->
         <scene sceneID="idE-1d-q5Z">
@@ -425,7 +431,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UoU-Qc-v5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2123" y="1409"/>
+            <point key="canvasLocation" x="2741" y="828"/>
         </scene>
         <!--Firetruck View Controller-->
         <scene sceneID="um1-jE-RXd">
@@ -444,7 +450,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="arrow-right"/>
                                 <connections>
-                                    <segue destination="S4R-Ja-viH" kind="show" id="Nk2-wp-lay"/>
+                                    <segue destination="FDj-u8-mBC" kind="show" id="FQc-Nh-Di3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3Z-pR-V7z">
@@ -464,63 +470,63 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_body" translatesAutoresizingMaskIntoConstraints="NO" id="F5x-TR-gea">
-                                <rect key="frame" x="111" y="249" width="802" height="238"/>
+                                <rect key="frame" x="114" y="275" width="802" height="238"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_ladder" translatesAutoresizingMaskIntoConstraints="NO" id="aQl-ut-z9e">
-                                <rect key="frame" x="99" y="277.5" width="380" height="57"/>
+                                <rect key="frame" x="102" y="304" width="380" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_garpun" translatesAutoresizingMaskIntoConstraints="NO" id="d8c-1X-4s2">
-                                <rect key="frame" x="144" y="262" width="268" height="13"/>
+                                <rect key="frame" x="147" y="288" width="268" height="13"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_chain" translatesAutoresizingMaskIntoConstraints="NO" id="Awz-85-KCN">
-                                <rect key="frame" x="525" y="418" width="1" height="27"/>
+                                <rect key="frame" x="529" y="444" width="1" height="27"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_axe" translatesAutoresizingMaskIntoConstraints="NO" id="bb6-H4-urM">
-                                <rect key="frame" x="431" y="386" width="35" height="71"/>
+                                <rect key="frame" x="434" y="412" width="35" height="71"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_holders" translatesAutoresizingMaskIntoConstraints="NO" id="R1S-o5-tDC">
-                                <rect key="frame" x="161" y="260" width="293" height="178"/>
+                                <rect key="frame" x="164" y="286" width="293" height="178"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_light5" translatesAutoresizingMaskIntoConstraints="NO" id="su3-TC-FWl">
-                                <rect key="frame" x="111" y="356" width="11" height="17"/>
+                                <rect key="frame" x="114" y="382" width="11" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_light4" translatesAutoresizingMaskIntoConstraints="NO" id="Gge-pc-1Go">
-                                <rect key="frame" x="555" y="255" width="10" height="14"/>
+                                <rect key="frame" x="558" y="281" width="10" height="14"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_syren1" translatesAutoresizingMaskIntoConstraints="NO" id="L4u-ti-BUa">
-                                <rect key="frame" x="803" y="252" width="39" height="14"/>
+                                <rect key="frame" x="806" y="278" width="39" height="14"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="F3g-ia-pKI">
-                                <rect key="frame" x="647" y="415" width="101" height="101"/>
+                                <rect key="frame" x="651" y="441" width="101" height="101"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="LWN-TR-FYZ">
-                                <rect key="frame" x="234" y="415" width="101" height="101"/>
+                                <rect key="frame" x="239" y="441" width="101" height="101"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_window_reflections" translatesAutoresizingMaskIntoConstraints="NO" id="YaJ-BW-wrT">
-                                <rect key="frame" x="611" y="301" width="237" height="44"/>
+                                <rect key="frame" x="614" y="327" width="237" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="lightThree00" translatesAutoresizingMaskIntoConstraints="NO" id="Cgg-Iq-77O">
-                                <rect key="frame" x="680.5" y="223" width="80" height="80"/>
+                                <rect key="frame" x="684" y="249" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="lightTwo00" translatesAutoresizingMaskIntoConstraints="NO" id="pyn-q7-bzE">
-                                <rect key="frame" x="676.5" y="240.5" width="90" height="90"/>
+                                <rect key="frame" x="680" y="267" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6bb-mA-4g7">
-                                <rect key="frame" x="64.222222222221944" y="494.5" width="889.99999999999977" height="42"/>
+                                <rect key="frame" x="68" y="521" width="889.99999999999977" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="large_road" translatesAutoresizingMaskIntoConstraints="NO" id="WRs-Mu-B8f">
@@ -534,15 +540,15 @@
                                 </subviews>
                             </view>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_wheel_reflection" translatesAutoresizingMaskIntoConstraints="NO" id="V4V-n9-Lga">
-                                <rect key="frame" x="244" y="422" width="80" height="87"/>
+                                <rect key="frame" x="247" y="448" width="80" height="87"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_wheel_reflection" translatesAutoresizingMaskIntoConstraints="NO" id="1zf-jh-Yee">
-                                <rect key="frame" x="657" y="422" width="80" height="87"/>
+                                <rect key="frame" x="660" y="448" width="80" height="87"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="lightOne00" translatesAutoresizingMaskIntoConstraints="NO" id="6WV-a2-aAg">
-                                <rect key="frame" x="844" y="410" width="80" height="80"/>
+                                <rect key="frame" x="848" y="436" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
@@ -572,11 +578,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSc-nA-mDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094.53125" y="495.3125"/>
+            <point key="canvasLocation" x="1708" y="-595"/>
         </scene>
     </scenes>
     <resources>
-        <image name="38260A46-D5CB-4AC9-A650-E02E56BD2112" width="32" height="17">
+        <image name="54DB8A90-BC4A-4437-B204-FEF745BB49EE" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGQkNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QDwcI
 ERYbHCUmJygwMzY8P1UkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dOU0Nv
@@ -720,9 +726,10 @@ AAAAAAAAAgEAAAAAAAAARgAAAAAAAAAAAAAAAAAAEyQ
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fDO-cg-zsL"/>
-        <segue reference="jyw-zy-5b2"/>
+        <segue reference="31R-Pj-w8V"/>
+        <segue reference="FQc-Nh-Di3"/>
+        <segue reference="nYK-5n-H5w"/>
         <segue reference="eAs-q5-aYq"/>
-        <segue reference="iJd-I6-ByO"/>
+        <segue reference="CPH-ZX-OBR"/>
     </inferredMetricsTieBreakers>
 </document>
