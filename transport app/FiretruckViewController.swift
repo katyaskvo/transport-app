@@ -63,8 +63,7 @@ class FiretruckViewController: UIViewController {
             let light1_00 = UIImage(named: "lightOne00")
             let light1_01 = UIImage(named: "lightOne01")
             let light1_02 = UIImage(named: "lightOne02")
-            let light1_03 = UIImage(named: "lightOne03")
-            light1Images = [light1_00!, light1_01!, light1_02!, light1_03!, light1_01!, light1_02!, light1_03!, light1_01!, light1_02!, light1_03!, light1_02!, light1_01!]
+            light1Images = [light1_00!, light1_01!, light1_02!, light1_01!, light1_02!, light1_01!, light1_02!, light1_01!, light1_00!]
         
             let light2_00 = UIImage(named: "lightTwo00")
             let light2_01 = UIImage(named: "lightTwo01")
@@ -77,10 +76,10 @@ class FiretruckViewController: UIViewController {
             light3Images = [light3_00!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_00!]
         
 
-            let light4_00 = UIImage(named: "lightFour00")
-            let light4_01 = UIImage(named: "lightFour01")
-            let light4_02 = UIImage(named: "lightFour02")
-            light4Images = [light4_00!, light4_01!, light4_02!, light4_01!, light4_02!, light4_01!, light4_02!, light4_01!, light4_00!]
+//            let light4_00 = UIImage(named: "lightFour00")
+//            let light4_01 = UIImage(named: "lightFour01")
+//            let light4_02 = UIImage(named: "lightFour02")
+//            light4Images = [light4_00!, light4_01!, light4_02!, light4_01!, light4_02!, light4_01!, light4_02!, light4_01!, light4_00!]
     
     }
     
@@ -114,11 +113,11 @@ class FiretruckViewController: UIViewController {
         lightThreeViewAnimation.duration = 0.5
         lightThreeViewAnimation.repeatCount = 1
         
-        let lightFourViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightFourViewAnimation.calculationMode = kCAAnimationDiscrete
-        lightFourViewAnimation.values = light4Images.map {$0.cgImage as AnyObject}
-        lightFourViewAnimation.duration = 0.5
-        lightFourViewAnimation.repeatCount = 1
+//        let lightFourViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+//        lightFourViewAnimation.calculationMode = kCAAnimationDiscrete
+//        lightFourViewAnimation.values = light4Images.map {$0.cgImage as AnyObject}
+//        lightFourViewAnimation.duration = 0.5
+//        lightFourViewAnimation.repeatCount = 1
         
         
         UIView.animate(withDuration: 1,
@@ -155,20 +154,20 @@ class FiretruckViewController: UIViewController {
                         
                         
                         //Syren Shine1
-//                        let SyrenOneAnimation = CAAnimationGroup()
-//                        SyrenOneAnimation.duration = 1.25
-//                        SyrenOneAnimation.repeatCount = 8
-//                        
-//                        SyrenOneAnimation.animations = [lightOneViewAnimation]
-//                        self.light1View.layer.add(SyrenOneAnimation, forKey: "contents")
+                        let SyrenOneAnimation = CAAnimationGroup()
+                        SyrenOneAnimation.duration = 1.25
+                        SyrenOneAnimation.repeatCount = 8
+                        
+                        SyrenOneAnimation.animations = [lightOneViewAnimation]
+                        self.light1View.layer.add(SyrenOneAnimation, forKey: "contents")
                         
                         //Syren Shine1 var2
-                        let SyrenFourAnimation = CAAnimationGroup()
-                        SyrenFourAnimation.duration = 0.75
-                        SyrenFourAnimation.repeatCount = 13
+//                        let SyrenFourAnimation = CAAnimationGroup()
+//                        SyrenFourAnimation.duration = 0.75
+//                        SyrenFourAnimation.repeatCount = 13
                         
-                        SyrenFourAnimation.animations = [lightFourViewAnimation]
-                        self.light1View.layer.add(SyrenFourAnimation, forKey: "contents")
+//                        SyrenFourAnimation.animations = [lightFourViewAnimation]
+//                        self.light1View.layer.add(SyrenFourAnimation, forKey: "contents")
                         
                         //Syren Shine3 var2
                         let SyrenThreeAnimation = CAAnimationGroup()
