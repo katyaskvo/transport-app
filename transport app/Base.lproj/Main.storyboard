@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="96E6C967-09A4-4D96-A65C-D3414C49C435" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="9569E7E7-5EBB-4960-BA79-6CAFD45A9055" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -144,7 +144,7 @@
         <!--Beetle View Controller-->
         <scene sceneID="NNQ-rg-kWZ">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="FDj-u8-mBC" userLabel="Beetle View Controller" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="FDj-u8-mBC" userLabel="Beetle View Controller" customClass="BeetleViewController" customModule="transport_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h06-3w-osl"/>
                         <viewControllerLayoutGuide type="bottom" id="JZ7-R1-VsF"/>
@@ -177,6 +177,7 @@
                                 <state key="normal" image="button"/>
                                 <connections>
                                     <action selector="startAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="bTA-aW-gFs"/>
+                                    <action selector="startAnimation" destination="FDj-u8-mBC" eventType="touchUpInside" id="kx4-ky-RHi"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="beetle_pipe" translatesAutoresizingMaskIntoConstraints="NO" id="cav-Ml-eAc">
@@ -224,6 +225,18 @@
                         </subviews>
                         <color key="backgroundColor" red="0.039215686270000001" green="0.58039215690000001" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="backWheelReflectionView" destination="C2P-pZ-Qid" id="V2D-k4-GNT"/>
+                        <outlet property="backWheelView" destination="dab-1y-dpi" id="2f8-RO-sJ7"/>
+                        <outlet property="bodyView" destination="Dgc-mq-ife" id="GbS-74-PEa"/>
+                        <outlet property="frontWheelReflectionView" destination="YhJ-R9-RIm" id="jRY-Sy-RGj"/>
+                        <outlet property="frontWheelView" destination="qxX-da-JXx" id="CWG-cA-hj3"/>
+                        <outlet property="pipeView" destination="cav-Ml-eAc" id="N63-6I-AXq"/>
+                        <outlet property="road1View" destination="Got-qC-eoU" id="wSV-L9-hwX"/>
+                        <outlet property="road2View" destination="LfN-ep-RRP" id="Vdn-tU-Me5"/>
+                        <outlet property="roadBoxView" destination="3ur-LE-UJf" id="yCN-IO-hZQ"/>
+                        <outlet property="windowReflectionView" destination="g9Y-AB-jV1" id="GUP-Bx-ZJU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hIh-o6-kqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -607,7 +620,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="96E6C967-09A4-4D96-A65C-D3414C49C435" width="32" height="17">
+        <image name="9569E7E7-5EBB-4960-BA79-6CAFD45A9055" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGSUpYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEAcI
 ERYbHCUmJysyNzo9Q0ZVJG51bGzUCQoLDA0ODxBWJGNsYXNzXE5TSW1hZ2VGbGFnc1ZOU1JlcHNXTlND
@@ -752,10 +765,10 @@ AAAAAAAAAgEAAAAAAAAATQAAAAAAAAAAAAAAAAAAE1I
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JPX-cz-51P"/>
         <segue reference="CPH-ZX-OBR"/>
-        <segue reference="VjF-JU-9aB"/>
-        <segue reference="FQc-Nh-Di3"/>
+        <segue reference="31R-Pj-w8V"/>
+        <segue reference="v2T-s6-0b7"/>
         <segue reference="nYK-5n-H5w"/>
+        <segue reference="eAs-q5-aYq"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0020AD101E13D1160080F514 /* BeetleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020AD0F1E13D1160080F514 /* BeetleViewController.swift */; };
 		002C0C791DD329360005AA2C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002C0C781DD329360005AA2C /* UIViewExtensions.swift */; };
 		00AA0F6C1D36B115005BEF28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA0F6B1D36B115005BEF28 /* AppDelegate.swift */; };
 		00AA0F6E1D36B115005BEF28 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA0F6D1D36B115005BEF28 /* RootViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0020AD0F1E13D1160080F514 /* BeetleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeetleViewController.swift; sourceTree = "<group>"; };
 		002C0C781DD329360005AA2C /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		00AA0F681D36B115005BEF28 /* transport app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transport app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AA0F6B1D36B115005BEF28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				00AA0F781D36B115005BEF28 /* LaunchScreen.storyboard */,
 				00AA0F7B1D36B115005BEF28 /* Info.plist */,
 				002C0C781DD329360005AA2C /* UIViewExtensions.swift */,
+				0020AD0F1E13D1160080F514 /* BeetleViewController.swift */,
 			);
 			path = "transport app";
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				4B8D68CB1D8C7B8C00C7F9A1 /* FiretruckViewController.swift in Sources */,
 				00AA0F721D36B115005BEF28 /* ModelController.swift in Sources */,
 				00AA0F701D36B115005BEF28 /* BicycleViewController.swift in Sources */,
+				0020AD101E13D1160080F514 /* BeetleViewController.swift in Sources */,
 				4B2831561D382A0200377A83 /* TractorViewController.swift in Sources */,
 				00AA0F6C1D36B115005BEF28 /* AppDelegate.swift in Sources */,
 			);
