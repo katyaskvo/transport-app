@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="896EE87C-2F91-4DB4-BA9B-BE9C4F73E606" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="04CA8FFF-CB67-4EEF-ABAD-9B301E3D3B21" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -630,6 +630,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="moto" translatesAutoresizingMaskIntoConstraints="NO" id="kMV-XV-F9A">
+                                <rect key="frame" x="211" y="252" width="602" height="288"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efb-R4-iRM">
                                 <rect key="frame" x="20" y="704" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -654,10 +658,20 @@
                                     <action selector="startAnimation" destination="4se-pa-4cI" eventType="touchUpInside" id="vWc-25-3vs"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="moto" translatesAutoresizingMaskIntoConstraints="NO" id="kMV-XV-F9A">
-                                <rect key="frame" x="211" y="253" width="602" height="288"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8R9-h6-i2t">
+                                <rect key="frame" x="162" y="538" width="700" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="Bzr-uu-5Ms">
+                                        <rect key="frame" x="-1" y="0.0" width="700" height="2"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="F6S-fX-1Tp">
+                                        <rect key="frame" x="700" y="0.0" width="700" height="2"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.96161985756540136" blue="0.59005216345999645" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -668,7 +682,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="896EE87C-2F91-4DB4-BA9B-BE9C4F73E606" width="32" height="17">
+        <image name="04CA8FFF-CB67-4EEF-ABAD-9B301E3D3B21" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGQkNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QDwcI
 ERYbHCUmJygwMzY8P1UkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dOU0Nv
@@ -818,6 +832,6 @@ AAAAAAAAAgEAAAAAAAAARgAAAAAAAAAAAAAAAAAAEyQ
         <segue reference="vgW-N1-GXF"/>
         <segue reference="TIf-N3-4A5"/>
         <segue reference="0Vj-FM-jc3"/>
-        <segue reference="jyw-zy-5b2"/>
+        <segue reference="nYK-5n-H5w"/>
     </inferredMetricsTieBreakers>
 </document>
