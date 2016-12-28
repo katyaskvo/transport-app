@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="19502FEB-9499-4FFC-86F4-C972D34BFA10" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="896EE87C-2F91-4DB4-BA9B-BE9C4F73E606" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -323,7 +323,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZi-Lv-CXW">
-                                <rect key="frame" x="324" y="135" width="700" height="467"/>
+                                <rect key="frame" x="174" y="135" width="700" height="467"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="1Fy-JJ-Utr">
@@ -385,7 +385,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow-right"/>
                                 <connections>
-                                    <segue destination="980-jK-LUk" kind="show" id="JPX-cz-51P"/>
+                                    <segue destination="339-XQ-wEa" kind="show" id="q8u-3C-dbN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-T0-90T">
@@ -463,7 +463,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="arrow-right"/>
                                 <connections>
-                                    <segue destination="FDj-u8-mBC" kind="show" id="FQc-Nh-Di3"/>
+                                    <segue destination="FDj-u8-mBC" kind="show" id="0Vj-FM-jc3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3Z-pR-V7z">
@@ -479,7 +479,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="arrow-left"/>
                                 <connections>
-                                    <segue destination="4se-pa-4cI" kind="show" id="CPH-ZX-OBR"/>
+                                    <segue destination="339-XQ-wEa" kind="show" id="vgW-N1-GXF"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="firetruck_body" translatesAutoresizingMaskIntoConstraints="NO" id="F5x-TR-gea">
@@ -621,7 +621,7 @@
         <!--Moto View Controller-->
         <scene sceneID="Fko-nh-B4g">
             <objects>
-                <viewController id="339-XQ-wEa" userLabel="Moto View Controller" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="339-XQ-wEa" userLabel="Moto View Controller" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z6S-xY-y76"/>
                         <viewControllerLayoutGuide type="bottom" id="Cyg-TV-jk0"/>
@@ -634,11 +634,17 @@
                                 <rect key="frame" x="20" y="704" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow-left"/>
+                                <connections>
+                                    <segue destination="4se-pa-4cI" kind="show" id="BzD-GJ-YjH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl6-T5-jEc">
                                 <rect key="frame" x="960" y="704" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow-right"/>
+                                <connections>
+                                    <segue destination="980-jK-LUk" kind="show" id="TIf-N3-4A5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpm-Pd-ApK">
                                 <rect key="frame" x="490" y="704" width="44" height="44"/>
@@ -662,7 +668,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="19502FEB-9499-4FFC-86F4-C972D34BFA10" width="32" height="17">
+        <image name="896EE87C-2F91-4DB4-BA9B-BE9C4F73E606" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGQkNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QDwcI
 ERYbHCUmJygwMzY8P1UkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dOU0Nv
@@ -807,10 +813,11 @@ AAAAAAAAAgEAAAAAAAAARgAAAAAAAAAAAAAAAAAAEyQ
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eAs-q5-aYq"/>
-        <segue reference="nYK-5n-H5w"/>
-        <segue reference="FQc-Nh-Di3"/>
-        <segue reference="31R-Pj-w8V"/>
-        <segue reference="CPH-ZX-OBR"/>
+        <segue reference="VjF-JU-9aB"/>
+        <segue reference="BzD-GJ-YjH"/>
+        <segue reference="vgW-N1-GXF"/>
+        <segue reference="TIf-N3-4A5"/>
+        <segue reference="0Vj-FM-jc3"/>
+        <segue reference="jyw-zy-5b2"/>
     </inferredMetricsTieBreakers>
 </document>
