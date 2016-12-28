@@ -18,6 +18,7 @@ class FiretruckViewController: UIViewController {
     @IBOutlet var light4View: UIImageView!
     @IBOutlet var light4OffView: UIImageView!
     @IBOutlet var light5View: UIImageView!
+    @IBOutlet var light5OffView: UIImageView!
     @IBOutlet var syrenView: UIImageView!
     
     @IBOutlet var ladderView: UIImageView!
@@ -38,6 +39,8 @@ class FiretruckViewController: UIViewController {
     var animatedLight3: UIImage!
     var light4Images: [UIImage]!
     var animatedLight4: UIImage!
+    var light5Images: [UIImage]!
+    var animatedLight5: UIImage!
 
     func animateSyren2() {
         let lightTwoViewAnimation = CAKeyframeAnimation(keyPath: "contents")
@@ -83,6 +86,11 @@ class FiretruckViewController: UIViewController {
             let light4_01 = UIImage(named: "lightFour01")
             let light4_02 = UIImage(named: "lightFour02")
             light4Images = [light4_00!, light4_01!, light4_02!, light4_01!, light4_02!, light4_01!, light4_02!, light4_01!, light4_00!]
+        
+            let light5_00 = UIImage(named: "lightFive00")
+            let light5_01 = UIImage(named: "lightFive01")
+            let light5_02 = UIImage(named: "lightFive02")
+            light5Images = [light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!, light5_01!, light5_02!, light5_01!, light5_02!, light5_01!, light5_02!, light5_01!, light5_00!]
 
     }
     
@@ -122,6 +130,12 @@ class FiretruckViewController: UIViewController {
         lightFourViewAnimation.duration = 0.5
         lightFourViewAnimation.repeatCount = 1
         
+        let lightFiveViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+        lightFiveViewAnimation.calculationMode = kCAAnimationDiscrete
+        lightFiveViewAnimation.values = light5Images.map {$0.cgImage as AnyObject}
+        lightFiveViewAnimation.duration = 1
+        lightFiveViewAnimation.repeatCount = 1
+
         UIView.animate(withDuration: 1,
                        delay: 0,
                        options: [.curveLinear],
@@ -149,6 +163,8 @@ class FiretruckViewController: UIViewController {
                         self.syrenView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.syrenView, duration: 0.7, animationDuration: self.animationDuration)
                         self.windowReflectionView.shake(values: [0, -1, 0, -1, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.windowReflectionView, duration: 0.7, animationDuration: self.animationDuration)
                         
+                        self.light5OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light5OffView, duration: 0.7, animationDuration: self.animationDuration)
+                        self.light4OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light4OffView, duration: 0.7, animationDuration: self.animationDuration)
                         self.light3OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light3OffView, duration: 0.7, animationDuration: self.animationDuration)
                         self.light2OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light2OffView, duration: 0.7, animationDuration: self.animationDuration)
                         self.light1OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light1OffView, duration: 0.7, animationDuration: self.animationDuration)
@@ -187,6 +203,14 @@ class FiretruckViewController: UIViewController {
                         SyrenFourAnimation.animations = [lightFourViewAnimation]
                         self.light4View.layer.add(SyrenFourAnimation, forKey: "contents")
 
+                        //Syren Shine5
+                        let SyrenFiveAnimation = CAAnimationGroup()
+                        SyrenFiveAnimation.duration = 1
+                        SyrenFiveAnimation.repeatCount = 10
+                        
+                        SyrenFiveAnimation.animations = [lightFiveViewAnimation]
+                        self.light5View.layer.add(SyrenFiveAnimation, forKey: "contents")
+                        
                         
         }, completion: nil)
     }
