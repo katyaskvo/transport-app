@@ -14,6 +14,7 @@ class BicycleViewController: UIViewController {
 
     @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
+    @IBOutlet var button: UIButton!
 
     @IBOutlet var wheelBackView: UIImageView!
     @IBOutlet var wheelFrontView: UIImageView!
@@ -64,7 +65,24 @@ class BicycleViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    func enableButton() {
+        self.button.isEnabled = true
+    }
+    
+
     @IBAction func startAnimation() {
+//        if pedalShaftView.isAnimating == true {
+//            wheelBackView.layer.removeAllAnimations()
+//            wheelFrontView.layer.removeAllAnimations()
+//            chainWheelView.layer.removeAllAnimations()
+//            chain0View.layer.removeAllAnimations()
+//            pedalShaftView.layer.removeAllAnimations()
+//        }
+        
+
+        self.button.isEnabled = false
+        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
+        
         wheelBackView.transform = CGAffineTransform.identity
         wheelFrontView.transform = CGAffineTransform.identity
         chainWheelView.transform = CGAffineTransform.identity
@@ -108,6 +126,26 @@ class BicycleViewController: UIViewController {
         pedalAnimation2.repeatCount = 10
         pedalAnimation2.duration = 1.0
         
+//        print(self.chain0View.isAnimating)
+//        if self.chain0View.isAnimating == true {
+//            self.chain0View.layer.removeAllAnimations()
+//            self.wheelBackView.layer.removeAllAnimations()
+//            self.wheelFrontView.layer.removeAllAnimations()
+//            self.chainWheelView.layer.removeAllAnimations()
+//            self.chain0View.layer.removeAllAnimations()
+//
+//            self.pedalShaftView.layer.removeAllAnimations()
+//            self.pedalView.layer.removeAllAnimations()
+//            self.pedal2View.layer.removeAllAnimations()
+//            self.pedalShaft2View.layer.removeAllAnimations()
+//
+//            self.bell00View.layer.removeAllAnimations()
+//            self.reflectionBackWheelView.layer.removeAllAnimations()
+//            self.reflectionFrontWheelView.layer.removeAllAnimations()
+//            self.road1View.layer.removeAllAnimations()
+//            self.road2View.layer.removeAllAnimations()
+//        } else {
+
         UIView.animate(
             withDuration: 1,
             delay: 0,
@@ -151,6 +189,7 @@ class BicycleViewController: UIViewController {
                 
                 self.bell00View.layer.add(bellAnimation, forKey: "contents")
         }, completion: nil)
+//        }
         
     }
 
