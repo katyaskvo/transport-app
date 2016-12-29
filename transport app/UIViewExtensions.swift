@@ -49,11 +49,16 @@ extension UIView {
         let animationOptions = UIViewAnimationOptions.curveLinear
         let repeatCount = Float(animationDuration / duration)
         UIView.animate(withDuration: duration, delay: 0.0, options: animationOptions, animations: {
+
             UIView.setAnimationRepeatCount(repeatCount)
             UIView.setAnimationDuration(duration)
+            
             road1View.frame = road1View.frame.offsetBy(dx: -1 * road1View.frame.size.width, dy: 0.0)
             road2View.frame = road2View.frame.offsetBy(dx: -1 * road2View.frame.size.width, dy: 0.0)
-        }, completion: nil)
+        }, completion: { (Bool) -> Void in
+            road1View.frame = road1View.frame.offsetBy(dx: 1 * road1View.frame.size.width, dy: 0.0)
+            road2View.frame = road2View.frame.offsetBy(dx: 1 * road2View.frame.size.width, dy: 0.0)
+        })
     }
 }
 extension UIViewKeyframeAnimationOptions {
