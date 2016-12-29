@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="40F0DC00-219A-4868-8173-C860775981EB" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="204DA302-A96F-41D4-AAE2-DD888287BB34" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -117,10 +117,14 @@
                                     </imageView>
                                 </subviews>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="navigation_button" translatesAutoresizingMaskIntoConstraints="NO" id="PbD-2d-Mar">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTa-V2-fyh">
                                 <rect key="frame" x="960" y="623" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="navigation_button"/>
+                                <connections>
+                                    <segue destination="eYz-ct-G7b" kind="show" id="nqZ-dB-v3P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96998745203018188" green="0.77201902919216581" blue="0.79084162477106679" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -226,10 +230,14 @@
                                     </imageView>
                                 </subviews>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="navigation_button" translatesAutoresizingMaskIntoConstraints="NO" id="ZPZ-S2-10I">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMD-1D-IGy">
                                 <rect key="frame" x="960" y="623" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="navigation_button"/>
+                                <connections>
+                                    <segue destination="eYz-ct-G7b" kind="show" id="NWe-BV-uvs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.039215686270000001" green="0.58039215690000001" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -253,7 +261,7 @@
         <!--Navigation Board View Controller-->
         <scene sceneID="OgX-wX-vqe">
             <objects>
-                <viewController id="eYz-ct-G7b" userLabel="Navigation Board View Controller" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="eYz-ct-G7b" userLabel="Navigation Board View Controller" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Iji-NV-yn1"/>
                         <viewControllerLayoutGuide type="bottom" id="6pK-HB-dEm"/>
@@ -368,10 +376,14 @@
                                     </imageView>
                                 </subviews>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="navigation_button" translatesAutoresizingMaskIntoConstraints="NO" id="gAv-Hw-a6B">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoi-g6-ggU">
                                 <rect key="frame" x="960" y="623" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="navigation_button"/>
+                                <connections>
+                                    <segue destination="eYz-ct-G7b" kind="show" id="di2-K5-DPJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78800262934362819" green="1" blue="0.84988205630963409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -464,10 +476,14 @@
                                 <rect key="frame" x="113" y="260" width="186" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="navigation_button" translatesAutoresizingMaskIntoConstraints="NO" id="RYx-C2-nkU">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGw-hE-zob">
                                 <rect key="frame" x="960" y="623" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="navigation_button"/>
+                                <connections>
+                                    <segue destination="eYz-ct-G7b" kind="show" id="9hi-BS-FVC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.67514503750239796" green="0.83558068862127322" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -624,10 +640,14 @@
                                 <rect key="frame" x="80" y="352" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="navigation_button" translatesAutoresizingMaskIntoConstraints="NO" id="RI4-Ik-ISi">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYH-eN-5yD">
                                 <rect key="frame" x="960" y="623" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="navigation_button"/>
+                                <connections>
+                                    <segue destination="eYz-ct-G7b" kind="show" id="Mnz-ED-BsI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.41422388815789829" green="0.86346531413612571" blue="0.71093306096771658" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -716,10 +736,14 @@
                                     </imageView>
                                 </subviews>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="navigation_button" translatesAutoresizingMaskIntoConstraints="NO" id="FPl-0i-fMo">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5X-PX-yk5">
                                 <rect key="frame" x="960" y="623" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="navigation_button"/>
+                                <connections>
+                                    <segue destination="eYz-ct-G7b" kind="show" id="XbO-Bq-ASr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.96161985756540136" blue="0.59005216345999645" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -730,7 +754,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="40F0DC00-219A-4868-8173-C860775981EB" width="32" height="17">
+        <image name="204DA302-A96F-41D4-AAE2-DD888287BB34" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGU1RYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
 ERYbHCgpKi41OT1CRUhNUFUkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dO
@@ -880,11 +904,12 @@ AAAAAAAAAAAAAAAAAAATpg
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="q8u-3C-dbN"/>
-        <segue reference="iJd-I6-ByO"/>
-        <segue reference="VjF-JU-9aB"/>
-        <segue reference="jyw-zy-5b2"/>
-        <segue reference="TIf-N3-4A5"/>
-        <segue reference="0Vj-FM-jc3"/>
+        <segue reference="nqZ-dB-v3P"/>
+        <segue reference="nYK-5n-H5w"/>
+        <segue reference="v2T-s6-0b7"/>
+        <segue reference="31R-Pj-w8V"/>
+        <segue reference="vgW-N1-GXF"/>
+        <segue reference="BzD-GJ-YjH"/>
+        <segue reference="eAs-q5-aYq"/>
     </inferredMetricsTieBreakers>
 </document>
