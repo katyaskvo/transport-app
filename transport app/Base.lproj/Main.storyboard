@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="1D5D1517-AAEE-45E8-9217-FF71EE78EDFB" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="40F0DC00-219A-4868-8173-C860775981EB" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -117,6 +117,10 @@
                                     </imageView>
                                 </subviews>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="navigation_button" translatesAutoresizingMaskIntoConstraints="NO" id="PbD-2d-Mar">
+                                <rect key="frame" x="960" y="623" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.96998745203018188" green="0.77201902919216581" blue="0.79084162477106679" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -222,6 +226,10 @@
                                     </imageView>
                                 </subviews>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="navigation_button" translatesAutoresizingMaskIntoConstraints="NO" id="ZPZ-S2-10I">
+                                <rect key="frame" x="960" y="623" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.039215686270000001" green="0.58039215690000001" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -360,6 +368,10 @@
                                     </imageView>
                                 </subviews>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="navigation_button" translatesAutoresizingMaskIntoConstraints="NO" id="gAv-Hw-a6B">
+                                <rect key="frame" x="960" y="623" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.78800262934362819" green="1" blue="0.84988205630963409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -450,6 +462,10 @@
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="helicopter_tail" translatesAutoresizingMaskIntoConstraints="NO" id="fkk-uP-do3">
                                 <rect key="frame" x="113" y="260" width="186" height="188"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="navigation_button" translatesAutoresizingMaskIntoConstraints="NO" id="RYx-C2-nkU">
+                                <rect key="frame" x="960" y="623" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
@@ -608,6 +624,10 @@
                                 <rect key="frame" x="80" y="352" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="navigation_button" translatesAutoresizingMaskIntoConstraints="NO" id="RI4-Ik-ISi">
+                                <rect key="frame" x="960" y="623" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.41422388815789829" green="0.86346531413612571" blue="0.71093306096771658" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -696,6 +716,10 @@
                                     </imageView>
                                 </subviews>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="navigation_button" translatesAutoresizingMaskIntoConstraints="NO" id="FPl-0i-fMo">
+                                <rect key="frame" x="960" y="623" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.96161985756540136" blue="0.59005216345999645" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -706,7 +730,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1D5D1517-AAEE-45E8-9217-FF71EE78EDFB" width="32" height="17">
+        <image name="40F0DC00-219A-4868-8173-C860775981EB" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGU1RYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
 ERYbHCgpKi41OT1CRUhNUFUkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dO
@@ -840,6 +864,7 @@ AAAAAAAAAAAAAAAAAAATpg
         <image name="lightTwo00" width="90" height="90"/>
         <image name="moto" width="602" height="288"/>
         <image name="navigation_board1" width="1024" height="768"/>
+        <image name="navigation_button" width="44" height="44"/>
         <image name="pedal" width="26" height="12"/>
         <image name="pedal_shaft" width="40" height="43"/>
         <image name="pimpochka" width="14" height="11"/>
@@ -855,11 +880,11 @@ AAAAAAAAAAAAAAAAAAATpg
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="q8u-3C-dbN"/>
+        <segue reference="iJd-I6-ByO"/>
         <segue reference="VjF-JU-9aB"/>
-        <segue reference="BzD-GJ-YjH"/>
-        <segue reference="vgW-N1-GXF"/>
+        <segue reference="jyw-zy-5b2"/>
         <segue reference="TIf-N3-4A5"/>
         <segue reference="0Vj-FM-jc3"/>
-        <segue reference="nYK-5n-H5w"/>
     </inferredMetricsTieBreakers>
 </document>
