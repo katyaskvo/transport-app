@@ -2,6 +2,7 @@ import UIKit
 
 class HelicopterViewController: UIViewController {
 
+    @IBOutlet var buttonPlay: UIButton!
     @IBOutlet var heliTailView: UIImageView!
     @IBOutlet var helixView: UIImageView!
     @IBOutlet var helixStillView: UIImageView!
@@ -31,7 +32,13 @@ class HelicopterViewController: UIViewController {
     }
     
     
+    func enableButton() {
+        self.buttonPlay.isEnabled = true
+    }
+    
     @IBAction func startAnimation() {
+        self.buttonPlay.isEnabled = false
+        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
         heliTailView.transform = CGAffineTransform.identity
         helixStillView.transform = CGAffineTransform.identity
         

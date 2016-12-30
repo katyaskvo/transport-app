@@ -2,6 +2,7 @@ import UIKit
 import AudioToolbox
 
 class TractorViewController: UIViewController {
+    @IBOutlet var buttonPlay: UIButton!
     @IBOutlet var bigWheelView: UIImageView!
     @IBOutlet var smallWheelView: UIImageView!
     @IBOutlet var cloud1View: UIImageView!
@@ -52,7 +53,14 @@ class TractorViewController: UIViewController {
     }
     
     
+    func enableButton() {
+        self.buttonPlay.isEnabled = true
+    }
+    
     @IBAction func startAnimation() {
+        self.buttonPlay.isEnabled = false
+        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
+
 //        playSound()
         bigWheelView.transform = CGAffineTransform.identity
         smallWheelView.transform = CGAffineTransform.identity

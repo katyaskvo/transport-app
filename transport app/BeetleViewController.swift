@@ -3,6 +3,7 @@ import AudioToolbox
 
 class BeetleViewController: UIViewController {
     
+    @IBOutlet var buttonPlay: UIButton!
     @IBOutlet var bodyView: UIImageView!
     @IBOutlet var backWheelView: UIImageView!
     @IBOutlet var backWheelReflectionView: UIImageView!
@@ -16,11 +17,13 @@ class BeetleViewController: UIViewController {
     
     let animationDuration = CFTimeInterval(10.0)
     
-    
-    
-    
+    func enableButton() {
+        self.buttonPlay.isEnabled = true
+    }
     
     @IBAction func startAnimation() {
+        self.buttonPlay.isEnabled = false
+        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
         
         UIView.animate(withDuration: 4,
                        delay: 0,

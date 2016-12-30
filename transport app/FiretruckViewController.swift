@@ -1,6 +1,7 @@
 import UIKit
 
 class FiretruckViewController: UIViewController {
+    @IBOutlet var buttonPlay: UIButton!
     @IBOutlet var firetruckBodyView: UIImageView!
     @IBOutlet var frontWheelView: UIImageView!
     @IBOutlet var backWheelView: UIImageView!
@@ -96,7 +97,13 @@ class FiretruckViewController: UIViewController {
     
     
     
+    func enableButton() {
+        self.buttonPlay.isEnabled = true
+    }
+    
     @IBAction func startAnimation() {
+        self.buttonPlay.isEnabled = false
+        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
         frontWheelView.transform = CGAffineTransform.identity
         backWheelView.transform = CGAffineTransform.identity
         

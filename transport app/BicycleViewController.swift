@@ -71,15 +71,6 @@ class BicycleViewController: UIViewController {
     
 
     @IBAction func startAnimation() {
-//        if pedalShaftView.isAnimating == true {
-//            wheelBackView.layer.removeAllAnimations()
-//            wheelFrontView.layer.removeAllAnimations()
-//            chainWheelView.layer.removeAllAnimations()
-//            chain0View.layer.removeAllAnimations()
-//            pedalShaftView.layer.removeAllAnimations()
-//        }
-        
-
         self.button.isEnabled = false
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
         
