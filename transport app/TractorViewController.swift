@@ -20,15 +20,14 @@ class TractorViewController: UIViewController {
     @IBOutlet var road1View: UIImageView!
     @IBOutlet var roadBoxView: UIView!
     
-    var soundId : SystemSoundID = 0
     let animationDuration = CFTimeInterval(10.0)
+    
+    var soundId : SystemSoundID = 0
 
     func playSound() {
-        if soundId == 0 {
-            let soundUrl = Bundle.main.url(forResource: "tractor", withExtension: "caf")
-            AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
-            AudioServicesPlaySystemSound(soundId)
-        }
+        let soundUrl = Bundle.main.url(forResource: "tractor", withExtension: "mp3")
+        AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
+        AudioServicesPlaySystemSound(soundId)
     }
 
     override func viewDidDisappear(_ animated: Bool) {

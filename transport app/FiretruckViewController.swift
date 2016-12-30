@@ -1,4 +1,5 @@
 import UIKit
+import AudioToolbox
 
 class FiretruckViewController: UIViewController {
     @IBOutlet var buttonPlay: UIButton!
@@ -42,6 +43,21 @@ class FiretruckViewController: UIViewController {
     var animatedLight4: UIImage!
     var light5Images: [UIImage]!
     var animatedLight5: UIImage!
+    
+    var soundId : SystemSoundID = 0
+    
+    func playSound() {
+        let soundUrl = Bundle.main.url(forResource: "firetruck", withExtension: "mp3")
+        AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
+        AudioServicesPlaySystemSound(soundId)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        if soundId != 0 {
+            AudioServicesDisposeSystemSoundID(soundId)
+        }
+    }
+    
 
     func animateSyren2() {
         let lightTwoViewAnimation = CAKeyframeAnimation(keyPath: "contents")
@@ -104,6 +120,9 @@ class FiretruckViewController: UIViewController {
     @IBAction func startAnimation() {
         self.buttonPlay.isEnabled = false
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
+        
+        playSound()
+        
         frontWheelView.transform = CGAffineTransform.identity
         backWheelView.transform = CGAffineTransform.identity
         

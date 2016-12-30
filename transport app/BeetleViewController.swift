@@ -20,10 +20,24 @@ class BeetleViewController: UIViewController {
     func enableButton() {
         self.buttonPlay.isEnabled = true
     }
+    var soundId : SystemSoundID = 0
+    
+    func playSound() {
+        let soundUrl = Bundle.main.url(forResource: "beetle", withExtension: "mp3")
+        AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
+        AudioServicesPlaySystemSound(soundId)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        if soundId != 0 {
+            AudioServicesDisposeSystemSoundID(soundId)
+        }
+    }
     
     @IBAction func startAnimation() {
         self.buttonPlay.isEnabled = false
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
+        playSound()
         
         UIView.animate(withDuration: 4,
                        delay: 0,

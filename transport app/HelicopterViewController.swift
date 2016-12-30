@@ -1,4 +1,5 @@
 import UIKit
+import AudioToolbox
 
 class HelicopterViewController: UIViewController {
 
@@ -16,6 +17,21 @@ class HelicopterViewController: UIViewController {
     let animationDuration = CFTimeInterval(10.0)
     var helixImages: [UIImage]!
     var animatedHelix: UIImage!
+    
+    var soundId : SystemSoundID = 0
+    
+    func playSound() {
+        let soundUrl = Bundle.main.url(forResource: "helicopter", withExtension: "mp3")
+        AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
+        AudioServicesPlaySystemSound(soundId)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        if soundId != 0 {
+            AudioServicesDisposeSystemSoundID(soundId)
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +55,8 @@ class HelicopterViewController: UIViewController {
     @IBAction func startAnimation() {
         self.buttonPlay.isEnabled = false
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
+        playSound()
+        
         heliTailView.transform = CGAffineTransform.identity
         helixStillView.transform = CGAffineTransform.identity
         
