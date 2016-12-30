@@ -1,14 +1,5 @@
-
-
-//
-//  DataViewController.swift
-//  transport app
-//
-//  Created by Ekaterina Zdorov on 7/13/16.
-//  Copyright © 2016 Ekaterina Zdorov. All rights reserved.
-//
-
 import UIKit
+import AudioToolbox
 
 class BicycleViewController: UIViewController {
 
@@ -42,6 +33,20 @@ class BicycleViewController: UIViewController {
     
     let animationDuration = CFTimeInterval(10.0)
     
+    var soundId : SystemSoundID = 0
+
+    func playSound() {
+            let soundUrl = Bundle.main.url(forResource: "bikebell", withExtension: "mp3")
+            AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
+            AudioServicesPlaySystemSound(soundId)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        if soundId != 0 {
+            AudioServicesDisposeSystemSoundID(soundId)
+        }
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +78,8 @@ class BicycleViewController: UIViewController {
     @IBAction func startAnimation() {
         self.button.isEnabled = false
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
+        
+        playSound()
         
         wheelBackView.transform = CGAffineTransform.identity
         wheelFrontView.transform = CGAffineTransform.identity

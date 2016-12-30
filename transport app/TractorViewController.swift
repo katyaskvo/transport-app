@@ -61,7 +61,7 @@ class TractorViewController: UIViewController {
         self.buttonPlay.isEnabled = false
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
 
-//        playSound()
+        playSound()
         bigWheelView.transform = CGAffineTransform.identity
         smallWheelView.transform = CGAffineTransform.identity
         cloud1View.transform = CGAffineTransform.identity
