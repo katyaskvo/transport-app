@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="7431950A-9F44-4119-A08C-04F8EB1F2965" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="9FA1040C-8382-4B6D-9CC5-1AD38158FC3B" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -584,6 +584,10 @@
                                     <segue destination="eYz-ct-G7b" kind="show" id="Mnz-ED-BsI"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="front00" translatesAutoresizingMaskIntoConstraints="NO" id="OY2-hT-B20">
+                                <rect key="frame" x="831" y="397" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="front00" translatesAutoresizingMaskIntoConstraints="NO" id="qpO-9P-ULg">
                                 <rect key="frame" x="831" y="381" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -721,6 +725,7 @@
                         <outlet property="light5OffView" destination="304-u1-Qju" id="CN1-8g-1vX"/>
                         <outlet property="light5View" destination="Wue-vl-Uab" id="dzK-Sb-7CZ"/>
                         <outlet property="lightFrontRedView" destination="qpO-9P-ULg" id="acw-xf-RBn"/>
+                        <outlet property="lightFrontWhiteView" destination="OY2-hT-B20" id="URX-I5-cvY"/>
                         <outlet property="reflectionBackWheelView" destination="V4V-n9-Lga" id="F3g-iV-4Lk"/>
                         <outlet property="reflectionFrontWheelView" destination="1zf-jh-Yee" id="bc9-fs-Hgf"/>
                         <outlet property="road1View" destination="WRs-Mu-B8f" id="hrl-7L-wPY"/>
@@ -806,7 +811,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="7431950A-9F44-4119-A08C-04F8EB1F2965" width="32" height="17">
+        <image name="9FA1040C-8382-4B6D-9CC5-1AD38158FC3B" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTE1YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ERYbHCgpKi41Njs+QUZJVSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05T
