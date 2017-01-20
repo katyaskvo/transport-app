@@ -21,6 +21,7 @@ class FiretruckViewController: UIViewController {
     @IBOutlet var light4OffView: UIImageView!
     @IBOutlet var light5View: UIImageView!
     @IBOutlet var light5OffView: UIImageView!
+    @IBOutlet var lightFrontRedView: UIImageView!
     @IBOutlet var syrenView: UIImageView!
     
     @IBOutlet var ladderView: UIImageView!
@@ -43,6 +44,9 @@ class FiretruckViewController: UIViewController {
     var animatedLight4: UIImage!
     var light5Images: [UIImage]!
     var animatedLight5: UIImage!
+    
+    var lightFrontRedImages: [UIImage]!
+    var animatedFrontRed: UIImage!
     
     var soundId : SystemSoundID = 0
     
@@ -108,6 +112,11 @@ class FiretruckViewController: UIViewController {
             let light5_01 = UIImage(named: "lightFive01")
             let light5_02 = UIImage(named: "lightFive02")
             light5Images = [light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!, light5_01!, light5_02!, light5_01!, light5_02!, light5_01!, light5_02!, light5_01!, light5_00!]
+        
+            let light_front_00 = UIImage(named: "front00")
+            let light_frontRed_01 = UIImage(named: "frontRed01")
+            let light_frontRed_02 = UIImage(named: "frontRed02")
+            lightFrontRedImages = [light_front_00!, light_frontRed_01!, light_frontRed_02!, light_frontRed_01!, light_frontRed_02!, light_frontRed_01!, light_frontRed_02!, light_frontRed_01!, light_front_00!]
 
     }
     
@@ -161,6 +170,12 @@ class FiretruckViewController: UIViewController {
         lightFiveViewAnimation.values = light5Images.map {$0.cgImage as AnyObject}
         lightFiveViewAnimation.duration = 1
         lightFiveViewAnimation.repeatCount = 1
+        
+        let lightFrontRedViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+        lightFrontRedViewAnimation.calculationMode = kCAAnimationDiscrete
+        lightFrontRedViewAnimation.values = lightFrontRedImages.map {$0.cgImage as AnyObject}
+        lightFrontRedViewAnimation.duration = 1
+        lightFrontRedViewAnimation.repeatCount = 1
 
         UIView.animate(withDuration: 1,
                        delay: 0,
@@ -181,6 +196,7 @@ class FiretruckViewController: UIViewController {
                         //Shake
                         self.firetruckBodyView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.firetruckBodyView, duration: 0.7, animationDuration: self.animationDuration)
                         self.firetruckHoldersView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.firetruckHoldersView, duration: 0.7, animationDuration: self.animationDuration)
+                        self.lightFrontRedView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.lightFrontRedView, duration: 0.7, animationDuration: self.animationDuration)
                         self.light5View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light5View, duration: 0.7, animationDuration: self.animationDuration)
                         self.light4View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light4View, duration: 0.7, animationDuration: self.animationDuration)
                         self.light3View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light3View, duration: 0.7, animationDuration: self.animationDuration)
@@ -188,6 +204,7 @@ class FiretruckViewController: UIViewController {
                         self.light1View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light1View, duration: 0.7, animationDuration: self.animationDuration)
                         self.syrenView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.syrenView, duration: 0.7, animationDuration: self.animationDuration)
                         self.windowReflectionView.shake(values: [0, -1, 0, -1, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.windowReflectionView, duration: 0.7, animationDuration: self.animationDuration)
+                     
                         
                         self.light5OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light5OffView, duration: 0.7, animationDuration: self.animationDuration)
                         self.light4OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light4OffView, duration: 0.7, animationDuration: self.animationDuration)
@@ -236,6 +253,14 @@ class FiretruckViewController: UIViewController {
                         
                         SyrenFiveAnimation.animations = [lightFiveViewAnimation]
                         self.light5View.layer.add(SyrenFiveAnimation, forKey: "contents")
+                        
+                        //Syren Front Red
+                        let SyrenFrontRedAnimation = CAAnimationGroup()
+                        SyrenFrontRedAnimation.duration = 1
+                        SyrenFrontRedAnimation.repeatCount = 10
+                        
+                        SyrenFrontRedAnimation.animations = [lightFrontRedViewAnimation]
+                        self.lightFrontRedView.layer.add(SyrenFrontRedAnimation, forKey: "contents")
                         
                         
         }, completion: nil)
