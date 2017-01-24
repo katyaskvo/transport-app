@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="39A793C7-6BF1-48ED-8BC0-3B5F95A0A668" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="C874D0B9-4FD5-481F-9981-3DD69616C609" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -201,7 +201,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="beetle_wheel_reflection" translatesAutoresizingMaskIntoConstraints="NO" id="C2P-pZ-Qid">
-                                <rect key="frame" x="267" y="436" width="81" height="91"/>
+                                <rect key="frame" x="268" y="436" width="81" height="91"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="beetle_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="qxX-da-JXx">
@@ -816,7 +816,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="39A793C7-6BF1-48ED-8BC0-3B5F95A0A668" width="32" height="17">
+        <image name="C874D0B9-4FD5-481F-9981-3DD69616C609" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGU1RYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
 ERYbHCgpKi41OT1CRUhNUFUkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dO
@@ -967,12 +967,12 @@ AAAAAAAAAAAAAAAAAAATpg
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Mnz-ED-BsI"/>
-        <segue reference="31R-Pj-w8V"/>
-        <segue reference="0Vj-FM-jc3"/>
-        <segue reference="vgW-N1-GXF"/>
         <segue reference="iJd-I6-ByO"/>
         <segue reference="eAs-q5-aYq"/>
-        <segue reference="jyw-zy-5b2"/>
+        <segue reference="nYK-5n-H5w"/>
+        <segue reference="0Vj-FM-jc3"/>
+        <segue reference="31R-Pj-w8V"/>
+        <segue reference="vgW-N1-GXF"/>
+        <segue reference="NWe-BV-uvs"/>
     </inferredMetricsTieBreakers>
 </document>
