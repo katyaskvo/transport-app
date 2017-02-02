@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="5ADF9073-A534-41D3-A9A2-EA4E7C2B791F" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="158F9186-C3EC-4D15-983B-FC8C607CDCBE" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -133,6 +133,8 @@
                         <outlet property="button" destination="j1P-3z-lbr" id="kq9-Hh-mC7"/>
                         <outlet property="chain0View" destination="7Mz-Cn-dHf" id="iCk-yZ-56s"/>
                         <outlet property="chainWheelView" destination="d7J-qR-I4C" id="xhl-Qv-amc"/>
+                        <outlet property="frame2View" destination="495-S5-DTW" id="ve8-jK-BtI"/>
+                        <outlet property="frameView" destination="GYo-Ql-b9b" id="fs8-Qv-j29"/>
                         <outlet property="pedal2View" destination="djp-O1-jc6" id="DIw-oP-MEh"/>
                         <outlet property="pedalShaft2View" destination="pBM-m9-VT8" id="kfS-aF-d0Y"/>
                         <outlet property="pedalShaftView" destination="Nny-PC-leg" id="Abu-yV-yLk"/>
@@ -847,7 +849,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="5ADF9073-A534-41D3-A9A2-EA4E7C2B791F" width="32" height="17">
+        <image name="158F9186-C3EC-4D15-983B-FC8C607CDCBE" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTE1YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ERYbHCgpKi41Njs+QUZJVSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05T
@@ -995,17 +997,17 @@ AAAAAAAAAAAAAAAAAAATeA
         <image name="roofLight00" width="120" height="120"/>
         <image name="small-wheel" width="169" height="170"/>
         <image name="truba" width="25" height="88"/>
-        <image name="wheel_back" width="191" height="192"/>
-        <image name="wheel_front" width="191" height="192"/>
+        <image name="wheel_back" width="192" height="192"/>
+        <image name="wheel_front" width="192" height="192"/>
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9hi-BS-FVC"/>
-        <segue reference="iJd-I6-ByO"/>
-        <segue reference="VjF-JU-9aB"/>
+        <segue reference="nqZ-dB-v3P"/>
         <segue reference="jyw-zy-5b2"/>
+        <segue reference="eAs-q5-aYq"/>
+        <segue reference="iJd-I6-ByO"/>
+        <segue reference="q8u-3C-dbN"/>
         <segue reference="v2T-s6-0b7"/>
         <segue reference="31R-Pj-w8V"/>
-        <segue reference="q8u-3C-dbN"/>
     </inferredMetricsTieBreakers>
 </document>

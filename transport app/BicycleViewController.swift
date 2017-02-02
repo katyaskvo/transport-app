@@ -7,6 +7,8 @@ class BicycleViewController: UIViewController {
     var dataObject: String = ""
     @IBOutlet var button: UIButton!
 
+    @IBOutlet var frameView: UIImageView!
+    @IBOutlet var frame2View: UIImageView!
     @IBOutlet var wheelBackView: UIImageView!
     @IBOutlet var wheelFrontView: UIImageView!
     @IBOutlet var chainWheelView: UIImageView!
@@ -123,26 +125,6 @@ class BicycleViewController: UIViewController {
         pedalAnimation2.path = circlePedalPath2.cgPath
         pedalAnimation2.repeatCount = 10
         pedalAnimation2.duration = 1.0
-        
-//        print(self.chain0View.isAnimating)
-//        if self.chain0View.isAnimating == true {
-//            self.chain0View.layer.removeAllAnimations()
-//            self.wheelBackView.layer.removeAllAnimations()
-//            self.wheelFrontView.layer.removeAllAnimations()
-//            self.chainWheelView.layer.removeAllAnimations()
-//            self.chain0View.layer.removeAllAnimations()
-//
-//            self.pedalShaftView.layer.removeAllAnimations()
-//            self.pedalView.layer.removeAllAnimations()
-//            self.pedal2View.layer.removeAllAnimations()
-//            self.pedalShaft2View.layer.removeAllAnimations()
-//
-//            self.bell00View.layer.removeAllAnimations()
-//            self.reflectionBackWheelView.layer.removeAllAnimations()
-//            self.reflectionFrontWheelView.layer.removeAllAnimations()
-//            self.road1View.layer.removeAllAnimations()
-//            self.road2View.layer.removeAllAnimations()
-//        } else {
 
         UIView.animate(
             withDuration: 1,
@@ -161,7 +143,21 @@ class BicycleViewController: UIViewController {
                 
                 bellAnimation.animations = [bellViewAnimation]
                 
+                //Shake
+                self.frameView.shake(values: [0.75, -0.5, 0.75, -0.5, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.frameView, duration: 0.75, animationDuration: self.animationDuration)
+                self.frame2View.shake(values: [0.75, -0.5, 0.75, -0.5, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.frame2View, duration: 0.75, animationDuration: self.animationDuration)
+                self.chain0View.shake(values: [0.75, -0.5, 0.75, -0.5, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.chain0View, duration: 0.75, animationDuration: self.animationDuration)
+                self.wheelBackView.shake(values: [0.75, -0.5, 0.75, -0.5, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.wheelBackView, duration: 0.75, animationDuration: self.animationDuration)
+                self.wheelFrontView.shake(values: [0.75, -0.5, 0.75, -0.5, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.wheelFrontView, duration: 0.75, animationDuration: self.animationDuration)
+                self.chainWheelView.shake(values: [0.75, -0.5, 0.75, -0.5, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.chainWheelView, duration: 0.75, animationDuration: self.animationDuration)
+                self.pedalView.shake(values: [0.75, -0.5, 0.75, -0.5, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.pedalView, duration: 0.75, animationDuration: self.animationDuration)
+                self.pedalShaftView.shake(values: [0.75, -0.5, 0.75, -0.5, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.pedalShaftView, duration: 0.75, animationDuration: self.animationDuration)
+                self.pedal2View.shake(values: [0.75, -0.5, 0.75, -0.5, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.pedal2View, duration: 0.75, animationDuration: self.animationDuration)
+                self.pedalShaft2View.shake(values: [0.75, -0.5, 0.75, -0.5, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.pedalShaft2View, duration: 0.75, animationDuration: self.animationDuration)
                 
+                self.bell00View.shake(values: [0.75, -0.5, 0.75, -0.5, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.bell00View, duration: 0.75, animationDuration: self.animationDuration)
+                self.reflectionBackWheelView.shake(values: [0.75, -0.5, 0.75, -0.5, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.reflectionBackWheelView, duration: 0.75, animationDuration: self.animationDuration)
+                self.reflectionFrontWheelView.shake(values: [0.75, -0.5, 0.75, -0.5, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.reflectionFrontWheelView, duration: 0.75, animationDuration: self.animationDuration)
 
                 self.roadBoxView.moveTheRoad(road1View: self.road1View, road2View: self.road2View, duration: 1.5, animationDuration: self.animationDuration)
                 
