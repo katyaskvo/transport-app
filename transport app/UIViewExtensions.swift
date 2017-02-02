@@ -60,6 +60,31 @@ extension UIView {
             road2View.frame = road2View.frame.offsetBy(dx: 1 * road2View.frame.size.width, dy: 0.0)
         })
     }
+    
+    func moveClouds(mainView: UIView, cloud1View: UIImageView, cloud1AView: UIImageView, cloud2View: UIImageView, cloud2AView: UIImageView, cloud3View: UIImageView, cloud3AView: UIImageView, duration: CFTimeInterval, animationDuration: CFTimeInterval) {
+        let animationOptions = UIViewAnimationOptions.curveLinear
+        let repeatCount = Float(animationDuration / duration)
+        UIView.animate(withDuration: duration, delay: 0.0, options: animationOptions, animations: {
+            
+            UIView.setAnimationRepeatCount(repeatCount)
+            UIView.setAnimationDuration(duration)
+            
+            cloud1View.frame = cloud1View.frame.offsetBy(dx: -1 * mainView.frame.size.width, dy: 0.0)
+            cloud1AView.frame = cloud1AView.frame.offsetBy(dx: -1 * mainView.frame.size.width, dy: 0.0)
+            cloud2View.frame = cloud2View.frame.offsetBy(dx: -1 * mainView.frame.size.width, dy: 0.0)
+            cloud2AView.frame = cloud2AView.frame.offsetBy(dx: -1 * mainView.frame.size.width, dy: 0.0)
+            cloud3View.frame = cloud3View.frame.offsetBy(dx: -1 * mainView.frame.size.width, dy: 0.0)
+            cloud3AView.frame = cloud3AView.frame.offsetBy(dx: -1 * mainView.frame.size.width, dy: 0.0)
+        }, completion: { (Bool) -> Void in
+            cloud1View.frame = cloud1View.frame.offsetBy(dx: 1 * mainView.frame.size.width, dy: 0.0)
+            cloud1AView.frame = cloud1AView.frame.offsetBy(dx: 1 * mainView.frame.size.width, dy: 0.0)
+            cloud2View.frame = cloud2View.frame.offsetBy(dx: 1 * mainView.frame.size.width, dy: 0.0)
+            cloud2AView.frame = cloud2AView.frame.offsetBy(dx: 1 * mainView.frame.size.width, dy: 0.0)
+            cloud3View.frame = cloud3View.frame.offsetBy(dx: 1 * mainView.frame.size.width, dy: 0.0)
+            cloud3AView.frame = cloud3AView.frame.offsetBy(dx: 1 * mainView.frame.size.width, dy: 0.0)
+        })
+    }
+    
 }
 extension UIViewKeyframeAnimationOptions {
     

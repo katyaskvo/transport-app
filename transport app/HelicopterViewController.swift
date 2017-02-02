@@ -13,6 +13,13 @@ class HelicopterViewController: UIViewController {
     @IBOutlet var reflectionFrontView: UIImageView!
     @IBOutlet var reflectionSideView: UIImageView!
     
+    @IBOutlet var cloud1View: UIImageView!
+    @IBOutlet var cloud2View: UIImageView!
+    @IBOutlet var cloud3View: UIImageView!
+    @IBOutlet var cloud1AView: UIImageView!
+    @IBOutlet var cloud2AView: UIImageView!
+    @IBOutlet var cloud3AView: UIImageView!
+    @IBOutlet var mainView: UIView!
     
     let animationDuration = CFTimeInterval(10.0)
     var helixImages: [UIImage]!
@@ -25,6 +32,7 @@ class HelicopterViewController: UIViewController {
         AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
         AudioServicesPlaySystemSound(soundId)
     }
+    
     
     override func viewDidDisappear(_ animated: Bool) {
         if soundId != 0 {
@@ -45,6 +53,9 @@ class HelicopterViewController: UIViewController {
         
         
         heliTailRotatingView.alpha = 0
+//        cloud1View.alpha = 0
+//        cloud2View.alpha = 0
+//        cloud3View.alpha = 0
     }
     
     
@@ -83,6 +94,8 @@ class HelicopterViewController: UIViewController {
         reflectionRotationAnimation.repeatCount = 2
         reflectionRotationAnimation.keyTimes = [0, 0.2, 0.55, 0.85, 1]
         reflectionRotationAnimation.values = [0, CGFloat(M_PI_2 * -0.02), CGFloat(M_PI_2 * ( 0.04)), CGFloat(M_PI_2 * -0.02), 0]
+        
+        
 
         
         UIView.animate(withDuration: 0.75,
@@ -109,6 +122,12 @@ class HelicopterViewController: UIViewController {
                                     self.reflectionFrontView.layer.add(reflectionRotationAnimation, forKey: "rotation")
                                     self.reflectionSideView.shake(values: [0, 13, -17, 8, 0], keyTimes: [0, 0.2, 0.55, 0.85, 1], animatedImageView: self.reflectionSideView, duration: 5, animationDuration: self.animationDuration)
                                     
+                                    
+                                    //Clouds
+//                                    self.cloud1View.layer.add(heliTailAppearAnimation, forKey: "opacity")
+//                                    self.cloud2View.layer.add(heliTailAppearAnimation, forKey: "opacity")
+//                                    self.cloud3View.layer.add(heliTailAppearAnimation, forKey: "opacity")
+                                    self.mainView.moveClouds(mainView: self.mainView, cloud1View: self.cloud1View, cloud1AView: self.cloud1AView, cloud2View: self.cloud2View, cloud2AView: self.cloud2AView, cloud3View: self.cloud3View, cloud3AView: self.cloud3AView, duration: 5, animationDuration: self.animationDuration)
         }, completion: nil)
     }
 }
