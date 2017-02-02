@@ -167,8 +167,8 @@ class BicycleViewController: UIViewController {
                 
                 UIView.setAnimationDuration(0.77)
                 UIView.setAnimationRepeatCount(13)
-                self.wheelBackView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
-                self.wheelFrontView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
+                self.wheelBackView.rotate360Degrees(duration: 0.5, repeatCount: 20)
+                self.wheelFrontView.rotate360Degrees(duration: 0.5, repeatCount: 20)
                 
                 self.chainWheelView.rotate360Degrees(duration: 1, repeatCount: 10)
                 
