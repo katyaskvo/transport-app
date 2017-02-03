@@ -53,9 +53,6 @@ class HelicopterViewController: UIViewController {
         
         
         heliTailRotatingView.alpha = 0
-//        cloud1View.alpha = 0
-//        cloud2View.alpha = 0
-//        cloud3View.alpha = 0
     }
     
     
@@ -124,10 +121,7 @@ class HelicopterViewController: UIViewController {
                                     
                                     
                                     //Clouds
-//                                    self.cloud1View.layer.add(heliTailAppearAnimation, forKey: "opacity")
-//                                    self.cloud2View.layer.add(heliTailAppearAnimation, forKey: "opacity")
-//                                    self.cloud3View.layer.add(heliTailAppearAnimation, forKey: "opacity")
-                                    self.mainView.moveClouds(mainView: self.mainView, cloud1View: self.cloud1View, cloud1AView: self.cloud1AView, cloud2View: self.cloud2View, cloud2AView: self.cloud2AView, cloud3View: self.cloud3View, cloud3AView: self.cloud3AView, duration: 5, animationDuration: self.animationDuration)
+                                    self.mainView.moveClouds(mainView: self.mainView, cloud1View: self.cloud1View, cloud1AView: self.cloud1AView, cloud2View: self.cloud2View, cloud2AView: self.cloud2AView, cloud3View: self.cloud3View, cloud3AView: self.cloud3AView, duration: 10, animationDuration: self.animationDuration)
         }, completion: nil)
     }
 }
