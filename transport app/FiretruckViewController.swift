@@ -21,6 +21,8 @@ class FiretruckViewController: UIViewController {
     @IBOutlet var light4OffView: UIImageView!
     @IBOutlet var light5View: UIImageView!
     @IBOutlet var light5OffView: UIImageView!
+    @IBOutlet var light6View: UIImageView!
+    @IBOutlet var light6OffView: UIImageView!
     @IBOutlet var lightFrontRedView: UIImageView!
     @IBOutlet var lightFrontWhiteView: UIImageView!
     @IBOutlet var syrenView: UIImageView!
@@ -46,6 +48,8 @@ class FiretruckViewController: UIViewController {
     var animatedLight4: UIImage!
     var light5Images: [UIImage]!
     var animatedLight5: UIImage!
+    var light6Images: [UIImage]!
+    var animatedLight6: UIImage!
     
     var lightFrontRedImages: [UIImage]!
     var animatedFrontRed: UIImage!
@@ -100,12 +104,12 @@ class FiretruckViewController: UIViewController {
             let light1_00 = UIImage(named: "lightOne00")
             let light1_01 = UIImage(named: "lightOne01")
             let light1_02 = UIImage(named: "lightOne02")
-            light1Images = [light1_00!, light1_00!,light1_00!, light1_00!, light1_00!,light1_00!, light1_00!, light1_00!, light1_01!, light1_02!, light1_01!, light1_02!, light1_01!, light1_02!, light1_01!, light1_00!]
+            light1Images = [light1_00!, light1_00!,light1_00!, light1_00!, light1_00!, light1_00!, light1_00!, light1_00!, light1_01!, light1_02!, light1_01!, light1_02!, light1_01!, light1_02!, light1_01!, light1_00!]
         
             let light2_00 = UIImage(named: "lightTwo00")
             let light2_01 = UIImage(named: "lightTwo01")
             let light2_02 = UIImage(named: "lightTwo02")
-            light2Images = [light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!, light2_01!, light2_02!, light2_01!, light2_02!, light2_01!, light2_02!, light2_02!, light2_01!]
+            light2Images = [light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!, light2_01!, light2_02!, light2_01!, light2_02!, light2_01!, light2_02!, light2_01!, light2_00!]
         
             let light3_00 = UIImage(named: "lightThree00")
             let light3_01 = UIImage(named: "lightThree01")
@@ -121,6 +125,9 @@ class FiretruckViewController: UIViewController {
             let light5_01 = UIImage(named: "lightFive01")
             let light5_02 = UIImage(named: "lightFive02")
             light5Images = [light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!, light5_01!, light5_02!, light5_01!, light5_02!, light5_01!, light5_02!, light5_01!, light5_00!]
+        
+
+            light6Images = [light3_00!, light3_00!,light3_00!, light3_00!, light3_00!,light3_00!, light3_00!, light3_00!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_00!]
         
             let light_front_00 = UIImage(named: "front00")
             let light_frontRed_01 = UIImage(named: "frontRed01")
@@ -191,6 +198,13 @@ class FiretruckViewController: UIViewController {
         lightFiveViewAnimation.values = light5Images.map {$0.cgImage as AnyObject}
         lightFiveViewAnimation.duration = 1
         lightFiveViewAnimation.repeatCount = 1
+
+        let lightSixViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+        lightSixViewAnimation.calculationMode = kCAAnimationDiscrete
+        lightSixViewAnimation.values = light6Images.map {$0.cgImage as AnyObject}
+        lightSixViewAnimation.duration = 1
+        lightSixViewAnimation.repeatCount = 1
+        
         
         let lightFrontRedViewAnimation = CAKeyframeAnimation(keyPath: "contents")
         lightFrontRedViewAnimation.calculationMode = kCAAnimationDiscrete
@@ -239,6 +253,7 @@ class FiretruckViewController: UIViewController {
                         self.lightFrontRedView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.lightFrontRedView, duration: 0.7, animationDuration: self.animationDuration)
                         self.lightFrontWhiteView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.lightFrontWhiteView, duration: 0.7, animationDuration: self.animationDuration)
                         self.syrenRoofView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.syrenRoofView, duration: 0.7, animationDuration: self.animationDuration)
+                        self.light6View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light6View, duration: 0.7, animationDuration: self.animationDuration)
                         self.light5View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light5View, duration: 0.7, animationDuration: self.animationDuration)
                         self.light4View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light4View, duration: 0.7, animationDuration: self.animationDuration)
                         self.light3View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light3View, duration: 0.7, animationDuration: self.animationDuration)
@@ -247,7 +262,7 @@ class FiretruckViewController: UIViewController {
                         self.syrenView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.syrenView, duration: 0.7, animationDuration: self.animationDuration)
                         self.windowReflectionView.shake(values: [0, -1, 0, -1, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.windowReflectionView, duration: 0.7, animationDuration: self.animationDuration)
                      
-                        
+                        self.light6OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light6OffView, duration: 0.7, animationDuration: self.animationDuration)
                         self.light5OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light5OffView, duration: 0.7, animationDuration: self.animationDuration)
                         self.light4OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light4OffView, duration: 0.7, animationDuration: self.animationDuration)
                         self.light3OffView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light3OffView, duration: 0.7, animationDuration: self.animationDuration)
@@ -263,8 +278,8 @@ class FiretruckViewController: UIViewController {
                         
                         //Syren Shine1
                         let SyrenOneAnimation = CAAnimationGroup()
-                        SyrenOneAnimation.duration = 1.25
-                        SyrenOneAnimation.repeatCount = 8
+                        SyrenOneAnimation.duration = 1
+                        SyrenOneAnimation.repeatCount = 10
                         
                         SyrenOneAnimation.animations = [lightOneViewAnimation]
                         self.light1View.layer.add(SyrenOneAnimation, forKey: "contents")
@@ -296,6 +311,14 @@ class FiretruckViewController: UIViewController {
                         SyrenFiveAnimation.animations = [lightFiveViewAnimation]
                         self.light5View.layer.add(SyrenFiveAnimation, forKey: "contents")
                         
+                        //Syren Shine6
+                        let SyrenSixAnimation = CAAnimationGroup()
+                        SyrenSixAnimation.duration = 1
+                        SyrenSixAnimation.repeatCount = 10
+                        
+                        SyrenSixAnimation.animations = [lightSixViewAnimation]
+                        self.light6View.layer.add(SyrenSixAnimation, forKey: "contents")
+
                         //Syren Front Red
                         let SyrenFrontRedAnimation = CAAnimationGroup()
                         SyrenFrontRedAnimation.duration = 1

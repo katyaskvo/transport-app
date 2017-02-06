@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="9CD7D727-56CB-4917-A5A3-CE138EA27D2D" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="D9B607A2-8814-4603-8B3D-56CF8A6FB9B7" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -739,6 +739,14 @@
                                 <rect key="frame" x="766" y="224" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="lightThree00" translatesAutoresizingMaskIntoConstraints="NO" id="gIz-nW-Qfs">
+                                <rect key="frame" x="661" y="375" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SfZ-U9-wGh">
+                                <rect key="frame" x="661" y="375" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.63529411764705879" green="0.84313725490196079" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -761,6 +769,8 @@
                         <outlet property="light4View" destination="Kvi-Yv-mMX" id="puw-vz-xKy"/>
                         <outlet property="light5OffView" destination="304-u1-Qju" id="CN1-8g-1vX"/>
                         <outlet property="light5View" destination="Wue-vl-Uab" id="dzK-Sb-7CZ"/>
+                        <outlet property="light6OffView" destination="gIz-nW-Qfs" id="Woj-pC-WTE"/>
+                        <outlet property="light6View" destination="SfZ-U9-wGh" id="1C3-qV-sgO"/>
                         <outlet property="lightFrontRedView" destination="qpO-9P-ULg" id="acw-xf-RBn"/>
                         <outlet property="lightFrontWhiteView" destination="OY2-hT-B20" id="URX-I5-cvY"/>
                         <outlet property="reflectionBackWheelView" destination="V4V-n9-Lga" id="F3g-iV-4Lk"/>
@@ -849,7 +859,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="9CD7D727-56CB-4917-A5A3-CE138EA27D2D" width="32" height="17">
+        <image name="D9B607A2-8814-4603-8B3D-56CF8A6FB9B7" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGQkNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QDwcI
 ERYbHCUmJygwMzY8P1UkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dOU0Nv
@@ -1001,11 +1011,11 @@ AAAAAAAAAgEAAAAAAAAARgAAAAAAAAAAAAAAAAAAEyQ
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="31R-Pj-w8V"/>
-        <segue reference="v2T-s6-0b7"/>
-        <segue reference="jyw-zy-5b2"/>
+        <segue reference="0Vj-FM-jc3"/>
+        <segue reference="Mnz-ED-BsI"/>
+        <segue reference="vgW-N1-GXF"/>
         <segue reference="eAs-q5-aYq"/>
+        <segue reference="jyw-zy-5b2"/>
         <segue reference="iJd-I6-ByO"/>
-        <segue reference="q8u-3C-dbN"/>
-        <segue reference="nqZ-dB-v3P"/>
     </inferredMetricsTieBreakers>
 </document>
