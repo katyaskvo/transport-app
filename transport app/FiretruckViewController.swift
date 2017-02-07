@@ -27,6 +27,7 @@ class FiretruckViewController: UIViewController {
     @IBOutlet var lightFrontWhiteView: UIImageView!
     @IBOutlet var syrenView: UIImageView!
     @IBOutlet var syrenRoofView: UIImageView!
+    @IBOutlet var syrenRoof2View: UIImageView!
     
     @IBOutlet var ladderView: UIImageView!
     @IBOutlet var garpunView: UIImageView!
@@ -58,7 +59,9 @@ class FiretruckViewController: UIViewController {
     var animatedFrontWhite: UIImage!
     
     var lightRoofImages: [UIImage]!
-    var animatedLightRoof: UIImage!
+    var lightRoof2Images: [UIImage]!
+//    var animatedLightRoof: UIImage!
+//    var animatedLightRoof2: UIImage!
     
     
     var soundId : SystemSoundID = 0
@@ -137,14 +140,19 @@ class FiretruckViewController: UIViewController {
 
             let light_frontWhite_01 = UIImage(named: "frontWhite01")
             let light_frontWhite_02 = UIImage(named: "frontWhite02")
-            lightFrontWhite01Images = [light_front_00!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_02!]
-            lightFrontWhite02Images = [light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_02!]
+            let light_frontWhite_03 = UIImage(named: "frontWhite03")
+            lightFrontWhite01Images = [light_front_00!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_03!, light_frontWhite_02!, light_frontWhite_03!, light_frontWhite_02!, light_frontWhite_02!]
+            lightFrontWhite02Images = [light_frontWhite_03!, light_frontWhite_03!, light_frontWhite_02!, light_frontWhite_03!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_03!, light_frontWhite_02!, light_frontWhite_03!]
         
         
-            let lightRoof_00 = UIImage(named: "roofLight00")
+            let lightRoof_000 = UIImage(named: "roofLight000")
             let lightRoof_01 = UIImage(named: "roofLight01")
             let lightRoof_02 = UIImage(named: "roofLight02")
-            lightRoofImages = [lightRoof_00!, lightRoof_01!, lightRoof_02!, lightRoof_01!, lightRoof_02!, lightRoof_01!, lightRoof_02!, lightRoof_01!, lightRoof_00!]
+            lightRoofImages = [lightRoof_01!, lightRoof_02!, lightRoof_01!, lightRoof_000!, lightRoof_000!, lightRoof_000! ]
+
+            lightRoof2Images = [lightRoof_000!, lightRoof_000!, lightRoof_000!, lightRoof_01!, lightRoof_02!, lightRoof_01! ]
+        
+        
 
     }
     
@@ -221,15 +229,21 @@ class FiretruckViewController: UIViewController {
         let lightFrontWhiteView02Animation = CAKeyframeAnimation(keyPath: "contents")
         lightFrontWhiteView02Animation.calculationMode = kCAAnimationDiscrete
         lightFrontWhiteView02Animation.values = lightFrontWhite02Images.map {$0.cgImage as AnyObject}
-        lightFrontWhiteView02Animation.duration = 9
-        lightFrontWhiteView02Animation.repeatCount = 1
+        lightFrontWhiteView02Animation.duration = 0.5
+        lightFrontWhiteView02Animation.repeatCount = 20
 
         let lightRoofViewAnimation = CAKeyframeAnimation(keyPath: "contents")
         lightRoofViewAnimation.calculationMode = kCAAnimationDiscrete
         lightRoofViewAnimation.values = lightRoofImages.map {$0.cgImage as AnyObject}
-        lightRoofViewAnimation.duration = 0.5
+        lightRoofViewAnimation.duration = 0.4
         lightRoofViewAnimation.repeatCount = 1
-        
+
+        let lightRoof2ViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+        lightRoof2ViewAnimation.calculationMode = kCAAnimationDiscrete
+        lightRoof2ViewAnimation.values = lightRoof2Images.map {$0.cgImage as AnyObject}
+        lightRoof2ViewAnimation.duration = 0.4
+        lightRoof2ViewAnimation.repeatCount = 1
+
         
         UIView.animate(withDuration: 1,
                        delay: 0,
@@ -253,6 +267,7 @@ class FiretruckViewController: UIViewController {
                         self.lightFrontRedView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.lightFrontRedView, duration: 0.7, animationDuration: self.animationDuration)
                         self.lightFrontWhiteView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.lightFrontWhiteView, duration: 0.7, animationDuration: self.animationDuration)
                         self.syrenRoofView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.syrenRoofView, duration: 0.7, animationDuration: self.animationDuration)
+                        self.syrenRoof2View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.syrenRoof2View, duration: 0.7, animationDuration: self.animationDuration)
                         self.light6View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light6View, duration: 0.7, animationDuration: self.animationDuration)
                         self.light5View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light5View, duration: 0.7, animationDuration: self.animationDuration)
                         self.light4View.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.light4View, duration: 0.7, animationDuration: self.animationDuration)
@@ -329,8 +344,8 @@ class FiretruckViewController: UIViewController {
                         
                         //Syren Front White
                         let SyrenFrontWhiteAnimation = CAAnimationGroup()
-                        SyrenFrontWhiteAnimation.duration = 1
-                        SyrenFrontWhiteAnimation.repeatCount = 10
+                        SyrenFrontWhiteAnimation.duration = 10
+                        SyrenFrontWhiteAnimation.repeatCount = 1
                         
                         SyrenFrontWhiteAnimation.animations = [lightFrontWhiteView01Animation,lightFrontWhiteView02Animation]
                         self.lightFrontWhiteView.layer.add(SyrenFrontWhiteAnimation, forKey: "contents")
@@ -338,12 +353,18 @@ class FiretruckViewController: UIViewController {
                         
                         //Syren Roof
                         let SyrenRoofAnimation = CAAnimationGroup()
-                        SyrenRoofAnimation.duration = 1
-                        SyrenRoofAnimation.repeatCount = 10
+                        SyrenRoofAnimation.duration = 0.4
+                        SyrenRoofAnimation.repeatCount = 25
                         
                         SyrenRoofAnimation.animations = [lightRoofViewAnimation]
                         self.syrenRoofView.layer.add(SyrenRoofAnimation, forKey: "contents")
                         
+                        let SyrenRoof2Animation = CAAnimationGroup()
+                        SyrenRoof2Animation.duration = 0.4
+                        SyrenRoof2Animation.repeatCount = 25
+                        
+                        SyrenRoof2Animation.animations = [lightRoof2ViewAnimation]
+                        self.syrenRoof2View.layer.add(SyrenRoof2Animation, forKey: "contents")
                         
         }, completion: nil)
     }
