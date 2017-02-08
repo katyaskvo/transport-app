@@ -121,11 +121,7 @@
 		00AA0F6A1D36B115005BEF28 /* transport app */ = {
 			isa = PBXGroup;
 			children = (
-				0017B30A1E169100000E43E8 /* bikebell.mp3 */,
-				0017B3081E168FE7000E43E8 /* tractor.mp3 */,
-				0017B3021E168A5B000E43E8 /* helicopter.mp3 */,
-				0017B3041E168D73000E43E8 /* firetruck.mp3 */,
-				0017B3101E169611000E43E8 /* beetle.mp3 */,
+				00BD286A1E4AD4C200CD132B /* sounds */,
 				00AA0F6B1D36B115005BEF28 /* AppDelegate.swift */,
 				00AA0F6F1D36B115005BEF28 /* BicycleViewController.swift */,
 				4B2831551D382A0200377A83 /* TractorViewController.swift */,
@@ -159,6 +155,18 @@
 				00AA0F911D36B115005BEF28 /* Info.plist */,
 			);
 			path = "transport appUITests";
+			sourceTree = "<group>";
+		};
+		00BD286A1E4AD4C200CD132B /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0017B30A1E169100000E43E8 /* bikebell.mp3 */,
+				0017B3081E168FE7000E43E8 /* tractor.mp3 */,
+				0017B3021E168A5B000E43E8 /* helicopter.mp3 */,
+				0017B3041E168D73000E43E8 /* firetruck.mp3 */,
+				0017B3101E169611000E43E8 /* beetle.mp3 */,
+			);
+			name = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
