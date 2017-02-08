@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="319A5205-1058-4752-8D6D-3B5A8C6A25E1" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="7AA2EA14-81A1-40A7-B25E-BA53E5743E7A" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -245,6 +245,10 @@
                                     <action selector="startAnimation" destination="FDj-u8-mBC" eventType="touchUpInside" id="kx4-ky-RHi"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mh1-Vl-WKJ">
+                                <rect key="frame" x="136" y="465" width="33" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97647058823529409" green="0.92941176470588238" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -260,6 +264,7 @@
                         <outlet property="road1View" destination="Got-qC-eoU" id="wSV-L9-hwX"/>
                         <outlet property="road2View" destination="LfN-ep-RRP" id="Vdn-tU-Me5"/>
                         <outlet property="roadBoxView" destination="3ur-LE-UJf" id="yCN-IO-hZQ"/>
+                        <outlet property="steamView" destination="Mh1-Vl-WKJ" id="PB8-Tm-qhY"/>
                         <outlet property="windowReflectionView" destination="g9Y-AB-jV1" id="GUP-Bx-ZJU"/>
                     </connections>
                 </viewController>
@@ -874,7 +879,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="319A5205-1058-4752-8D6D-3B5A8C6A25E1" width="32" height="17">
+        <image name="7AA2EA14-81A1-40A7-B25E-BA53E5743E7A" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGQkNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QDwcI
 ERYbHCUmJygwMzY8P1UkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dOU0Nv
@@ -1027,10 +1032,10 @@ AAAAAAAAAgEAAAAAAAAARgAAAAAAAAAAAAAAAAAAEyQ
     <inferredMetricsTieBreakers>
         <segue reference="iJd-I6-ByO"/>
         <segue reference="eAs-q5-aYq"/>
-        <segue reference="jyw-zy-5b2"/>
-        <segue reference="di2-K5-DPJ"/>
+        <segue reference="nYK-5n-H5w"/>
         <segue reference="0Vj-FM-jc3"/>
         <segue reference="31R-Pj-w8V"/>
         <segue reference="vgW-N1-GXF"/>
+        <segue reference="NWe-BV-uvs"/>
     </inferredMetricsTieBreakers>
 </document>
