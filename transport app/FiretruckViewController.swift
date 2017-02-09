@@ -141,11 +141,11 @@ class FiretruckViewController: UIViewController {
             lightFrontRedImages = [light_front_00!, light_front_00!,light_front_00!,light_front_00!,light_front_00!,light_front_00!,light_front_00!,light_front_00!, light_frontRed_01!, light_frontRed_02!, light_frontRed_01!, light_frontRed_02!, light_frontRed_01!, light_frontRed_02!, light_frontRed_01!, light_front_00!]
         
 
-            let light_frontWhite_01 = UIImage(named: "frontWhite01")
-            let light_frontWhite_02 = UIImage(named: "frontWhite02")
-            let light_frontWhite_03 = UIImage(named: "frontWhite03")
-            lightFrontWhite01Images = [light_front_00!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_03!, light_frontWhite_02!, light_frontWhite_03!, light_frontWhite_02!, light_frontWhite_02!]
-            lightFrontWhite02Images = [light_frontWhite_03!, light_frontWhite_03!, light_frontWhite_02!, light_frontWhite_03!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_03!, light_frontWhite_02!, light_frontWhite_03!]
+            let light_frontWhite_01 = UIImage(named: "headlights01")
+            let light_frontWhite_02 = UIImage(named: "headlights02")
+//            let light_frontWhite_03 = UIImage(named: "headlights02")
+            lightFrontWhite01Images = [light_front_00!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!]
+            lightFrontWhite02Images = [light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_02!]
         
             let light_orange_01 = UIImage(named: "lightOrange01")
             let light_orange_02 = UIImage(named: "lightOrange02")
