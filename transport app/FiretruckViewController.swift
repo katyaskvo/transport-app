@@ -143,7 +143,6 @@ class FiretruckViewController: UIViewController {
 
             let light_frontWhite_01 = UIImage(named: "headlights01")
             let light_frontWhite_02 = UIImage(named: "headlights02")
-//            let light_frontWhite_03 = UIImage(named: "headlights02")
             lightFrontWhite01Images = [light_front_00!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!]
             lightFrontWhite02Images = [light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_02!]
         

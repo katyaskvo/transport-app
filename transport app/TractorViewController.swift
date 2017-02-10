@@ -7,6 +7,10 @@ class TractorViewController: UIViewController {
     @IBOutlet var smallWheelView: UIImageView!
     @IBOutlet var cloud1View: UIImageView!
     @IBOutlet var cloud2View: UIImageView!
+    @IBOutlet var cloud3View: UIImageView!
+    @IBOutlet var cloud4View: UIImageView!
+    @IBOutlet var cloud5View: UIImageView!
+    @IBOutlet var cloud6View: UIImageView!
     @IBOutlet var reflectionBackWheelView: UIImageView!
     @IBOutlet var reflectionFrontWheelView: UIImageView!
     @IBOutlet var tractorBodyView: UIImageView!
@@ -67,43 +71,82 @@ class TractorViewController: UIViewController {
         cloud1View.alpha = 1
         cloud2View.transform = CGAffineTransform.identity
         cloud2View.alpha = 1
+        cloud3View.transform = CGAffineTransform.identity
+        cloud3View.alpha = 1
+        cloud4View.transform = CGAffineTransform.identity
+        cloud4View.alpha = 1
+        cloud5View.transform = CGAffineTransform.identity
+        cloud5View.alpha = 1
+        cloud6View.transform = CGAffineTransform.identity
+        cloud6View.alpha = 1
 
         
         let cloud = cloud1View
         let cloud2 = cloud2View
+        let cloud3 = cloud3View
+        let cloud4 = cloud4View
+        let cloud5 = cloud5View
+        let cloud6 = cloud6View
+        let cloudAnimationDuration = 3.33
+        
 
         let cloudPath = UIBezierPath()
         cloudPath.move(to: CGPoint(x: 583,y: 255))
         cloudPath.addCurve(to: CGPoint(x: 400, y: -0), controlPoint1: CGPoint(x: 650, y: 260), controlPoint2: CGPoint(x: 700, y: 0))
         
         let cloudScaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
-        cloudScaleAnimation.duration = 3.33
+        cloudScaleAnimation.duration = cloudAnimationDuration
         cloudScaleAnimation.repeatCount = Float.infinity
         cloudScaleAnimation.keyTimes = [0, 0.1, 0.2, 0.3, 0.4, 1]
         cloudScaleAnimation.values = [0, 3, 6, 9, 12, 14]
         
+        
         let cloudTransparencyAnimation = CAKeyframeAnimation(keyPath: "opacity")
-        cloudTransparencyAnimation.duration = 3.33
+        cloudTransparencyAnimation.duration = cloudAnimationDuration
         cloudTransparencyAnimation.repeatCount = Float.infinity
         cloudTransparencyAnimation.keyTimes = [0, 0.3, 1]
-        cloudTransparencyAnimation.values = [1, 1, 0]
+        cloudTransparencyAnimation.values = [1, 0.5, 0]
 
         let cloudPathAnimation = CAKeyframeAnimation(keyPath: "position")
         cloudPathAnimation.calculationMode = kCAAnimationPaced
         cloudPathAnimation.path = cloudPath.cgPath
         cloudPathAnimation.repeatCount = Float.infinity
-        cloudPathAnimation.duration = 3.33
+        cloudPathAnimation.duration = cloudAnimationDuration
         
         let cloudAnimation = CAAnimationGroup()
-        cloudAnimation.duration = 3.33
+        cloudAnimation.duration = cloudAnimationDuration
         cloudAnimation.repeatCount = 3
         cloudAnimation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloudPathAnimation]
         
         let cloud2Animation = CAAnimationGroup()
-        cloud2Animation.duration = 3.33
+        cloud2Animation.duration = cloudAnimationDuration
         cloud2Animation.repeatCount = 3
-        cloud2Animation.beginTime = CACurrentMediaTime()+0.7
+        cloud2Animation.beginTime = CACurrentMediaTime()+0.4
         cloud2Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloudPathAnimation]
+        
+        let cloud3Animation = CAAnimationGroup()
+        cloud3Animation.duration = cloudAnimationDuration
+        cloud3Animation.repeatCount = 3
+        cloud3Animation.beginTime = CACurrentMediaTime()+1.0
+        cloud3Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloudPathAnimation]
+        
+        let cloud4Animation = CAAnimationGroup()
+        cloud4Animation.duration = cloudAnimationDuration
+        cloud4Animation.repeatCount = 3
+        cloud4Animation.beginTime = CACurrentMediaTime()+1.4
+        cloud4Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloudPathAnimation]
+        
+        let cloud5Animation = CAAnimationGroup()
+        cloud5Animation.duration = cloudAnimationDuration
+        cloud5Animation.repeatCount = 3
+        cloud5Animation.beginTime = CACurrentMediaTime()+2.1
+        cloud5Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloudPathAnimation]
+        
+        let cloud6Animation = CAAnimationGroup()
+        cloud6Animation.duration = cloudAnimationDuration
+        cloud6Animation.repeatCount = 3
+        cloud6Animation.beginTime = CACurrentMediaTime()+2.6
+        cloud6Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloudPathAnimation]
         
 
         UIView.animate(withDuration: 4,
@@ -114,6 +157,10 @@ class TractorViewController: UIViewController {
         //Clouds
                         cloud?.layer.add(cloudAnimation, forKey: "animate cloud position")
                         cloud2?.layer.add(cloud2Animation, forKey: "animate cloud position")
+                        cloud3?.layer.add(cloud3Animation, forKey: "animate cloud position")
+                        cloud4?.layer.add(cloud4Animation, forKey: "animate cloud position")
+                        cloud5?.layer.add(cloud5Animation, forKey: "animate cloud position")
+                        cloud6?.layer.add(cloud6Animation, forKey: "animate cloud position")
                         
         //Shake
                         self.tractorBodyView.shake(values: [1, -2, 1, -2, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.tractorBodyView, duration: 0.75, animationDuration: self.animationDuration)
