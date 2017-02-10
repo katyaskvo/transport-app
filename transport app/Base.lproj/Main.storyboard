@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="F8A266CE-598E-4BDD-8044-BCAFA16F301F" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="1560F9B8-0D73-496E-B7D4-FE81B1DD7361" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -422,11 +422,11 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="xSO-P8-PY9">
-                                <rect key="frame" x="585" y="253" width="5" height="4"/>
+                                <rect key="frame" x="585" y="253" width="6" height="5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="8SU-7e-O40">
-                                <rect key="frame" x="585" y="253" width="5" height="4"/>
+                                <rect key="frame" x="585" y="253" width="4" height="3"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud" translatesAutoresizingMaskIntoConstraints="NO" id="M9k-0a-ywD">
@@ -434,11 +434,11 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="JDT-OM-HPL">
-                                <rect key="frame" x="585" y="253" width="5" height="4"/>
+                                <rect key="frame" x="585" y="253" width="6" height="5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="1fZ-tw-kVG">
-                                <rect key="frame" x="585" y="253" width="5" height="4"/>
+                                <rect key="frame" x="585" y="253" width="4" height="4"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="truba" translatesAutoresizingMaskIntoConstraints="NO" id="xK9-ra-E2w">
@@ -914,7 +914,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="F8A266CE-598E-4BDD-8044-BCAFA16F301F" width="32" height="17">
+        <image name="1560F9B8-0D73-496E-B7D4-FE81B1DD7361" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGQkNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QDwcI
 ERYbHCUmJygwMzY8P1UkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dOU0Nv
@@ -1066,12 +1066,12 @@ AAAAAAAAAgEAAAAAAAAARgAAAAAAAAAAAAAAAAAAEyQ
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nYK-5n-H5w"/>
-        <segue reference="0Vj-FM-jc3"/>
-        <segue reference="31R-Pj-w8V"/>
-        <segue reference="vgW-N1-GXF"/>
-        <segue reference="NWe-BV-uvs"/>
-        <segue reference="iJd-I6-ByO"/>
+        <segue reference="jyw-zy-5b2"/>
         <segue reference="VjF-JU-9aB"/>
+        <segue reference="iJd-I6-ByO"/>
+        <segue reference="di2-K5-DPJ"/>
+        <segue reference="31R-Pj-w8V"/>
+        <segue reference="0Vj-FM-jc3"/>
+        <segue reference="vgW-N1-GXF"/>
     </inferredMetricsTieBreakers>
 </document>
