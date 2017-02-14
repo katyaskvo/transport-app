@@ -68,12 +68,6 @@ class BeetleViewController: UIViewController {
         headlightsAnimation.duration = 0.5
         headlightsAnimation.repeatCount = 20
 
-//        let steamAnimation = CAKeyframeAnimation(keyPath: "contents")
-//        steamAnimation.calculationMode = kCAAnimationDiscrete
-//        steamAnimation.values = steamImages.map {$0.cgImage as AnyObject}
-//        steamAnimation.duration = 0.8
-//        steamAnimation.repeatCount = 12.5
-        
         let cloud = cloud1View
         let cloud2 = cloud2View
         let cloud3 = cloud3View
@@ -146,7 +140,6 @@ class BeetleViewController: UIViewController {
                         self.backWheelReflectionView.shake(values: [0, 1, 0, 1.5, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.backWheelReflectionView, duration: 0.75, animationDuration: self.animationDuration)
                         self.frontWheelView.shake(values: [0, 1.5, 0, 1, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.frontWheelView, duration: 0.75, animationDuration: self.animationDuration)
                         self.frontWheelReflectionView.shake(values: [0, 1.5, 0, 1, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.frontWheelReflectionView, duration: 0.75, animationDuration: self.animationDuration)
-//                        self.steamView.shake(values: [0.75, -0.75, 0.75, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.steamView, duration: 0.75, animationDuration: self.animationDuration)
                         
                         
                         //Wheels
@@ -160,11 +153,12 @@ class BeetleViewController: UIViewController {
                         
                         //Steam Animation
 //                
-//                        self.steamView.layer.add(steamAnimation, forKey: "contents")
                         cloud?.layer.add(cloudAnimation, forKey: "animate cloud position")
                         cloud2?.layer.add(cloud2Animation, forKey: "animate cloud position")
                         cloud3?.layer.add(cloud3Animation, forKey: "animate cloud position")
                         cloud4?.layer.add(cloud4Animation, forKey: "animate cloud position")
+                        
+                        self.pipeView.stretchX(animatedImageView: self.pipeView, values: [1, 1.07, 1, 1.07, 1], keytimes: [0, 0.25, 0.5, 0.75, 1], duration: 0.7, animationDuration: self.animationDuration)
 
                         
                         //Road

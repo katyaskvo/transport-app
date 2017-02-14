@@ -85,6 +85,22 @@ extension UIView {
         })
     }
     
+    func stretchX(animatedImageView: UIImageView, values: [Double], keytimes: [NSNumber], duration: CFTimeInterval, animationDuration: CFTimeInterval) {
+        let pipeStretchAnimation = CAKeyframeAnimation()
+        let repeatCount = Float(animationDuration / duration)
+        UIView.animate(withDuration: duration, delay: 0.0, animations: {
+            pipeStretchAnimation.keyPath = "transform.scale.x"
+            pipeStretchAnimation.values = values
+            pipeStretchAnimation.keyTimes = keytimes
+            pipeStretchAnimation.duration = duration
+            pipeStretchAnimation.repeatCount = repeatCount
+            
+            animatedImageView.layer.add(pipeStretchAnimation, forKey: "move")
+            
+        }, completion: nil)
+    }
+
+    
 }
 extension UIViewKeyframeAnimationOptions {
     
