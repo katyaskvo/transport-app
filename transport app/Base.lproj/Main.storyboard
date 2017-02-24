@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="7CEB4454-67DB-4834-BC54-379CABD6FEE7" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="837F7803-4972-474D-98DC-633102AA1F4F" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -904,8 +904,16 @@
                                     <action selector="startAnimation" destination="4se-pa-4cI" eventType="touchUpInside" id="vWc-25-3vs"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_body" translatesAutoresizingMaskIntoConstraints="NO" id="1f2-V5-Wma">
+                                <rect key="frame" x="358" y="232" width="338" height="265"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_back_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Mc0-47-Hlp">
                                 <rect key="frame" x="226" y="366" width="173" height="173"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_part3" translatesAutoresizingMaskIntoConstraints="NO" id="sFL-n5-Iud">
+                                <rect key="frame" x="336" y="450" width="119" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_back_wheel_disc" translatesAutoresizingMaskIntoConstraints="NO" id="VyQ-nk-Jq4">
@@ -940,24 +948,32 @@
                                 <rect key="frame" x="270" y="402" width="169" height="23"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_part3" translatesAutoresizingMaskIntoConstraints="NO" id="sFL-n5-Iud">
-                                <rect key="frame" x="336" y="450" width="119" height="48"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_new_pipes2" translatesAutoresizingMaskIntoConstraints="NO" id="iSj-eB-JQo">
-                                <rect key="frame" x="237" y="390" width="377" height="121"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_front_fender" translatesAutoresizingMaskIntoConstraints="NO" id="cVI-rY-Uug">
-                                <rect key="frame" x="618" y="269" width="146" height="190"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_back_fender" translatesAutoresizingMaskIntoConstraints="NO" id="dlr-u9-9dV">
                                 <rect key="frame" x="210" y="344" width="164" height="71"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_spring" translatesAutoresizingMaskIntoConstraints="NO" id="dhM-2n-7aH">
                                 <rect key="frame" x="310" y="379" width="45" height="68"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_pedal" translatesAutoresizingMaskIntoConstraints="NO" id="q7Z-DP-0H2">
+                                <rect key="frame" x="456" y="363" width="127" height="123"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_new_pipes2" translatesAutoresizingMaskIntoConstraints="NO" id="iSj-eB-JQo">
+                                <rect key="frame" x="237" y="390" width="377" height="121"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_front_fender" translatesAutoresizingMaskIntoConstraints="NO" id="B4Q-hj-WXP">
+                                <rect key="frame" x="627" y="355" width="137" height="104"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_mirrow" translatesAutoresizingMaskIntoConstraints="NO" id="JDR-qx-Jxp">
+                                <rect key="frame" x="589" y="198" width="18" height="41"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_seat" translatesAutoresizingMaskIntoConstraints="NO" id="ONg-0w-TSu">
+                                <rect key="frame" x="368" y="369" width="91" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
@@ -970,7 +986,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="7CEB4454-67DB-4834-BC54-379CABD6FEE7" width="32" height="17">
+        <image name="837F7803-4972-474D-98DC-633102AA1F4F" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGU1RYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
 ERYbHCgpKi41OT1CRUhNUFUkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dO
@@ -1107,14 +1123,18 @@ AAAAAAAAAAAAAAAAAAATpg
         <image name="motorcycle_back_fender" width="164" height="71"/>
         <image name="motorcycle_back_wheel" width="173" height="173"/>
         <image name="motorcycle_back_wheel_disc" width="98" height="103"/>
+        <image name="motorcycle_body" width="338" height="265"/>
         <image name="motorcycle_engine_left" width="69" height="82"/>
         <image name="motorcycle_engine_right" width="71" height="81"/>
-        <image name="motorcycle_front_fender" width="146" height="190"/>
+        <image name="motorcycle_front_fender" width="137" height="104"/>
         <image name="motorcycle_front_wheel" width="173" height="173"/>
+        <image name="motorcycle_mirrow" width="18" height="41"/>
         <image name="motorcycle_new_pipes2" width="377" height="121"/>
         <image name="motorcycle_part1" width="122" height="15"/>
         <image name="motorcycle_part2" width="169" height="23"/>
         <image name="motorcycle_part3" width="119" height="48"/>
+        <image name="motorcycle_pedal" width="127" height="123"/>
+        <image name="motorcycle_seat" width="91" height="50"/>
         <image name="motorcycle_spring" width="45" height="68"/>
         <image name="motorcycle_wheel_reflection" width="151" height="153"/>
         <image name="navigation_board2" width="1024" height="768"/>
