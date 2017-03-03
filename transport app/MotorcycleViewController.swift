@@ -79,8 +79,8 @@ class MotorcycleViewController: UIViewController {
         
         
         let cloudPath = UIBezierPath()
-        cloudPath.move(to: CGPoint(x: 182,y: 477))
-        cloudPath.addCurve(to: CGPoint(x: 50, y: 420), controlPoint1: CGPoint(x: 100, y: 477), controlPoint2: CGPoint(x: 50, y: 420))
+        cloudPath.move(to: CGPoint(x: 245,y: 474))
+        cloudPath.addCurve(to: CGPoint(x: 120, y: 420), controlPoint1: CGPoint(x: 190, y: 474), controlPoint2: CGPoint(x: 120, y: 420))
         
         let cloudScaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
         cloudScaleAnimation.duration = cloudAnimationDuration

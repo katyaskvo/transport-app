@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="014A30DA-08FA-42BF-A9AF-7A25AAAB4305" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="AFA1A862-DF5D-45F5-9FE3-773BAB1E4D2F" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -973,20 +973,20 @@
                                 <rect key="frame" x="368" y="369" width="91" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="small_cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Yd9-sV-Zm7">
-                                <rect key="frame" x="226" y="450" width="64" height="48"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Yd9-sV-Zm7">
+                                <rect key="frame" x="245" y="474" width="4" height="3"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="0C4-oJ-d1c">
-                                <rect key="frame" x="241" y="468" width="44" height="29"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="0C4-oJ-d1c">
+                                <rect key="frame" x="245" y="474" width="4" height="3"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="ByM-5L-mav">
-                                <rect key="frame" x="247" y="466" width="37" height="26"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="ByM-5L-mav">
+                                <rect key="frame" x="245" y="474" width="5" height="4"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="gZq-a1-rDR">
-                                <rect key="frame" x="247" y="466" width="37" height="26"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="gZq-a1-rDR">
+                                <rect key="frame" x="245" y="474" width="3" height="2"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-T4-kYP">
@@ -1029,7 +1029,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="014A30DA-08FA-42BF-A9AF-7A25AAAB4305" width="32" height="17">
+        <image name="AFA1A862-DF5D-45F5-9FE3-773BAB1E4D2F" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTE1YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ERYbHCgpKi41Njs+QUZJVSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05T
