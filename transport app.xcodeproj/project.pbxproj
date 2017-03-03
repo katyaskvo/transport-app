@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0005A9D81E6010890027EC73 /* MotorcycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0005A9D71E6010890027EC73 /* MotorcycleViewController.swift */; };
+		0005A9DA1E6013850027EC73 /* motorcycle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0005A9D91E6013850027EC73 /* motorcycle.mp3 */; };
 		0020AD101E13D1160080F514 /* BeetleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020AD0F1E13D1160080F514 /* BeetleViewController.swift */; };
 		002C0C791DD329360005AA2C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002C0C781DD329360005AA2C /* UIViewExtensions.swift */; };
 		0039A6E11E52D7F30084F4C5 /* beetle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0039A6E01E52D7F30084F4C5 /* beetle.mp3 */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0005A9D71E6010890027EC73 /* MotorcycleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorcycleViewController.swift; sourceTree = "<group>"; };
+		0005A9D91E6013850027EC73 /* motorcycle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = motorcycle.mp3; sourceTree = "<group>"; };
 		0020AD0F1E13D1160080F514 /* BeetleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeetleViewController.swift; sourceTree = "<group>"; };
 		002C0C781DD329360005AA2C /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		0039A6E01E52D7F30084F4C5 /* beetle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beetle.mp3; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				00AA0F781D36B115005BEF28 /* LaunchScreen.storyboard */,
 				00AA0F7B1D36B115005BEF28 /* Info.plist */,
 				002C0C781DD329360005AA2C /* UIViewExtensions.swift */,
+				0005A9D71E6010890027EC73 /* MotorcycleViewController.swift */,
 			);
 			path = "transport app";
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 		00BD286A1E4AD4C200CD132B /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				0005A9D91E6013850027EC73 /* motorcycle.mp3 */,
 				0039A6E81E544BD30084F4C5 /* tractor.mp3 */,
 				0039A6E61E544BB00084F4C5 /* helicopter.mp3 */,
 				0039A6E21E52D84D0084F4C5 /* bikebell.mp3 */,
@@ -284,6 +290,7 @@
 				0039A6E71E544BB00084F4C5 /* helicopter.mp3 in Resources */,
 				0039A6E11E52D7F30084F4C5 /* beetle.mp3 in Resources */,
 				0039A6E41E52D84D0084F4C5 /* bikebell.mp3 in Resources */,
+				0005A9DA1E6013850027EC73 /* motorcycle.mp3 in Resources */,
 				00AA0F751D36B115005BEF28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +325,7 @@
 				0020AD101E13D1160080F514 /* BeetleViewController.swift in Sources */,
 				4B2831561D382A0200377A83 /* TractorViewController.swift in Sources */,
 				00AA0F6C1D36B115005BEF28 /* AppDelegate.swift in Sources */,
+				0005A9D81E6010890027EC73 /* MotorcycleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

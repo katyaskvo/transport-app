@@ -43,7 +43,21 @@ extension UIView {
             animatedImageView.layer.add(shakeAnimation, forKey: "shake")
         }, completion: nil)
     }
-
+    
+    func shakeX( values: [Double], keyTimes: [NSNumber
+        ], animatedImageView: UIImageView, duration: CFTimeInterval, animationDuration: CFTimeInterval) {
+        let repeatCount = Float(animationDuration / duration)
+        
+        let shakeAnimation = CAKeyframeAnimation(keyPath: "transform.translation.x")
+        UIView.animate(withDuration: duration, delay: 0.0, animations: {
+            shakeAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+            shakeAnimation.duration = duration
+            shakeAnimation.values = values
+            shakeAnimation.keyTimes = keyTimes
+            shakeAnimation.repeatCount = repeatCount
+            animatedImageView.layer.add(shakeAnimation, forKey: "shake")
+        }, completion: nil)
+    }
     
     func moveTheRoad(road1View: UIImageView, road2View: UIImageView, duration: CFTimeInterval, animationDuration: CFTimeInterval) {
         let animationOptions = UIViewAnimationOptions.curveLinear
