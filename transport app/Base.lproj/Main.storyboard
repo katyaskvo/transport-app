@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="A4A0B6EF-3B58-4B17-B40E-04D6CF91F07F" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4ADDEB82-A245-4792-8540-A5D0DFB8DBAF" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -901,6 +901,10 @@
                                     <action selector="startAnimation" destination="4se-pa-4cI" eventType="touchUpInside" id="vWc-25-3vs"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-T4-kYP">
+                                <rect key="frame" x="664" y="238" width="215" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_body" translatesAutoresizingMaskIntoConstraints="NO" id="1f2-V5-Wma">
                                 <rect key="frame" x="358" y="232" width="338" height="265"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -917,7 +921,7 @@
                                 <rect key="frame" x="270" y="395" width="98" height="103"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_engine_left" translatesAutoresizingMaskIntoConstraints="NO" id="JAV-QO-WjU">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="motorcycle_engine_left" translatesAutoresizingMaskIntoConstraints="NO" id="JAV-QO-WjU">
                                 <rect key="frame" x="469" y="342" width="69" height="82"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -973,10 +977,6 @@
                                 <rect key="frame" x="368" y="369" width="91" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-T4-kYP">
-                                <rect key="frame" x="664" y="236" width="257" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Yd9-sV-Zm7">
                                 <rect key="frame" x="245" y="474" width="4" height="3"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -1021,8 +1021,11 @@
                         <color key="backgroundColor" red="0.63921568627450975" green="0.46274509803921571" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="backFenderView" destination="dlr-u9-9dV" id="bPB-GM-7Xs"/>
                         <outlet property="backWheelReflectionView" destination="dwq-D6-Fzh" id="Qmm-3k-uUR"/>
                         <outlet property="backWheelView" destination="Mc0-47-Hlp" id="bOC-hX-a7a"/>
+                        <outlet property="bodyPedalView" destination="q7Z-DP-0H2" id="e52-iV-Dbg"/>
+                        <outlet property="bodySeatView" destination="ONg-0w-TSu" id="T1a-DT-cby"/>
                         <outlet property="bodyView" destination="1f2-V5-Wma" id="4sp-a8-m5P"/>
                         <outlet property="buttonPlay" destination="Bpm-Pd-ApK" id="ZLN-wN-PIC"/>
                         <outlet property="cloud1View" destination="Yd9-sV-Zm7" id="CFv-w3-6O5"/>
@@ -1033,9 +1036,13 @@
                         <outlet property="cloud6View" destination="EpG-Bk-xha" id="LaL-Gf-ygN"/>
                         <outlet property="cloud7View" destination="Fqu-mz-sGg" id="te8-EP-FYA"/>
                         <outlet property="cloud8View" destination="UbT-r1-5QW" id="k1B-Ph-XXW"/>
+                        <outlet property="engineLeftView" destination="JAV-QO-WjU" id="fD1-nk-76i"/>
+                        <outlet property="engineRightView" destination="GJh-1n-xVR" id="nM4-WP-60q"/>
                         <outlet property="frontWheelReflectionView" destination="gsf-yB-9KQ" id="TfC-qc-sgw"/>
                         <outlet property="frontWheelView" destination="VVb-yE-Evd" id="pqz-fm-6Ll"/>
                         <outlet property="headlightsView" destination="ewC-T4-kYP" id="3gy-h2-foW"/>
+                        <outlet property="mainPipesView" destination="iSj-eB-JQo" id="AdA-dz-57U"/>
+                        <outlet property="mirrorView" destination="JDR-qx-Jxp" id="yEf-6P-amq"/>
                         <outlet property="pipe2View" destination="hlR-1g-c39" id="dEQ-4M-07F"/>
                         <outlet property="pipeView" destination="xnw-U4-mqy" id="djS-sH-0dB"/>
                         <outlet property="road1View" destination="Bzr-uu-5Ms" id="mwR-Ew-C4k"/>
@@ -1049,7 +1056,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="A4A0B6EF-3B58-4B17-B40E-04D6CF91F07F" width="32" height="17">
+        <image name="4ADDEB82-A245-4792-8540-A5D0DFB8DBAF" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTE1YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ERYbHCgpKi41Njs+QUZJVSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05T

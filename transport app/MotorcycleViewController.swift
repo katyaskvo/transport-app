@@ -8,6 +8,13 @@ class MotorcycleViewController: UIViewController {
     
     @IBOutlet var buttonPlay: UIButton!
     @IBOutlet var bodyView: UIImageView!
+    @IBOutlet var bodySeatView: UIImageView!
+    @IBOutlet var bodyPedalView: UIImageView!
+    @IBOutlet var mainPipesView: UIImageView!
+    @IBOutlet var engineRightView: UIImageView!
+    @IBOutlet var engineLeftView: UIImageView!
+    @IBOutlet var mirrorView: UIImageView!
+    @IBOutlet var backFenderView: UIImageView!
     @IBOutlet var backWheelView: UIImageView!
     @IBOutlet var backWheelReflectionView: UIImageView!
     @IBOutlet var frontWheelView: UIImageView!
@@ -54,8 +61,8 @@ class MotorcycleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let headlights_01 = UIImage(named: "headlights01")
-        let headlights_02 = UIImage(named: "headlights02")
+        let headlights_01 = UIImage(named: "motorcycle_headlights01")
+        let headlights_02 = UIImage(named: "motorcycle_headlights02")
         headlightsImages = [headlights_01!, headlights_02!, headlights_02!, headlights_01!, headlights_02!, headlights_01!, headlights_02!, headlights_01!, headlights_01!]
         
     }
@@ -169,7 +176,18 @@ class MotorcycleViewController: UIViewController {
                        animations: {
                         
                         //Shake
-                        self.bodyView.shake(values: [0.75, -0.75, 0.75, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.bodyView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.bodyView.shake(values: [0.75, -0.75, 1.5, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.bodyView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.bodySeatView.shake(values: [0.75, -0.75, 1.5, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.bodySeatView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.bodyPedalView.shake(values: [0.75, -0.75, 1.5, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.bodyPedalView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.engineLeftView.shake(values: [0.75, -0.75, 1.5, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.engineLeftView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.engineRightView.shake(values: [0.75, -0.75, 1.5, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.engineRightView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.mainPipesView.shake(values: [0.75, -0.75, 1.5, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.mainPipesView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.pipeView.shake(values: [0.75, -0.75, 1.5, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.pipeView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.pipe2View.shake(values: [0.75, -0.75, 1.5, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.pipe2View, duration: 0.75, animationDuration: self.animationDuration)
+                        self.mirrorView.shake(values: [0.75, -0.75, 1.5, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.mirrorView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.backFenderView.shake(values: [0.75, -0.75, 1.5, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.backFenderView, duration: 0.75, animationDuration: self.animationDuration)
+
+                        
                         self.headlightsView.shake(values: [0.75, -0.75, 0.75, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.headlightsView, duration: 0.75, animationDuration: self.animationDuration)
                         self.pipeView.shake(values: [0.5, -0.5, 0.5, -0.5, 0.5], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.pipeView, duration: 0.75, animationDuration: self.animationDuration)
                         self.backWheelView.shake(values: [0, 1, 0, 1.5, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.backWheelView, duration: 0.75, animationDuration: self.animationDuration)
