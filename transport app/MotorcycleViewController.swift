@@ -18,10 +18,16 @@ class MotorcycleViewController: UIViewController {
     @IBOutlet var roadBoxView: UIView!
     @IBOutlet var road1View: UIImageView!
     @IBOutlet var road2View: UIImageView!
+    
+    
     @IBOutlet var cloud1View: UIImageView!
     @IBOutlet var cloud2View: UIImageView!
     @IBOutlet var cloud3View: UIImageView!
     @IBOutlet var cloud4View: UIImageView!
+    @IBOutlet var cloud5View: UIImageView!
+    @IBOutlet var cloud6View: UIImageView!
+    @IBOutlet var cloud7View: UIImageView!
+    @IBOutlet var cloud8View: UIImageView!
     
     let animationDuration = CFTimeInterval(10.0)
     
@@ -52,11 +58,6 @@ class MotorcycleViewController: UIViewController {
         let headlights_02 = UIImage(named: "headlights02")
         headlightsImages = [headlights_01!, headlights_02!, headlights_02!, headlights_01!, headlights_02!, headlights_01!, headlights_02!, headlights_01!, headlights_01!]
         
-        let steamCloud_01 = UIImage(named: "steamCloud01")
-        let steamCloud_02 = UIImage(named: "steamCloud02")
-        steamImages = [steamCloud_01!, steamCloud_02!, steamCloud_01!, steamCloud_02!, steamCloud_01!, steamCloud_02!, steamCloud_01!, steamCloud_02!, steamCloud_01!]
-        
-        
     }
     
     @IBAction func startAnimation() {
@@ -74,6 +75,10 @@ class MotorcycleViewController: UIViewController {
         let cloud2 = cloud2View
         let cloud3 = cloud3View
         let cloud4 = cloud4View
+        let cloud5 = cloud5View
+        let cloud6 = cloud6View
+        let cloud7 = cloud7View
+        let cloud8 = cloud8View
         let cloudAnimationDuration = 2.0
         let cloudAnimationRepeatCount = 5
         
@@ -81,6 +86,10 @@ class MotorcycleViewController: UIViewController {
         let cloudPath = UIBezierPath()
         cloudPath.move(to: CGPoint(x: 245,y: 474))
         cloudPath.addCurve(to: CGPoint(x: 120, y: 420), controlPoint1: CGPoint(x: 190, y: 474), controlPoint2: CGPoint(x: 120, y: 420))
+        
+        let cloud2Path = UIBezierPath()
+        cloud2Path.move(to: CGPoint(x: 404,y: 497))
+        cloud2Path.addCurve(to: CGPoint(x: 260, y: 440), controlPoint1: CGPoint(x: 330, y: 497), controlPoint2: CGPoint(x: 260, y: 440))
         
         let cloudScaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
         cloudScaleAnimation.duration = cloudAnimationDuration
@@ -101,6 +110,12 @@ class MotorcycleViewController: UIViewController {
         cloudPathAnimation.repeatCount = Float.infinity
         cloudPathAnimation.duration = cloudAnimationDuration
         
+        let cloud2PathAnimation = CAKeyframeAnimation(keyPath: "position")
+        cloud2PathAnimation.calculationMode = kCAAnimationPaced
+        cloud2PathAnimation.path = cloud2Path.cgPath
+        cloud2PathAnimation.repeatCount = Float.infinity
+        cloud2PathAnimation.duration = cloudAnimationDuration
+        
         let cloudAnimation = CAAnimationGroup()
         cloudAnimation.duration = cloudAnimationDuration
         cloudAnimation.repeatCount = Float(cloudAnimationRepeatCount)
@@ -115,8 +130,6 @@ class MotorcycleViewController: UIViewController {
         let cloud3Animation = CAAnimationGroup()
         cloud3Animation.duration = cloudAnimationDuration
         cloud3Animation.repeatCount = Float(cloudAnimationRepeatCount)
-        
-        
         cloud3Animation.beginTime = CACurrentMediaTime()+1.0
         cloud3Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloudPathAnimation]
         
@@ -125,6 +138,30 @@ class MotorcycleViewController: UIViewController {
         cloud4Animation.repeatCount = Float(cloudAnimationRepeatCount)
         cloud4Animation.beginTime = CACurrentMediaTime()+1.4
         cloud4Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloudPathAnimation]
+
+        let cloud5Animation = CAAnimationGroup()
+        cloud5Animation.duration = cloudAnimationDuration
+        cloud5Animation.repeatCount = Float(cloudAnimationRepeatCount)
+        cloud5Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloud2PathAnimation]
+        
+        let cloud6Animation = CAAnimationGroup()
+        cloud6Animation.duration = cloudAnimationDuration
+        cloud6Animation.repeatCount = Float(cloudAnimationRepeatCount)
+        cloud6Animation.beginTime = CACurrentMediaTime()+0.5
+        cloud6Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloud2PathAnimation]
+        
+        let cloud7Animation = CAAnimationGroup()
+        cloud7Animation.duration = cloudAnimationDuration
+        cloud7Animation.repeatCount = Float(cloudAnimationRepeatCount)
+        cloud7Animation.beginTime = CACurrentMediaTime()+0.9
+        cloud7Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloud2PathAnimation]
+        
+        let cloud8Animation = CAAnimationGroup()
+        cloud8Animation.duration = cloudAnimationDuration
+        cloud8Animation.repeatCount = Float(cloudAnimationRepeatCount)
+        cloud8Animation.beginTime = CACurrentMediaTime()+1.3
+        cloud8Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloud2PathAnimation]
+        
         
         UIView.animate(withDuration: 4,
                        delay: 0,
@@ -156,6 +193,10 @@ class MotorcycleViewController: UIViewController {
                         cloud2?.layer.add(cloud2Animation, forKey: "animate cloud position")
                         cloud3?.layer.add(cloud3Animation, forKey: "animate cloud position")
                         cloud4?.layer.add(cloud4Animation, forKey: "animate cloud position")
+                        cloud5?.layer.add(cloud5Animation, forKey: "animate cloud position")
+                        cloud6?.layer.add(cloud6Animation, forKey: "animate cloud position")
+                        cloud7?.layer.add(cloud7Animation, forKey: "animate cloud position")
+                        cloud8?.layer.add(cloud8Animation, forKey: "animate cloud position")
                         
                         self.pipeView.stretchX(animatedImageView: self.pipeView, values: [1, 1.03, 1, 1.03, 1], keytimes: [0, 0.25, 0.5, 0.75, 1], duration: 0.7, animationDuration: self.animationDuration)
                         self.pipeView.shakeX(values: [0, -2, 0, -2, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.pipeView, duration: 0.7, animationDuration: self.animationDuration)
