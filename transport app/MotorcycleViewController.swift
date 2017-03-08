@@ -23,6 +23,9 @@ class MotorcycleViewController: UIViewController {
     @IBOutlet var pipeView: UIImageView!
     @IBOutlet var pipe2View: UIImageView!
     @IBOutlet var part1View: UIImageView!
+    @IBOutlet var part3View: UIImageView!
+    @IBOutlet var springView: UIImageView!
+    @IBOutlet var part2View: UIImageView!
     @IBOutlet var headlightsView: UIImageView!
     @IBOutlet var roadBoxView: UIView!
     @IBOutlet var road1View: UIImageView!
@@ -173,6 +176,9 @@ class MotorcycleViewController: UIViewController {
         
         
         self.part1View.setAnchorPoint(anchorPoint: CGPoint(x: 0.05, y: 0.5), view: self.part1View)
+        self.part2View.setAnchorPoint(anchorPoint: CGPoint(x: 0.05, y: 0.5), view: self.part2View)
+        self.part3View.setAnchorPoint(anchorPoint: CGPoint(x: 0.05, y: 0.5), view: self.part3View)
+        self.springView.setAnchorPoint(anchorPoint: CGPoint(x: 0, y: 1), view: self.springView)
         
         UIView.animate(withDuration: 4,
                        delay: 0,
@@ -245,6 +251,11 @@ class MotorcycleViewController: UIViewController {
                         
                         //parts rotation
                         self.part1View.animateWheelReflection(values: [M_PI * 0.001, M_PI * (-0.0015), M_PI * 0.001, M_PI * (-0.0015), M_PI * 0.001], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.part1View, duration: 0.75, animationDuration: self.animationDuration)
+                        self.part2View.animateWheelReflection(values: [M_PI * 0.001, M_PI * (-0.0015), M_PI * 0.001, M_PI * (-0.0015), M_PI * 0.001], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.part2View, duration: 0.75, animationDuration: self.animationDuration)
+                        self.part3View.animateWheelReflection(values: [M_PI * 0.001, M_PI * (-0.0015), M_PI * 0.001, M_PI * (-0.0015), M_PI * 0.001], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.part3View, duration: 0.75, animationDuration: self.animationDuration)
+                        self.springView.animateWheelReflection(values: [M_PI * 0.006, M_PI * (-0.001), M_PI * 0.008, M_PI * (-0.001), M_PI * 0.006], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.springView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.springView.stretchXY(values: [0.99, 1, 0.98, 1, 0.99 ], animatedImageView: self.springView, keytimes: bodyRelatedKeyTimes as [NSNumber], duration: 0.75, animationDuration: self.animationDuration
+                        )
                         
                         //Road
                         self.roadBoxView.moveTheRoad(road1View: self.road1View, road2View: self.road2View, duration: 1, animationDuration: self.animationDuration)

@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4F8C112A-F62D-4E74-8BC0-AF658E6C7D72" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="536B7DD1-A994-43EE-9DCB-8516BA68FC53" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -1045,11 +1045,14 @@
                         <outlet property="mainPipesView" destination="iSj-eB-JQo" id="AdA-dz-57U"/>
                         <outlet property="mirrorView" destination="JDR-qx-Jxp" id="yEf-6P-amq"/>
                         <outlet property="part1View" destination="jfI-3m-uEp" id="gqt-Jt-1EX"/>
+                        <outlet property="part2View" destination="vlZ-bh-8qL" id="0gd-PC-kEc"/>
+                        <outlet property="part3View" destination="sFL-n5-Iud" id="ePN-Gb-FH2"/>
                         <outlet property="pipe2View" destination="hlR-1g-c39" id="dEQ-4M-07F"/>
                         <outlet property="pipeView" destination="xnw-U4-mqy" id="djS-sH-0dB"/>
                         <outlet property="road1View" destination="Bzr-uu-5Ms" id="mwR-Ew-C4k"/>
                         <outlet property="road2View" destination="F6S-fX-1Tp" id="VGC-RC-3Gn"/>
                         <outlet property="roadBoxView" destination="8R9-h6-i2t" id="Htk-Hs-StT"/>
+                        <outlet property="springView" destination="dhM-2n-7aH" id="Onh-MW-BDd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mXc-0y-hns" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1058,7 +1061,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="4F8C112A-F62D-4E74-8BC0-AF658E6C7D72" width="32" height="17">
+        <image name="536B7DD1-A994-43EE-9DCB-8516BA68FC53" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGU1RYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
 ERYbHCgpKi41OT1CRUhNUFUkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dO
