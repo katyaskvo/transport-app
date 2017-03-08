@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="2F4E1796-C84A-479F-BFEA-9754C8615D1F" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4F8C112A-F62D-4E74-8BC0-AF658E6C7D72" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -1044,6 +1044,7 @@
                         <outlet property="headlightsView" destination="ewC-T4-kYP" id="3gy-h2-foW"/>
                         <outlet property="mainPipesView" destination="iSj-eB-JQo" id="AdA-dz-57U"/>
                         <outlet property="mirrorView" destination="JDR-qx-Jxp" id="yEf-6P-amq"/>
+                        <outlet property="part1View" destination="jfI-3m-uEp" id="gqt-Jt-1EX"/>
                         <outlet property="pipe2View" destination="hlR-1g-c39" id="dEQ-4M-07F"/>
                         <outlet property="pipeView" destination="xnw-U4-mqy" id="djS-sH-0dB"/>
                         <outlet property="road1View" destination="Bzr-uu-5Ms" id="mwR-Ew-C4k"/>
@@ -1057,7 +1058,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2F4E1796-C84A-479F-BFEA-9754C8615D1F" width="32" height="17">
+        <image name="4F8C112A-F62D-4E74-8BC0-AF658E6C7D72" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGU1RYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
 ERYbHCgpKi41OT1CRUhNUFUkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dO

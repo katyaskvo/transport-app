@@ -22,6 +22,7 @@ class MotorcycleViewController: UIViewController {
     @IBOutlet var frontFenderView: UIImageView!
     @IBOutlet var pipeView: UIImageView!
     @IBOutlet var pipe2View: UIImageView!
+    @IBOutlet var part1View: UIImageView!
     @IBOutlet var headlightsView: UIImageView!
     @IBOutlet var roadBoxView: UIView!
     @IBOutlet var road1View: UIImageView!
@@ -171,41 +172,44 @@ class MotorcycleViewController: UIViewController {
         cloud8Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloud2PathAnimation]
         
         
+        self.part1View.setAnchorPoint(anchorPoint: CGPoint(x: 0.05, y: 0.5), view: self.part1View)
+        
         UIView.animate(withDuration: 4,
                        delay: 0,
                        options: [.curveLinear],
                        animations: {
                         
+                        let bodyRelatedKeyTimes = [0, 0.25, 0.5, 0.75, 1]
+                        
                         //Shake
                         let bodyShakeValues = [CGPoint(x: 0, y: 0.5), CGPoint(x: -0, y: -0.5), CGPoint(x: 0, y: 1), CGPoint(x: 0, y: -0.5), CGPoint(x: 0, y: 0.5)]
-                        self.bodyView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.bodyView, duration: 0.75, animationDuration: self.animationDuration)
-                        self.bodySeatView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.bodySeatView, duration: 0.75, animationDuration: self.animationDuration)
-                        self.bodyPedalView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.bodyPedalView, duration: 0.75, animationDuration: self.animationDuration)
-                        self.engineLeftView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.engineLeftView, duration: 0.75, animationDuration: self.animationDuration)
-                        self.engineRightView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.engineRightView, duration: 0.75, animationDuration: self.animationDuration)
-                        self.mainPipesView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.mainPipesView, duration: 0.75, animationDuration: self.animationDuration)
-                        self.mirrorView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.mirrorView, duration: 0.75, animationDuration: self.animationDuration)
-                        self.backFenderView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.backFenderView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.bodyView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.bodyView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.bodySeatView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.bodySeatView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.bodyPedalView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.bodyPedalView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.engineLeftView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.engineLeftView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.engineRightView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.engineRightView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.mainPipesView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.mainPipesView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.mirrorView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.mirrorView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.backFenderView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.backFenderView, duration: 0.75, animationDuration: self.animationDuration)
                         
                         
-                        self.headlightsView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.headlightsView, duration: 0.75, animationDuration: self.animationDuration)
-                        self.backWheelView.shake(values: [0, 1, 0, 1.5, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.backWheelView, duration: 0.75, animationDuration: self.animationDuration)
-                        self.backWheelReflectionView.shake(values: [0, 1, 0, 1.5, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.backWheelReflectionView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.headlightsView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.headlightsView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.backWheelView.shake(values: [0, 1, 0, 1.5, 0], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.backWheelView, duration: 0.75, animationDuration: self.animationDuration)
                         
+                        self.backWheelReflectionView.shake(values: [0, 1, 0, 1.5, 0], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.backWheelReflectionView, duration: 0.75, animationDuration: self.animationDuration)
                         
-//                        bodyShakeValues = [CGPoint(x: 0, y: 0.5), CGPoint(x: -0, y: -0.5), CGPoint(x: 0, y: 1), CGPoint(x: 0, y: -0.5), CGPoint(x: 0, y: 0.5)]
                         let frontFenderShakeValues = [CGPoint(x: -0.1, y: 0), CGPoint(x: 0.4, y: 1), CGPoint(x: -0.1, y: 0), CGPoint(x: 0.5, y: 1.5), CGPoint(x: -0.1, y: 0)]
                         
-                        self.frontFenderView.shakeXY(values: frontFenderShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.frontFenderView, duration: 0.75, animationDuration: self.animationDuration)
-                        self.frontWheelView.shakeXY(values: frontFenderShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.frontWheelView, duration: 0.75, animationDuration: self.animationDuration)
-                        self.frontWheelReflectionView.shakeXY(values: frontFenderShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.frontWheelReflectionView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.frontFenderView.shakeXY(values: frontFenderShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.frontFenderView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.frontWheelView.shakeXY(values: frontFenderShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.frontWheelView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.frontWheelReflectionView.shakeXY(values: frontFenderShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.frontWheelReflectionView, duration: 0.75, animationDuration: self.animationDuration)
                         
                         
                         //Wheels
                         self.backWheelView.rotate360Degrees(duration: 1, repeatCount: 10)
                         self.frontWheelView.rotate360Degrees(duration: 1, repeatCount: 10)
-                        self.backWheelReflectionView.animateWheelReflection(values: [0, M_PI * 0.02, 0, M_PI * (-0.03), 0 ], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.backWheelReflectionView, duration: 0.5, animationDuration: self.animationDuration)
-                        self.frontWheelReflectionView.animateWheelReflection(values: [0, M_PI * 0.02, 0, M_PI * (-0.03), 0 ], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.frontWheelReflectionView, duration: 0.5, animationDuration: self.animationDuration)
+                        self.backWheelReflectionView.animateWheelReflection(values: [0, M_PI * 0.02, 0, M_PI * (-0.03), 0 ], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.backWheelReflectionView, duration: 0.5, animationDuration: self.animationDuration)
+                        self.frontWheelReflectionView.animateWheelReflection(values: [0, M_PI * 0.02, 0, M_PI * (-0.03), 0 ], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.frontWheelReflectionView, duration: 0.5, animationDuration: self.animationDuration)
                         
                         //Headlights Shine
                         self.headlightsView.layer.add(headlightsAnimation, forKey: "contents")
@@ -229,15 +233,18 @@ class MotorcycleViewController: UIViewController {
                         cloud8?.layer.add(cloud8Animation, forKey: "animate cloud position")
                         
                         
-                        self.pipeView.stretchX(animatedImageView: self.pipeView, values: [1, 1.03, 1, 1.03, 1], keytimes: [0, 0.25, 0.5, 0.75, 1], duration: 0.75, animationDuration: self.animationDuration)
+                        self.pipeView.stretchX(animatedImageView: self.pipeView, values: [1, 1.03, 1, 1.03, 1], keytimes: bodyRelatedKeyTimes as [NSNumber], duration: 0.75, animationDuration: self.animationDuration)
                         
                         let pipeShakeValues = [CGPoint(x: 0, y: 0.75), CGPoint(x: -2, y: -0.75), CGPoint(x: 0, y: 1.5), CGPoint(x: -2, y: -0.75), CGPoint(x: 0, y: 0.75)]
                         let pipe2ShakeValues = [CGPoint(x: -2, y: 0.75), CGPoint(x: 0, y: -0.75), CGPoint(x: -2, y: 1.5), CGPoint(x: 0, y: -0.75), CGPoint(x: -2, y: 0.75)]
 
-                        self.pipeView.shakeXY(values: pipeShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.pipeView, duration: 0.75, animationDuration: self.animationDuration)
-                        self.pipe2View.stretchX(animatedImageView: self.pipe2View, values: [1.03, 1, 1.03, 1, 1.03], keytimes: [0, 0.25, 0.5, 0.75, 1], duration: 0.75, animationDuration: self.animationDuration)
-                        self.pipe2View.shakeXY(values: pipe2ShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.pipe2View, duration: 0.75, animationDuration: self.animationDuration)
+                        self.pipeView.shakeXY(values: pipeShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.pipeView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.pipe2View.stretchX(animatedImageView: self.pipe2View, values: [1.03, 1, 1.03, 1, 1.03], keytimes: bodyRelatedKeyTimes as [NSNumber], duration: 0.75, animationDuration: self.animationDuration)
+                        self.pipe2View.shakeXY(values: pipe2ShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.pipe2View, duration: 0.75, animationDuration: self.animationDuration)
                         
+                        
+                        //parts rotation
+                        self.part1View.animateWheelReflection(values: [M_PI * 0.001, M_PI * (-0.0015), M_PI * 0.001, M_PI * (-0.0015), M_PI * 0.001], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.part1View, duration: 0.75, animationDuration: self.animationDuration)
                         
                         //Road
                         self.roadBoxView.moveTheRoad(road1View: self.road1View, road2View: self.road2View, duration: 1, animationDuration: self.animationDuration)
