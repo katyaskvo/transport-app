@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="5E128209-5338-44F4-B3D5-80A243689348" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="2F4E1796-C84A-479F-BFEA-9754C8615D1F" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -913,6 +913,10 @@
                                 <rect key="frame" x="226" y="366" width="173" height="173"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_wheel_reflection" translatesAutoresizingMaskIntoConstraints="NO" id="dwq-D6-Fzh" userLabel="motorcycle_back_wheel_reflection">
+                                <rect key="frame" x="236" y="376" width="151" height="153"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_part3" translatesAutoresizingMaskIntoConstraints="NO" id="sFL-n5-Iud">
                                 <rect key="frame" x="336" y="450" width="119" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -931,10 +935,6 @@
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_front_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="VVb-yE-Evd">
                                 <rect key="frame" x="640" y="366" width="173" height="173"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_wheel_reflection" translatesAutoresizingMaskIntoConstraints="NO" id="dwq-D6-Fzh" userLabel="motorcycle_back_wheel_reflection">
-                                <rect key="frame" x="234" y="376" width="151" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_wheel_reflection" translatesAutoresizingMaskIntoConstraints="NO" id="gsf-yB-9KQ" userLabel="motorcycle_front_wheel_reflection">
@@ -1057,7 +1057,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="5E128209-5338-44F4-B3D5-80A243689348" width="32" height="17">
+        <image name="2F4E1796-C84A-479F-BFEA-9754C8615D1F" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGU1RYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
 ERYbHCgpKi41OT1CRUhNUFUkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dO

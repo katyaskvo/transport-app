@@ -177,7 +177,7 @@ class MotorcycleViewController: UIViewController {
                        animations: {
                         
                         //Shake
-                        let bodyShakeValues = [CGPoint(x: 0.35, y: 0.75), CGPoint(x: -0.35, y: -0.75), CGPoint(x: 0.7, y: 1.5), CGPoint(x: -0.35, y: -0.75), CGPoint(x: 0.35, y: 0.75)]
+                        let bodyShakeValues = [CGPoint(x: 0, y: 0.5), CGPoint(x: -0, y: -0.5), CGPoint(x: 0, y: 1), CGPoint(x: 0, y: -0.5), CGPoint(x: 0, y: 0.5)]
                         self.bodyView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.bodyView, duration: 0.75, animationDuration: self.animationDuration)
                         self.bodySeatView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.bodySeatView, duration: 0.75, animationDuration: self.animationDuration)
                         self.bodyPedalView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.bodyPedalView, duration: 0.75, animationDuration: self.animationDuration)
@@ -192,7 +192,9 @@ class MotorcycleViewController: UIViewController {
                         self.backWheelView.shake(values: [0, 1, 0, 1.5, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.backWheelView, duration: 0.75, animationDuration: self.animationDuration)
                         self.backWheelReflectionView.shake(values: [0, 1, 0, 1.5, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.backWheelReflectionView, duration: 0.75, animationDuration: self.animationDuration)
                         
-                        let frontFenderShakeValues = [CGPoint(x: 0, y: 0), CGPoint(x: 0.5, y: 1.5), CGPoint(x: 0, y: 0), CGPoint(x: 0.3, y: 1), CGPoint(x: 0, y: 0)]
+                        
+//                        bodyShakeValues = [CGPoint(x: 0, y: 0.5), CGPoint(x: -0, y: -0.5), CGPoint(x: 0, y: 1), CGPoint(x: 0, y: -0.5), CGPoint(x: 0, y: 0.5)]
+                        let frontFenderShakeValues = [CGPoint(x: -0.1, y: 0), CGPoint(x: 0.4, y: 1), CGPoint(x: -0.1, y: 0), CGPoint(x: 0.5, y: 1.5), CGPoint(x: -0.1, y: 0)]
                         
                         self.frontFenderView.shakeXY(values: frontFenderShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.frontFenderView, duration: 0.75, animationDuration: self.animationDuration)
                         self.frontWheelView.shakeXY(values: frontFenderShakeValues as [NSValue], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.frontWheelView, duration: 0.75, animationDuration: self.animationDuration)
@@ -207,6 +209,13 @@ class MotorcycleViewController: UIViewController {
                         
                         //Headlights Shine
                         self.headlightsView.layer.add(headlightsAnimation, forKey: "contents")
+                        
+//                        //Engine scale
+//                        let engineStretchValues = [0.99, 1.01, 0.99, 1.01, 0.99]
+//                        self.engineRightView.stretchXY(values: engineStretchValues, animatedImageView: self.engineRightView, keytimes: [0, 0.25, 0.5, 0.75, 1], duration: 0.3, animationDuration: self.animationDuration)
+//                        self.engineLeftView.stretchXY(values: engineStretchValues, animatedImageView: self.engineLeftView, keytimes: [0, 0.25, 0.5, 0.75, 1], duration: 0.3, animationDuration: self.animationDuration)
+//                        
+                        
                         
                         //Steam Animation
                         //

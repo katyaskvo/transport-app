@@ -47,7 +47,7 @@ extension UIView {
     
     func shakeXY(values: [NSValue], keyTimes: [NSNumber
         ], animatedImageView: UIImageView, duration: CFTimeInterval, animationDuration: CFTimeInterval) {
-        let repeatCount = Float(animationDuration / duration)        
+        let repeatCount = Float(animationDuration / duration)
         let shakeAnimation = CAKeyframeAnimation(keyPath: "transform.translation")
         
         UIView.animate(withDuration: duration, delay: 0.0, animations: {
@@ -114,6 +114,22 @@ extension UIView {
             
         }, completion: nil)
     }
+    
+    func stretchXY(values: [Double], animatedImageView: UIImageView, keytimes: [NSNumber], duration: CFTimeInterval, animationDuration: CFTimeInterval) {
+        let pipeStretchAnimation = CAKeyframeAnimation()
+        let repeatCount = Float(animationDuration / duration)
+        UIView.animate(withDuration: duration, delay: 0.0, animations: {
+            pipeStretchAnimation.keyPath = "transform.scale"
+            pipeStretchAnimation.values = values
+            pipeStretchAnimation.keyTimes = keytimes
+            pipeStretchAnimation.duration = duration
+            pipeStretchAnimation.repeatCount = repeatCount
+            
+            animatedImageView.layer.add(pipeStretchAnimation, forKey: "move")
+            
+        }, completion: nil)
+    }
+
 
     
 }
