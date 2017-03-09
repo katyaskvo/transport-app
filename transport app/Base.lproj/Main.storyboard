@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="9ADB87EC-20E0-482E-8685-6F7AB820F188" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="D4798E8B-B5CB-4A21-95B3-082D476E7100" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -1041,6 +1041,14 @@
                                 <rect key="frame" x="261" y="368" width="24" height="20"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="motorcycle_front_orange_light01" translatesAutoresizingMaskIntoConstraints="NO" id="LIw-LY-k62">
+                                <rect key="frame" x="604" y="246" width="19" height="31"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_front_orange_light_part" translatesAutoresizingMaskIntoConstraints="NO" id="dFn-V8-kWt">
+                                <rect key="frame" x="590" y="252" width="25" height="20"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.92174449336105191" green="0.71485629807393347" blue="0.37776180308044938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1068,6 +1076,8 @@
                         <outlet property="engineLeftView" destination="JAV-QO-WjU" id="fD1-nk-76i"/>
                         <outlet property="engineRightView" destination="GJh-1n-xVR" id="nM4-WP-60q"/>
                         <outlet property="frontFenderView" destination="B4Q-hj-WXP" id="BTd-oO-zR9"/>
+                        <outlet property="frontLightOrangeOnView" destination="LIw-LY-k62" id="h2o-dD-OLL"/>
+                        <outlet property="frontLightOrangePartView" destination="dFn-V8-kWt" id="Xdq-8v-gr0"/>
                         <outlet property="frontWheelReflectionView" destination="gsf-yB-9KQ" id="TfC-qc-sgw"/>
                         <outlet property="frontWheelView" destination="VVb-yE-Evd" id="pqz-fm-6Ll"/>
                         <outlet property="headlightsView" destination="ewC-T4-kYP" id="3gy-h2-foW"/>
@@ -1090,7 +1100,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="9ADB87EC-20E0-482E-8685-6F7AB820F188" width="32" height="17">
+        <image name="D4798E8B-B5CB-4A21-95B3-082D476E7100" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGU1RYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
 ERYbHCgpKi41OT1CRUhNUFUkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dO
@@ -1234,6 +1244,8 @@ AAAAAAAAAAAAAAAAAAATpg
         <image name="motorcycle_engine_right" width="71" height="81"/>
         <image name="motorcycle_front_disc" width="72" height="68"/>
         <image name="motorcycle_front_fender" width="137" height="104"/>
+        <image name="motorcycle_front_orange_light01" width="19" height="31"/>
+        <image name="motorcycle_front_orange_light_part" width="25" height="20"/>
         <image name="motorcycle_front_wheel" width="173" height="173"/>
         <image name="motorcycle_mirrow" width="18" height="41"/>
         <image name="motorcycle_new_pipes2" width="377" height="121"/>
