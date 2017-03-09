@@ -79,7 +79,7 @@
                                 <rect key="frame" x="472" y="431" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="440B9DDF-A485-40AE-BF76-281DCB8DB80C" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="9ADB87EC-20E0-482E-8685-6F7AB820F188" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-mK-yPg">
                                 <rect key="frame" x="585" y="224" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -346,7 +346,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.019852548594576191" green="0.051246486274877448" blue="0.13699635152284262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bu-0G-1vR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1042,7 +1042,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.63921568627450975" green="0.46274509803921571" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.92174449336105191" green="0.71485629807393347" blue="0.37776180308044938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="BackLightOrangePartView" destination="c8c-1L-h1z" id="Hzm-2Z-3g7"/>
@@ -1090,7 +1090,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="440B9DDF-A485-40AE-BF76-281DCB8DB80C" width="32" height="17">
+        <image name="9ADB87EC-20E0-482E-8685-6F7AB820F188" width="32" height="17">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGU1RYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
 ERYbHCgpKi41OT1CRUhNUFUkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dO
@@ -1268,12 +1268,12 @@ AAAAAAAAAAAAAAAAAAATpg
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="nYK-5n-H5w"/>
+        <segue reference="wMh-tC-qJQ"/>
         <segue reference="XbO-Bq-ASr"/>
-        <segue reference="vgW-N1-GXF"/>
-        <segue reference="TIf-N3-4A5"/>
-        <segue reference="0Vj-FM-jc3"/>
+        <segue reference="aIo-Mp-qjr"/>
         <segue reference="BzD-GJ-YjH"/>
-        <segue reference="VjF-JU-9aB"/>
-        <segue reference="jyw-zy-5b2"/>
+        <segue reference="TIf-N3-4A5"/>
+        <segue reference="mj3-V3-DeW"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -183,6 +183,7 @@ class MotorcycleViewController: UIViewController {
         self.part2View.setAnchorPoint(anchorPoint: CGPoint(x: 0.05, y: 0.5), view: self.part2View)
         self.part3View.setAnchorPoint(anchorPoint: CGPoint(x: 0.05, y: 0.5), view: self.part3View)
         self.springView.setAnchorPoint(anchorPoint: CGPoint(x: 0, y: 1), view: self.springView)
+        self.mirrorView.setAnchorPoint(anchorPoint: CGPoint(x: 0, y: 1), view: self.mirrorView)
         
         UIView.animate(withDuration: 4,
                        delay: 0,
@@ -236,7 +237,11 @@ class MotorcycleViewController: UIViewController {
 //                        let engineStretchValues = [0.99, 1.01, 0.99, 1.01, 0.99]
 //                        self.engineRightView.stretchXY(values: engineStretchValues, animatedImageView: self.engineRightView, keytimes: [0, 0.25, 0.5, 0.75, 1], duration: 0.3, animationDuration: self.animationDuration)
 //                        self.engineLeftView.stretchXY(values: engineStretchValues, animatedImageView: self.engineLeftView, keytimes: [0, 0.25, 0.5, 0.75, 1], duration: 0.3, animationDuration: self.animationDuration)
-//                        
+//                       
+                        
+                        //Mirror rotation animation
+                        self.mirrorView.animateWheelReflection(values: [M_PI * 0.002, M_PI * (-0.003), M_PI * 0.003, M_PI * (-0.002), M_PI * 0.002], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.mirrorView, duration: 0.75, animationDuration: self.animationDuration)
+
                         
                         
                         //Steam Animation
