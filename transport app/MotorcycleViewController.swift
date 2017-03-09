@@ -31,6 +31,10 @@ class MotorcycleViewController: UIViewController {
     @IBOutlet var road1View: UIImageView!
     @IBOutlet var road2View: UIImageView!
     
+    @IBOutlet weak var backLightOrangePartView: UIImageView!
+    @IBOutlet weak var backLightRedView: UIImageView!
+    @IBOutlet weak var backLightRedOnView: UIImageView!
+    @IBOutlet weak var backLightOrangeOnView: UIImageView!
     
     @IBOutlet var cloud1View: UIImageView!
     @IBOutlet var cloud2View: UIImageView!
@@ -69,7 +73,6 @@ class MotorcycleViewController: UIViewController {
         let headlights_01 = UIImage(named: "motorcycle_headlights01")
         let headlights_02 = UIImage(named: "motorcycle_headlights02")
         headlightsImages = [headlights_01!, headlights_02!, headlights_02!, headlights_01!, headlights_02!, headlights_01!, headlights_02!, headlights_01!, headlights_01!]
-        
     }
     
     @IBAction func startAnimation() {
@@ -174,6 +177,7 @@ class MotorcycleViewController: UIViewController {
         cloud8Animation.beginTime = CACurrentMediaTime()+1.3
         cloud8Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloud2PathAnimation]
         
+
         
         self.part1View.setAnchorPoint(anchorPoint: CGPoint(x: 0.05, y: 0.5), view: self.part1View)
         self.part2View.setAnchorPoint(anchorPoint: CGPoint(x: 0.05, y: 0.5), view: self.part2View)
@@ -200,6 +204,10 @@ class MotorcycleViewController: UIViewController {
                         
                         
                         self.headlightsView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.headlightsView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.backLightRedView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.backLightRedView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.backLightRedOnView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.backLightRedOnView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.backLightOrangeOnView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.backLightOrangeOnView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.backLightOrangePartView.shakeXY(values: bodyShakeValues as [NSValue], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.backLightOrangePartView, duration: 0.75, animationDuration: self.animationDuration)
                         self.backWheelView.shake(values: [0, 1, 0, 1.5, 0], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.backWheelView, duration: 0.75, animationDuration: self.animationDuration)
                         
                         self.backWheelReflectionView.shake(values: [0, 1, 0, 1.5, 0], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.backWheelReflectionView, duration: 0.75, animationDuration: self.animationDuration)
@@ -219,6 +227,9 @@ class MotorcycleViewController: UIViewController {
                         
                         //Headlights Shine
                         self.headlightsView.layer.add(headlightsAnimation, forKey: "contents")
+                        
+                        self.backLightRedOnView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.backLightRedOnView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
+                        self.backLightOrangeOnView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.backLightOrangeOnView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
                         
 //                        //Engine scale
 //                        let engineStretchValues = [0.99, 1.01, 0.99, 1.01, 0.99]

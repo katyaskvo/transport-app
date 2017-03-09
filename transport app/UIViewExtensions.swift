@@ -139,23 +139,20 @@ extension UIView {
         
         view.center = CGPoint(x: view.center.x - transition.x, y: view.center.y - transition.y)
     }
-//    func setAnchorPoint(_ anchorPoint: CGPoint, forView view: UIView) {
-//        var newPoint = CGPoint(x: view.bounds.size.width * anchorPoint.x, y: view.bounds.size.height * anchorPoint.y)
-//        var oldPoint = CGPoint(x: view.bounds.size.width * view.layer.anchorPoint.x, y: view.bounds.size.height * view.layer.anchorPoint.y)
-//        
-//        newPoint = newPoint.applying(view.transform)
-//        oldPoint = oldPoint.applying(view.transform)
-//        
-//        var position = view.layer.position
-//        position.x -= oldPoint.x
-//        position.x += newPoint.x
-//        
-//        position.y -= oldPoint.y
-//        position.y += newPoint.y
-//        
-//        view.layer.position = position
-//        view.layer.anchorPoint = anchorPoint
-//    }
+    
+    func fadeInanOut(values: [Double], animatedImageView: UIImageView, keytimes: [NSNumber], duration: CFTimeInterval, animationDuration: CFTimeInterval){
+        let repeatCount = Float(animationDuration / duration)
+        let fadeInanOutAnimation = CAKeyframeAnimation()
+        
+        fadeInanOutAnimation.duration = animationDuration
+        fadeInanOutAnimation.keyPath = "opacity"
+        fadeInanOutAnimation.repeatCount = repeatCount
+        fadeInanOutAnimation.keyTimes = [0, 0.02, 0.98, 1]
+        fadeInanOutAnimation.values = [0, 1, 1, 0]
+        
+        
+        animatedImageView.layer.add(fadeInanOutAnimation, forKey: "move")
+    }
 }
 extension UIViewKeyframeAnimationOptions {
     
