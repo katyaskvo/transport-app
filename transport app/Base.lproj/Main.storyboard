@@ -21,7 +21,7 @@
                     </layoutGuides>
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZwX-cT-FIQ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-gs-bVj">
                                 <rect key="frame" x="20" y="650" width="44" height="44"/>
@@ -46,8 +46,9 @@
                                     <segue destination="eYz-ct-G7b" kind="show" id="nqZ-dB-v3P"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5U8-sd-m2j">
-                                <rect key="frame" x="162" y="214" width="700" height="350"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5U8-sd-m2j" userLabel="bike">
+                                <rect key="frame" x="162" y="214" width="700" height="344"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHt-o4-2gV">
                                         <rect key="frame" x="0.0" y="341" width="700" height="2"/>
@@ -132,15 +133,13 @@
                         <color key="backgroundColor" red="0.96862745098039216" green="0.68205970972276231" blue="0.65090339520605323" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="EPS-s9-h4K" firstAttribute="top" secondItem="ADe-jG-ewD" secondAttribute="bottom" constant="74" id="3Zj-Rv-ZlD"/>
-                            <constraint firstItem="j1P-3z-lbr" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX" id="4bO-eU-gtM"/>
-                            <constraint firstItem="YTa-V2-fyh" firstAttribute="trailing" secondItem="ZwX-cT-FIQ" secondAttribute="trailingMargin" id="7rq-q0-wdG"/>
                             <constraint firstItem="MfZ-gs-bVj" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leadingMargin" id="7zL-uU-LoZ"/>
-                            <constraint firstItem="j1P-3z-lbr" firstAttribute="centerX" secondItem="5U8-sd-m2j" secondAttribute="centerX" id="HNO-Nc-qtD"/>
-                            <constraint firstItem="5U8-sd-m2j" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leading" constant="162" id="JbQ-OF-CLn"/>
-                            <constraint firstItem="5U8-sd-m2j" firstAttribute="top" secondItem="fXf-Jd-eTc" secondAttribute="bottom" constant="194" id="MiO-LQ-1eT"/>
-                            <constraint firstItem="j1P-3z-lbr" firstAttribute="top" secondItem="5U8-sd-m2j" secondAttribute="bottom" constant="78" id="d4a-C7-D0t"/>
+                            <constraint firstItem="j1P-3z-lbr" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX" id="LwM-Hz-s0h"/>
+                            <constraint firstItem="EPS-s9-h4K" firstAttribute="top" secondItem="j1P-3z-lbr" secondAttribute="bottom" constant="66" id="N2U-Iq-EBb"/>
                             <constraint firstItem="EPS-s9-h4K" firstAttribute="top" secondItem="MfZ-gs-bVj" secondAttribute="bottom" constant="74" id="dvW-Yl-rmP"/>
+                            <constraint firstItem="YTa-V2-fyh" firstAttribute="trailing" secondItem="ZwX-cT-FIQ" secondAttribute="trailingMargin" id="fBS-bx-zVq"/>
                             <constraint firstItem="ADe-jG-ewD" firstAttribute="top" secondItem="YTa-V2-fyh" secondAttribute="bottom" constant="36" id="iQg-vx-JlR"/>
+                            <constraint firstItem="ADe-jG-ewD" firstAttribute="top" secondItem="YTa-V2-fyh" secondAttribute="bottom" constant="36" id="kCo-xR-Spn"/>
                             <constraint firstItem="ADe-jG-ewD" firstAttribute="trailing" secondItem="ZwX-cT-FIQ" secondAttribute="trailingMargin" id="rWa-FV-4kG"/>
                             <constraint firstItem="j1P-3z-lbr" firstAttribute="centerY" secondItem="MfZ-gs-bVj" secondAttribute="centerY" id="urt-0p-pT5"/>
                         </constraints>
@@ -204,8 +203,9 @@
                                     <segue destination="eYz-ct-G7b" kind="show" id="NWe-BV-uvs"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hvt-Cr-cZF">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hvt-Cr-cZF" userLabel="beetle">
                                 <rect key="frame" x="16" y="273" width="990" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="ehK-Zg-JAT">
                                         <rect key="frame" x="165" y="204" width="5" height="4"/>
@@ -287,9 +287,6 @@
                         <color key="backgroundColor" red="0.97647058823529409" green="0.92941176470588238" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="oR7-Rn-Zmf" firstAttribute="top" secondItem="cMD-1D-IGy" secondAttribute="bottom" constant="36" id="6zH-b8-WRh"/>
-                            <constraint firstItem="Hvt-Cr-cZF" firstAttribute="top" secondItem="h06-3w-osl" secondAttribute="bottom" constant="253" id="9AO-QE-49w"/>
-                            <constraint firstItem="Hvt-Cr-cZF" firstAttribute="leading" secondItem="U2J-vO-Mnc" secondAttribute="leadingMargin" constant="-4" id="E2g-jn-X8U"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Hvt-Cr-cZF" secondAttribute="trailing" constant="-2" id="Gog-Ah-q3J"/>
                             <constraint firstItem="JZ7-R1-VsF" firstAttribute="top" secondItem="oR7-Rn-Zmf" secondAttribute="bottom" constant="74" id="Jke-PU-ge8"/>
                             <constraint firstItem="oR7-Rn-Zmf" firstAttribute="trailing" secondItem="U2J-vO-Mnc" secondAttribute="trailingMargin" id="PkY-mB-aSP"/>
                             <constraint firstItem="cMD-1D-IGy" firstAttribute="trailing" secondItem="U2J-vO-Mnc" secondAttribute="trailingMargin" id="RGz-uX-iTe"/>
@@ -297,7 +294,6 @@
                             <constraint firstItem="7hV-Nf-zf1" firstAttribute="centerX" secondItem="U2J-vO-Mnc" secondAttribute="centerX" id="nxj-8M-W1l"/>
                             <constraint firstItem="KXa-7H-nmR" firstAttribute="leading" secondItem="U2J-vO-Mnc" secondAttribute="leadingMargin" id="tj9-Ci-qfk"/>
                             <constraint firstItem="JZ7-R1-VsF" firstAttribute="top" secondItem="KXa-7H-nmR" secondAttribute="bottom" constant="74" id="vRM-dJ-hxy"/>
-                            <constraint firstItem="7hV-Nf-zf1" firstAttribute="top" secondItem="Hvt-Cr-cZF" secondAttribute="bottom" constant="98" id="zxn-Jn-plh"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1256,12 +1252,12 @@
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tE1-0V-kka"/>
-        <segue reference="nqZ-dB-v3P"/>
+        <segue reference="nYK-5n-H5w"/>
+        <segue reference="v2T-s6-0b7"/>
+        <segue reference="NWe-BV-uvs"/>
+        <segue reference="31R-Pj-w8V"/>
         <segue reference="MqU-HI-Ags"/>
         <segue reference="aIo-Mp-qjr"/>
-        <segue reference="ax9-85-2wf"/>
-        <segue reference="wMh-tC-qJQ"/>
-        <segue reference="mj3-V3-DeW"/>
+        <segue reference="eAs-q5-aYq"/>
     </inferredMetricsTieBreakers>
 </document>
