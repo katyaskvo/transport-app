@@ -20,6 +20,7 @@ class HelicopterViewController: UIViewController {
     @IBOutlet var cloud2AView: UIImageView!
     @IBOutlet var cloud3AView: UIImageView!
     @IBOutlet var mainView: UIView!
+    @IBOutlet var cloudsFrameView: UIView!
     
     let animationDuration = CFTimeInterval(10.0)
     var helixImages: [UIImage]!
@@ -121,7 +122,7 @@ class HelicopterViewController: UIViewController {
                                     
                                     
                                     //Clouds
-                                    self.mainView.moveClouds(mainView: self.mainView, cloud1View: self.cloud1View, cloud1AView: self.cloud1AView, cloud2View: self.cloud2View, cloud2AView: self.cloud2AView, cloud3View: self.cloud3View, cloud3AView: self.cloud3AView, duration: 10, animationDuration: self.animationDuration)
+                                    self.cloudsFrameView.moveClouds(mainView: self.cloudsFrameView, cloud1View: self.cloud1View, cloud1AView: self.cloud1AView, cloud2View: self.cloud2View, cloud2AView: self.cloud2AView, cloud3View: self.cloud3View, cloud3AView: self.cloud3AView, duration: 10, animationDuration: self.animationDuration)
         }, completion: nil)
     }
 }
