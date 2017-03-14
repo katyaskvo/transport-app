@@ -424,114 +424,126 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb3-A5-bvJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb3-A5-bvJ" userLabel="Button Next">
                                 <rect key="frame" x="960" y="650" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow-right"/>
                                 <connections>
                                     <segue destination="4se-pa-4cI" kind="show" id="iJd-I6-ByO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lz-sK-KVL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lz-sK-KVL" userLabel="Button Back">
                                 <rect key="frame" x="20" y="650" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow-left"/>
                                 <connections>
                                     <segue destination="S4R-Ja-viH" kind="show" id="jyw-zy-5b2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoi-g6-ggU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoi-g6-ggU" userLabel="Button Navigation">
                                 <rect key="frame" x="960" y="570" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="navigation_button"/>
                                 <connections>
                                     <segue destination="eYz-ct-G7b" kind="show" id="di2-K5-DPJ"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="body" translatesAutoresizingMaskIntoConstraints="NO" id="zjp-9I-jbD">
-                                <rect key="frame" x="307" y="217" width="435" height="265"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="big-wheel" translatesAutoresizingMaskIntoConstraints="NO" id="4Kf-Mq-Ny2">
-                                <rect key="frame" x="264" y="326" width="214" height="215"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="reflection_back_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Ya9-UP-dpd">
-                                <rect key="frame" x="304" y="358" width="142" height="153"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="fender_front" translatesAutoresizingMaskIntoConstraints="NO" id="IV6-JT-HYT">
-                                <rect key="frame" x="596" y="358" width="105" height="93"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="small-wheel" translatesAutoresizingMaskIntoConstraints="NO" id="EW8-Wz-G1U">
-                                <rect key="frame" x="610" y="371" width="169" height="170"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="reflection_front_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Ulk-FD-C30">
-                                <rect key="frame" x="641" y="396" width="113" height="120"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="window-reflections" translatesAutoresizingMaskIntoConstraints="NO" id="nYD-Jg-mhZ">
-                                <rect key="frame" x="383" y="249" width="103" height="40"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Rm6-lX-vTx">
-                                <rect key="frame" x="585" y="253" width="5" height="4"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="xSO-P8-PY9">
-                                <rect key="frame" x="585" y="253" width="6" height="5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="8SU-7e-O40">
-                                <rect key="frame" x="585" y="253" width="4" height="3"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud" translatesAutoresizingMaskIntoConstraints="NO" id="M9k-0a-ywD">
-                                <rect key="frame" x="585" y="253" width="5" height="4"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="JDT-OM-HPL">
-                                <rect key="frame" x="585" y="253" width="6" height="5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="1fZ-tw-kVG">
-                                <rect key="frame" x="585" y="253" width="4" height="4"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="truba" translatesAutoresizingMaskIntoConstraints="NO" id="xK9-ra-E2w">
-                                <rect key="frame" x="568" y="247" width="25" height="88"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="fender_back" translatesAutoresizingMaskIntoConstraints="NO" id="SQF-ui-Ruw">
-                                <rect key="frame" x="294" y="311" width="208" height="115"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-Iu-Sf1">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-Iu-Sf1">
                                 <rect key="frame" x="482" y="642" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="playButton"/>
                                 <connections>
                                     <action selector="startAnimation" destination="BDY-SG-CIy" eventType="touchUpInside" id="hK7-fy-1sV"/>
                                 </connections>
                             </button>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZi-Lv-CXW">
-                                <rect key="frame" x="161" y="539" width="700" height="2"/>
+                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-XJ-VMn" userLabel="tractor">
+                                <rect key="frame" x="162" y="215" width="700" height="325"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="1Fy-JJ-Utr">
-                                        <rect key="frame" x="0.0" y="0.0" width="700" height="2"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="body" translatesAutoresizingMaskIntoConstraints="NO" id="zjp-9I-jbD">
+                                        <rect key="frame" x="146" y="0.0" width="435" height="265"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="big-wheel" translatesAutoresizingMaskIntoConstraints="NO" id="4Kf-Mq-Ny2">
+                                        <rect key="frame" x="102" y="109" width="214" height="215"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="reflection_back_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Ya9-UP-dpd">
+                                        <rect key="frame" x="142" y="141" width="142" height="153"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="fender_front" translatesAutoresizingMaskIntoConstraints="NO" id="IV6-JT-HYT">
+                                        <rect key="frame" x="434" y="140" width="105" height="93"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="small-wheel" translatesAutoresizingMaskIntoConstraints="NO" id="EW8-Wz-G1U">
+                                        <rect key="frame" x="448" y="154" width="169" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="reflection_front_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Ulk-FD-C30">
+                                        <rect key="frame" x="479" y="179" width="113" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="window-reflections" translatesAutoresizingMaskIntoConstraints="NO" id="nYD-Jg-mhZ">
+                                        <rect key="frame" x="221" y="33" width="103" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Rm6-lX-vTx">
+                                        <rect key="frame" x="424" y="36" width="5" height="4"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="zUD-M0-4s9">
-                                        <rect key="frame" x="700" y="0.0" width="700" height="2"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="xSO-P8-PY9">
+                                        <rect key="frame" x="424" y="36" width="6" height="5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="8SU-7e-O40">
+                                        <rect key="frame" x="424" y="36" width="4" height="3"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud" translatesAutoresizingMaskIntoConstraints="NO" id="M9k-0a-ywD">
+                                        <rect key="frame" x="424" y="36" width="5" height="4"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="JDT-OM-HPL">
+                                        <rect key="frame" x="424" y="36" width="6" height="5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="1fZ-tw-kVG">
+                                        <rect key="frame" x="424" y="36" width="4" height="4"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="truba" translatesAutoresizingMaskIntoConstraints="NO" id="xK9-ra-E2w">
+                                        <rect key="frame" x="408" y="30" width="25" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="fender_back" translatesAutoresizingMaskIntoConstraints="NO" id="SQF-ui-Ruw">
+                                        <rect key="frame" x="133" y="94" width="208" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZi-Lv-CXW">
+                                        <rect key="frame" x="0.0" y="323" width="700" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="1Fy-JJ-Utr">
+                                                <rect key="frame" x="0.0" y="0.0" width="700" height="2"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="zUD-M0-4s9">
+                                                <rect key="frame" x="700" y="0.0" width="700" height="2"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
                                 </subviews>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.38039215686274508" green="0.83137254901960778" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="apB-jx-yjS" firstAttribute="top" secondItem="8Lz-sK-KVL" secondAttribute="bottom" constant="74" id="GC6-4b-oXx"/>
+                            <constraint firstItem="8Lz-sK-KVL" firstAttribute="leading" secondItem="dv3-cO-JKA" secondAttribute="leadingMargin" id="LJa-Pd-2Be"/>
+                            <constraint firstItem="Jb3-A5-bvJ" firstAttribute="trailing" secondItem="dv3-cO-JKA" secondAttribute="trailingMargin" id="O85-8H-uXX"/>
+                            <constraint firstItem="apB-jx-yjS" firstAttribute="top" secondItem="UpD-Iu-Sf1" secondAttribute="bottom" constant="66" id="llD-yr-hgv"/>
+                            <constraint firstItem="UpD-Iu-Sf1" firstAttribute="centerX" secondItem="dv3-cO-JKA" secondAttribute="centerX" id="nUn-uZ-5Ko"/>
+                            <constraint firstItem="hoi-g6-ggU" firstAttribute="trailing" secondItem="dv3-cO-JKA" secondAttribute="trailingMargin" id="pzr-dd-lFg"/>
+                            <constraint firstItem="Jb3-A5-bvJ" firstAttribute="top" secondItem="hoi-g6-ggU" secondAttribute="bottom" constant="36" id="wze-BP-u5b"/>
+                            <constraint firstItem="apB-jx-yjS" firstAttribute="top" secondItem="Jb3-A5-bvJ" secondAttribute="bottom" constant="74" id="ywG-82-q8a"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="bigWheelView" destination="4Kf-Mq-Ny2" id="wbl-ow-8pe"/>
@@ -1247,12 +1259,12 @@
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tE1-0V-kka"/>
-        <segue reference="NWe-BV-uvs"/>
-        <segue reference="wMh-tC-qJQ"/>
-        <segue reference="MqU-HI-Ags"/>
+        <segue reference="jyw-zy-5b2"/>
+        <segue reference="mj3-V3-DeW"/>
+        <segue reference="di2-K5-DPJ"/>
         <segue reference="aIo-Mp-qjr"/>
         <segue reference="ax9-85-2wf"/>
-        <segue reference="mj3-V3-DeW"/>
+        <segue reference="wMh-tC-qJQ"/>
+        <segue reference="iJd-I6-ByO"/>
     </inferredMetricsTieBreakers>
 </document>
