@@ -34,6 +34,7 @@ class FiretruckViewController: UIViewController {
     @IBOutlet var garpunView: UIImageView!
     @IBOutlet var axeView: UIImageView!
     @IBOutlet var windowReflectionView: UIImageView!
+    @IBOutlet var chainView: UIImageView!
     
     @IBOutlet var reflectionBackWheelView: UIImageView!
     @IBOutlet var reflectionFrontWheelView: UIImageView!
@@ -255,6 +256,8 @@ class FiretruckViewController: UIViewController {
         lightRoof2ViewAnimation.values = lightRoof2Images.map {$0.cgImage as AnyObject}
         lightRoof2ViewAnimation.duration = 0.4
         lightRoof2ViewAnimation.repeatCount = 1
+        
+        self.chainView.setAnchorPoint(anchorPoint: CGPoint(x: 0.5, y: 0), view: self.chainView)
 
         
         UIView.animate(withDuration: 1,
@@ -275,7 +278,11 @@ class FiretruckViewController: UIViewController {
                         
                         //Shake
                         self.firetruckBodyView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.firetruckBodyView, duration: 0.7, animationDuration: self.animationDuration)
+                        
+                        self.chainView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.chainView, duration: 0.7, animationDuration: self.animationDuration)
+                    
                         self.firetruckHoldersView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.firetruckHoldersView, duration: 0.7, animationDuration: self.animationDuration)
+                        
                         self.lightFrontRedView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.lightFrontRedView, duration: 0.7, animationDuration: self.animationDuration)
                         self.lightFrontWhiteView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.lightFrontWhiteView, duration: 0.7, animationDuration: self.animationDuration)
                         self.lightOrangeView.shake(values: [1, -1, 1, -1, 1], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.lightOrangeView, duration: 0.7, animationDuration: self.animationDuration)
@@ -380,6 +387,8 @@ class FiretruckViewController: UIViewController {
                         
                         SyrenRoof2Animation.animations = [lightRoof2ViewAnimation]
                         self.syrenRoof2View.layer.add(SyrenRoof2Animation, forKey: "contents")
+                        
+                        self.chainView.animateWheelReflection(values: [M_PI * 0.015, M_PI * (-0.02), M_PI * 0.015 ], keyTimes: [0, 0.5, 1], animatedImageView: self.chainView, duration: 0.3, animationDuration: self.animationDuration)
                         
         }, completion: nil)
     }
