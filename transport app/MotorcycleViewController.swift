@@ -96,17 +96,19 @@ class MotorcycleViewController: UIViewController {
         let cloud6 = cloud6View
         let cloud7 = cloud7View
         let cloud8 = cloud8View
-        let cloudAnimationDuration = 2.0
-        let cloudAnimationRepeatCount = 5
+        let cloudAnimationDuration = 1.0
+        let cloudAnimationRepeatCount = 10
         
         
         let cloudPath = UIBezierPath()
-        cloudPath.move(to: CGPoint(x: 245,y: 474))
-        cloudPath.addCurve(to: CGPoint(x: 120, y: 420), controlPoint1: CGPoint(x: 190, y: 474), controlPoint2: CGPoint(x: 120, y: 420))
+        cloudPath.move(to: CGPoint(x: 83,y: 276))
+        cloudPath.addCurve(to: CGPoint(x: -42, y: 222), controlPoint1: CGPoint(x: 32, y: 276), controlPoint2: CGPoint(x: -42, y: 222))
+        
         
         let cloud2Path = UIBezierPath()
-        cloud2Path.move(to: CGPoint(x: 404,y: 497))
-        cloud2Path.addCurve(to: CGPoint(x: 260, y: 440), controlPoint1: CGPoint(x: 330, y: 497), controlPoint2: CGPoint(x: 260, y: 440))
+        cloud2Path.move(to: CGPoint(x: 242,y: 298))
+        cloud2Path.addCurve(to: CGPoint(x: 118, y: 241), controlPoint1: CGPoint(x: 48, y: 298), controlPoint2: CGPoint(x: 118, y: 241))
+
         
         let cloudScaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
         cloudScaleAnimation.duration = cloudAnimationDuration
@@ -141,19 +143,19 @@ class MotorcycleViewController: UIViewController {
         let cloud2Animation = CAAnimationGroup()
         cloud2Animation.duration = cloudAnimationDuration
         cloud2Animation.repeatCount = Float(cloudAnimationRepeatCount)
-        cloud2Animation.beginTime = CACurrentMediaTime()+0.4
+        cloud2Animation.beginTime = CACurrentMediaTime()+0.2
         cloud2Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloudPathAnimation]
         
         let cloud3Animation = CAAnimationGroup()
         cloud3Animation.duration = cloudAnimationDuration
         cloud3Animation.repeatCount = Float(cloudAnimationRepeatCount)
-        cloud3Animation.beginTime = CACurrentMediaTime()+1.0
+        cloud3Animation.beginTime = CACurrentMediaTime()+0.5
         cloud3Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloudPathAnimation]
         
         let cloud4Animation = CAAnimationGroup()
         cloud4Animation.duration = cloudAnimationDuration
         cloud4Animation.repeatCount = Float(cloudAnimationRepeatCount)
-        cloud4Animation.beginTime = CACurrentMediaTime()+1.4
+        cloud4Animation.beginTime = CACurrentMediaTime()+0.7
         cloud4Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloudPathAnimation]
 
         let cloud5Animation = CAAnimationGroup()
@@ -164,19 +166,19 @@ class MotorcycleViewController: UIViewController {
         let cloud6Animation = CAAnimationGroup()
         cloud6Animation.duration = cloudAnimationDuration
         cloud6Animation.repeatCount = Float(cloudAnimationRepeatCount)
-        cloud6Animation.beginTime = CACurrentMediaTime()+0.5
+        cloud6Animation.beginTime = CACurrentMediaTime()+0.25
         cloud6Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloud2PathAnimation]
         
         let cloud7Animation = CAAnimationGroup()
         cloud7Animation.duration = cloudAnimationDuration
         cloud7Animation.repeatCount = Float(cloudAnimationRepeatCount)
-        cloud7Animation.beginTime = CACurrentMediaTime()+0.9
+        cloud7Animation.beginTime = CACurrentMediaTime()+0.45
         cloud7Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloud2PathAnimation]
         
         let cloud8Animation = CAAnimationGroup()
         cloud8Animation.duration = cloudAnimationDuration
         cloud8Animation.repeatCount = Float(cloudAnimationRepeatCount)
-        cloud8Animation.beginTime = CACurrentMediaTime()+1.3
+        cloud8Animation.beginTime = CACurrentMediaTime()+0.65
         cloud8Animation.animations = [cloudScaleAnimation, cloudTransparencyAnimation, cloud2PathAnimation]
         
 
