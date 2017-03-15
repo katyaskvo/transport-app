@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-gs-bVj" userLabel="Button Back">
-                                <rect key="frame" x="20" y="647" width="44" height="47"/>
+                                <rect key="frame" x="20" y="650" width="44" height="44"/>
                                 <state key="normal" image="arrow-left">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -135,9 +135,7 @@
                             <constraint firstItem="EPS-s9-h4K" firstAttribute="top" secondItem="MfZ-gs-bVj" secondAttribute="bottom" constant="74" id="dvW-Yl-rmP"/>
                             <constraint firstItem="YTa-V2-fyh" firstAttribute="trailing" secondItem="ZwX-cT-FIQ" secondAttribute="trailingMargin" id="fBS-bx-zVq"/>
                             <constraint firstItem="ADe-jG-ewD" firstAttribute="top" secondItem="YTa-V2-fyh" secondAttribute="bottom" constant="36" id="iQg-vx-JlR"/>
-                            <constraint firstItem="ADe-jG-ewD" firstAttribute="top" secondItem="YTa-V2-fyh" secondAttribute="bottom" constant="36" id="kCo-xR-Spn"/>
-                            <constraint firstItem="ADe-jG-ewD" firstAttribute="trailing" secondItem="ZwX-cT-FIQ" secondAttribute="trailingMargin" id="rWa-FV-4kG"/>
-                            <constraint firstItem="j1P-3z-lbr" firstAttribute="centerY" secondItem="MfZ-gs-bVj" secondAttribute="centerY" constant="1" id="urt-0p-pT5"/>
+                            <constraint firstItem="ADe-jG-ewD" firstAttribute="trailing" secondItem="ZwX-cT-FIQ" secondAttribute="trailingMargin" id="xOh-ZP-sum"/>
                         </constraints>
                     </view>
                     <connections>
@@ -177,7 +175,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXa-7H-nmR" userLabel="Button Back">
-                                <rect key="frame" x="20" y="649" width="44" height="45"/>
+                                <rect key="frame" x="20" y="650" width="44" height="44"/>
                                 <state key="normal" image="arrow-left">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -290,7 +288,6 @@
                             <constraint firstItem="JZ7-R1-VsF" firstAttribute="top" secondItem="oR7-Rn-Zmf" secondAttribute="bottom" constant="74" id="Jke-PU-ge8"/>
                             <constraint firstItem="oR7-Rn-Zmf" firstAttribute="trailing" secondItem="U2J-vO-Mnc" secondAttribute="trailingMargin" id="PkY-mB-aSP"/>
                             <constraint firstItem="cMD-1D-IGy" firstAttribute="trailing" secondItem="U2J-vO-Mnc" secondAttribute="trailingMargin" id="RGz-uX-iTe"/>
-                            <constraint firstItem="7hV-Nf-zf1" firstAttribute="centerY" secondItem="KXa-7H-nmR" secondAttribute="centerY" id="ajV-8X-Y1f"/>
                             <constraint firstItem="7hV-Nf-zf1" firstAttribute="centerX" secondItem="U2J-vO-Mnc" secondAttribute="centerX" id="nxj-8M-W1l"/>
                             <constraint firstItem="JZ7-R1-VsF" firstAttribute="top" secondItem="7hV-Nf-zf1" secondAttribute="bottom" constant="66" id="r8i-ST-IdE"/>
                             <constraint firstItem="KXa-7H-nmR" firstAttribute="leading" secondItem="U2J-vO-Mnc" secondAttribute="leadingMargin" id="tj9-Ci-qfk"/>
@@ -1307,12 +1304,12 @@
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nYK-5n-H5w"/>
-        <segue reference="0Vj-FM-jc3"/>
-        <segue reference="31R-Pj-w8V"/>
-        <segue reference="NWe-BV-uvs"/>
+        <segue reference="jyw-zy-5b2"/>
         <segue reference="VjF-JU-9aB"/>
-        <segue reference="iJd-I6-ByO"/>
-        <segue reference="q8u-3C-dbN"/>
+        <segue reference="BzD-GJ-YjH"/>
+        <segue reference="vgW-N1-GXF"/>
+        <segue reference="TIf-N3-4A5"/>
+        <segue reference="Mnz-ED-BsI"/>
+        <segue reference="0Vj-FM-jc3"/>
     </inferredMetricsTieBreakers>
 </document>
