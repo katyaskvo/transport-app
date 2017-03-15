@@ -11,11 +11,12 @@ class BeetleViewController: UIViewController {
     @IBOutlet var frontWheelReflectionView: UIImageView!
     @IBOutlet var windowReflectionView: UIImageView!
     @IBOutlet var pipeView: UIImageView!
+    @IBOutlet var fenderBackView: UIImageView!
+    @IBOutlet var parkingLightOnView: UIImageView!
     @IBOutlet var headlightsView: UIImageView!
     @IBOutlet var roadBoxView: UIView!
     @IBOutlet var road1View: UIImageView!
     @IBOutlet var road2View: UIImageView!
-//    @IBOutlet var steamView: UIImageView!
     @IBOutlet var cloud1View: UIImageView!
     @IBOutlet var cloud2View: UIImageView!
     @IBOutlet var cloud3View: UIImageView!
@@ -140,6 +141,8 @@ class BeetleViewController: UIViewController {
                         self.backWheelReflectionView.shake(values: [0, 1, 0, 1.5, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.backWheelReflectionView, duration: 0.75, animationDuration: self.animationDuration)
                         self.frontWheelView.shake(values: [0, 1.5, 0, 1, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.frontWheelView, duration: 0.75, animationDuration: self.animationDuration)
                         self.frontWheelReflectionView.shake(values: [0, 1.5, 0, 1, 0], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.frontWheelReflectionView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.fenderBackView.shake(values: [0.75, -0.75, 0.75, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.fenderBackView, duration: 0.75, animationDuration: self.animationDuration)
+                        self.parkingLightOnView.shake(values: [0.75, -0.75, 0.75, -0.75, 0.75], keyTimes: [0, 0.25, 0.5, 0.75, 1], animatedImageView: self.parkingLightOnView, duration: 0.75, animationDuration: self.animationDuration)
                         
                         
                         //Wheels
@@ -151,6 +154,7 @@ class BeetleViewController: UIViewController {
                         //Headlights Shine
                         self.headlightsView.layer.add(headlightsAnimation, forKey: "contents")
                         self.headlightsView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.headlightsView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
+                        self.parkingLightOnView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.parkingLightOnView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
                         
                         //Steam Animation
 //                

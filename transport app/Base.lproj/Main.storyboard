@@ -200,7 +200,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hV-Nf-zf1">
-                                <rect key="frame" x="481.5" y="641" width="61" height="61"/>
+                                <rect key="frame" x="482" y="641" width="61" height="61"/>
                                 <state key="normal" image="playButton"/>
                                 <connections>
                                     <action selector="startAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="bTA-aW-gFs"/>
@@ -259,6 +259,14 @@
                                         <rect key="frame" x="370" y="38" width="143" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="beetle_parking_light_on" translatesAutoresizingMaskIntoConstraints="NO" id="5MK-OJ-8nC">
+                                        <rect key="frame" x="192" y="118" width="52" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="beetle_fender_back" translatesAutoresizingMaskIntoConstraints="NO" id="M2f-bU-MRb">
+                                        <rect key="frame" x="160" y="110" width="469" height="111"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ur-LE-UJf">
                                         <rect key="frame" x="145" y="268" width="700" height="2"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -298,9 +306,11 @@
                         <outlet property="cloud2View" destination="APT-mP-rmW" id="SxM-7T-zey"/>
                         <outlet property="cloud3View" destination="XMc-hN-NZW" id="VMi-77-Tf4"/>
                         <outlet property="cloud4View" destination="uNU-CR-EGK" id="NHM-w6-104"/>
+                        <outlet property="fenderBackView" destination="M2f-bU-MRb" id="KVj-IS-l2K"/>
                         <outlet property="frontWheelReflectionView" destination="YhJ-R9-RIm" id="jRY-Sy-RGj"/>
                         <outlet property="frontWheelView" destination="qxX-da-JXx" id="CWG-cA-hj3"/>
                         <outlet property="headlightsView" destination="18r-yL-nkg" id="fnA-0i-NUd"/>
+                        <outlet property="parkingLightOnView" destination="5MK-OJ-8nC" id="HcX-2j-HHO"/>
                         <outlet property="pipeView" destination="cav-Ml-eAc" id="N63-6I-AXq"/>
                         <outlet property="road1View" destination="Got-qC-eoU" id="wSV-L9-hwX"/>
                         <outlet property="road2View" destination="LfN-ep-RRP" id="Vdn-tU-Me5"/>
@@ -1211,6 +1221,8 @@
         <image name="arrow-left" width="44" height="44"/>
         <image name="arrow-right" width="44" height="44"/>
         <image name="beetle_body" width="672" height="221"/>
+        <image name="beetle_fender_back" width="469" height="111"/>
+        <image name="beetle_parking_light_on" width="52" height="58"/>
         <image name="beetle_pipe" width="80" height="17"/>
         <image name="beetle_wheel" width="123" height="124"/>
         <image name="beetle_wheel_reflection" width="81" height="91"/>
