@@ -96,7 +96,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="GYo-Ql-b9b">
-                                        <rect key="frame" x="99" y="32" width="447" height="238"/>
+                                        <rect key="frame" x="98.5" y="34" width="449" height="239"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="chain_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="d7J-qR-I4C">
@@ -116,7 +116,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bike_bell00" translatesAutoresizingMaskIntoConstraints="NO" id="0qf-GI-WSg">
-                                        <rect key="frame" x="404" y="1" width="55" height="45"/>
+                                        <rect key="frame" x="409" y="4" width="55" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="frame2" translatesAutoresizingMaskIntoConstraints="NO" id="495-S5-DTW">
@@ -1243,7 +1243,7 @@
         <image name="firetruck_wheel" width="101" height="101"/>
         <image name="firetruck_wheel_reflection" width="87" height="87"/>
         <image name="firetruck_window_reflections" width="238" height="44"/>
-        <image name="frame" width="447" height="238"/>
+        <image name="frame" width="449" height="239"/>
         <image name="frame2" width="43" height="43"/>
         <image name="helicopter_body" width="650" height="318"/>
         <image name="helicopter_front_window_reflection" width="20" height="44"/>
@@ -1305,11 +1305,11 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="jyw-zy-5b2"/>
-        <segue reference="VjF-JU-9aB"/>
+        <segue reference="eAs-q5-aYq"/>
+        <segue reference="v2T-s6-0b7"/>
+        <segue reference="nqZ-dB-v3P"/>
         <segue reference="BzD-GJ-YjH"/>
         <segue reference="vgW-N1-GXF"/>
         <segue reference="TIf-N3-4A5"/>
-        <segue reference="Mnz-ED-BsI"/>
-        <segue reference="0Vj-FM-jc3"/>
     </inferredMetricsTieBreakers>
 </document>
