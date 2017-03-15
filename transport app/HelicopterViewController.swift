@@ -104,11 +104,13 @@ class HelicopterViewController: UIViewController {
                                     //helix
                                     self.heliTailView.layer.add(stillViewDisappearAnimation, forKey: "opacity")
                                     self.helixStillView.layer.add(stillViewDisappearAnimation, forKey: "opacity")
+                                    self.helixView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.helixView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
                                     
                                     //helitail
                                     self.heliTailRotatingView.rotate360Degrees(duration: 2, repeatCount: 5)
                                     self.heliTailRotatingView.layer.add(heliTailAppearAnimation, forKey: "opacity")
                                     self.helixView.layer.add(helixViewAnimation, forKey: "helix on")
+                                    self.heliTailRotatingView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.heliTailRotatingView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
                                     
                                     //Shake
                                     self.helicopterBodyView.shake(values: [0, 15, -20, 10, 0], keyTimes: [0, 0.2, 0.55, 0.85, 1], animatedImageView: self.helicopterBodyView, duration: 5, animationDuration: self.animationDuration)

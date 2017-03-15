@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-gs-bVj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-gs-bVj" userLabel="Button Back">
                                 <rect key="frame" x="20" y="650" width="44" height="44"/>
                                 <state key="normal" image="arrow-left">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,18 +32,29 @@
                                     <segue destination="FDj-u8-mBC" kind="show" id="v2T-s6-0b7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADe-jG-ewD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADe-jG-ewD" userLabel="Button Next">
                                 <rect key="frame" x="960" y="650" width="44" height="44"/>
                                 <state key="normal" image="arrow-right"/>
                                 <connections>
                                     <segue destination="BDY-SG-CIy" kind="show" id="eAs-q5-aYq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTa-V2-fyh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTa-V2-fyh" userLabel="Button Navigation">
                                 <rect key="frame" x="960" y="570" width="44" height="44"/>
                                 <state key="normal" image="navigation_button"/>
                                 <connections>
                                     <segue destination="eYz-ct-G7b" kind="show" id="nqZ-dB-v3P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-3z-lbr" userLabel="Button Play">
+                                <rect key="frame" x="482" y="642" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="5En-5E-KSR"/>
+                                    <constraint firstAttribute="height" constant="60" id="8Sq-eq-CH5"/>
+                                </constraints>
+                                <state key="normal" image="playButton"/>
+                                <connections>
+                                    <action selector="startAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="3cJ-mY-LLK"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5U8-sd-m2j" userLabel="bike">
@@ -118,17 +129,6 @@
                                     </imageView>
                                 </subviews>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-3z-lbr">
-                                <rect key="frame" x="482" y="642" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="5En-5E-KSR"/>
-                                    <constraint firstAttribute="height" constant="60" id="8Sq-eq-CH5"/>
-                                </constraints>
-                                <state key="normal" image="playButton"/>
-                                <connections>
-                                    <action selector="startAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="3cJ-mY-LLK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.68205970972276231" blue="0.65090339520605323" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -180,7 +180,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXa-7H-nmR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXa-7H-nmR" userLabel="Button Back">
                                 <rect key="frame" x="20" y="650" width="44" height="44"/>
                                 <state key="normal" image="arrow-left">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -189,22 +189,34 @@
                                     <segue destination="980-jK-LUk" kind="show" id="31R-Pj-w8V"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oR7-Rn-Zmf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oR7-Rn-Zmf" userLabel="Button Next">
                                 <rect key="frame" x="960" y="650" width="44" height="44"/>
                                 <state key="normal" image="arrow-right"/>
                                 <connections>
                                     <segue destination="S4R-Ja-viH" kind="show" id="nYK-5n-H5w"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMD-1D-IGy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMD-1D-IGy" userLabel="Button Navigation">
                                 <rect key="frame" x="960" y="570" width="44" height="44"/>
                                 <state key="normal" image="navigation_button"/>
                                 <connections>
                                     <segue destination="eYz-ct-G7b" kind="show" id="NWe-BV-uvs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hV-Nf-zf1">
+                                <rect key="frame" x="482" y="642" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="74P-2P-TzT"/>
+                                    <constraint firstAttribute="width" constant="60" id="yDc-37-mhc"/>
+                                </constraints>
+                                <state key="normal" image="playButton"/>
+                                <connections>
+                                    <action selector="startAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="bTA-aW-gFs"/>
+                                    <action selector="startAnimation" destination="FDj-u8-mBC" eventType="touchUpInside" id="kx4-ky-RHi"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hvt-Cr-cZF" userLabel="beetle">
-                                <rect key="frame" x="16" y="273" width="990" height="271"/>
+                                <rect key="frame" x="16" y="273" width="990" height="272"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="ehK-Zg-JAT">
@@ -271,18 +283,6 @@
                                     </view>
                                 </subviews>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hV-Nf-zf1">
-                                <rect key="frame" x="482" y="642" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="74P-2P-TzT"/>
-                                    <constraint firstAttribute="width" constant="60" id="yDc-37-mhc"/>
-                                </constraints>
-                                <state key="normal" image="playButton"/>
-                                <connections>
-                                    <action selector="startAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="bTA-aW-gFs"/>
-                                    <action selector="startAnimation" destination="FDj-u8-mBC" eventType="touchUpInside" id="kx4-ky-RHi"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97647058823529409" green="0.92941176470588238" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -583,21 +583,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WL-Jn-pJU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WL-Jn-pJU" userLabel="Button Back">
                                 <rect key="frame" x="20" y="650" width="44" height="44"/>
                                 <state key="normal" image="arrow-left"/>
                                 <connections>
                                     <segue destination="BDY-SG-CIy" kind="show" id="VjF-JU-9aB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npS-NJ-Q1v">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npS-NJ-Q1v" userLabel="Button Next">
                                 <rect key="frame" x="960" y="650" width="44" height="44"/>
                                 <state key="normal" image="arrow-right"/>
                                 <connections>
                                     <segue destination="339-XQ-wEa" kind="show" id="q8u-3C-dbN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGw-hE-zob">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGw-hE-zob" userLabel="Button Navigation">
                                 <rect key="frame" x="960" y="570" width="44" height="44"/>
                                 <state key="normal" image="navigation_button"/>
                                 <connections>
@@ -757,7 +757,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFx-gz-usA" userLabel="firetruck">
-                                <rect key="frame" x="70" y="243" width="890" height="300"/>
+                                <rect key="frame" x="70" y="243" width="890" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OY2-hT-B20">
@@ -1304,10 +1304,10 @@
     <inferredMetricsTieBreakers>
         <segue reference="jyw-zy-5b2"/>
         <segue reference="VjF-JU-9aB"/>
-        <segue reference="BzD-GJ-YjH"/>
-        <segue reference="vgW-N1-GXF"/>
-        <segue reference="TIf-N3-4A5"/>
+        <segue reference="iJd-I6-ByO"/>
+        <segue reference="di2-K5-DPJ"/>
         <segue reference="0Vj-FM-jc3"/>
-        <segue reference="XbO-Bq-ASr"/>
+        <segue reference="TIf-N3-4A5"/>
+        <segue reference="vgW-N1-GXF"/>
     </inferredMetricsTieBreakers>
 </document>

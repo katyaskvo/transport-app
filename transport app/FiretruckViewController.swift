@@ -369,6 +369,7 @@ class FiretruckViewController: UIViewController {
                         
                         SyrenFrontWhiteAnimation.animations = [lightFrontWhiteView01Animation, lightFrontWhiteView02Animation]
                         self.lightFrontWhiteView.layer.add(SyrenFrontWhiteAnimation, forKey: "contents")
+                        self.lightFrontWhiteView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.lightFrontWhiteView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
                         
                         //Orange Light
                         self.lightOrangeView.layer.add(lightOrangeViewAnimation, forKey: "contents")

@@ -150,6 +150,7 @@ class BeetleViewController: UIViewController {
                         
                         //Headlights Shine
                         self.headlightsView.layer.add(headlightsAnimation, forKey: "contents")
+                        self.headlightsView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.headlightsView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
                         
                         //Steam Animation
 //                
