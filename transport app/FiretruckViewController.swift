@@ -389,7 +389,7 @@ class FiretruckViewController: UIViewController {
                         SyrenRoof2Animation.animations = [lightRoof2ViewAnimation]
                         self.syrenRoof2View.layer.add(SyrenRoof2Animation, forKey: "contents")
                         
-                        self.chainView.animateWheelReflection(values: [M_PI * 0.015, M_PI * (-0.02), M_PI * 0.015 ], keyTimes: [0, 0.5, 1], animatedImageView: self.chainView, duration: 0.3, animationDuration: self.animationDuration)
+                        self.chainView.animateWheelReflection(values: [M_PI * 0.015, M_PI * (-0.02), M_PI * 0.015 ], keyTimes: [0, 0.5, 1], animatedImageView: self.chainView, duration: 0.5, animationDuration: self.animationDuration)
                         
         }, completion: nil)
     }

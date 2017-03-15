@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-gs-bVj" userLabel="Button Back">
-                                <rect key="frame" x="20" y="650" width="44" height="44"/>
+                                <rect key="frame" x="20" y="647" width="44" height="47"/>
                                 <state key="normal" image="arrow-left">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -47,11 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-3z-lbr" userLabel="Button Play">
-                                <rect key="frame" x="482" y="642" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="5En-5E-KSR"/>
-                                    <constraint firstAttribute="height" constant="60" id="8Sq-eq-CH5"/>
-                                </constraints>
+                                <rect key="frame" x="482" y="641" width="61" height="61"/>
                                 <state key="normal" image="playButton"/>
                                 <connections>
                                     <action selector="startAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="3cJ-mY-LLK"/>
@@ -141,7 +137,7 @@
                             <constraint firstItem="ADe-jG-ewD" firstAttribute="top" secondItem="YTa-V2-fyh" secondAttribute="bottom" constant="36" id="iQg-vx-JlR"/>
                             <constraint firstItem="ADe-jG-ewD" firstAttribute="top" secondItem="YTa-V2-fyh" secondAttribute="bottom" constant="36" id="kCo-xR-Spn"/>
                             <constraint firstItem="ADe-jG-ewD" firstAttribute="trailing" secondItem="ZwX-cT-FIQ" secondAttribute="trailingMargin" id="rWa-FV-4kG"/>
-                            <constraint firstItem="j1P-3z-lbr" firstAttribute="centerY" secondItem="MfZ-gs-bVj" secondAttribute="centerY" id="urt-0p-pT5"/>
+                            <constraint firstItem="j1P-3z-lbr" firstAttribute="centerY" secondItem="MfZ-gs-bVj" secondAttribute="centerY" constant="1" id="urt-0p-pT5"/>
                         </constraints>
                     </view>
                     <connections>
@@ -181,7 +177,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXa-7H-nmR" userLabel="Button Back">
-                                <rect key="frame" x="20" y="650" width="44" height="44"/>
+                                <rect key="frame" x="20" y="649" width="44" height="45"/>
                                 <state key="normal" image="arrow-left">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -204,11 +200,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hV-Nf-zf1">
-                                <rect key="frame" x="482" y="642" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="74P-2P-TzT"/>
-                                    <constraint firstAttribute="width" constant="60" id="yDc-37-mhc"/>
-                                </constraints>
+                                <rect key="frame" x="481.5" y="641" width="61" height="61"/>
                                 <state key="normal" image="playButton"/>
                                 <connections>
                                     <action selector="startAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="bTA-aW-gFs"/>
@@ -292,6 +284,7 @@
                             <constraint firstItem="cMD-1D-IGy" firstAttribute="trailing" secondItem="U2J-vO-Mnc" secondAttribute="trailingMargin" id="RGz-uX-iTe"/>
                             <constraint firstItem="7hV-Nf-zf1" firstAttribute="centerY" secondItem="KXa-7H-nmR" secondAttribute="centerY" id="ajV-8X-Y1f"/>
                             <constraint firstItem="7hV-Nf-zf1" firstAttribute="centerX" secondItem="U2J-vO-Mnc" secondAttribute="centerX" id="nxj-8M-W1l"/>
+                            <constraint firstItem="JZ7-R1-VsF" firstAttribute="top" secondItem="7hV-Nf-zf1" secondAttribute="bottom" constant="66" id="r8i-ST-IdE"/>
                             <constraint firstItem="KXa-7H-nmR" firstAttribute="leading" secondItem="U2J-vO-Mnc" secondAttribute="leadingMargin" id="tj9-Ci-qfk"/>
                             <constraint firstItem="JZ7-R1-VsF" firstAttribute="top" secondItem="KXa-7H-nmR" secondAttribute="bottom" constant="74" id="vRM-dJ-hxy"/>
                         </constraints>
@@ -445,8 +438,8 @@
                                     <segue destination="eYz-ct-G7b" kind="show" id="di2-K5-DPJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-Iu-Sf1">
-                                <rect key="frame" x="482" y="642" width="60" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-Iu-Sf1">
+                                <rect key="frame" x="481.5" y="641" width="61" height="61"/>
                                 <state key="normal" image="playButton"/>
                                 <connections>
                                     <action selector="startAnimation" destination="BDY-SG-CIy" eventType="touchUpInside" id="hK7-fy-1sV"/>
@@ -583,34 +576,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WL-Jn-pJU" userLabel="Button Back">
-                                <rect key="frame" x="20" y="650" width="44" height="44"/>
-                                <state key="normal" image="arrow-left"/>
-                                <connections>
-                                    <segue destination="BDY-SG-CIy" kind="show" id="VjF-JU-9aB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npS-NJ-Q1v" userLabel="Button Next">
-                                <rect key="frame" x="960" y="650" width="44" height="44"/>
-                                <state key="normal" image="arrow-right"/>
-                                <connections>
-                                    <segue destination="339-XQ-wEa" kind="show" id="q8u-3C-dbN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGw-hE-zob" userLabel="Button Navigation">
-                                <rect key="frame" x="960" y="570" width="44" height="44"/>
-                                <state key="normal" image="navigation_button"/>
-                                <connections>
-                                    <segue destination="eYz-ct-G7b" kind="show" id="9hi-BS-FVC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-T0-90T">
-                                <rect key="frame" x="482" y="642" width="60" height="60"/>
-                                <state key="normal" image="playButton"/>
-                                <connections>
-                                    <action selector="startAnimation" destination="4se-pa-4cI" eventType="touchUpInside" id="pMA-W3-Xaj"/>
-                                </connections>
-                            </button>
                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSh-cR-CgX" userLabel="clouds">
                                 <rect key="frame" x="0.0" y="62" width="1024" height="648"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -641,6 +606,34 @@
                                     </imageView>
                                 </subviews>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WL-Jn-pJU" userLabel="Button Back">
+                                <rect key="frame" x="20" y="650" width="44" height="44"/>
+                                <state key="normal" image="arrow-left"/>
+                                <connections>
+                                    <segue destination="BDY-SG-CIy" kind="show" id="VjF-JU-9aB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npS-NJ-Q1v" userLabel="Button Next">
+                                <rect key="frame" x="960" y="650" width="44" height="44"/>
+                                <state key="normal" image="arrow-right"/>
+                                <connections>
+                                    <segue destination="339-XQ-wEa" kind="show" id="q8u-3C-dbN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGw-hE-zob" userLabel="Button Navigation">
+                                <rect key="frame" x="960" y="570" width="44" height="44"/>
+                                <state key="normal" image="navigation_button"/>
+                                <connections>
+                                    <segue destination="eYz-ct-G7b" kind="show" id="9hi-BS-FVC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-T0-90T">
+                                <rect key="frame" x="481.5" y="641" width="61" height="61"/>
+                                <state key="normal" image="playButton"/>
+                                <connections>
+                                    <action selector="startAnimation" destination="4se-pa-4cI" eventType="touchUpInside" id="pMA-W3-Xaj"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cxw-dl-n5Y" userLabel="helicopter">
                                 <rect key="frame" x="77" y="204" width="870" height="345"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -749,8 +742,8 @@
                                     <segue destination="eYz-ct-G7b" kind="show" id="Mnz-ED-BsI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3Z-pR-V7z">
-                                <rect key="frame" x="482" y="642" width="60" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3Z-pR-V7z">
+                                <rect key="frame" x="481.5" y="641" width="61" height="61"/>
                                 <state key="normal" backgroundImage="playButton"/>
                                 <connections>
                                     <action selector="startAnimation" destination="980-jK-LUk" eventType="touchUpInside" id="NX7-Qc-veF"/>
@@ -978,8 +971,8 @@
                                     <segue destination="eYz-ct-G7b" kind="show" id="XbO-Bq-ASr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpm-Pd-ApK">
-                                <rect key="frame" x="482" y="642" width="60" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpm-Pd-ApK">
+                                <rect key="frame" x="482" y="641" width="61" height="61"/>
                                 <state key="normal" image="playButton"/>
                                 <connections>
                                     <action selector="startAnimation" destination="339-XQ-wEa" eventType="touchUpInside" id="aQB-S8-6uQ"/>
@@ -1302,12 +1295,12 @@
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jyw-zy-5b2"/>
+        <segue reference="nYK-5n-H5w"/>
+        <segue reference="0Vj-FM-jc3"/>
+        <segue reference="31R-Pj-w8V"/>
+        <segue reference="NWe-BV-uvs"/>
         <segue reference="VjF-JU-9aB"/>
         <segue reference="iJd-I6-ByO"/>
-        <segue reference="di2-K5-DPJ"/>
-        <segue reference="0Vj-FM-jc3"/>
-        <segue reference="TIf-N3-4A5"/>
-        <segue reference="vgW-N1-GXF"/>
+        <segue reference="q8u-3C-dbN"/>
     </inferredMetricsTieBreakers>
 </document>
