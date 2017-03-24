@@ -371,7 +371,7 @@ Go to katyaskvo.com/bibika.</string>
                                     <constraint firstItem="vrX-1U-SHE" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" id="SzT-dY-3k9"/>
                                     <constraint firstItem="vrX-1U-SHE" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.8" id="WYL-Vw-lxy"/>
                                     <constraint firstItem="z2l-Hg-P83" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" multiplier="0.48" id="eme-Be-zzP"/>
-                                    <constraint firstItem="z2l-Hg-P83" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.38" id="h8p-gs-g9W"/>
+                                    <constraint firstItem="z2l-Hg-P83" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.39" id="h8p-gs-g9W"/>
                                     <constraint firstItem="z2l-Hg-P83" firstAttribute="bottom" secondItem="jf8-Yw-dHW" secondAttribute="bottom" multiplier="0.95" id="tXc-AS-L1D"/>
                                     <constraint firstItem="vrX-1U-SHE" firstAttribute="top" secondItem="jf8-Yw-dHW" secondAttribute="bottom" multiplier="0.07" id="tjA-Ko-r5L"/>
                                     <constraint firstItem="vrX-1U-SHE" firstAttribute="centerX" secondItem="jf8-Yw-dHW" secondAttribute="centerX" id="xve-ga-jAx"/>
@@ -1408,12 +1408,12 @@ Go to katyaskvo.com/bibika.</string>
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Mnz-ED-BsI"/>
+        <segue reference="dIa-WD-A1C"/>
+        <segue reference="tE1-0V-kka"/>
         <segue reference="TIf-N3-4A5"/>
         <segue reference="vgW-N1-GXF"/>
         <segue reference="BzD-GJ-YjH"/>
         <segue reference="VjF-JU-9aB"/>
         <segue reference="0Vj-FM-jc3"/>
-        <segue reference="tE1-0V-kka"/>
     </inferredMetricsTieBreakers>
 </document>
