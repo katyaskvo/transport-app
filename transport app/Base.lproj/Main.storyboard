@@ -975,7 +975,7 @@ Go to katyaskvo.com/bibika.</string>
                                 </subviews>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.63529411764705879" green="0.84313725490196079" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.32476645308816532" green="0.80493585621645003" blue="0.52696761883116039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ra9-dx-ITY" firstAttribute="top" secondItem="b3Z-pR-V7z" secondAttribute="bottom" constant="66" id="FvJ-in-UsF"/>
                             <constraint firstItem="HYH-eN-5yD" firstAttribute="trailing" secondItem="GJo-3Q-mgL" secondAttribute="trailingMargin" id="I7G-zS-iPp"/>
@@ -1237,7 +1237,7 @@ Go to katyaskvo.com/bibika.</string>
                                 </subviews>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.92174449336105191" green="0.71485629807393347" blue="0.37776180308044938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.76847403246380797" blue="0.31535085928417883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="S5X-PX-yk5" firstAttribute="trailing" secondItem="1Qu-2h-kkh" secondAttribute="trailingMargin" id="6yw-jq-dep"/>
                             <constraint firstItem="Cyg-TV-jk0" firstAttribute="top" secondItem="Bpm-Pd-ApK" secondAttribute="bottom" constant="66" id="FGb-YQ-3pj"/>
@@ -1408,12 +1408,12 @@ Go to katyaskvo.com/bibika.</string>
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9hi-BS-FVC"/>
-        <segue reference="BzD-GJ-YjH"/>
-        <segue reference="q8u-3C-dbN"/>
+        <segue reference="Mnz-ED-BsI"/>
         <segue reference="TIf-N3-4A5"/>
+        <segue reference="vgW-N1-GXF"/>
+        <segue reference="BzD-GJ-YjH"/>
         <segue reference="VjF-JU-9aB"/>
+        <segue reference="0Vj-FM-jc3"/>
         <segue reference="tE1-0V-kka"/>
-        <segue reference="wMh-tC-qJQ"/>
     </inferredMetricsTieBreakers>
 </document>
