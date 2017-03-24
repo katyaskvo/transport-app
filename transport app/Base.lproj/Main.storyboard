@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5U8-sd-m2j" userLabel="bike">
-                                <rect key="frame" x="324" y="214" width="700" height="344"/>
+                                <rect key="frame" x="162" y="214" width="700" height="344"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHt-o4-2gV">
@@ -206,7 +206,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hvt-Cr-cZF" userLabel="beetle">
-                                <rect key="frame" x="34" y="273" width="990" height="272"/>
+                                <rect key="frame" x="16" y="273" width="990" height="272"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="ehK-Zg-JAT">
@@ -322,41 +322,20 @@
         <!--Info Screen View Controller-->
         <scene sceneID="qtz-WP-xCH">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="YAq-73-NZs" userLabel="Info Screen View Controller" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="YAq-73-NZs" userLabel="Info Screen View Controller" customClass="Per" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HEL-uN-4E2"/>
                         <viewControllerLayoutGuide type="bottom" id="slu-gd-Z1X"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleAspectFit" id="ede-BV-2hO">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="katya_masha_bibika" translatesAutoresizingMaskIntoConstraints="NO" id="sT1-gl-SV5">
                                 <rect key="frame" x="0.0" y="-7" width="1024" height="786"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="story_container" translatesAutoresizingMaskIntoConstraints="NO" id="sRn-cm-vZo">
-                                <rect key="frame" x="313" y="270" width="400" height="317"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="stamp_rotated" translatesAutoresizingMaskIntoConstraints="NO" id="z2l-Hg-P83">
-                                <rect key="frame" x="530" y="416" width="155" height="155"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrX-1U-SHE">
-                                <rect key="frame" x="342" y="282" width="340" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Bibika App is an animated sound book created for babies 0 - 111 years of age.
-
-Have some questions about the app? 
-Go to bibika.io.
-
-Want to learn about how bibika was made? 
-Go to katyaskvo.com/bibika.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQ5-aa-EcQ">
                                 <rect key="frame" x="490" y="658" width="44" height="44"/>
                                 <state key="normal" image="close_button"/>
@@ -364,11 +343,48 @@ Go to katyaskvo.com/bibika.</string>
                                     <segue destination="eYz-ct-G7b" kind="show" id="dIa-WD-A1C"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jf8-Yw-dHW">
+                                <rect key="frame" x="313" y="270" width="400" height="317"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="story_container" translatesAutoresizingMaskIntoConstraints="NO" id="sRn-cm-vZo">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="317"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrX-1U-SHE">
+                                        <rect key="frame" x="30" y="14" width="340" height="180"/>
+                                        <string key="text">Bibika App is an animated sound book created for babies 0 - 111 years of age.
+
+Have some questions about the app? 
+Go to bibika.io.
+
+Want to learn about how bibika was made? 
+Go to katyaskvo.com/bibika.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="stamp_rotated" translatesAutoresizingMaskIntoConstraints="NO" id="z2l-Hg-P83">
+                                        <rect key="frame" x="220" y="146" width="155" height="155"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="z2l-Hg-P83" firstAttribute="trailing" secondItem="jf8-Yw-dHW" secondAttribute="trailing" multiplier="0.94" id="MYH-33-MEk"/>
+                                    <constraint firstItem="vrX-1U-SHE" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" id="SzT-dY-3k9"/>
+                                    <constraint firstItem="vrX-1U-SHE" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.8" id="WYL-Vw-lxy"/>
+                                    <constraint firstItem="z2l-Hg-P83" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" multiplier="0.48" id="eme-Be-zzP"/>
+                                    <constraint firstItem="z2l-Hg-P83" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.38" id="h8p-gs-g9W"/>
+                                    <constraint firstItem="z2l-Hg-P83" firstAttribute="bottom" secondItem="jf8-Yw-dHW" secondAttribute="bottom" multiplier="0.95" id="tXc-AS-L1D"/>
+                                    <constraint firstItem="vrX-1U-SHE" firstAttribute="top" secondItem="jf8-Yw-dHW" secondAttribute="bottom" multiplier="0.07" id="tjA-Ko-r5L"/>
+                                    <constraint firstItem="vrX-1U-SHE" firstAttribute="centerX" secondItem="jf8-Yw-dHW" secondAttribute="centerX" id="xve-ga-jAx"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.90980392156862744" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="jf8-Yw-dHW" firstAttribute="top" secondItem="ede-BV-2hO" secondAttribute="bottom" multiplier="0.35" id="6Mv-tA-ptC"/>
                             <constraint firstItem="slu-gd-Z1X" firstAttribute="top" secondItem="uQ5-aa-EcQ" secondAttribute="bottom" constant="66" id="8sz-aX-1TX"/>
+                            <constraint firstItem="jf8-Yw-dHW" firstAttribute="centerX" secondItem="ede-BV-2hO" secondAttribute="centerX" id="Ddd-Oj-G8E"/>
                             <constraint firstItem="uQ5-aa-EcQ" firstAttribute="centerX" secondItem="ede-BV-2hO" secondAttribute="centerX" id="nDM-xK-8eU"/>
+                            <constraint firstItem="jf8-Yw-dHW" firstAttribute="width" secondItem="ede-BV-2hO" secondAttribute="width" multiplier="0.39" id="na7-03-fMC"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -519,7 +535,7 @@ Go to katyaskvo.com/bibika.</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-XJ-VMn" userLabel="tractor">
-                                <rect key="frame" x="324" y="215" width="700" height="325"/>
+                                <rect key="frame" x="162" y="215" width="700" height="325"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="body" translatesAutoresizingMaskIntoConstraints="NO" id="zjp-9I-jbD">
@@ -650,7 +666,7 @@ Go to katyaskvo.com/bibika.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSh-cR-CgX" userLabel="clouds">
-                                <rect key="frame" x="0.0" y="120" width="1024" height="648"/>
+                                <rect key="frame" x="0.0" y="61" width="1024" height="648"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="Xte-dM-S1H">
@@ -708,7 +724,7 @@ Go to katyaskvo.com/bibika.</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cxw-dl-n5Y" userLabel="helicopter">
-                                <rect key="frame" x="120" y="204" width="904" height="345"/>
+                                <rect key="frame" x="59" y="204" width="904" height="345"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="helicopter_helix_still" translatesAutoresizingMaskIntoConstraints="NO" id="DAI-Fe-IjQ">
@@ -823,7 +839,7 @@ Go to katyaskvo.com/bibika.</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFx-gz-usA" userLabel="firetruck">
-                                <rect key="frame" x="134" y="243" width="890" height="301"/>
+                                <rect key="frame" x="66" y="243" width="890" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OY2-hT-B20">
@@ -1021,7 +1037,7 @@ Go to katyaskvo.com/bibika.</string>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1Qu-2h-kkh" customClass="Moto">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efb-R4-iRM" userLabel="Button Back">
                                 <rect key="frame" x="20" y="650" width="44" height="44"/>
@@ -1053,7 +1069,7 @@ Go to katyaskvo.com/bibika.</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1Z-d3-lIb" userLabel="motorcycle">
-                                <rect key="frame" x="324" y="198" width="700" height="350"/>
+                                <rect key="frame" x="160" y="198" width="700" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-T4-kYP">
@@ -1209,11 +1225,11 @@ Go to katyaskvo.com/bibika.</string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="eJE-E8-63W">
-                                                <rect key="frame" x="0.0" y="0.0" width="700" height="2"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="702" height="2"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="OA2-ez-0SB">
-                                                <rect key="frame" x="700" y="0.0" width="701" height="2"/>
+                                                <rect key="frame" x="702" y="0.0" width="701" height="2"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
                                         </subviews>
@@ -1392,12 +1408,12 @@ Go to katyaskvo.com/bibika.</string>
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dIa-WD-A1C"/>
+        <segue reference="9hi-BS-FVC"/>
+        <segue reference="BzD-GJ-YjH"/>
+        <segue reference="q8u-3C-dbN"/>
+        <segue reference="TIf-N3-4A5"/>
+        <segue reference="VjF-JU-9aB"/>
         <segue reference="tE1-0V-kka"/>
         <segue reference="wMh-tC-qJQ"/>
-        <segue reference="q8u-3C-dbN"/>
-        <segue reference="BzD-GJ-YjH"/>
-        <segue reference="VjF-JU-9aB"/>
-        <segue reference="TIf-N3-4A5"/>
     </inferredMetricsTieBreakers>
 </document>
