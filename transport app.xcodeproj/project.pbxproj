@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0005A9D81E6010890027EC73 /* MotorcycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0005A9D71E6010890027EC73 /* MotorcycleViewController.swift */; };
-		0005A9DA1E6013850027EC73 /* motorcycle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0005A9D91E6013850027EC73 /* motorcycle.mp3 */; };
 		0020AD101E13D1160080F514 /* BeetleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020AD0F1E13D1160080F514 /* BeetleViewController.swift */; };
+		002788DD1E8A3C3400B26632 /* bikebell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002788D91E8A3C3400B26632 /* bikebell.mp3 */; };
+		002788DE1E8A3C3400B26632 /* tractor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002788DA1E8A3C3400B26632 /* tractor.mp3 */; };
+		002788DF1E8A3C3400B26632 /* motorcycle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002788DB1E8A3C3400B26632 /* motorcycle.mp3 */; };
+		002788E01E8A3C3400B26632 /* beetle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002788DC1E8A3C3400B26632 /* beetle.mp3 */; };
 		002C0C791DD329360005AA2C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002C0C781DD329360005AA2C /* UIViewExtensions.swift */; };
-		0039A6E11E52D7F30084F4C5 /* beetle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0039A6E01E52D7F30084F4C5 /* beetle.mp3 */; };
-		0039A6E41E52D84D0084F4C5 /* bikebell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0039A6E21E52D84D0084F4C5 /* bikebell.mp3 */; };
 		0039A6E71E544BB00084F4C5 /* helicopter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0039A6E61E544BB00084F4C5 /* helicopter.mp3 */; };
-		0039A6E91E544BD30084F4C5 /* tractor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0039A6E81E544BD30084F4C5 /* tractor.mp3 */; };
 		00AA0F6C1D36B115005BEF28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA0F6B1D36B115005BEF28 /* AppDelegate.swift */; };
 		00AA0F6E1D36B115005BEF28 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA0F6D1D36B115005BEF28 /* RootViewController.swift */; };
 		00AA0F701D36B115005BEF28 /* BicycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA0F6F1D36B115005BEF28 /* BicycleViewController.swift */; };
@@ -49,13 +49,13 @@
 
 /* Begin PBXFileReference section */
 		0005A9D71E6010890027EC73 /* MotorcycleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorcycleViewController.swift; sourceTree = "<group>"; };
-		0005A9D91E6013850027EC73 /* motorcycle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = motorcycle.mp3; sourceTree = "<group>"; };
 		0020AD0F1E13D1160080F514 /* BeetleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeetleViewController.swift; sourceTree = "<group>"; };
+		002788D91E8A3C3400B26632 /* bikebell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bikebell.mp3; sourceTree = "<group>"; };
+		002788DA1E8A3C3400B26632 /* tractor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tractor.mp3; sourceTree = "<group>"; };
+		002788DB1E8A3C3400B26632 /* motorcycle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = motorcycle.mp3; sourceTree = "<group>"; };
+		002788DC1E8A3C3400B26632 /* beetle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beetle.mp3; sourceTree = "<group>"; };
 		002C0C781DD329360005AA2C /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		0039A6E01E52D7F30084F4C5 /* beetle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beetle.mp3; sourceTree = "<group>"; };
-		0039A6E21E52D84D0084F4C5 /* bikebell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bikebell.mp3; sourceTree = "<group>"; };
 		0039A6E61E544BB00084F4C5 /* helicopter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = helicopter.mp3; sourceTree = "<group>"; };
-		0039A6E81E544BD30084F4C5 /* tractor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tractor.mp3; sourceTree = "<group>"; };
 		00AA0F681D36B115005BEF28 /* transport app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transport app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AA0F6B1D36B115005BEF28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00AA0F6D1D36B115005BEF28 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -165,11 +165,11 @@
 		00BD286A1E4AD4C200CD132B /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				0005A9D91E6013850027EC73 /* motorcycle.mp3 */,
-				0039A6E81E544BD30084F4C5 /* tractor.mp3 */,
+				002788D91E8A3C3400B26632 /* bikebell.mp3 */,
+				002788DA1E8A3C3400B26632 /* tractor.mp3 */,
+				002788DB1E8A3C3400B26632 /* motorcycle.mp3 */,
+				002788DC1E8A3C3400B26632 /* beetle.mp3 */,
 				0039A6E61E544BB00084F4C5 /* helicopter.mp3 */,
-				0039A6E21E52D84D0084F4C5 /* bikebell.mp3 */,
-				0039A6E01E52D7F30084F4C5 /* beetle.mp3 */,
 				00BD28811E4AECB900CD132B /* firetruck.mp3 */,
 			);
 			name = sounds;
@@ -283,14 +283,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002788E01E8A3C3400B26632 /* beetle.mp3 in Resources */,
+				002788DD1E8A3C3400B26632 /* bikebell.mp3 in Resources */,
 				00BD28821E4AECB900CD132B /* firetruck.mp3 in Resources */,
 				00AA0F7A1D36B115005BEF28 /* LaunchScreen.storyboard in Resources */,
-				0039A6E91E544BD30084F4C5 /* tractor.mp3 in Resources */,
+				002788DE1E8A3C3400B26632 /* tractor.mp3 in Resources */,
 				00AA0F771D36B115005BEF28 /* Assets.xcassets in Resources */,
+				002788DF1E8A3C3400B26632 /* motorcycle.mp3 in Resources */,
 				0039A6E71E544BB00084F4C5 /* helicopter.mp3 in Resources */,
-				0039A6E11E52D7F30084F4C5 /* beetle.mp3 in Resources */,
-				0039A6E41E52D84D0084F4C5 /* bikebell.mp3 in Resources */,
-				0005A9DA1E6013850027EC73 /* motorcycle.mp3 in Resources */,
 				00AA0F751D36B115005BEF28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
