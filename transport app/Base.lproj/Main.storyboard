@@ -50,6 +50,7 @@
                                 <rect key="frame" x="482" y="641" width="61" height="61"/>
                                 <state key="normal" image="playButton"/>
                                 <connections>
+                                    <action selector="playSoundButton" destination="S4R-Ja-viH" eventType="touchUpInside" id="S79-Tc-XMX"/>
                                     <action selector="startAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="3cJ-mY-LLK"/>
                                 </connections>
                             </button>
@@ -125,6 +126,10 @@
                                     </imageView>
                                 </subviews>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tPq-Yx-HOj" customClass="MPVolumeView">
+                                <rect key="frame" x="135" y="40" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.68205970972276231" blue="0.65090339520605323" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -154,6 +159,7 @@
                         <outlet property="road1View" destination="JFa-U2-Bjq" id="h5k-An-IQL"/>
                         <outlet property="road2View" destination="s3o-cc-dE9" id="Qvd-Tc-o4P"/>
                         <outlet property="roadBoxView" destination="YHt-o4-2gV" id="ahA-4O-hBk"/>
+                        <outlet property="sliderSoundView" destination="tPq-Yx-HOj" id="ixy-ii-MMj"/>
                         <outlet property="wheelBackView" destination="dm7-5P-ifM" id="egE-Jr-Cah"/>
                         <outlet property="wheelFrontView" destination="oN5-nq-jg4" id="FJs-hv-kzv"/>
                     </connections>

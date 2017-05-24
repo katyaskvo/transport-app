@@ -1,5 +1,7 @@
 import UIKit
 import AudioToolbox
+import MediaPlayer
+import AVFoundation
 
 class BicycleViewController: UIViewController {
 
@@ -19,6 +21,7 @@ class BicycleViewController: UIViewController {
     @IBOutlet var pedal2View: UIImageView!
     @IBOutlet var pedalShaft2View: UIImageView!
     
+    @IBOutlet var sliderSoundView: MPVolumeView!
     @IBOutlet var bell00View: UIImageView!
     @IBOutlet var reflectionBackWheelView: UIImageView!
     @IBOutlet var reflectionFrontWheelView: UIImageView!
@@ -33,20 +36,12 @@ class BicycleViewController: UIViewController {
     var bellImages: [UIImage]!
     var animatedBell: UIImage!
     
+    var audioPlayer: AVAudioPlayer!
+    
     let animationDuration = CFTimeInterval(10.0)
-    
-    var soundId : SystemSoundID = 0
 
-    func playSound() {
-            let soundUrl = Bundle.main.url(forResource: "bikebell", withExtension: "mp3")
-            AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
-            AudioServicesPlaySystemSound(soundId)
-    }
-    
     override func viewDidDisappear(_ animated: Bool) {
-        if soundId != 0 {
-            AudioServicesDisposeSystemSoundID(soundId)
-        }
+        self.audioPlayer.stop()
     }
 
     
@@ -69,6 +64,23 @@ class BicycleViewController: UIViewController {
         chainImages = [chain0, chain1]
         bellImages = [bell00!, bell01!, bell02!, bell03!, bell04!, bell05!, bell06!, bell07!, bell08!, bell09!]
         
+        if let filePath = Bundle.main.path(forResource: "bikebell", ofType: "mp3", inDirectory: "") {
+            // Good, got a file
+            let filePathUrl = NSURL.fileURL(withPath: filePath)
+            
+            // Try to instantiate the audio player
+            do {
+                self.audioPlayer = try AVAudioPlayer(contentsOf: filePathUrl)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("filePath is empty!")
+        }
+        
+        sliderSoundView.setVolumeThumbImage(UIImage(named:"volume2"), for: UIControlState.normal)
+        sliderSoundView.setMaximumVolumeSliderImage(UIImage(named:"min_volume2"), for: UIControlState.normal)
+        sliderSoundView.setMinimumVolumeSliderImage(UIImage(named:"max_volume2"), for: UIControlState.normal)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -76,12 +88,14 @@ class BicycleViewController: UIViewController {
         self.button.isEnabled = true
     }
     
+    @IBAction func playSoundButton() {
+        self.audioPlayer.play()
+    }
+    
 
     @IBAction func startAnimation() {
         self.button.isEnabled = false
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
-        
-        playSound()
         
         wheelBackView.transform = CGAffineTransform.identity
         wheelFrontView.transform = CGAffineTransform.identity
