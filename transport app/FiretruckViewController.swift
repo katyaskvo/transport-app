@@ -1,7 +1,10 @@
 import UIKit
 import AudioToolbox
+import MediaPlayer
+import AVFoundation
 
 class FiretruckViewController: UIViewController {
+    @IBOutlet var sliderSoundView: MPVolumeView!
     @IBOutlet var buttonPlay: UIButton!
     @IBOutlet var firetruckBodyView: UIImageView!
     @IBOutlet var frontWheelView: UIImageView!
@@ -68,18 +71,10 @@ class FiretruckViewController: UIViewController {
     var animatedLightRoof2: UIImage!
     
     
-    var soundId : SystemSoundID = 0
-    
-    func playSound() {
-        let soundUrl = Bundle.main.url(forResource: "firetruck", withExtension: "mp3")
-        AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
-        AudioServicesPlaySystemSound(soundId)
-    }
+    var audioPlayer: AVAudioPlayer!
     
     override func viewDidDisappear(_ animated: Bool) {
-        if soundId != 0 {
-            AudioServicesDisposeSystemSoundID(soundId)
-        }
+        self.audioPlayer.stop()
     }
     
 
@@ -102,78 +97,92 @@ class FiretruckViewController: UIViewController {
                         SyrenTwoAnimation.animations = [lightTwoViewAnimation]
                         self.light2View.layer.add(SyrenTwoAnimation, forKey: "contents")
         }, completion: nil)
-        
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            let light1_00 = UIImage(named: "lightOne00")
-            let light1_01 = UIImage(named: "lightOne01")
-            let light1_02 = UIImage(named: "lightOne02")
-            light1Images = [light1_00!, light1_00!,light1_00!, light1_00!, light1_00!, light1_00!, light1_00!, light1_00!, light1_01!, light1_02!, light1_01!, light1_02!, light1_01!, light1_02!, light1_01!, light1_00!]
-        
-            let light2_00 = UIImage(named: "lightTwo00")
-            let light2_01 = UIImage(named: "lightTwo01")
-            let light2_02 = UIImage(named: "lightTwo02")
-            light2Images = [light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!, light2_01!, light2_02!, light2_01!, light2_02!, light2_01!, light2_02!, light2_01!, light2_00!]
-        
-            let light3_00 = UIImage(named: "lightThree00")
-            let light3_01 = UIImage(named: "lightThree01")
-            let light3_02 = UIImage(named: "lightThree02")
-            light3Images = [light3_00!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_00!]
-        
-            let light4_00 = UIImage(named: "lightFour00")
-            let light4_01 = UIImage(named: "lightFour01")
-            let light4_02 = UIImage(named: "lightFour02")
-            light4Images = [light4_00!, light4_01!, light4_02!, light4_01!, light4_02!, light4_01!, light4_02!, light4_01!, light4_00!]
-        
-            let light5_00 = UIImage(named: "lightFive00")
-            let light5_01 = UIImage(named: "lightFive01")
-            let light5_02 = UIImage(named: "lightFive02")
-            light5Images = [light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!, light5_01!, light5_02!, light5_01!, light5_02!, light5_01!, light5_02!, light5_01!, light5_00!]
-        
+        let light1_00 = UIImage(named: "lightOne00")
+        let light1_01 = UIImage(named: "lightOne01")
+        let light1_02 = UIImage(named: "lightOne02")
+        light1Images = [light1_00!, light1_00!,light1_00!, light1_00!, light1_00!, light1_00!, light1_00!, light1_00!, light1_01!, light1_02!, light1_01!, light1_02!, light1_01!, light1_02!, light1_01!, light1_00!]
+    
+        let light2_00 = UIImage(named: "lightTwo00")
+        let light2_01 = UIImage(named: "lightTwo01")
+        let light2_02 = UIImage(named: "lightTwo02")
+        light2Images = [light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!,light2_00!, light2_01!, light2_02!, light2_01!, light2_02!, light2_01!, light2_02!, light2_01!, light2_00!]
+    
+        let light3_00 = UIImage(named: "lightThree00")
+        let light3_01 = UIImage(named: "lightThree01")
+        let light3_02 = UIImage(named: "lightThree02")
+        light3Images = [light3_00!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_00!]
+    
+        let light4_00 = UIImage(named: "lightFour00")
+        let light4_01 = UIImage(named: "lightFour01")
+        let light4_02 = UIImage(named: "lightFour02")
+        light4Images = [light4_00!, light4_01!, light4_02!, light4_01!, light4_02!, light4_01!, light4_02!, light4_01!, light4_00!]
+    
+        let light5_00 = UIImage(named: "lightFive00")
+        let light5_01 = UIImage(named: "lightFive01")
+        let light5_02 = UIImage(named: "lightFive02")
+        light5Images = [light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!,light5_00!, light5_01!, light5_02!, light5_01!, light5_02!, light5_01!, light5_02!, light5_01!, light5_00!]
+    
 
-            light6Images = [light3_00!, light3_00!,light3_00!, light3_00!, light3_00!,light3_00!, light3_00!, light3_00!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_00!]
-        
-            let light_front_00 = UIImage(named: "front00")
-            let light_frontRed_01 = UIImage(named: "frontRed01")
-            let light_frontRed_02 = UIImage(named: "frontRed02")
-            lightFrontRedImages = [light_front_00!, light_front_00!,light_front_00!,light_front_00!,light_front_00!,light_front_00!,light_front_00!,light_front_00!, light_frontRed_01!, light_frontRed_02!, light_frontRed_01!, light_frontRed_02!, light_frontRed_01!, light_frontRed_02!, light_frontRed_01!, light_front_00!]
-        
+        light6Images = [light3_00!, light3_00!,light3_00!, light3_00!, light3_00!,light3_00!, light3_00!, light3_00!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_02!, light3_01!, light3_00!]
+    
+        let light_front_00 = UIImage(named: "front00")
+        let light_frontRed_01 = UIImage(named: "frontRed01")
+        let light_frontRed_02 = UIImage(named: "frontRed02")
+        lightFrontRedImages = [light_front_00!, light_front_00!,light_front_00!,light_front_00!,light_front_00!,light_front_00!,light_front_00!,light_front_00!, light_frontRed_01!, light_frontRed_02!, light_frontRed_01!, light_frontRed_02!, light_frontRed_01!, light_frontRed_02!, light_frontRed_01!, light_front_00!]
+    
 
-            let light_frontWhite_01 = UIImage(named: "headlights01")
-            let light_frontWhite_02 = UIImage(named: "headlights02")
-            lightFrontWhite01Images = [light_front_00!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!]
-            lightFrontWhite02Images = [light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_02!]
-        
-            let light_orange_01 = UIImage(named: "lightOrange01")
-            let light_orange_02 = UIImage(named: "lightOrange02")
-            lightOrangeImages = [light_orange_01!, light_orange_02!, light_orange_01!, light_orange_02!, light_orange_01!, light_orange_01!, light_orange_02!, light_orange_02!, light_orange_01!]
+        let light_frontWhite_01 = UIImage(named: "headlights01")
+        let light_frontWhite_02 = UIImage(named: "headlights02")
+        lightFrontWhite01Images = [light_front_00!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!]
+        lightFrontWhite02Images = [light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_02!, light_frontWhite_01!, light_frontWhite_02!, light_frontWhite_02!]
+    
+        let light_orange_01 = UIImage(named: "lightOrange01")
+        let light_orange_02 = UIImage(named: "lightOrange02")
+        lightOrangeImages = [light_orange_01!, light_orange_02!, light_orange_01!, light_orange_02!, light_orange_01!, light_orange_01!, light_orange_02!, light_orange_02!, light_orange_01!]
 
-        
-            let lightRoof_000 = UIImage(named: "roofLight000")
-            let lightRoof_01 = UIImage(named: "roofLight01")
-            let lightRoof_02 = UIImage(named: "roofLight02")
-            lightRoofImages = [lightRoof_01!, lightRoof_02!, lightRoof_01!, lightRoof_000!, lightRoof_000!, lightRoof_000! ]
+    
+        let lightRoof_000 = UIImage(named: "roofLight000")
+        let lightRoof_01 = UIImage(named: "roofLight01")
+        let lightRoof_02 = UIImage(named: "roofLight02")
+        lightRoofImages = [lightRoof_01!, lightRoof_02!, lightRoof_01!, lightRoof_000!, lightRoof_000!, lightRoof_000! ]
 
-            lightRoof2Images = [lightRoof_000!, lightRoof_000!, lightRoof_000!, lightRoof_01!, lightRoof_02!, lightRoof_01! ]
+        lightRoof2Images = [lightRoof_000!, lightRoof_000!, lightRoof_000!, lightRoof_01!, lightRoof_02!, lightRoof_01! ]
         
+        if let filePath = Bundle.main.path(forResource: "firetruck", ofType: "mp3", inDirectory: "") {
+            // Good, got a file
+            let filePathUrl = NSURL.fileURL(withPath: filePath)
+            
+            // Try to instantiate the audio player
+            do {
+                self.audioPlayer = try AVAudioPlayer(contentsOf: filePathUrl)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("filePath is empty!")
+        }
         
-
+        sliderSoundView.setVolumeThumbImage(UIImage(named:"volume"), for: UIControlState.normal)
+        sliderSoundView.setMaximumVolumeSliderImage(UIImage(named:"min_volume"), for: UIControlState.normal)
+        sliderSoundView.setMinimumVolumeSliderImage(UIImage(named:"max_volume"), for: UIControlState.normal)
+        sliderSoundView.setRouteButtonImage(UIImage(named:""), for: UIControlState.normal)
     }
-    
-    
     
     func enableButton() {
         self.buttonPlay.isEnabled = true
     }
     
+    @IBAction func playSoundButton() {
+        self.audioPlayer.play()
+    }
+    
     @IBAction func startAnimation() {
         self.buttonPlay.isEnabled = false
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
-        
-        playSound()
         
         frontWheelView.transform = CGAffineTransform.identity
         backWheelView.transform = CGAffineTransform.identity
@@ -191,11 +200,6 @@ class FiretruckViewController: UIViewController {
         lightOneViewAnimation.duration = 1
         lightOneViewAnimation.repeatCount = 1
        
-
-        
-
-
- 
         let lightThreeViewAnimation = CAKeyframeAnimation(keyPath: "contents")
         lightThreeViewAnimation.calculationMode = kCAAnimationDiscrete
         lightThreeViewAnimation.values = light3Images.map {$0.cgImage as AnyObject}

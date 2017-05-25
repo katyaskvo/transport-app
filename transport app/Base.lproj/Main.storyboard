@@ -858,6 +858,7 @@ Go to bibika.katyaskvo.com</string>
                                 <rect key="frame" x="482" y="641" width="61" height="61"/>
                                 <state key="normal" backgroundImage="playButton"/>
                                 <connections>
+                                    <action selector="playSoundButton" destination="980-jK-LUk" eventType="touchUpInside" id="BZw-tp-NQE"/>
                                     <action selector="startAnimation" destination="980-jK-LUk" eventType="touchUpInside" id="NX7-Qc-veF"/>
                                 </connections>
                             </button>
@@ -978,7 +979,7 @@ Go to bibika.katyaskvo.com</string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rf4-jv-OKl">
-                                        <rect key="frame" x="751" y="166.5" width="50" height="50"/>
+                                        <rect key="frame" x="751" y="167" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6bb-mA-4g7">
@@ -997,9 +998,14 @@ Go to bibika.katyaskvo.com</string>
                                     </view>
                                 </subviews>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewB-cW-DDl" customClass="MPVolumeView">
+                                <rect key="frame" x="20" y="60" width="170" height="30"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.32476645308816532" green="0.80493585621645003" blue="0.52696761883116039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ewB-cW-DDl" firstAttribute="leading" secondItem="GJo-3Q-mgL" secondAttribute="leadingMargin" id="FOU-Rr-kJP"/>
+                            <constraint firstAttribute="trailing" secondItem="ewB-cW-DDl" secondAttribute="trailing" constant="834" id="FuC-TV-7sf"/>
                             <constraint firstItem="Ra9-dx-ITY" firstAttribute="top" secondItem="b3Z-pR-V7z" secondAttribute="bottom" constant="66" id="FvJ-in-UsF"/>
                             <constraint firstItem="HYH-eN-5yD" firstAttribute="trailing" secondItem="GJo-3Q-mgL" secondAttribute="trailingMargin" id="I7G-zS-iPp"/>
                             <constraint firstItem="b3Z-pR-V7z" firstAttribute="centerX" secondItem="GJo-3Q-mgL" secondAttribute="centerX" id="IhI-J5-s5c"/>
@@ -1008,6 +1014,8 @@ Go to bibika.katyaskvo.com</string>
                             <constraint firstItem="eVr-ZO-ACk" firstAttribute="trailing" secondItem="GJo-3Q-mgL" secondAttribute="trailingMargin" id="lOv-0L-kKS"/>
                             <constraint firstItem="WnP-4P-AzR" firstAttribute="leading" secondItem="GJo-3Q-mgL" secondAttribute="leadingMargin" id="pcx-RO-Frv"/>
                             <constraint firstItem="Ra9-dx-ITY" firstAttribute="top" secondItem="eVr-ZO-ACk" secondAttribute="bottom" constant="74" id="qcr-XQ-U5k"/>
+                            <constraint firstItem="ewB-cW-DDl" firstAttribute="top" secondItem="7gt-yM-fSU" secondAttribute="bottom" constant="40" id="sA7-Bq-DDh"/>
+                            <constraint firstAttribute="bottom" secondItem="ewB-cW-DDl" secondAttribute="bottom" constant="678" id="vXF-YC-xyk"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1040,6 +1048,7 @@ Go to bibika.katyaskvo.com</string>
                         <outlet property="road1View" destination="WRs-Mu-B8f" id="hrl-7L-wPY"/>
                         <outlet property="road2View" destination="Hng-cq-MqG" id="TdM-Xb-vcx"/>
                         <outlet property="roadBoxView" destination="6bb-mA-4g7" id="Rvs-bL-jIL"/>
+                        <outlet property="sliderSoundView" destination="ewB-cW-DDl" id="KRh-1B-POJ"/>
                         <outlet property="syrenRoof2View" destination="eJu-Be-3Cq" id="KpT-kE-QtE"/>
                         <outlet property="syrenRoofView" destination="TS6-BU-HMW" id="OrC-wJ-dus"/>
                         <outlet property="syrenView" destination="bGJ-zA-xLn" id="Jkb-Xq-pCc"/>
@@ -1421,10 +1430,10 @@ Go to bibika.katyaskvo.com</string>
     <inferredMetricsTieBreakers>
         <segue reference="VjF-JU-9aB"/>
         <segue reference="iJd-I6-ByO"/>
-        <segue reference="9hi-BS-FVC"/>
-        <segue reference="q8u-3C-dbN"/>
-        <segue reference="TIf-N3-4A5"/>
         <segue reference="jyw-zy-5b2"/>
-        <segue reference="v2T-s6-0b7"/>
+        <segue reference="TIf-N3-4A5"/>
+        <segue reference="vgW-N1-GXF"/>
+        <segue reference="0Vj-FM-jc3"/>
+        <segue reference="Mnz-ED-BsI"/>
     </inferredMetricsTieBreakers>
 </document>
