@@ -78,9 +78,10 @@ class BicycleViewController: UIViewController {
             print("filePath is empty!")
         }
         
-        sliderSoundView.setVolumeThumbImage(UIImage(named:"volume2"), for: UIControlState.normal)
-        sliderSoundView.setMaximumVolumeSliderImage(UIImage(named:"min_volume2"), for: UIControlState.normal)
-        sliderSoundView.setMinimumVolumeSliderImage(UIImage(named:"max_volume2"), for: UIControlState.normal)
+        sliderSoundView.setVolumeThumbImage(UIImage(named:"volume"), for: UIControlState.normal)
+        sliderSoundView.setMaximumVolumeSliderImage(UIImage(named:"min_volume"), for: UIControlState.normal)
+        sliderSoundView.setMinimumVolumeSliderImage(UIImage(named:"max_volume"), for: UIControlState.normal)
+        sliderSoundView.setRouteButtonImage(UIImage(named:""), for: UIControlState.normal)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
