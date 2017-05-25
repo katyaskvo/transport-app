@@ -511,6 +511,9 @@ Go to bibika.katyaskvo.com</string>
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyU-2s-b1B" customClass="MPVolumeView">
+                                <rect key="frame" x="20" y="60" width="170" height="30"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb3-A5-bvJ" userLabel="Button Next">
                                 <rect key="frame" x="960" y="650" width="44" height="44"/>
                                 <state key="normal" image="arrow-right"/>
@@ -533,9 +536,10 @@ Go to bibika.katyaskvo.com</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-Iu-Sf1">
-                                <rect key="frame" x="481.5" y="641" width="61" height="61"/>
+                                <rect key="frame" x="482" y="641" width="61" height="61"/>
                                 <state key="normal" image="playButton"/>
                                 <connections>
+                                    <action selector="playSoundButton" destination="BDY-SG-CIy" eventType="touchUpInside" id="SGV-Tt-ySp"/>
                                     <action selector="startAnimation" destination="BDY-SG-CIy" eventType="touchUpInside" id="hK7-fy-1sV"/>
                                 </connections>
                             </button>
@@ -623,8 +627,12 @@ Go to bibika.katyaskvo.com</string>
                         <color key="backgroundColor" red="0.38039215686274508" green="0.83137254901960778" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="apB-jx-yjS" firstAttribute="top" secondItem="8Lz-sK-KVL" secondAttribute="bottom" constant="74" id="GC6-4b-oXx"/>
+                            <constraint firstItem="wyU-2s-b1B" firstAttribute="top" secondItem="KJN-Oc-o3G" secondAttribute="bottom" constant="40" id="Kma-r7-Trm"/>
+                            <constraint firstAttribute="bottom" secondItem="wyU-2s-b1B" secondAttribute="bottom" constant="678" id="KsE-U6-Zkg"/>
                             <constraint firstItem="8Lz-sK-KVL" firstAttribute="leading" secondItem="dv3-cO-JKA" secondAttribute="leadingMargin" id="LJa-Pd-2Be"/>
                             <constraint firstItem="Jb3-A5-bvJ" firstAttribute="trailing" secondItem="dv3-cO-JKA" secondAttribute="trailingMargin" id="O85-8H-uXX"/>
+                            <constraint firstAttribute="trailing" secondItem="wyU-2s-b1B" secondAttribute="trailing" constant="834" id="S3h-5E-Xs2"/>
+                            <constraint firstItem="wyU-2s-b1B" firstAttribute="leading" secondItem="dv3-cO-JKA" secondAttribute="leadingMargin" id="fmu-4G-biS"/>
                             <constraint firstItem="apB-jx-yjS" firstAttribute="top" secondItem="UpD-Iu-Sf1" secondAttribute="bottom" constant="66" id="llD-yr-hgv"/>
                             <constraint firstItem="UpD-Iu-Sf1" firstAttribute="centerX" secondItem="dv3-cO-JKA" secondAttribute="centerX" id="nUn-uZ-5Ko"/>
                             <constraint firstItem="hoi-g6-ggU" firstAttribute="trailing" secondItem="dv3-cO-JKA" secondAttribute="trailingMargin" id="pzr-dd-lFg"/>
@@ -649,6 +657,7 @@ Go to bibika.katyaskvo.com</string>
                         <outlet property="road1View" destination="1Fy-JJ-Utr" id="w0k-pn-wbn"/>
                         <outlet property="road2View" destination="zUD-M0-4s9" id="em8-IF-Ajz"/>
                         <outlet property="roadBoxView" destination="DZi-Lv-CXW" id="YnI-bT-Qmj"/>
+                        <outlet property="sliderSoundView" destination="wyU-2s-b1B" id="Kke-hY-YVa"/>
                         <outlet property="smallWheelView" destination="EW8-Wz-G1U" id="tWt-Rh-zG7"/>
                         <outlet property="tractorBodyView" destination="zjp-9I-jbD" id="KGT-wc-aCU"/>
                         <outlet property="whindowReflectionView" destination="nYD-Jg-mhZ" id="Iwi-Ui-L5I"/>
@@ -1398,7 +1407,7 @@ Go to bibika.katyaskvo.com</string>
         <segue reference="eAs-q5-aYq"/>
         <segue reference="jyw-zy-5b2"/>
         <segue reference="v2T-s6-0b7"/>
-        <segue reference="nqZ-dB-v3P"/>
+        <segue reference="di2-K5-DPJ"/>
         <segue reference="iJd-I6-ByO"/>
         <segue reference="q8u-3C-dbN"/>
         <segue reference="TIf-N3-4A5"/>

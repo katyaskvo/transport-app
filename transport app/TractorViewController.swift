@@ -1,7 +1,10 @@
 import UIKit
 import AudioToolbox
+import MediaPlayer
+import AVFoundation
 
 class TractorViewController: UIViewController {
+    @IBOutlet var sliderSoundView: MPVolumeView!
     @IBOutlet var buttonPlay: UIButton!
     @IBOutlet var bigWheelView: UIImageView!
     @IBOutlet var smallWheelView: UIImageView!
@@ -26,18 +29,36 @@ class TractorViewController: UIViewController {
     
     let animationDuration = CFTimeInterval(10.0)
     
-    var soundId : SystemSoundID = 0
-
-    func playSound() {
-        let soundUrl = Bundle.main.url(forResource: "tractor", withExtension: "mp3")
-        AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
-        AudioServicesPlaySystemSound(soundId)
+    var audioPlayer: AVAudioPlayer!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+     
+        if let filePath = Bundle.main.path(forResource: "tractor", ofType: "mp3", inDirectory: "") {
+            // Good, got a file
+            let filePathUrl = NSURL.fileURL(withPath: filePath)
+            
+            // Try to instantiate the audio player
+            do {
+                self.audioPlayer = try AVAudioPlayer(contentsOf: filePathUrl)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("filePath is empty!")
+        }
+        
+        sliderSoundView.setVolumeThumbImage(UIImage(named:"volume"), for: UIControlState.normal)
+        sliderSoundView.setMaximumVolumeSliderImage(UIImage(named:"min_volume"), for: UIControlState.normal)
+        sliderSoundView.setMinimumVolumeSliderImage(UIImage(named:"max_volume"), for: UIControlState.normal)
+        sliderSoundView.setRouteButtonImage(UIImage(named:""), for: UIControlState.normal)
+        // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
 
     override func viewDidDisappear(_ animated: Bool) {
-        if soundId != 0 {
-            AudioServicesDisposeSystemSoundID(soundId)
-        }
+        self.audioPlayer.stop()
     }
     
     func stretchY(duration: CFTimeInterval) {
@@ -59,12 +80,14 @@ class TractorViewController: UIViewController {
     func enableButton() {
         self.buttonPlay.isEnabled = true
     }
-    
+    @IBAction func playSoundButton() {
+        self.audioPlayer.play()
+    }
+
     @IBAction func startAnimation() {
         self.buttonPlay.isEnabled = false
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
 
-        playSound()
         bigWheelView.transform = CGAffineTransform.identity
         smallWheelView.transform = CGAffineTransform.identity
         cloud1View.transform = CGAffineTransform.identity
