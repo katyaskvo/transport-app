@@ -1,11 +1,12 @@
 import UIKit
 import AudioToolbox
+import MediaPlayer
+import AVFoundation
 
-import UIKit
-import AudioToolbox
 
 class MotorcycleViewController: UIViewController {
     
+    @IBOutlet weak var sliderSoundView: MPVolumeView!
     @IBOutlet var buttonPlay: UIButton!
     @IBOutlet var bodyView: UIImageView!
     @IBOutlet var bodySeatView: UIImageView!
@@ -55,19 +56,10 @@ class MotorcycleViewController: UIViewController {
     func enableButton() {
         self.buttonPlay.isEnabled = true
     }
-    var soundId : SystemSoundID = 0
-    
-    func playSound() {
-        let soundUrl = Bundle.main.url(forResource: "motorcycle", withExtension: "mp3")
-        AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
-        AudioServicesPlaySystemSound(soundId)
-    }
-    
+    var audioPlayer: AVAudioPlayer!
     
     override func viewDidDisappear(_ animated: Bool) {
-        if soundId != 0 {
-            AudioServicesDisposeSystemSoundID(soundId)
-        }
+        self.audioPlayer.stop()
     }
     
     override func viewDidLoad() {
@@ -75,12 +67,34 @@ class MotorcycleViewController: UIViewController {
         let headlights_01 = UIImage(named: "motorcycle_headlights01")
         let headlights_02 = UIImage(named: "motorcycle_headlights02")
         headlightsImages = [headlights_01!, headlights_02!, headlights_02!, headlights_01!, headlights_02!, headlights_01!, headlights_02!, headlights_01!, headlights_01!]
+
+        if let filePath = Bundle.main.path(forResource: "motorcycle", ofType: "mp3", inDirectory: "") {
+            // Good, got a file
+            let filePathUrl = NSURL.fileURL(withPath: filePath)
+            
+            // Try to instantiate the audio player
+            do {
+                self.audioPlayer = try AVAudioPlayer(contentsOf: filePathUrl)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("filePath is empty!")
+        }
+        
+        sliderSoundView.setVolumeThumbImage(UIImage(named:"volume"), for: UIControlState.normal)
+        sliderSoundView.setMaximumVolumeSliderImage(UIImage(named:"min_volume"), for: UIControlState.normal)
+        sliderSoundView.setMinimumVolumeSliderImage(UIImage(named:"max_volume"), for: UIControlState.normal)
+        sliderSoundView.setRouteButtonImage(UIImage(named:""), for: UIControlState.normal)
+    }
+   
+    @IBAction func playSoundButton() {
+        self.audioPlayer.play()
     }
     
     @IBAction func startAnimation() {
         self.buttonPlay.isEnabled = false
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
-        playSound()
         
         let headlightsAnimation = CAKeyframeAnimation(keyPath: "contents")
         headlightsAnimation.calculationMode = kCAAnimationDiscrete
