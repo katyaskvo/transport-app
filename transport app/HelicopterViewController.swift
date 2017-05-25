@@ -1,8 +1,12 @@
 import UIKit
 import AudioToolbox
+import MediaPlayer
+import AVFoundation
 
 class HelicopterViewController: UIViewController {
 
+
+    @IBOutlet weak var sliderSoundView: MPVolumeView!
     @IBOutlet var buttonPlay: UIButton!
     @IBOutlet var heliTailView: UIImageView!
     @IBOutlet var helixView: UIImageView!
@@ -26,19 +30,12 @@ class HelicopterViewController: UIViewController {
     var helixImages: [UIImage]!
     var animatedHelix: UIImage!
     
-    var soundId : SystemSoundID = 0
-    
-    func playSound() {
-        let soundUrl = Bundle.main.url(forResource: "helicopter", withExtension: "mp3")
-        AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
-        AudioServicesPlaySystemSound(soundId)
-    }
+    var audioPlayer: AVAudioPlayer!
+
     
     
     override func viewDidDisappear(_ animated: Bool) {
-        if soundId != 0 {
-            AudioServicesDisposeSystemSoundID(soundId)
-        }
+        self.audioPlayer.stop()
     }
     
     
@@ -54,6 +51,25 @@ class HelicopterViewController: UIViewController {
         
         
         heliTailRotatingView.alpha = 0
+        
+        if let filePath = Bundle.main.path(forResource: "helicopter", ofType: "mp3", inDirectory: "") {
+            // Good, got a file
+            let filePathUrl = NSURL.fileURL(withPath: filePath)
+            
+            // Try to instantiate the audio player
+            do {
+                self.audioPlayer = try AVAudioPlayer(contentsOf: filePathUrl)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("filePath is empty!")
+        }
+        
+        sliderSoundView.setVolumeThumbImage(UIImage(named:"volume"), for: UIControlState.normal)
+        sliderSoundView.setMaximumVolumeSliderImage(UIImage(named:"min_volume"), for: UIControlState.normal)
+        sliderSoundView.setMinimumVolumeSliderImage(UIImage(named:"max_volume"), for: UIControlState.normal)
+        sliderSoundView.setRouteButtonImage(UIImage(named:""), for: UIControlState.normal)
     }
     
     
@@ -61,10 +77,13 @@ class HelicopterViewController: UIViewController {
         self.buttonPlay.isEnabled = true
     }
     
+    @IBAction func playSoundButton() {
+        self.audioPlayer.play()
+    }
+    
     @IBAction func startAnimation() {
         self.buttonPlay.isEnabled = false
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
-        playSound()
         
         heliTailView.transform = CGAffineTransform.identity
         helixStillView.transform = CGAffineTransform.identity
