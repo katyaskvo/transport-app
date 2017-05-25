@@ -210,6 +210,7 @@
                                 <rect key="frame" x="482" y="641" width="61" height="61"/>
                                 <state key="normal" image="playButton"/>
                                 <connections>
+                                    <action selector="playSoundButton" destination="FDj-u8-mBC" eventType="touchUpInside" id="aco-jT-Mhw"/>
                                     <action selector="startAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="bTA-aW-gFs"/>
                                     <action selector="startAnimation" destination="FDj-u8-mBC" eventType="touchUpInside" id="kx4-ky-RHi"/>
                                 </connections>
@@ -290,13 +291,20 @@
                                     </view>
                                 </subviews>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anc-H2-Fq6" customClass="MPVolumeView">
+                                <rect key="frame" x="20" y="60" width="170" height="30"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.97647058823529409" green="0.92941176470588238" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="anc-H2-Fq6" secondAttribute="trailing" constant="834" id="5Yy-8E-e7b"/>
                             <constraint firstItem="oR7-Rn-Zmf" firstAttribute="top" secondItem="cMD-1D-IGy" secondAttribute="bottom" constant="36" id="6zH-b8-WRh"/>
+                            <constraint firstItem="anc-H2-Fq6" firstAttribute="leading" secondItem="U2J-vO-Mnc" secondAttribute="leadingMargin" id="7Nh-SF-T8c"/>
+                            <constraint firstItem="anc-H2-Fq6" firstAttribute="top" secondItem="h06-3w-osl" secondAttribute="bottom" constant="40" id="BQy-lP-NOA"/>
                             <constraint firstItem="JZ7-R1-VsF" firstAttribute="top" secondItem="oR7-Rn-Zmf" secondAttribute="bottom" constant="74" id="Jke-PU-ge8"/>
                             <constraint firstItem="oR7-Rn-Zmf" firstAttribute="trailing" secondItem="U2J-vO-Mnc" secondAttribute="trailingMargin" id="PkY-mB-aSP"/>
                             <constraint firstItem="cMD-1D-IGy" firstAttribute="trailing" secondItem="U2J-vO-Mnc" secondAttribute="trailingMargin" id="RGz-uX-iTe"/>
+                            <constraint firstAttribute="bottom" secondItem="anc-H2-Fq6" secondAttribute="bottom" constant="678" id="fGj-dd-9wA"/>
                             <constraint firstItem="7hV-Nf-zf1" firstAttribute="centerX" secondItem="U2J-vO-Mnc" secondAttribute="centerX" id="nxj-8M-W1l"/>
                             <constraint firstItem="JZ7-R1-VsF" firstAttribute="top" secondItem="7hV-Nf-zf1" secondAttribute="bottom" constant="66" id="r8i-ST-IdE"/>
                             <constraint firstItem="KXa-7H-nmR" firstAttribute="leading" secondItem="U2J-vO-Mnc" secondAttribute="leadingMargin" id="tj9-Ci-qfk"/>
@@ -321,6 +329,7 @@
                         <outlet property="road1View" destination="Got-qC-eoU" id="wSV-L9-hwX"/>
                         <outlet property="road2View" destination="LfN-ep-RRP" id="Vdn-tU-Me5"/>
                         <outlet property="roadBoxView" destination="3ur-LE-UJf" id="yCN-IO-hZQ"/>
+                        <outlet property="sliderSoundView" destination="anc-H2-Fq6" id="1Th-8S-bHe"/>
                         <outlet property="windowReflectionView" destination="g9Y-AB-jV1" id="GUP-Bx-ZJU"/>
                     </connections>
                 </viewController>
@@ -1430,10 +1439,10 @@ Go to bibika.katyaskvo.com</string>
     <inferredMetricsTieBreakers>
         <segue reference="VjF-JU-9aB"/>
         <segue reference="iJd-I6-ByO"/>
-        <segue reference="jyw-zy-5b2"/>
-        <segue reference="TIf-N3-4A5"/>
-        <segue reference="vgW-N1-GXF"/>
+        <segue reference="nYK-5n-H5w"/>
         <segue reference="0Vj-FM-jc3"/>
-        <segue reference="Mnz-ED-BsI"/>
+        <segue reference="31R-Pj-w8V"/>
+        <segue reference="vgW-N1-GXF"/>
+        <segue reference="NWe-BV-uvs"/>
     </inferredMetricsTieBreakers>
 </document>

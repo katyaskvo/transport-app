@@ -78,11 +78,11 @@ class BicycleViewController: UIViewController {
             print("filePath is empty!")
         }
         
+        sliderSoundView.showsRouteButton = false
         sliderSoundView.setVolumeThumbImage(UIImage(named:"volume"), for: UIControlState.normal)
         sliderSoundView.setMaximumVolumeSliderImage(UIImage(named:"min_volume"), for: UIControlState.normal)
         sliderSoundView.setMinimumVolumeSliderImage(UIImage(named:"max_volume"), for: UIControlState.normal)
-        sliderSoundView.setRouteButtonImage(UIImage(named:""), for: UIControlState.normal)
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
     
     func enableButton() {

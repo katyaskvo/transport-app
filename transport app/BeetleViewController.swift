@@ -1,8 +1,11 @@
 import UIKit
 import AudioToolbox
+import MediaPlayer
+import AVFoundation
 
 class BeetleViewController: UIViewController {
     
+    @IBOutlet var sliderSoundView: MPVolumeView!
     @IBOutlet var buttonPlay: UIButton!
     @IBOutlet var bodyView: UIImageView!
     @IBOutlet var backWheelView: UIImageView!
@@ -30,19 +33,10 @@ class BeetleViewController: UIViewController {
     func enableButton() {
         self.buttonPlay.isEnabled = true
     }
-    var soundId : SystemSoundID = 0
-    
-    func playSound() {
-        let soundUrl = Bundle.main.url(forResource: "beetle", withExtension: "mp3")
-        AudioServicesCreateSystemSoundID(soundUrl as! CFURL, &soundId)
-        AudioServicesPlaySystemSound(soundId)
-    }
-    
+    var audioPlayer: AVAudioPlayer!
     
     override func viewDidDisappear(_ animated: Bool) {
-        if soundId != 0 {
-            AudioServicesDisposeSystemSoundID(soundId)
-        }
+        self.audioPlayer.stop()
     }
     
     override func viewDidLoad() {
@@ -55,13 +49,34 @@ class BeetleViewController: UIViewController {
         let steamCloud_02 = UIImage(named: "steamCloud02")
         steamImages = [steamCloud_01!, steamCloud_02!, steamCloud_01!, steamCloud_02!, steamCloud_01!, steamCloud_02!, steamCloud_01!, steamCloud_02!, steamCloud_01!]
         
+        
+        if let filePath = Bundle.main.path(forResource: "beetle", ofType: "mp3", inDirectory: "") {
+            // Good, got a file
+            let filePathUrl = NSURL.fileURL(withPath: filePath)
+            
+            // Try to instantiate the audio player
+            do {
+                self.audioPlayer = try AVAudioPlayer(contentsOf: filePathUrl)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("filePath is empty!")
+        }
+        sliderSoundView.showsRouteButton = false
+        sliderSoundView.setVolumeThumbImage(UIImage(named:"volume"), for: UIControlState.normal)
+        sliderSoundView.setMaximumVolumeSliderImage(UIImage(named:"min_volume"), for: UIControlState.normal)
+        sliderSoundView.setMinimumVolumeSliderImage(UIImage(named:"max_volume"), for: UIControlState.normal)
 
+    }
+
+    @IBAction func playSoundButton() {
+        self.audioPlayer.play()
     }
     
     @IBAction func startAnimation() {
         self.buttonPlay.isEnabled = false
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
-        playSound()
         
         let headlightsAnimation = CAKeyframeAnimation(keyPath: "contents")
         headlightsAnimation.calculationMode = kCAAnimationDiscrete
