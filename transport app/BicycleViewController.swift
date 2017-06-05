@@ -122,15 +122,19 @@ class BicycleViewController: UIViewController {
         self.pedalShaftView.setAnchorPoint(anchorPoint: CGPoint(x: 0.075, y: 0.075), view: self.pedalShaftView)
         self.pedalShaft2View.setAnchorPoint(anchorPoint: CGPoint(x: 0.925, y: 0.925), view: self.pedalShaft2View)
         
+        let startAngle = CGFloat(M_PI * 0.26)
+        let endAngle = CGFloat(M_PI)*2 + CGFloat(M_PI * 0.26)
         
-        let circlePedalPath = UIBezierPath(arcCenter: CGPoint(x: 339,y: 260), radius: 49, startAngle: CGFloat(M_PI * 0.26), endAngle:CGFloat(M_PI)*2 + CGFloat(M_PI * 0.26), clockwise: true)
+        let circlePedalPath = UIBezierPath(arcCenter: CGPoint(x: 339,y: 260), radius: 49, startAngle:startAngle , endAngle: endAngle, clockwise: true)
         let pedalAnimation = CAKeyframeAnimation(keyPath: "position")
+        pedalAnimation.calculationMode = kCAAnimationPaced
         pedalAnimation.path = circlePedalPath.cgPath
         pedalAnimation.repeatCount = 10
         pedalAnimation.duration = 1.0
         
         let circlePedalPath2 = UIBezierPath(arcCenter: CGPoint(x: 339,y: 260), radius: 49, startAngle: CGFloat(M_PI * 0.74 + M_PI/2), endAngle:CGFloat(M_PI)*2 + CGFloat(M_PI * 0.74 + M_PI/2), clockwise: true)
         let pedalAnimation2 = CAKeyframeAnimation(keyPath: "position")
+        pedalAnimation2.calculationMode = kCAAnimationPaced
         pedalAnimation2.path = circlePedalPath2.cgPath
         pedalAnimation2.repeatCount = 10
         pedalAnimation2.duration = 1.0
