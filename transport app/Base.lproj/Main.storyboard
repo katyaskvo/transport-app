@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eYz-ct-G7b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eYz-ct-G7b">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,8 +23,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPq-Yx-HOj" customClass="MPVolumeView">
-                                <rect key="frame" x="20" y="60" width="170" height="30"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="guM-Yk-iNs" userLabel="Volume">
+                                <rect key="frame" x="35" y="49" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tPq-Yx-HOj" customClass="MPVolumeView">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                </subviews>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-gs-bVj" userLabel="Button Back">
                                 <rect key="frame" x="20" y="650" width="44" height="44"/>
@@ -134,15 +141,11 @@
                         <constraints>
                             <constraint firstItem="EPS-s9-h4K" firstAttribute="top" secondItem="ADe-jG-ewD" secondAttribute="bottom" constant="74" id="3Zj-Rv-ZlD"/>
                             <constraint firstItem="MfZ-gs-bVj" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leadingMargin" id="7zL-uU-LoZ"/>
-                            <constraint firstItem="tPq-Yx-HOj" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leadingMargin" id="DRu-ud-hMn"/>
                             <constraint firstItem="j1P-3z-lbr" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX" id="LwM-Hz-s0h"/>
                             <constraint firstItem="EPS-s9-h4K" firstAttribute="top" secondItem="j1P-3z-lbr" secondAttribute="bottom" constant="66" id="N2U-Iq-EBb"/>
-                            <constraint firstAttribute="bottom" secondItem="tPq-Yx-HOj" secondAttribute="bottom" constant="678" id="Y4x-m2-Wdb"/>
-                            <constraint firstItem="tPq-Yx-HOj" firstAttribute="top" secondItem="fXf-Jd-eTc" secondAttribute="bottom" constant="40" id="YsM-hk-edK"/>
                             <constraint firstItem="EPS-s9-h4K" firstAttribute="top" secondItem="MfZ-gs-bVj" secondAttribute="bottom" constant="74" id="dvW-Yl-rmP"/>
                             <constraint firstItem="YTa-V2-fyh" firstAttribute="trailing" secondItem="ZwX-cT-FIQ" secondAttribute="trailingMargin" id="fBS-bx-zVq"/>
                             <constraint firstItem="ADe-jG-ewD" firstAttribute="top" secondItem="YTa-V2-fyh" secondAttribute="bottom" constant="36" id="iQg-vx-JlR"/>
-                            <constraint firstAttribute="trailing" secondItem="tPq-Yx-HOj" secondAttribute="trailing" constant="834" id="tyj-u9-pIe"/>
                             <constraint firstItem="ADe-jG-ewD" firstAttribute="trailing" secondItem="ZwX-cT-FIQ" secondAttribute="trailingMargin" id="xOh-ZP-sum"/>
                         </constraints>
                     </view>
@@ -362,10 +365,13 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jf8-Yw-dHW">
-                                <rect key="frame" x="313" y="269" width="400" height="317"/>
+                                <rect key="frame" x="313.5" y="269" width="399" height="317"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vrX-1U-SHE">
-                                        <rect key="frame" x="49" y="20" width="300" height="180"/>
+                                        <rect key="frame" x="73.961893764746492" y="20" width="250" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="f6I-wW-pjS"/>
+                                        </constraints>
                                         <string key="text">Bibika App is an animated sound book created for babies 0 - 99 years of age.
 
 Have some questions about the app? 
@@ -374,7 +380,7 @@ Go to bibika.katyaskvo.com</string>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="stamp_rotated" translatesAutoresizingMaskIntoConstraints="NO" id="z2l-Hg-P83">
-                                        <rect key="frame" x="122" y="170" width="155" height="155"/>
+                                        <rect key="frame" x="121.5" y="170" width="155" height="155"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="155" id="Km5-Wd-jk8"/>
                                             <constraint firstAttribute="width" constant="155" id="ZJ0-75-llt"/>
@@ -385,7 +391,6 @@ Go to bibika.katyaskvo.com</string>
                                     <constraint firstItem="z2l-Hg-P83" firstAttribute="top" secondItem="jf8-Yw-dHW" secondAttribute="top" constant="170" id="8WN-uH-hTd"/>
                                     <constraint firstAttribute="bottom" secondItem="z2l-Hg-P83" secondAttribute="bottom" constant="-8" id="Nh2-4j-ClH"/>
                                     <constraint firstItem="vrX-1U-SHE" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" constant="-137" id="SzT-dY-3k9"/>
-                                    <constraint firstItem="vrX-1U-SHE" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.8" constant="-20" id="WYL-Vw-lxy"/>
                                     <constraint firstItem="z2l-Hg-P83" firstAttribute="centerX" secondItem="jf8-Yw-dHW" secondAttribute="centerX" id="nqE-4u-oyx"/>
                                     <constraint firstItem="vrX-1U-SHE" firstAttribute="top" secondItem="jf8-Yw-dHW" secondAttribute="top" multiplier="0.06" constant="20" id="rie-3u-vb9"/>
                                     <constraint firstItem="vrX-1U-SHE" firstAttribute="centerX" secondItem="jf8-Yw-dHW" secondAttribute="centerX" constant="-1.5" id="vsX-Qh-MZY"/>
@@ -434,7 +439,7 @@ Go to bibika.katyaskvo.com</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujh-OD-EKn" userLabel="firetruck">
-                                <rect key="frame" x="465" y="433" width="559" height="335"/>
+                                <rect key="frame" x="465" y="432.5" width="559" height="335.5"/>
                                 <connections>
                                     <segue destination="980-jK-LUk" kind="show" id="ax9-85-2wf"/>
                                 </connections>
@@ -545,7 +550,7 @@ Go to bibika.katyaskvo.com</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-Iu-Sf1">
-                                <rect key="frame" x="482" y="641" width="61" height="61"/>
+                                <rect key="frame" x="481.5" y="641" width="61" height="61"/>
                                 <state key="normal" image="playButton"/>
                                 <connections>
                                     <action selector="playSoundButton" destination="BDY-SG-CIy" eventType="touchUpInside" id="SGV-Tt-ySp"/>
@@ -553,7 +558,7 @@ Go to bibika.katyaskvo.com</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-XJ-VMn" userLabel="tractor">
-                                <rect key="frame" x="161" y="215" width="700" height="325"/>
+                                <rect key="frame" x="162" y="215" width="700" height="325"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="body" translatesAutoresizingMaskIntoConstraints="NO" id="zjp-9I-jbD">
@@ -617,7 +622,7 @@ Go to bibika.katyaskvo.com</string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZi-Lv-CXW">
-                                        <rect key="frame" x="0.0" y="323" width="700" height="2"/>
+                                        <rect key="frame" x="0.0" y="322" width="698" height="2"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="1Fy-JJ-Utr">
@@ -740,7 +745,7 @@ Go to bibika.katyaskvo.com</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-T0-90T">
-                                <rect key="frame" x="482" y="641" width="61" height="61"/>
+                                <rect key="frame" x="481.5" y="641" width="61" height="61"/>
                                 <state key="normal" image="playButton"/>
                                 <connections>
                                     <action selector="playSoundButton" destination="4se-pa-4cI" eventType="touchUpInside" id="zwE-S2-stS"/>
@@ -1439,10 +1444,10 @@ Go to bibika.katyaskvo.com</string>
     <inferredMetricsTieBreakers>
         <segue reference="VjF-JU-9aB"/>
         <segue reference="iJd-I6-ByO"/>
-        <segue reference="nYK-5n-H5w"/>
-        <segue reference="0Vj-FM-jc3"/>
+        <segue reference="q8u-3C-dbN"/>
+        <segue reference="jyw-zy-5b2"/>
+        <segue reference="v2T-s6-0b7"/>
         <segue reference="31R-Pj-w8V"/>
-        <segue reference="vgW-N1-GXF"/>
-        <segue reference="NWe-BV-uvs"/>
+        <segue reference="dIa-WD-A1C"/>
     </inferredMetricsTieBreakers>
 </document>

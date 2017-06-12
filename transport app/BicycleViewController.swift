@@ -39,14 +39,21 @@ class BicycleViewController: UIViewController {
     var audioPlayer: AVAudioPlayer!
     
     let animationDuration = CFTimeInterval(10.0)
-
+    
+    func volumeSliderRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds
+    }
     override func viewDidDisappear(_ animated: Bool) {
         self.audioPlayer.stop()
     }
 
-    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        func volumeSliderRect(forBounds bounds: CGRect) -> CGRect {
+            return bounds
+        }
+        
         chain0 = UIImage(named: "chain0")
         chain1 = UIImage(named: "chain1")
 
