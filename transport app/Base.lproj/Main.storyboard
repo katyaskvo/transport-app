@@ -1266,7 +1266,7 @@ Go to bibika.katyaskvo.com</string>
                                         <color key="backgroundColor" red="0.00079708063424091622" green="0.14809102646621472" blue="0.31228188451776651" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="motorcycle_back_light_01" translatesAutoresizingMaskIntoConstraints="NO" id="tBg-0Z-kxS">
-                                        <rect key="frame" x="28" y="167" width="52" height="47"/>
+                                        <rect key="frame" x="27.5" y="167" width="52" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="motorcycle_orange_backlight01" translatesAutoresizingMaskIntoConstraints="NO" id="zTo-gd-a3i">
