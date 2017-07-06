@@ -58,7 +58,7 @@
                                 <state key="normal" image="playButton"/>
                                 <connections>
                                     <action selector="playSoundButton" destination="S4R-Ja-viH" eventType="touchUpInside" id="S79-Tc-XMX"/>
-                                    <action selector="startAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="3cJ-mY-LLK"/>
+                                    <action selector="startAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="cVG-tr-xHR"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5U8-sd-m2j" userLabel="bike">
@@ -131,6 +131,13 @@
                                         <rect key="frame" x="193" y="208" width="42" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeN-nx-mSn">
+                                        <rect key="frame" x="89" y="8" width="540" height="340"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="playBellSoundandAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="jyd-Ju-iFc"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </view>
                         </subviews>
@@ -152,6 +159,7 @@
                     <connections>
                         <outlet property="bell00View" destination="0qf-GI-WSg" id="TnN-if-6Ni"/>
                         <outlet property="button" destination="j1P-3z-lbr" id="kq9-Hh-mC7"/>
+                        <outlet property="buttonBellSound" destination="xeN-nx-mSn" id="U56-JV-jxm"/>
                         <outlet property="chain0View" destination="7Mz-Cn-dHf" id="iCk-yZ-56s"/>
                         <outlet property="chainWheelView" destination="d7J-qR-I4C" id="xhl-Qv-amc"/>
                         <outlet property="frame2View" destination="495-S5-DTW" id="ve8-jK-BtI"/>
@@ -370,7 +378,7 @@
                                 <rect key="frame" x="313.5" y="269" width="399" height="317"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vrX-1U-SHE">
-                                        <rect key="frame" x="74" y="20" width="250" height="180"/>
+                                        <rect key="frame" x="73" y="20" width="250" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="f6I-wW-pjS"/>
                                         </constraints>
@@ -1455,12 +1463,12 @@ Go to bibika.katyaskvo.com</string>
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XbO-Bq-ASr"/>
-        <segue reference="vgW-N1-GXF"/>
-        <segue reference="TIf-N3-4A5"/>
-        <segue reference="0Vj-FM-jc3"/>
+        <segue reference="nqZ-dB-v3P"/>
         <segue reference="nYK-5n-H5w"/>
+        <segue reference="v2T-s6-0b7"/>
+        <segue reference="eAs-q5-aYq"/>
+        <segue reference="TIf-N3-4A5"/>
+        <segue reference="vgW-N1-GXF"/>
         <segue reference="BzD-GJ-YjH"/>
-        <segue reference="VjF-JU-9aB"/>
     </inferredMetricsTieBreakers>
 </document>

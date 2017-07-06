@@ -8,6 +8,7 @@ class BicycleViewController: UIViewController {
     @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
     @IBOutlet var button: UIButton!
+    @IBOutlet var buttonBellSound: UIButton!
 
     @IBOutlet var frameView: UIImageView!
     @IBOutlet var frame2View: UIImageView!
@@ -37,6 +38,7 @@ class BicycleViewController: UIViewController {
     var animatedBell: UIImage!
     
     var audioPlayer: AVAudioPlayer!
+    var audioPlayerBellSound: AVAudioPlayer!
     
     let animationDuration = CFTimeInterval(10.0)
     
@@ -69,9 +71,9 @@ class BicycleViewController: UIViewController {
         let bell09 = UIImage(named: "bike_bell09")
 
         chainImages = [chain0, chain1]
-        bellImages = [bell00!, bell01!, bell02!, bell03!, bell04!, bell05!, bell06!, bell07!, bell08!, bell09!]
+        bellImages = [bell00!, bell00!, bell00!, bell00!, bell01!, bell02!, bell03!, bell04!, bell05!, bell06!, bell07!, bell08!, bell09!]
         
-        if let filePath = Bundle.main.path(forResource: "bikebell", ofType: "mp3", inDirectory: "") {
+        if let filePath = Bundle.main.path(forResource: "bike_mechanical", ofType: "mp3", inDirectory: "") {
             // Good, got a file
             let filePathUrl = NSURL.fileURL(withPath: filePath)
             
@@ -85,6 +87,19 @@ class BicycleViewController: UIViewController {
             print("filePath is empty!")
         }
         
+        if let filePathBell = Bundle.main.path(forResource: "bike_bell", ofType: "mp3", inDirectory: "") {
+            // Good, got a file
+            let filePathUrl = NSURL.fileURL(withPath: filePathBell)
+            
+            // Try to instantiate the audio player
+            do {
+                self.audioPlayerBellSound = try AVAudioPlayer(contentsOf: filePathUrl)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("filePath is empty!")
+        }
         sliderSoundView.showsRouteButton = false
         sliderSoundView.setVolumeThumbImage(UIImage(named:"volume"), for: UIControlState.normal)
         sliderSoundView.setMaximumVolumeSliderImage(UIImage(named:"min_volume"), for: UIControlState.normal)
@@ -95,9 +110,41 @@ class BicycleViewController: UIViewController {
     func enableButton() {
         self.button.isEnabled = true
     }
+    func enableBellButton() {
+        self.buttonBellSound.isEnabled = true
+    }
     
     @IBAction func playSoundButton() {
         self.audioPlayer.play()
+    }
+    
+    @IBAction func playBellSoundAndAnimation() {
+        self.buttonBellSound.isEnabled = false
+        Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(enableBellButton), userInfo: nil, repeats: false)
+        
+        let bellViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+        bellViewAnimation.calculationMode = kCAAnimationDiscrete
+        bellViewAnimation.values = bellImages.map {$0.cgImage as AnyObject}
+        bellViewAnimation.duration = 0.5
+        bellViewAnimation.repeatCount = 2
+        
+        self.audioPlayerBellSound.play()
+
+        UIView.animate(
+            withDuration: 1,
+            delay: 0,
+            options: [.curveLinear],
+            animations: {
+                
+                let bellAnimation = CAAnimationGroup()
+                bellAnimation.duration = 1
+                bellAnimation.repeatCount = 1
+                
+                bellAnimation.animations = [bellViewAnimation]
+                
+                self.bell00View.layer.add(bellAnimation, forKey: "contents")
+        }, completion: nil)
+        
     }
     
 
@@ -119,11 +166,6 @@ class BicycleViewController: UIViewController {
         road1View.transform = CGAffineTransform.identity
         road2View.transform = CGAffineTransform.identity
         
-        let bellViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        bellViewAnimation.calculationMode = kCAAnimationDiscrete
-        bellViewAnimation.values = bellImages.map {$0.cgImage as AnyObject}
-        bellViewAnimation.duration = 0.25
-        bellViewAnimation.repeatCount = 2
 
         
         self.pedalShaftView.setAnchorPoint(anchorPoint: CGPoint(x: 0.075, y: 0.075), view: self.pedalShaftView)
@@ -156,12 +198,6 @@ class BicycleViewController: UIViewController {
                 self.chain0View.animationDuration = 0.1
                 self.chain0View.animationRepeatCount = 100
                 self.chain0View.startAnimating()
-                
-                let bellAnimation = CAAnimationGroup()
-                bellAnimation.duration = 2.5
-                bellAnimation.repeatCount = 4
-                
-                bellAnimation.animations = [bellViewAnimation]
                 
                 //Shake
                 self.frameView.shake(values: [0.5, -0.5, 0.5, -0.5, 0.5], keyTimes: [0, 0.15, 0.4, 0.65, 1], animatedImageView: self.frameView, duration: 0.75, animationDuration: self.animationDuration)
@@ -203,7 +239,7 @@ class BicycleViewController: UIViewController {
                 self.reflectionFrontWheelView.animateWheelReflection(values: [M_PI * 0.02, M_PI * (-0.025), M_PI * 0.005, M_PI * (-0.025), M_PI * 0.01 ], keyTimes: [0, 0.25, 0.45, 0.65, 1], animatedImageView: self.reflectionFrontWheelView, duration: 0.83, animationDuration: self.animationDuration)
 
                 
-                self.bell00View.layer.add(bellAnimation, forKey: "contents")
+               
         }, completion: nil)
 //        }
         

@@ -153,6 +153,10 @@ extension UIView {
         
         animatedImageView.layer.add(fadeInanOutAnimation, forKey: "move")
     }
+    
+    func enableButton(touchButton: UIButton) {
+        touchButton.isEnabled = true
+    }
 }
 extension UIViewKeyframeAnimationOptions {
     

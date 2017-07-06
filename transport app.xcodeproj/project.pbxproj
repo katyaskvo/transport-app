@@ -25,6 +25,8 @@
 		00AA0F851D36B115005BEF28 /* transport_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA0F841D36B115005BEF28 /* transport_appTests.swift */; };
 		00AA0F901D36B115005BEF28 /* transport_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA0F8F1D36B115005BEF28 /* transport_appUITests.swift */; };
 		00BD28821E4AECB900CD132B /* firetruck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00BD28811E4AECB900CD132B /* firetruck.mp3 */; };
+		00FDE53E1F0E412F000DA6B6 /* bike_bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00FDE53D1F0E412F000DA6B6 /* bike_bell.mp3 */; };
+		00FDE5401F0E413E000DA6B6 /* bike_mechanical.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00FDE53F1F0E413E000DA6B6 /* bike_mechanical.mp3 */; };
 		4B2831561D382A0200377A83 /* TractorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2831551D382A0200377A83 /* TractorViewController.swift */; };
 		4B2831581D38337D00377A83 /* HelicopterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2831571D38337D00377A83 /* HelicopterViewController.swift */; };
 		4B8D68CB1D8C7B8C00C7F9A1 /* FiretruckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D68CA1D8C7B8C00C7F9A1 /* FiretruckViewController.swift */; };
@@ -72,6 +74,8 @@
 		00AA0F8F1D36B115005BEF28 /* transport_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transport_appUITests.swift; sourceTree = "<group>"; };
 		00AA0F911D36B115005BEF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BD28811E4AECB900CD132B /* firetruck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = firetruck.mp3; sourceTree = "<group>"; };
+		00FDE53D1F0E412F000DA6B6 /* bike_bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bike_bell.mp3; sourceTree = "<group>"; };
+		00FDE53F1F0E413E000DA6B6 /* bike_mechanical.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bike_mechanical.mp3; sourceTree = "<group>"; };
 		4B2831551D382A0200377A83 /* TractorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TractorViewController.swift; sourceTree = "<group>"; };
 		4B2831571D38337D00377A83 /* HelicopterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelicopterViewController.swift; sourceTree = "<group>"; };
 		4B8D68CA1D8C7B8C00C7F9A1 /* FiretruckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiretruckViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 		00BD286A1E4AD4C200CD132B /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				00FDE53F1F0E413E000DA6B6 /* bike_mechanical.mp3 */,
+				00FDE53D1F0E412F000DA6B6 /* bike_bell.mp3 */,
 				002788D91E8A3C3400B26632 /* bikebell.mp3 */,
 				002788DA1E8A3C3400B26632 /* tractor.mp3 */,
 				002788DB1E8A3C3400B26632 /* motorcycle.mp3 */,
@@ -285,11 +291,13 @@
 			files = (
 				002788E01E8A3C3400B26632 /* beetle.mp3 in Resources */,
 				002788DD1E8A3C3400B26632 /* bikebell.mp3 in Resources */,
+				00FDE53E1F0E412F000DA6B6 /* bike_bell.mp3 in Resources */,
 				00BD28821E4AECB900CD132B /* firetruck.mp3 in Resources */,
 				00AA0F7A1D36B115005BEF28 /* LaunchScreen.storyboard in Resources */,
 				002788DE1E8A3C3400B26632 /* tractor.mp3 in Resources */,
 				00AA0F771D36B115005BEF28 /* Assets.xcassets in Resources */,
 				002788DF1E8A3C3400B26632 /* motorcycle.mp3 in Resources */,
+				00FDE5401F0E413E000DA6B6 /* bike_mechanical.mp3 in Resources */,
 				0039A6E71E544BB00084F4C5 /* helicopter.mp3 in Resources */,
 				00AA0F751D36B115005BEF28 /* Main.storyboard in Resources */,
 			);
