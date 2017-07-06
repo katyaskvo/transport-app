@@ -134,7 +134,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBs-Gl-Mz8">
                                         <rect key="frame" x="83" y="8" width="540" height="340"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="playBellSoundAndAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="SEH-Gh-yEP"/>
                                         </connections>
@@ -301,6 +300,14 @@
                                             </imageView>
                                         </subviews>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fw-9d-fyd">
+                                        <rect key="frame" x="156" y="-14" width="680" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="playBeep:" destination="FDj-u8-mBC" eventType="touchUpInside" id="iee-oD-RDO"/>
+                                            <action selector="playBeepButton" destination="FDj-u8-mBC" eventType="touchUpInside" id="pX5-Pl-m6S"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anc-H2-Fq6" customClass="MPVolumeView">
@@ -329,6 +336,7 @@
                         <outlet property="backWheelReflectionView" destination="C2P-pZ-Qid" id="V2D-k4-GNT"/>
                         <outlet property="backWheelView" destination="dab-1y-dpi" id="2f8-RO-sJ7"/>
                         <outlet property="bodyView" destination="Dgc-mq-ife" id="GbS-74-PEa"/>
+                        <outlet property="buttonClakson" destination="7fw-9d-fyd" id="g6v-zQ-mib"/>
                         <outlet property="buttonPlay" destination="7hV-Nf-zf1" id="jgE-IH-qC6"/>
                         <outlet property="cloud1View" destination="ehK-Zg-JAT" id="lDF-uL-GMU"/>
                         <outlet property="cloud2View" destination="APT-mP-rmW" id="SxM-7T-zey"/>

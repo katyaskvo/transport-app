@@ -7,6 +7,7 @@ class BeetleViewController: UIViewController {
     
     @IBOutlet var sliderSoundView: MPVolumeView!
     @IBOutlet var buttonPlay: UIButton!
+    @IBOutlet var buttonClakson: UIButton!
     @IBOutlet var bodyView: UIImageView!
     @IBOutlet var backWheelView: UIImageView!
     @IBOutlet var backWheelReflectionView: UIImageView!
@@ -33,7 +34,12 @@ class BeetleViewController: UIViewController {
     func enableButton() {
         self.buttonPlay.isEnabled = true
     }
+    
+    func enableBeepButton() {
+        self.buttonClakson.isEnabled = true
+    }
     var audioPlayer: AVAudioPlayer!
+    var audioPlayerBeep: AVAudioPlayer!
     
     override func viewDidDisappear(_ animated: Bool) {
         self.audioPlayer.stop()
@@ -63,6 +69,21 @@ class BeetleViewController: UIViewController {
         } else {
             print("filePath is empty!")
         }
+        
+        if let filePathBeep = Bundle.main.path(forResource: "bug_beep", ofType: "mp3", inDirectory: "") {
+            // Good, got a file
+            let filePathUrl = NSURL.fileURL(withPath: filePathBeep)
+            
+            // Try to instantiate the audio player
+            do {
+                self.audioPlayerBeep = try AVAudioPlayer(contentsOf: filePathUrl)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("filePath is empty!")
+        }
+
         sliderSoundView.showsRouteButton = false
         sliderSoundView.setVolumeThumbImage(UIImage(named:"volume"), for: UIControlState.normal)
         sliderSoundView.setMaximumVolumeSliderImage(UIImage(named:"min_volume"), for: UIControlState.normal)
@@ -72,6 +93,20 @@ class BeetleViewController: UIViewController {
 
     @IBAction func playSoundButton() {
         self.audioPlayer.play()
+    }
+    
+    @IBAction func playBeepButton() {
+        self.audioPlayerBeep.play()
+    }
+    
+    
+    @IBAction func playBeep(_ sender: Any) {
+        
+        self.buttonClakson.isEnabled = false
+        Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(enableBeepButton), userInfo: nil, repeats: false)
+        
+        self.audioPlayerBeep.play()
+        
     }
     
     @IBAction func startAnimation() {
