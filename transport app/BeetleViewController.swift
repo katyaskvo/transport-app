@@ -50,7 +50,7 @@ class BeetleViewController: UIViewController {
         steamImages = [steamCloud_01!, steamCloud_02!, steamCloud_01!, steamCloud_02!, steamCloud_01!, steamCloud_02!, steamCloud_01!, steamCloud_02!, steamCloud_01!]
         
         
-        if let filePath = Bundle.main.path(forResource: "beetle", ofType: "mp3", inDirectory: "") {
+        if let filePath = Bundle.main.path(forResource: "bug_mechanical", ofType: "mp3", inDirectory: "") {
             // Good, got a file
             let filePathUrl = NSURL.fileURL(withPath: filePath)
             
