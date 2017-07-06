@@ -131,11 +131,12 @@
                                         <rect key="frame" x="193" y="208" width="42" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeN-nx-mSn">
-                                        <rect key="frame" x="89" y="8" width="540" height="340"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBs-Gl-Mz8">
+                                        <rect key="frame" x="83" y="8" width="540" height="340"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="playBellSoundandAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="jyd-Ju-iFc"/>
+                                            <action selector="playBellSoundAndAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="SEH-Gh-yEP"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -159,7 +160,7 @@
                     <connections>
                         <outlet property="bell00View" destination="0qf-GI-WSg" id="TnN-if-6Ni"/>
                         <outlet property="button" destination="j1P-3z-lbr" id="kq9-Hh-mC7"/>
-                        <outlet property="buttonBellSound" destination="xeN-nx-mSn" id="U56-JV-jxm"/>
+                        <outlet property="buttonBellSound" destination="LBs-Gl-Mz8" id="KqW-Zq-o7c"/>
                         <outlet property="chain0View" destination="7Mz-Cn-dHf" id="iCk-yZ-56s"/>
                         <outlet property="chainWheelView" destination="d7J-qR-I4C" id="xhl-Qv-amc"/>
                         <outlet property="frame2View" destination="495-S5-DTW" id="ve8-jK-BtI"/>
