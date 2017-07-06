@@ -1110,44 +1110,10 @@ Go to bibika.katyaskvo.com</string>
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efb-R4-iRM" userLabel="Button Back">
-                                <rect key="frame" x="20" y="650" width="44" height="44"/>
-                                <state key="normal" image="arrow-left"/>
-                                <connections>
-                                    <segue destination="4se-pa-4cI" kind="show" id="BzD-GJ-YjH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl6-T5-jEc" userLabel="Button Next">
-                                <rect key="frame" x="960" y="650" width="44" height="44"/>
-                                <state key="normal" image="arrow-right"/>
-                                <connections>
-                                    <segue destination="980-jK-LUk" kind="show" id="TIf-N3-4A5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5X-PX-yk5" userLabel="Button Navigation">
-                                <rect key="frame" x="960" y="570" width="44" height="44"/>
-                                <state key="normal" image="navigation_button"/>
-                                <connections>
-                                    <segue destination="eYz-ct-G7b" kind="show" id="XbO-Bq-ASr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpm-Pd-ApK">
-                                <rect key="frame" x="482" y="641" width="61" height="61"/>
-                                <state key="normal" image="playButton"/>
-                                <connections>
-                                    <action selector="playSoundButton" destination="339-XQ-wEa" eventType="touchUpInside" id="8dY-Rb-9b6"/>
-                                    <action selector="startAnimation" destination="339-XQ-wEa" eventType="touchUpInside" id="aQB-S8-6uQ"/>
-                                    <action selector="startAnimation" destination="4se-pa-4cI" eventType="touchUpInside" id="vWc-25-3vs"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1Z-d3-lIb" userLabel="motorcycle">
                                 <rect key="frame" x="160" y="198" width="700" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-T4-kYP">
-                                        <rect key="frame" x="498" y="41" width="215" height="117"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_body" translatesAutoresizingMaskIntoConstraints="NO" id="1f2-V5-Wma">
                                         <rect key="frame" x="196" y="35" width="338" height="265"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -1203,10 +1169,6 @@ Go to bibika.katyaskvo.com</string>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_back_light_00" translatesAutoresizingMaskIntoConstraints="NO" id="8pa-zP-8yO">
                                         <rect key="frame" x="42" y="180" width="24" height="21"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="motorcycle_back_light_01" translatesAutoresizingMaskIntoConstraints="NO" id="tBg-0Z-kxS">
-                                        <rect key="frame" x="28" y="167" width="52" height="47"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_back_fender" translatesAutoresizingMaskIntoConstraints="NO" id="dlr-u9-9dV">
                                         <rect key="frame" x="46" y="144" width="166" height="73"/>
@@ -1276,16 +1238,8 @@ Go to bibika.katyaskvo.com</string>
                                         <rect key="frame" x="234" y="286" width="142" height="27"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="motorcycle_orange_backlight01" translatesAutoresizingMaskIntoConstraints="NO" id="zTo-gd-a3i">
-                                        <rect key="frame" x="91" y="166" width="14" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_orange_backlight_part" translatesAutoresizingMaskIntoConstraints="NO" id="c8c-1L-h1z">
                                         <rect key="frame" x="99" y="170" width="24" height="20"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="motorcycle_front_orange_light01" translatesAutoresizingMaskIntoConstraints="NO" id="LIw-LY-k62">
-                                        <rect key="frame" x="442" y="49" width="19" height="31"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_front_orange_light_part" translatesAutoresizingMaskIntoConstraints="NO" id="dFn-V8-kWt">
@@ -1306,6 +1260,34 @@ Go to bibika.katyaskvo.com</string>
                                             </imageView>
                                         </subviews>
                                     </view>
+                                    <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8J-VK-dus">
+                                        <rect key="frame" x="-159" y="-198" width="1024" height="768"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.00079708063424091622" green="0.14809102646621472" blue="0.31228188451776651" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="motorcycle_back_light_01" translatesAutoresizingMaskIntoConstraints="NO" id="tBg-0Z-kxS">
+                                        <rect key="frame" x="28" y="167" width="52" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="motorcycle_orange_backlight01" translatesAutoresizingMaskIntoConstraints="NO" id="zTo-gd-a3i">
+                                        <rect key="frame" x="91" y="166" width="14" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="motorcycle_front_orange_light01" translatesAutoresizingMaskIntoConstraints="NO" id="LIw-LY-k62">
+                                        <rect key="frame" x="442" y="49" width="19" height="31"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-T4-kYP">
+                                        <rect key="frame" x="498" y="41" width="215" height="117"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mb-OY-VVx">
+                                        <rect key="frame" x="327" y="160" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="turnOnNight" destination="339-XQ-wEa" eventType="touchUpInside" id="kuH-PK-w3M"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gh-Uq-MYB" customClass="MPVolumeView">
@@ -1314,6 +1296,36 @@ Go to bibika.katyaskvo.com</string>
                                     <constraint firstAttribute="width" constant="170" id="UlY-aX-f3Z"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efb-R4-iRM" userLabel="Button Back">
+                                <rect key="frame" x="20" y="650" width="44" height="44"/>
+                                <state key="normal" image="arrow-left"/>
+                                <connections>
+                                    <segue destination="4se-pa-4cI" kind="show" id="BzD-GJ-YjH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl6-T5-jEc" userLabel="Button Next">
+                                <rect key="frame" x="960" y="650" width="44" height="44"/>
+                                <state key="normal" image="arrow-right"/>
+                                <connections>
+                                    <segue destination="980-jK-LUk" kind="show" id="TIf-N3-4A5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5X-PX-yk5" userLabel="Button Navigation">
+                                <rect key="frame" x="960" y="570" width="44" height="44"/>
+                                <state key="normal" image="navigation_button"/>
+                                <connections>
+                                    <segue destination="eYz-ct-G7b" kind="show" id="XbO-Bq-ASr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpm-Pd-ApK">
+                                <rect key="frame" x="482" y="641" width="61" height="61"/>
+                                <state key="normal" image="playButton"/>
+                                <connections>
+                                    <action selector="playSoundButton" destination="339-XQ-wEa" eventType="touchUpInside" id="8dY-Rb-9b6"/>
+                                    <action selector="startAnimation" destination="339-XQ-wEa" eventType="touchUpInside" id="aQB-S8-6uQ"/>
+                                    <action selector="startAnimation" destination="4se-pa-4cI" eventType="touchUpInside" id="vWc-25-3vs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.76847403246380797" blue="0.31535085928417883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1342,6 +1354,7 @@ Go to bibika.katyaskvo.com</string>
                         <outlet property="bodyPedalView" destination="q7Z-DP-0H2" id="e52-iV-Dbg"/>
                         <outlet property="bodySeatView" destination="ONg-0w-TSu" id="T1a-DT-cby"/>
                         <outlet property="bodyView" destination="1f2-V5-Wma" id="4sp-a8-m5P"/>
+                        <outlet property="buttonNight" destination="3Mb-OY-VVx" id="XDR-IK-w6V"/>
                         <outlet property="buttonPlay" destination="Bpm-Pd-ApK" id="ZLN-wN-PIC"/>
                         <outlet property="cloud1View" destination="Yd9-sV-Zm7" id="CFv-w3-6O5"/>
                         <outlet property="cloud2View" destination="0C4-oJ-d1c" id="lIi-Ji-lAe"/>
@@ -1361,6 +1374,7 @@ Go to bibika.katyaskvo.com</string>
                         <outlet property="headlightsView" destination="ewC-T4-kYP" id="3gy-h2-foW"/>
                         <outlet property="mainPipesView" destination="iSj-eB-JQo" id="AdA-dz-57U"/>
                         <outlet property="mirrorView" destination="JDR-qx-Jxp" id="yEf-6P-amq"/>
+                        <outlet property="nightView" destination="C8J-VK-dus" id="tnG-kI-pJu"/>
                         <outlet property="part1View" destination="jfI-3m-uEp" id="gqt-Jt-1EX"/>
                         <outlet property="part2View" destination="vlZ-bh-8qL" id="0gd-PC-kEc"/>
                         <outlet property="part3View" destination="sFL-n5-Iud" id="ePN-Gb-FH2"/>
@@ -1472,12 +1486,12 @@ Go to bibika.katyaskvo.com</string>
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nqZ-dB-v3P"/>
+        <segue reference="XbO-Bq-ASr"/>
+        <segue reference="vgW-N1-GXF"/>
+        <segue reference="TIf-N3-4A5"/>
+        <segue reference="BzD-GJ-YjH"/>
         <segue reference="nYK-5n-H5w"/>
         <segue reference="v2T-s6-0b7"/>
         <segue reference="eAs-q5-aYq"/>
-        <segue reference="TIf-N3-4A5"/>
-        <segue reference="vgW-N1-GXF"/>
-        <segue reference="BzD-GJ-YjH"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -6,7 +6,9 @@ import AVFoundation
 
 class MotorcycleViewController: UIViewController {
     
-    @IBOutlet weak var sliderSoundView: MPVolumeView!
+    @IBOutlet var buttonNight: UIButton!
+    @IBOutlet var nightView: UIView!
+    @IBOutlet var sliderSoundView: MPVolumeView!
     @IBOutlet var buttonPlay: UIButton!
     @IBOutlet var bodyView: UIImageView!
     @IBOutlet var bodySeatView: UIImageView!
@@ -91,6 +93,10 @@ class MotorcycleViewController: UIViewController {
    
     @IBAction func playSoundButton() {
         self.audioPlayer.play()
+    }
+    
+    @IBAction func turnOnNight() {
+        self.nightView.alpha = 1
     }
     
     @IBAction func startAnimation() {
