@@ -1261,7 +1261,7 @@ Go to bibika.katyaskvo.com</string>
                                         </subviews>
                                     </view>
                                     <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8J-VK-dus">
-                                        <rect key="frame" x="-159" y="-198" width="1024" height="768"/>
+                                        <rect key="frame" x="-160" y="-198" width="1024" height="768"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.39718205670000001" blue="0.84589149750000003" alpha="0.51468321920000004" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
@@ -1278,7 +1278,7 @@ Go to bibika.katyaskvo.com</string>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-T4-kYP">
-                                        <rect key="frame" x="498" y="41" width="215" height="117"/>
+                                        <rect key="frame" x="504" y="29" width="257" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mb-OY-VVx">
