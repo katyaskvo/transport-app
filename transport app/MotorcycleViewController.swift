@@ -96,13 +96,25 @@ class MotorcycleViewController: UIViewController {
     }
     
     @IBAction func turnOnNight() {
-        self.nightView.alpha = 1
+//        self.nightView.alpha = 1
         
         let headlightsAnimation = CAKeyframeAnimation(keyPath: "contents")
         headlightsAnimation.calculationMode = kCAAnimationDiscrete
         headlightsAnimation.values = headlightsImages.map {$0.cgImage as AnyObject}
         headlightsAnimation.duration = 0.5
         headlightsAnimation.repeatCount = 20
+        
+        let fadeInanOutAnimation = CAKeyframeAnimation()
+        
+        fadeInanOutAnimation.duration = animationDuration
+        fadeInanOutAnimation.keyPath = "opacity"
+        fadeInanOutAnimation.repeatCount = 1
+        fadeInanOutAnimation.keyTimes = [0, 0.02, 0.98, 1]
+        fadeInanOutAnimation.values = [0, 1, 1, 0]
+        
+        
+        nightView.layer.add(fadeInanOutAnimation, forKey: "move")
+
 
         UIView.animate(withDuration: 4,
                        delay: 0,
