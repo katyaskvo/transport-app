@@ -97,17 +97,33 @@ class MotorcycleViewController: UIViewController {
     
     @IBAction func turnOnNight() {
         self.nightView.alpha = 1
-    }
-    
-    @IBAction func startAnimation() {
-        self.buttonPlay.isEnabled = false
-        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
         
         let headlightsAnimation = CAKeyframeAnimation(keyPath: "contents")
         headlightsAnimation.calculationMode = kCAAnimationDiscrete
         headlightsAnimation.values = headlightsImages.map {$0.cgImage as AnyObject}
         headlightsAnimation.duration = 0.5
         headlightsAnimation.repeatCount = 20
+
+        UIView.animate(withDuration: 4,
+                       delay: 0,
+                       options: [.curveLinear],
+                       animations: {
+        
+            //Headlights Shine
+            self.headlightsView.layer.add(headlightsAnimation, forKey: "contents")
+            self.headlightsView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.headlightsView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
+            
+            self.backLightRedOnView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.backLightRedOnView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
+            self.backLightOrangeOnView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.backLightOrangeOnView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
+            self.frontLightOrangeOnView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.frontLightOrangeOnView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
+        
+        }, completion: nil)
+    }
+    
+    @IBAction func startAnimation() {
+        self.buttonPlay.isEnabled = false
+        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButton), userInfo: nil, repeats: false)
+        
         
         let cloud = cloud1View
         let cloud2 = cloud2View
@@ -253,14 +269,7 @@ class MotorcycleViewController: UIViewController {
                         self.backWheelReflectionView.animateWheelReflection(values: [0, M_PI * 0.02, 0, M_PI * (-0.03), 0 ], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.backWheelReflectionView, duration: 0.5, animationDuration: self.animationDuration)
                         self.frontWheelReflectionView.animateWheelReflection(values: [0, M_PI * 0.02, 0, M_PI * (-0.03), 0 ], keyTimes: bodyRelatedKeyTimes as [NSNumber], animatedImageView: self.frontWheelReflectionView, duration: 0.5, animationDuration: self.animationDuration)
                         
-                        //Headlights Shine
-                        self.headlightsView.layer.add(headlightsAnimation, forKey: "contents")
-                        self.headlightsView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.headlightsView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
-                        
-                        self.backLightRedOnView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.backLightRedOnView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
-                        self.backLightOrangeOnView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.backLightOrangeOnView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
-                        self.frontLightOrangeOnView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.frontLightOrangeOnView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
-                        
+                       
 //                        //Engine scale
 //                        let engineStretchValues = [0.99, 1.01, 0.99, 1.01, 0.99]
 //                        self.engineRightView.stretchXY(values: engineStretchValues, animatedImageView: self.engineRightView, keytimes: [0, 0.25, 0.5, 0.75, 1], duration: 0.3, animationDuration: self.animationDuration)
