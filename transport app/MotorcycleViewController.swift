@@ -58,6 +58,9 @@ class MotorcycleViewController: UIViewController {
     func enableButton() {
         self.buttonPlay.isEnabled = true
     }
+    func enableButtonNight() {
+        self.buttonNight.isEnabled = true
+    }
     var audioPlayer: AVAudioPlayer!
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -96,7 +99,8 @@ class MotorcycleViewController: UIViewController {
     }
     
     @IBAction func turnOnNight() {
-//        self.nightView.alpha = 1
+        self.buttonNight.isEnabled = false
+        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableButtonNight), userInfo: nil, repeats: false)
         
         let headlightsAnimation = CAKeyframeAnimation(keyPath: "contents")
         headlightsAnimation.calculationMode = kCAAnimationDiscrete
