@@ -79,26 +79,26 @@ class FiretruckViewController: UIViewController {
     }
     
 
-    func animateSyren2() {
-        let lightTwoViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightTwoViewAnimation.calculationMode = kCAAnimationDiscrete
-        
-        UIView.animate(withDuration: 1,
-                       delay: 5,
-                       options: [.curveLinear],
-                       animations: {
-                        lightTwoViewAnimation.values = self.light2Images.map {$0.cgImage as AnyObject}
-                        lightTwoViewAnimation.duration = 1
-                        lightTwoViewAnimation.repeatCount = 1
-                        
-                        let SyrenTwoAnimation = CAAnimationGroup()
-                        SyrenTwoAnimation.duration = 1
-                        SyrenTwoAnimation.repeatCount = 10
-                        
-                        SyrenTwoAnimation.animations = [lightTwoViewAnimation]
-                        self.light2View.layer.add(SyrenTwoAnimation, forKey: "contents")
-        }, completion: nil)
-    }
+//    func animateSyren2() {
+//        let lightTwoViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+//        lightTwoViewAnimation.calculationMode = kCAAnimationDiscrete
+//        
+//        UIView.animate(withDuration: 1,
+//                       delay: 5,
+//                       options: [.curveLinear],
+//                       animations: {
+//                        lightTwoViewAnimation.values = self.light2Images.map {$0.cgImage as AnyObject}
+//                        lightTwoViewAnimation.duration = 1
+//                        lightTwoViewAnimation.repeatCount = 1
+//                        
+//                        let SyrenTwoAnimation = CAAnimationGroup()
+//                        SyrenTwoAnimation.duration = 1
+//                        SyrenTwoAnimation.repeatCount = 10
+//                        
+//                        SyrenTwoAnimation.animations = [lightTwoViewAnimation]
+//                        self.light2View.layer.add(SyrenTwoAnimation, forKey: "contents")
+//        }, completion: nil)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -188,12 +188,20 @@ class FiretruckViewController: UIViewController {
         self.syrenSwitchButton.isEnabled = false
         Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(enableSyrenSwitchButton), userInfo: nil, repeats: false)
         
+        let repeatCount = 5.0
         
         let lightOneViewAnimation = CAKeyframeAnimation(keyPath: "contents")
         lightOneViewAnimation.calculationMode = kCAAnimationDiscrete
         lightOneViewAnimation.values = light1Images.map {$0.cgImage as AnyObject}
         lightOneViewAnimation.duration = 1
         lightOneViewAnimation.repeatCount = 1
+        
+        let lightTwoViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+        lightTwoViewAnimation.calculationMode = kCAAnimationDiscrete
+        lightTwoViewAnimation.values = light2Images.map {$0.cgImage as AnyObject}
+        lightTwoViewAnimation.duration = 1
+        lightTwoViewAnimation.repeatCount = 1
+
 
         let lightThreeViewAnimation = CAKeyframeAnimation(keyPath: "contents")
         lightThreeViewAnimation.calculationMode = kCAAnimationDiscrete
@@ -241,7 +249,7 @@ class FiretruckViewController: UIViewController {
         lightOrangeViewAnimation.calculationMode = kCAAnimationDiscrete
         lightOrangeViewAnimation.values = lightOrangeImages.map {$0.cgImage as AnyObject}
         lightOrangeViewAnimation.duration = 1
-        lightOrangeViewAnimation.repeatCount = 10
+        lightOrangeViewAnimation.repeatCount = Float(repeatCount)
         
         let lightRoofViewAnimation = CAKeyframeAnimation(keyPath: "contents")
         lightRoofViewAnimation.calculationMode = kCAAnimationDiscrete
@@ -264,7 +272,7 @@ class FiretruckViewController: UIViewController {
                 //Syren Shine1
                 let SyrenOneAnimation = CAAnimationGroup()
                 SyrenOneAnimation.duration = 1
-                SyrenOneAnimation.repeatCount = 10
+                SyrenOneAnimation.repeatCount = Float(repeatCount)
                 
                 SyrenOneAnimation.animations = [lightOneViewAnimation]
                 self.light1View.layer.add(SyrenOneAnimation, forKey: "contents")
@@ -272,18 +280,25 @@ class FiretruckViewController: UIViewController {
                 //Syren Shine3
                 let SyrenThreeAnimation = CAAnimationGroup()
                 SyrenThreeAnimation.duration = 1
-                SyrenThreeAnimation.repeatCount = 10
+                SyrenThreeAnimation.repeatCount = Float(repeatCount)
                 
                 SyrenThreeAnimation.animations = [lightThreeViewAnimation]
                 self.light3View.layer.add(SyrenThreeAnimation, forKey: "contents")
                 
-                self.animateSyren2()
+//                self.animateSyren2()
+                //Syren Shine2
+                let SyrenTwoAnimation = CAAnimationGroup()
+                SyrenTwoAnimation.duration = 1
+                SyrenTwoAnimation.repeatCount = Float(repeatCount)
                 
-                
+                SyrenTwoAnimation.animations = [lightTwoViewAnimation]
+                self.light2View.layer.add(SyrenTwoAnimation, forKey: "contents")
+            
+            
                 //Syren Shine4
                 let SyrenFourAnimation = CAAnimationGroup()
                 SyrenFourAnimation.duration = 1
-                SyrenFourAnimation.repeatCount = 10
+                SyrenFourAnimation.repeatCount = Float(repeatCount)
                 
                 SyrenFourAnimation.animations = [lightFourViewAnimation]
                 self.light4View.layer.add(SyrenFourAnimation, forKey: "contents")
@@ -291,7 +306,7 @@ class FiretruckViewController: UIViewController {
                 //Syren Shine5
                 let SyrenFiveAnimation = CAAnimationGroup()
                 SyrenFiveAnimation.duration = 1
-                SyrenFiveAnimation.repeatCount = 10
+                SyrenFiveAnimation.repeatCount = Float(repeatCount)
                 
                 SyrenFiveAnimation.animations = [lightFiveViewAnimation]
                 self.light5View.layer.add(SyrenFiveAnimation, forKey: "contents")
@@ -299,7 +314,7 @@ class FiretruckViewController: UIViewController {
                 //Syren Shine6
                 let SyrenSixAnimation = CAAnimationGroup()
                 SyrenSixAnimation.duration = 1
-                SyrenSixAnimation.repeatCount = 10
+                SyrenSixAnimation.repeatCount = Float(repeatCount)
                 
                 SyrenSixAnimation.animations = [lightSixViewAnimation]
                 self.light6View.layer.add(SyrenSixAnimation, forKey: "contents")
@@ -307,19 +322,19 @@ class FiretruckViewController: UIViewController {
                 //Syren Front Red
                 let SyrenFrontRedAnimation = CAAnimationGroup()
                 SyrenFrontRedAnimation.duration = 1
-                SyrenFrontRedAnimation.repeatCount = 10
+                SyrenFrontRedAnimation.repeatCount = Float(repeatCount)
                 
                 SyrenFrontRedAnimation.animations = [lightFrontRedViewAnimation]
                 self.lightFrontRedView.layer.add(SyrenFrontRedAnimation, forKey: "contents")
                 
                 //Syren Front White
                 let SyrenFrontWhiteAnimation = CAAnimationGroup()
-                SyrenFrontWhiteAnimation.duration = 10
+                SyrenFrontWhiteAnimation.duration = CFTimeInterval(Float(repeatCount))
                 SyrenFrontWhiteAnimation.repeatCount = 1
                 
                 SyrenFrontWhiteAnimation.animations = [lightFrontWhiteView01Animation, lightFrontWhiteView02Animation]
                 self.lightFrontWhiteView.layer.add(SyrenFrontWhiteAnimation, forKey: "contents")
-                self.lightFrontWhiteView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.lightFrontWhiteView, keytimes: [0, 0.02, 0.98, 1], duration: 10, animationDuration: self.animationDuration)
+                self.lightFrontWhiteView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.lightFrontWhiteView, keytimes: [0, 0.02, 0.98, 1], duration: CFTimeInterval(Float(repeatCount)), animationDuration: self.animationDuration)
                 
                 //Orange Light
                 self.lightOrangeView.layer.add(lightOrangeViewAnimation, forKey: "contents")
@@ -327,14 +342,14 @@ class FiretruckViewController: UIViewController {
                 //Syren Roof
                 let SyrenRoofAnimation = CAAnimationGroup()
                 SyrenRoofAnimation.duration = 0.4
-                SyrenRoofAnimation.repeatCount = 25
+                SyrenRoofAnimation.repeatCount = (Float(repeatCount) / Float(SyrenRoofAnimation.duration))
                 
                 SyrenRoofAnimation.animations = [lightRoofViewAnimation]
                 self.syrenRoofView.layer.add(SyrenRoofAnimation, forKey: "contents")
                 
                 let SyrenRoof2Animation = CAAnimationGroup()
                 SyrenRoof2Animation.duration = 0.4
-                SyrenRoof2Animation.repeatCount = 25
+                SyrenRoof2Animation.repeatCount = (Float(repeatCount) / Float(SyrenRoof2Animation.duration))
                 
                 SyrenRoof2Animation.animations = [lightRoof2ViewAnimation]
                 self.syrenRoof2View.layer.add(SyrenRoof2Animation, forKey: "contents")
