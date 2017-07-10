@@ -1033,6 +1033,13 @@ Go to bibika.katyaskvo.com</string>
                                             </imageView>
                                         </subviews>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdt-2K-nG7">
+                                        <rect key="frame" x="25" y="20" width="840" height="280"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="startSyren" destination="980-jK-LUk" eventType="touchUpInside" id="cdW-zS-m49"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewB-cW-DDl" customClass="MPVolumeView">
@@ -1090,6 +1097,7 @@ Go to bibika.katyaskvo.com</string>
                         <outlet property="sliderSoundView" destination="ewB-cW-DDl" id="KRh-1B-POJ"/>
                         <outlet property="syrenRoof2View" destination="eJu-Be-3Cq" id="KpT-kE-QtE"/>
                         <outlet property="syrenRoofView" destination="TS6-BU-HMW" id="OrC-wJ-dus"/>
+                        <outlet property="syrenSwitchButton" destination="qdt-2K-nG7" id="jCs-gk-d9X"/>
                         <outlet property="syrenView" destination="bGJ-zA-xLn" id="Jkb-Xq-pCc"/>
                         <outlet property="windowReflectionView" destination="YaJ-BW-wrT" id="jrf-4b-92S"/>
                     </connections>
@@ -1486,12 +1494,12 @@ Go to bibika.katyaskvo.com</string>
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XbO-Bq-ASr"/>
+        <segue reference="BzD-GJ-YjH"/>
         <segue reference="vgW-N1-GXF"/>
         <segue reference="TIf-N3-4A5"/>
-        <segue reference="BzD-GJ-YjH"/>
+        <segue reference="0Vj-FM-jc3"/>
+        <segue reference="Mnz-ED-BsI"/>
         <segue reference="nYK-5n-H5w"/>
-        <segue reference="v2T-s6-0b7"/>
         <segue reference="eAs-q5-aYq"/>
     </inferredMetricsTieBreakers>
 </document>

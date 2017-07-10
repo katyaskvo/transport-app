@@ -4,6 +4,7 @@ import MediaPlayer
 import AVFoundation
 
 class FiretruckViewController: UIViewController {
+    @IBOutlet var syrenSwitchButton: UIButton!
     @IBOutlet var sliderSoundView: MPVolumeView!
     @IBOutlet var buttonPlay: UIButton!
     @IBOutlet var firetruckBodyView: UIImageView!
@@ -180,6 +181,28 @@ class FiretruckViewController: UIViewController {
     @IBAction func playSoundButton() {
         self.audioPlayer.play()
     }
+    @IBAction func startSyren() {
+        let lightOneViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+        lightOneViewAnimation.calculationMode = kCAAnimationDiscrete
+        lightOneViewAnimation.values = light1Images.map {$0.cgImage as AnyObject}
+        lightOneViewAnimation.duration = 1
+        lightOneViewAnimation.repeatCount = 1
+
+        UIView.animate(withDuration: 1,
+           delay: 0,
+           options: [.curveLinear],
+           animations: {
+
+                //Syren Shine1
+                let SyrenOneAnimation = CAAnimationGroup()
+                SyrenOneAnimation.duration = 1
+                SyrenOneAnimation.repeatCount = 10
+                
+                SyrenOneAnimation.animations = [lightOneViewAnimation]
+                self.light1View.layer.add(SyrenOneAnimation, forKey: "contents")
+        }, completion: nil)
+        
+    }
     
     @IBAction func startAnimation() {
         self.buttonPlay.isEnabled = false
@@ -195,11 +218,6 @@ class FiretruckViewController: UIViewController {
         road1View.transform = CGAffineTransform.identity
         road2View.transform = CGAffineTransform.identity
         
-        let lightOneViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightOneViewAnimation.calculationMode = kCAAnimationDiscrete
-        lightOneViewAnimation.values = light1Images.map {$0.cgImage as AnyObject}
-        lightOneViewAnimation.duration = 1
-        lightOneViewAnimation.repeatCount = 1
        
         let lightThreeViewAnimation = CAKeyframeAnimation(keyPath: "contents")
         lightThreeViewAnimation.calculationMode = kCAAnimationDiscrete
@@ -224,7 +242,6 @@ class FiretruckViewController: UIViewController {
         lightSixViewAnimation.values = light6Images.map {$0.cgImage as AnyObject}
         lightSixViewAnimation.duration = 1
         lightSixViewAnimation.repeatCount = 1
-        
         
         let lightFrontRedViewAnimation = CAKeyframeAnimation(keyPath: "contents")
         lightFrontRedViewAnimation.calculationMode = kCAAnimationDiscrete
@@ -316,13 +333,6 @@ class FiretruckViewController: UIViewController {
                         self.axeView.shake(values: [0, 0.5, -1.2, 1, -0.5, 0], keyTimes: [0, 0.1, 0.35, 0.6, 0.85, 1], animatedImageView: self.axeView, duration: 0.75, animationDuration: self.animationDuration)
                         
                         
-                        //Syren Shine1
-                        let SyrenOneAnimation = CAAnimationGroup()
-                        SyrenOneAnimation.duration = 1
-                        SyrenOneAnimation.repeatCount = 10
-                        
-                        SyrenOneAnimation.animations = [lightOneViewAnimation]
-                        self.light1View.layer.add(SyrenOneAnimation, forKey: "contents")
                         
                         //Syren Shine3
                         let SyrenThreeAnimation = CAAnimationGroup()
