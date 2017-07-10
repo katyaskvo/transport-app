@@ -153,6 +153,7 @@ extension UIView {
         
         animatedImageView.layer.add(fadeInanOutAnimation, forKey: "move")
     }
+    
 }
 extension UIViewKeyframeAnimationOptions {
     

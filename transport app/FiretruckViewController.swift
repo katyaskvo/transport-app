@@ -79,26 +79,7 @@ class FiretruckViewController: UIViewController {
     }
     
 
-//    func animateSyren2() {
-//        let lightTwoViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-//        lightTwoViewAnimation.calculationMode = kCAAnimationDiscrete
-//        
-//        UIView.animate(withDuration: 1,
-//                       delay: 5,
-//                       options: [.curveLinear],
-//                       animations: {
-//                        lightTwoViewAnimation.values = self.light2Images.map {$0.cgImage as AnyObject}
-//                        lightTwoViewAnimation.duration = 1
-//                        lightTwoViewAnimation.repeatCount = 1
-//                        
-//                        let SyrenTwoAnimation = CAAnimationGroup()
-//                        SyrenTwoAnimation.duration = 1
-//                        SyrenTwoAnimation.repeatCount = 10
-//                        
-//                        SyrenTwoAnimation.animations = [lightTwoViewAnimation]
-//                        self.light2View.layer.add(SyrenTwoAnimation, forKey: "contents")
-//        }, completion: nil)
-//    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -174,6 +155,31 @@ class FiretruckViewController: UIViewController {
 
     }
     
+    
+        func animateSyren(animatedImageView: UIImageView, imageSequence: [UIImage], duration: CFTimeInterval, animationDuration: CFTimeInterval, animationDelay: CFTimeInterval) {
+    
+            let lightViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+            lightViewAnimation.calculationMode = kCAAnimationDiscrete
+            let animationValues = imageSequence.map {$0.cgImage as AnyObject}
+    
+            UIView.animate(withDuration: duration,
+                           delay: animationDelay,
+                           options: [.curveLinear],
+                           animations: {
+                            lightViewAnimation.values = animationValues
+                            lightViewAnimation.duration = duration
+                            lightViewAnimation.repeatCount = 1
+    
+                            let syrenAnimation = CAAnimationGroup()
+                            syrenAnimation.duration = 1
+                            syrenAnimation.repeatCount = Float(animationDuration)
+    
+                            syrenAnimation.animations = [lightViewAnimation]
+                            animatedImageView.layer.add(syrenAnimation, forKey: "contents")
+            }, completion: nil)
+        }
+
+    
     func enableButton() {
         self.buttonPlay.isEnabled = true
     }
@@ -188,171 +194,158 @@ class FiretruckViewController: UIViewController {
         self.syrenSwitchButton.isEnabled = false
         Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(enableSyrenSwitchButton), userInfo: nil, repeats: false)
         
-        let repeatCount = 5.0
         
-        let lightOneViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightOneViewAnimation.calculationMode = kCAAnimationDiscrete
-        lightOneViewAnimation.values = light1Images.map {$0.cgImage as AnyObject}
-        lightOneViewAnimation.duration = 1
-        lightOneViewAnimation.repeatCount = 1
+//        let lightOneViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+//        lightOneViewAnimation.calculationMode = kCAAnimationDiscrete
+//        lightOneViewAnimation.values = light1Images.map {$0.cgImage as AnyObject}
+//        lightOneViewAnimation.duration = 1
+//        lightOneViewAnimation.repeatCount = 1
         
-        let lightTwoViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightTwoViewAnimation.calculationMode = kCAAnimationDiscrete
-        lightTwoViewAnimation.values = light2Images.map {$0.cgImage as AnyObject}
-        lightTwoViewAnimation.duration = 1
-        lightTwoViewAnimation.repeatCount = 1
-
-
-        let lightThreeViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightThreeViewAnimation.calculationMode = kCAAnimationDiscrete
-        lightThreeViewAnimation.values = light3Images.map {$0.cgImage as AnyObject}
-        lightThreeViewAnimation.duration = 0.5
-        lightThreeViewAnimation.repeatCount = 1
-        
-        let lightFourViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightFourViewAnimation.calculationMode = kCAAnimationDiscrete
-        lightFourViewAnimation.values = light4Images.map {$0.cgImage as AnyObject}
-        lightFourViewAnimation.duration = 0.5
-        lightFourViewAnimation.repeatCount = 1
-        
-        let lightFiveViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightFiveViewAnimation.calculationMode = kCAAnimationDiscrete
-        lightFiveViewAnimation.values = light5Images.map {$0.cgImage as AnyObject}
-        lightFiveViewAnimation.duration = 1
-        lightFiveViewAnimation.repeatCount = 1
-        
-        let lightSixViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightSixViewAnimation.calculationMode = kCAAnimationDiscrete
-        lightSixViewAnimation.values = light6Images.map {$0.cgImage as AnyObject}
-        lightSixViewAnimation.duration = 1
-        lightSixViewAnimation.repeatCount = 1
-        
-        let lightFrontRedViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightFrontRedViewAnimation.calculationMode = kCAAnimationDiscrete
-        lightFrontRedViewAnimation.values = lightFrontRedImages.map {$0.cgImage as AnyObject}
-        lightFrontRedViewAnimation.duration = 1
-        lightFrontRedViewAnimation.repeatCount = 1
-        
-        let lightFrontWhiteView01Animation = CAKeyframeAnimation(keyPath: "contents")
-        lightFrontWhiteView01Animation.calculationMode = kCAAnimationDiscrete
-        lightFrontWhiteView01Animation.values = lightFrontWhite01Images.map {$0.cgImage as AnyObject}
-        lightFrontWhiteView01Animation.duration = 1
-        lightFrontWhiteView01Animation.repeatCount = 1
-        
-        let lightFrontWhiteView02Animation = CAKeyframeAnimation(keyPath: "contents")
-        lightFrontWhiteView02Animation.calculationMode = kCAAnimationDiscrete
-        lightFrontWhiteView02Animation.values = lightFrontWhite02Images.map {$0.cgImage as AnyObject}
-        lightFrontWhiteView02Animation.duration = 0.5
-        lightFrontWhiteView02Animation.repeatCount = 20
-        
-        let lightOrangeViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightOrangeViewAnimation.calculationMode = kCAAnimationDiscrete
-        lightOrangeViewAnimation.values = lightOrangeImages.map {$0.cgImage as AnyObject}
-        lightOrangeViewAnimation.duration = 1
-        lightOrangeViewAnimation.repeatCount = Float(repeatCount)
-        
-        let lightRoofViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightRoofViewAnimation.calculationMode = kCAAnimationDiscrete
-        lightRoofViewAnimation.values = lightRoofImages.map {$0.cgImage as AnyObject}
-        lightRoofViewAnimation.duration = 0.4
-        lightRoofViewAnimation.repeatCount = 1
-        
-        let lightRoof2ViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-        lightRoof2ViewAnimation.calculationMode = kCAAnimationDiscrete
-        lightRoof2ViewAnimation.values = lightRoof2Images.map {$0.cgImage as AnyObject}
-        lightRoof2ViewAnimation.duration = 0.4
-        lightRoof2ViewAnimation.repeatCount = 1
+//        let lightTwoViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+//        lightTwoViewAnimation.calculationMode = kCAAnimationDiscrete
+//        lightTwoViewAnimation.values = light2Images.map {$0.cgImage as AnyObject}
+//        lightTwoViewAnimation.duration = 1
+//        lightTwoViewAnimation.repeatCount = 1
+//
+//
+//        let lightThreeViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+//        lightThreeViewAnimation.calculationMode = kCAAnimationDiscrete
+//        lightThreeViewAnimation.values = light3Images.map {$0.cgImage as AnyObject}
+//        lightThreeViewAnimation.duration = 0.5
+//        lightThreeViewAnimation.repeatCount = 1
+//
+//        let lightFourViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+//        lightFourViewAnimation.calculationMode = kCAAnimationDiscrete
+//        lightFourViewAnimation.values = light4Images.map {$0.cgImage as AnyObject}
+//        lightFourViewAnimation.duration = 0.5
+//        lightFourViewAnimation.repeatCount = 1
+//        
+//        let lightFiveViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+//        lightFiveViewAnimation.calculationMode = kCAAnimationDiscrete
+//        lightFiveViewAnimation.values = light5Images.map {$0.cgImage as AnyObject}
+//        lightFiveViewAnimation.duration = 1
+//        lightFiveViewAnimation.repeatCount = 1
+//        
+//        let lightSixViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+//        lightSixViewAnimation.calculationMode = kCAAnimationDiscrete
+//        lightSixViewAnimation.values = light6Images.map {$0.cgImage as AnyObject}
+//        lightSixViewAnimation.duration = 1
+//        lightSixViewAnimation.repeatCount = 1
+//        
+//        let lightFrontRedViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+//        lightFrontRedViewAnimation.calculationMode = kCAAnimationDiscrete
+//        lightFrontRedViewAnimation.values = lightFrontRedImages.map {$0.cgImage as AnyObject}
+//        lightFrontRedViewAnimation.duration = 1
+//        lightFrontRedViewAnimation.repeatCount = 1
+//        
+//        let lightFrontWhiteView01Animation = CAKeyframeAnimation(keyPath: "contents")
+//        lightFrontWhiteView01Animation.calculationMode = kCAAnimationDiscrete
+//        lightFrontWhiteView01Animation.values = lightFrontWhite01Images.map {$0.cgImage as AnyObject}
+//        lightFrontWhiteView01Animation.duration = 1
+//        lightFrontWhiteView01Animation.repeatCount = 1
+//        
+//        let lightFrontWhiteView02Animation = CAKeyframeAnimation(keyPath: "contents")
+//        lightFrontWhiteView02Animation.calculationMode = kCAAnimationDiscrete
+//        lightFrontWhiteView02Animation.values = lightFrontWhite02Images.map {$0.cgImage as AnyObject}
+//        lightFrontWhiteView02Animation.duration = 0.5
+//        lightFrontWhiteView02Animation.repeatCount = 20
+//        
+//        let lightOrangeViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+//        lightOrangeViewAnimation.calculationMode = kCAAnimationDiscrete
+//        lightOrangeViewAnimation.values = lightOrangeImages.map {$0.cgImage as AnyObject}
+//        lightOrangeViewAnimation.duration = 1
+//        lightOrangeViewAnimation.repeatCount = Float(repeatCount)
+//        
+//        let lightRoofViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+//        lightRoofViewAnimation.calculationMode = kCAAnimationDiscrete
+//        lightRoofViewAnimation.values = lightRoofImages.map {$0.cgImage as AnyObject}
+//        lightRoofViewAnimation.duration = 0.4
+//        lightRoofViewAnimation.repeatCount = 1
+//        
+//        let lightRoof2ViewAnimation = CAKeyframeAnimation(keyPath: "contents")
+//        lightRoof2ViewAnimation.calculationMode = kCAAnimationDiscrete
+//        lightRoof2ViewAnimation.values = lightRoof2Images.map {$0.cgImage as AnyObject}
+//        lightRoof2ViewAnimation.duration = 0.4
+//        lightRoof2ViewAnimation.repeatCount = 1
         
         
         UIView.animate(withDuration: 1,
            delay: 0,
            options: [.curveLinear],
            animations: {
+            
+                self.animateSyren(animatedImageView: self.light1View, imageSequence: self.light1Images, duration: 1, animationDuration: 5, animationDelay: 0)
 
-                //Syren Shine1
-                let SyrenOneAnimation = CAAnimationGroup()
-                SyrenOneAnimation.duration = 1
-                SyrenOneAnimation.repeatCount = Float(repeatCount)
-                
-                SyrenOneAnimation.animations = [lightOneViewAnimation]
-                self.light1View.layer.add(SyrenOneAnimation, forKey: "contents")
+                self.animateSyren(animatedImageView: self.light2View, imageSequence: self.light2Images, duration: 1, animationDuration: 5, animationDelay: 0)
+
+                self.animateSyren(animatedImageView: self.light3View, imageSequence: self.light3Images, duration: 0.5, animationDuration: 5, animationDelay: 0)
             
-                //Syren Shine3
-                let SyrenThreeAnimation = CAAnimationGroup()
-                SyrenThreeAnimation.duration = 1
-                SyrenThreeAnimation.repeatCount = Float(repeatCount)
-                
-                SyrenThreeAnimation.animations = [lightThreeViewAnimation]
-                self.light3View.layer.add(SyrenThreeAnimation, forKey: "contents")
-                
-//                self.animateSyren2()
-                //Syren Shine2
-                let SyrenTwoAnimation = CAAnimationGroup()
-                SyrenTwoAnimation.duration = 1
-                SyrenTwoAnimation.repeatCount = Float(repeatCount)
-                
-                SyrenTwoAnimation.animations = [lightTwoViewAnimation]
-                self.light2View.layer.add(SyrenTwoAnimation, forKey: "contents")
-            
-            
-                //Syren Shine4
-                let SyrenFourAnimation = CAAnimationGroup()
-                SyrenFourAnimation.duration = 1
-                SyrenFourAnimation.repeatCount = Float(repeatCount)
-                
-                SyrenFourAnimation.animations = [lightFourViewAnimation]
-                self.light4View.layer.add(SyrenFourAnimation, forKey: "contents")
-                
-                //Syren Shine5
-                let SyrenFiveAnimation = CAAnimationGroup()
-                SyrenFiveAnimation.duration = 1
-                SyrenFiveAnimation.repeatCount = Float(repeatCount)
-                
-                SyrenFiveAnimation.animations = [lightFiveViewAnimation]
-                self.light5View.layer.add(SyrenFiveAnimation, forKey: "contents")
-                
-                //Syren Shine6
-                let SyrenSixAnimation = CAAnimationGroup()
-                SyrenSixAnimation.duration = 1
-                SyrenSixAnimation.repeatCount = Float(repeatCount)
-                
-                SyrenSixAnimation.animations = [lightSixViewAnimation]
-                self.light6View.layer.add(SyrenSixAnimation, forKey: "contents")
-                
-                //Syren Front Red
-                let SyrenFrontRedAnimation = CAAnimationGroup()
-                SyrenFrontRedAnimation.duration = 1
-                SyrenFrontRedAnimation.repeatCount = Float(repeatCount)
-                
-                SyrenFrontRedAnimation.animations = [lightFrontRedViewAnimation]
-                self.lightFrontRedView.layer.add(SyrenFrontRedAnimation, forKey: "contents")
-                
-                //Syren Front White
-                let SyrenFrontWhiteAnimation = CAAnimationGroup()
-                SyrenFrontWhiteAnimation.duration = CFTimeInterval(Float(repeatCount))
-                SyrenFrontWhiteAnimation.repeatCount = 1
-                
-                SyrenFrontWhiteAnimation.animations = [lightFrontWhiteView01Animation, lightFrontWhiteView02Animation]
-                self.lightFrontWhiteView.layer.add(SyrenFrontWhiteAnimation, forKey: "contents")
-                self.lightFrontWhiteView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.lightFrontWhiteView, keytimes: [0, 0.02, 0.98, 1], duration: CFTimeInterval(Float(repeatCount)), animationDuration: self.animationDuration)
-                
-                //Orange Light
-                self.lightOrangeView.layer.add(lightOrangeViewAnimation, forKey: "contents")
-                
-                //Syren Roof
-                let SyrenRoofAnimation = CAAnimationGroup()
-                SyrenRoofAnimation.duration = 0.4
-                SyrenRoofAnimation.repeatCount = (Float(repeatCount) / Float(SyrenRoofAnimation.duration))
-                
-                SyrenRoofAnimation.animations = [lightRoofViewAnimation]
-                self.syrenRoofView.layer.add(SyrenRoofAnimation, forKey: "contents")
-                
-                let SyrenRoof2Animation = CAAnimationGroup()
-                SyrenRoof2Animation.duration = 0.4
-                SyrenRoof2Animation.repeatCount = (Float(repeatCount) / Float(SyrenRoof2Animation.duration))
-                
-                SyrenRoof2Animation.animations = [lightRoof2ViewAnimation]
-                self.syrenRoof2View.layer.add(SyrenRoof2Animation, forKey: "contents")
+//                //Syren Shine3
+//                let SyrenThreeAnimation = CAAnimationGroup()
+//                SyrenThreeAnimation.duration = 1
+//                SyrenThreeAnimation.repeatCount = Float(repeatCount)
+//                
+//                SyrenThreeAnimation.animations = [lightThreeViewAnimation]
+//                self.light3View.layer.add(SyrenThreeAnimation, forKey: "contents")
+//
+//                //Syren Shine4
+//                let SyrenFourAnimation = CAAnimationGroup()
+//                SyrenFourAnimation.duration = 1
+//                SyrenFourAnimation.repeatCount = Float(repeatCount)
+//                
+//                SyrenFourAnimation.animations = [lightFourViewAnimation]
+//                self.light4View.layer.add(SyrenFourAnimation, forKey: "contents")
+//                
+//                //Syren Shine5
+//                let SyrenFiveAnimation = CAAnimationGroup()
+//                SyrenFiveAnimation.duration = 1
+//                SyrenFiveAnimation.repeatCount = Float(repeatCount)
+//                
+//                SyrenFiveAnimation.animations = [lightFiveViewAnimation]
+//                self.light5View.layer.add(SyrenFiveAnimation, forKey: "contents")
+//                
+//                //Syren Shine6
+//                let SyrenSixAnimation = CAAnimationGroup()
+//                SyrenSixAnimation.duration = 1
+//                SyrenSixAnimation.repeatCount = Float(repeatCount)
+//                
+//                SyrenSixAnimation.animations = [lightSixViewAnimation]
+//                self.light6View.layer.add(SyrenSixAnimation, forKey: "contents")
+//                
+//                //Syren Front Red
+//                let SyrenFrontRedAnimation = CAAnimationGroup()
+//                SyrenFrontRedAnimation.duration = 1
+//                SyrenFrontRedAnimation.repeatCount = Float(repeatCount)
+//                
+//                SyrenFrontRedAnimation.animations = [lightFrontRedViewAnimation]
+//                self.lightFrontRedView.layer.add(SyrenFrontRedAnimation, forKey: "contents")
+//                
+//                //Syren Front White
+//                let SyrenFrontWhiteAnimation = CAAnimationGroup()
+//                SyrenFrontWhiteAnimation.duration = CFTimeInterval(Float(repeatCount))
+//                SyrenFrontWhiteAnimation.repeatCount = 1
+//                
+//                SyrenFrontWhiteAnimation.animations = [lightFrontWhiteView01Animation, lightFrontWhiteView02Animation]
+//                self.lightFrontWhiteView.layer.add(SyrenFrontWhiteAnimation, forKey: "contents")
+//                self.lightFrontWhiteView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.lightFrontWhiteView, keytimes: [0, 0.02, 0.98, 1], duration: CFTimeInterval(Float(repeatCount)), animationDuration: self.animationDuration)
+//                
+//                //Orange Light
+//                self.lightOrangeView.layer.add(lightOrangeViewAnimation, forKey: "contents")
+//                
+//                //Syren Roof
+//                let SyrenRoofAnimation = CAAnimationGroup()
+//                SyrenRoofAnimation.duration = 0.4
+//                SyrenRoofAnimation.repeatCount = (Float(repeatCount) / Float(SyrenRoofAnimation.duration))
+//                
+//                SyrenRoofAnimation.animations = [lightRoofViewAnimation]
+//                self.syrenRoofView.layer.add(SyrenRoofAnimation, forKey: "contents")
+//                
+//                let SyrenRoof2Animation = CAAnimationGroup()
+//                SyrenRoof2Animation.duration = 0.4
+//                SyrenRoof2Animation.repeatCount = (Float(repeatCount) / Float(SyrenRoof2Animation.duration))
+//                
+//                SyrenRoof2Animation.animations = [lightRoof2ViewAnimation]
+//                self.syrenRoof2View.layer.add(SyrenRoof2Animation, forKey: "contents")
             
         }, completion: nil)
         
