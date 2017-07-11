@@ -195,13 +195,6 @@ class FiretruckViewController: UIViewController {
         Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(enableSyrenSwitchButton), userInfo: nil, repeats: false)
         
         
-//
-//        let lightOrangeViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-//        lightOrangeViewAnimation.calculationMode = kCAAnimationDiscrete
-//        lightOrangeViewAnimation.values = lightOrangeImages.map {$0.cgImage as AnyObject}
-//        lightOrangeViewAnimation.duration = 1
-//        lightOrangeViewAnimation.repeatCount = Float(repeatCount)
-//        
 //        let lightRoofViewAnimation = CAKeyframeAnimation(keyPath: "contents")
 //        lightRoofViewAnimation.calculationMode = kCAAnimationDiscrete
 //        lightRoofViewAnimation.values = lightRoofImages.map {$0.cgImage as AnyObject}
@@ -235,12 +228,11 @@ class FiretruckViewController: UIViewController {
                 self.animateSyren(animatedImageView: self.lightFrontRedView, imageSequence: self.lightFrontRedImages, duration: 1, animationDuration: 5, animationDelay: 0)
 
                 self.animateSyren(animatedImageView: self.lightFrontWhiteView, imageSequence: self.lightFrontWhite02Images, duration: 1, animationDuration: 5, animationDelay: 0)
-            
                 self.lightFrontWhiteView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.lightFrontWhiteView, keytimes: [0, 0.02, 0.98, 1], duration: CFTimeInterval(Float(5)), animationDuration: 5)
-//
-//                //Orange Light
-//                self.lightOrangeView.layer.add(lightOrangeViewAnimation, forKey: "contents")
-//                
+            
+                self.animateSyren(animatedImageView: self.lightOrangeView, imageSequence: self.lightOrangeImages, duration: 1, animationDuration: 5, animationDelay: 0)
+                self.lightOrangeView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.lightOrangeView, keytimes: [0, 0.02, 0.98, 1], duration: CFTimeInterval(Float(5)), animationDuration: 5)
+            
 //                //Syren Roof
 //                let SyrenRoofAnimation = CAAnimationGroup()
 //                SyrenRoofAnimation.duration = 0.4
