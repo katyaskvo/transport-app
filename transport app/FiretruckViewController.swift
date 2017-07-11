@@ -130,9 +130,9 @@ class FiretruckViewController: UIViewController {
         let lightRoof_000 = UIImage(named: "roofLight000")
         let lightRoof_01 = UIImage(named: "roofLight01")
         let lightRoof_02 = UIImage(named: "roofLight02")
-        lightRoofImages = [lightRoof_01!, lightRoof_02!, lightRoof_01!, lightRoof_000!, lightRoof_000!, lightRoof_000! ]
+        lightRoofImages = [lightRoof_01!, lightRoof_02!, lightRoof_01!, lightRoof_000!, lightRoof_000!, lightRoof_000!, lightRoof_01!, lightRoof_02!, lightRoof_01!, lightRoof_000!, lightRoof_000!, lightRoof_000!]
 
-        lightRoof2Images = [lightRoof_000!, lightRoof_000!, lightRoof_000!, lightRoof_01!, lightRoof_02!, lightRoof_01! ]
+        lightRoof2Images = [lightRoof_000!, lightRoof_000!, lightRoof_000!, lightRoof_01!, lightRoof_02!, lightRoof_01!, lightRoof_000!, lightRoof_000!, lightRoof_000!, lightRoof_01!, lightRoof_02!, lightRoof_01!]
         
         if let filePath = Bundle.main.path(forResource: "firetruck", ofType: "mp3", inDirectory: "") {
             // Good, got a file
@@ -194,20 +194,6 @@ class FiretruckViewController: UIViewController {
         self.syrenSwitchButton.isEnabled = false
         Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(enableSyrenSwitchButton), userInfo: nil, repeats: false)
         
-        
-//        let lightRoofViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-//        lightRoofViewAnimation.calculationMode = kCAAnimationDiscrete
-//        lightRoofViewAnimation.values = lightRoofImages.map {$0.cgImage as AnyObject}
-//        lightRoofViewAnimation.duration = 0.4
-//        lightRoofViewAnimation.repeatCount = 1
-//        
-//        let lightRoof2ViewAnimation = CAKeyframeAnimation(keyPath: "contents")
-//        lightRoof2ViewAnimation.calculationMode = kCAAnimationDiscrete
-//        lightRoof2ViewAnimation.values = lightRoof2Images.map {$0.cgImage as AnyObject}
-//        lightRoof2ViewAnimation.duration = 0.4
-//        lightRoof2ViewAnimation.repeatCount = 1
-        
-        
         UIView.animate(withDuration: 1,
            delay: 0,
            options: [.curveLinear],
@@ -233,20 +219,9 @@ class FiretruckViewController: UIViewController {
                 self.animateSyren(animatedImageView: self.lightOrangeView, imageSequence: self.lightOrangeImages, duration: 1, animationDuration: 5, animationDelay: 0)
                 self.lightOrangeView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.lightOrangeView, keytimes: [0, 0.02, 0.98, 1], duration: CFTimeInterval(Float(5)), animationDuration: 5)
             
-//                //Syren Roof
-//                let SyrenRoofAnimation = CAAnimationGroup()
-//                SyrenRoofAnimation.duration = 0.4
-//                SyrenRoofAnimation.repeatCount = (Float(repeatCount) / Float(SyrenRoofAnimation.duration))
-//                
-//                SyrenRoofAnimation.animations = [lightRoofViewAnimation]
-//                self.syrenRoofView.layer.add(SyrenRoofAnimation, forKey: "contents")
-//                
-//                let SyrenRoof2Animation = CAAnimationGroup()
-//                SyrenRoof2Animation.duration = 0.4
-//                SyrenRoof2Animation.repeatCount = (Float(repeatCount) / Float(SyrenRoof2Animation.duration))
-//                
-//                SyrenRoof2Animation.animations = [lightRoof2ViewAnimation]
-//                self.syrenRoof2View.layer.add(SyrenRoof2Animation, forKey: "contents")
+                self.animateSyren(animatedImageView: self.syrenRoofView, imageSequence: self.lightRoofImages, duration: 1, animationDuration: 5, animationDelay: 0)
+            
+                self.animateSyren(animatedImageView: self.syrenRoof2View, imageSequence: self.lightRoof2Images, duration: 1, animationDuration: 5, animationDelay: 0)
             
         }, completion: nil)
         
