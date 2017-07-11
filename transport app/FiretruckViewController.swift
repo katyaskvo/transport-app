@@ -192,7 +192,7 @@ class FiretruckViewController: UIViewController {
     }
     @IBAction func startSyren() {
         
-        let timeDuration = 5;
+        let timeDuration = 10;
         self.syrenSwitchButton.isEnabled = false
         Timer.scheduledTimer(timeInterval: CFTimeInterval(timeDuration), target: self, selector: #selector(enableSyrenSwitchButton), userInfo: nil, repeats: false)
         
