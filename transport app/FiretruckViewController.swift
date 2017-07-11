@@ -191,37 +191,39 @@ class FiretruckViewController: UIViewController {
         self.audioPlayer.play()
     }
     @IBAction func startSyren() {
+        
+        let timeDuration = 5;
         self.syrenSwitchButton.isEnabled = false
-        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(enableSyrenSwitchButton), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: CFTimeInterval(timeDuration), target: self, selector: #selector(enableSyrenSwitchButton), userInfo: nil, repeats: false)
         
         UIView.animate(withDuration: 1,
            delay: 0,
            options: [.curveLinear],
            animations: {
             
-                self.animateSyren(animatedImageView: self.light1View, imageSequence: self.light1Images, duration: 1, animationDuration: 5, animationDelay: 0)
+                self.animateSyren(animatedImageView: self.light1View, imageSequence: self.light1Images, duration: 1, animationDuration: CFTimeInterval(timeDuration), animationDelay: 0)
 
-                self.animateSyren(animatedImageView: self.light2View, imageSequence: self.light2Images, duration: 1, animationDuration: 5, animationDelay: 0)
+                self.animateSyren(animatedImageView: self.light2View, imageSequence: self.light2Images, duration: 1, animationDuration: CFTimeInterval(timeDuration), animationDelay: 0)
 
-                self.animateSyren(animatedImageView: self.light3View, imageSequence: self.light3Images, duration: 0.5, animationDuration: 5, animationDelay: 0)
+                self.animateSyren(animatedImageView: self.light3View, imageSequence: self.light3Images, duration: 0.5, animationDuration: CFTimeInterval(timeDuration), animationDelay: 0)
 
-                self.animateSyren(animatedImageView: self.light4View, imageSequence: self.light4Images, duration: 0.5, animationDuration: 5, animationDelay: 0)
+                self.animateSyren(animatedImageView: self.light4View, imageSequence: self.light4Images, duration: 0.5, animationDuration: CFTimeInterval(timeDuration), animationDelay: 0)
             
-                self.animateSyren(animatedImageView: self.light5View, imageSequence: self.light5Images, duration: 1, animationDuration: 5, animationDelay: 0)
+                self.animateSyren(animatedImageView: self.light5View, imageSequence: self.light5Images, duration: 1, animationDuration: CFTimeInterval(timeDuration), animationDelay: 0)
 
-                self.animateSyren(animatedImageView: self.light6View, imageSequence: self.light6Images, duration: 1, animationDuration: 5, animationDelay: 0)
+                self.animateSyren(animatedImageView: self.light6View, imageSequence: self.light6Images, duration: 1, animationDuration: CFTimeInterval(timeDuration), animationDelay: 0)
             
-                self.animateSyren(animatedImageView: self.lightFrontRedView, imageSequence: self.lightFrontRedImages, duration: 1, animationDuration: 5, animationDelay: 0)
+                self.animateSyren(animatedImageView: self.lightFrontRedView, imageSequence: self.lightFrontRedImages, duration: 1, animationDuration: CFTimeInterval(timeDuration), animationDelay: 0)
 
-                self.animateSyren(animatedImageView: self.lightFrontWhiteView, imageSequence: self.lightFrontWhite02Images, duration: 1, animationDuration: 5, animationDelay: 0)
-                self.lightFrontWhiteView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.lightFrontWhiteView, keytimes: [0, 0.02, 0.98, 1], duration: CFTimeInterval(Float(5)), animationDuration: 5)
+                self.animateSyren(animatedImageView: self.lightFrontWhiteView, imageSequence: self.lightFrontWhite02Images, duration: 1, animationDuration: CFTimeInterval(timeDuration), animationDelay: 0)
+                self.lightFrontWhiteView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.lightFrontWhiteView, keytimes: [0, 0.02, 0.98, 1], duration: CFTimeInterval(timeDuration), animationDuration: CFTimeInterval(timeDuration))
             
-                self.animateSyren(animatedImageView: self.lightOrangeView, imageSequence: self.lightOrangeImages, duration: 1, animationDuration: 5, animationDelay: 0)
-                self.lightOrangeView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.lightOrangeView, keytimes: [0, 0.02, 0.98, 1], duration: CFTimeInterval(Float(5)), animationDuration: 5)
+                self.animateSyren(animatedImageView: self.lightOrangeView, imageSequence: self.lightOrangeImages, duration: 1, animationDuration: CFTimeInterval(timeDuration), animationDelay: 0)
+                self.lightOrangeView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.lightOrangeView, keytimes: [0, 0.02, 0.98, 1], duration: CFTimeInterval(timeDuration), animationDuration: CFTimeInterval(timeDuration))
             
-                self.animateSyren(animatedImageView: self.syrenRoofView, imageSequence: self.lightRoofImages, duration: 1, animationDuration: 5, animationDelay: 0)
+                self.animateSyren(animatedImageView: self.syrenRoofView, imageSequence: self.lightRoofImages, duration: 1, animationDuration: CFTimeInterval(timeDuration), animationDelay: 0)
             
-                self.animateSyren(animatedImageView: self.syrenRoof2View, imageSequence: self.lightRoof2Images, duration: 1, animationDuration: 5, animationDelay: 0)
+                self.animateSyren(animatedImageView: self.syrenRoof2View, imageSequence: self.lightRoof2Images, duration: 1, animationDuration: CFTimeInterval(timeDuration), animationDelay: 0)
             
         }, completion: nil)
         
