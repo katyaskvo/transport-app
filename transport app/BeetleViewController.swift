@@ -128,8 +128,8 @@ class BeetleViewController: UIViewController {
         
         
         let cloudPath = UIBezierPath()
-        cloudPath.move(to: CGPoint(x: 165,y: 204))
-        cloudPath.addCurve(to: CGPoint(x: 30, y: 150), controlPoint1: CGPoint(x: 80, y: 204), controlPoint2: CGPoint(x: 30, y: 150))
+        cloudPath.move(to: CGPoint(x: 165,y: 284))
+        cloudPath.addCurve(to: CGPoint(x: 30, y: 230), controlPoint1: CGPoint(x: 80, y: 284), controlPoint2: CGPoint(x: 30, y: 230))
         
         let cloudScaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
         cloudScaleAnimation.duration = cloudAnimationDuration
