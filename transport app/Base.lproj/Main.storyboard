@@ -1120,143 +1120,143 @@ Go to bibika.katyaskvo.com</string>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1Z-d3-lIb" userLabel="motorcycle">
-                                <rect key="frame" x="324" y="198" width="700" height="350"/>
+                                <rect key="frame" x="161" y="210" width="700" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_body" translatesAutoresizingMaskIntoConstraints="NO" id="1f2-V5-Wma">
-                                        <rect key="frame" x="196" y="35" width="338" height="265"/>
+                                        <rect key="frame" x="196" y="42" width="338" height="265"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_disc_part" translatesAutoresizingMaskIntoConstraints="NO" id="Gvx-Gi-7sk">
-                                        <rect key="frame" x="123" y="197" width="85" height="85"/>
+                                        <rect key="frame" x="123" y="204" width="85" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_back_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Mc0-47-Hlp">
-                                        <rect key="frame" x="64" y="168" width="173" height="173"/>
+                                        <rect key="frame" x="64" y="175" width="173" height="173"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_wheel_reflection" translatesAutoresizingMaskIntoConstraints="NO" id="dwq-D6-Fzh" userLabel="motorcycle_back_wheel_reflection">
-                                        <rect key="frame" x="74" y="178" width="151" height="153"/>
+                                        <rect key="frame" x="74" y="185" width="151" height="153"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_part3" translatesAutoresizingMaskIntoConstraints="NO" id="sFL-n5-Iud">
-                                        <rect key="frame" x="174" y="251" width="119" height="48"/>
+                                        <rect key="frame" x="174" y="258" width="119" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_back_wheel_disc" translatesAutoresizingMaskIntoConstraints="NO" id="VyQ-nk-Jq4">
-                                        <rect key="frame" x="104" y="202" width="98" height="103"/>
+                                        <rect key="frame" x="104" y="209" width="98" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="motorcycle_engine_left" translatesAutoresizingMaskIntoConstraints="NO" id="JAV-QO-WjU">
-                                        <rect key="frame" x="307" y="145" width="69" height="82"/>
+                                        <rect key="frame" x="307" y="152" width="69" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_engine_right" translatesAutoresizingMaskIntoConstraints="NO" id="GJh-1n-xVR">
-                                        <rect key="frame" x="375" y="146" width="71" height="81"/>
+                                        <rect key="frame" x="375" y="153" width="71" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_front_disc" translatesAutoresizingMaskIntoConstraints="NO" id="twx-As-MhB">
-                                        <rect key="frame" x="527" y="221" width="72" height="68"/>
+                                        <rect key="frame" x="527" y="228" width="72" height="68"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_front_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="VVb-yE-Evd">
-                                        <rect key="frame" x="478" y="168" width="173" height="173"/>
+                                        <rect key="frame" x="478" y="175" width="173" height="173"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_wheel_reflection" translatesAutoresizingMaskIntoConstraints="NO" id="gsf-yB-9KQ" userLabel="motorcycle_front_wheel_reflection">
-                                        <rect key="frame" x="488" y="178" width="151" height="153"/>
+                                        <rect key="frame" x="488" y="185" width="151" height="153"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_part1" translatesAutoresizingMaskIntoConstraints="NO" id="jfI-3m-uEp">
-                                        <rect key="frame" x="141" y="246" width="122" height="15"/>
+                                        <rect key="frame" x="141" y="253" width="122" height="15"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_part2" translatesAutoresizingMaskIntoConstraints="NO" id="vlZ-bh-8qL">
-                                        <rect key="frame" x="108" y="204" width="169" height="23"/>
+                                        <rect key="frame" x="108" y="211" width="169" height="23"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_back_light_00" translatesAutoresizingMaskIntoConstraints="NO" id="8pa-zP-8yO">
-                                        <rect key="frame" x="42" y="180" width="24" height="21"/>
+                                        <rect key="frame" x="42" y="187" width="24" height="21"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_back_fender" translatesAutoresizingMaskIntoConstraints="NO" id="dlr-u9-9dV">
-                                        <rect key="frame" x="46" y="144" width="166" height="73"/>
+                                        <rect key="frame" x="46" y="151" width="166" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_spring" translatesAutoresizingMaskIntoConstraints="NO" id="dhM-2n-7aH">
-                                        <rect key="frame" x="148" y="181" width="45" height="68"/>
+                                        <rect key="frame" x="148" y="188" width="45" height="68"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_pedal" translatesAutoresizingMaskIntoConstraints="NO" id="q7Z-DP-0H2">
-                                        <rect key="frame" x="294" y="165" width="127" height="123"/>
+                                        <rect key="frame" x="294" y="172" width="127" height="123"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_new_pipes2" translatesAutoresizingMaskIntoConstraints="NO" id="iSj-eB-JQo">
-                                        <rect key="frame" x="75" y="192" width="377" height="121"/>
+                                        <rect key="frame" x="75" y="199" width="377" height="121"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_front_fender" translatesAutoresizingMaskIntoConstraints="NO" id="B4Q-hj-WXP">
-                                        <rect key="frame" x="465" y="157" width="137" height="104"/>
+                                        <rect key="frame" x="465" y="164" width="137" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_mirrow" translatesAutoresizingMaskIntoConstraints="NO" id="JDR-qx-Jxp">
-                                        <rect key="frame" x="428" y="0.0" width="18" height="41"/>
+                                        <rect key="frame" x="428" y="7" width="18" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_seat" translatesAutoresizingMaskIntoConstraints="NO" id="ONg-0w-TSu">
-                                        <rect key="frame" x="206" y="171" width="91" height="50"/>
+                                        <rect key="frame" x="206" y="178" width="91" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Yd9-sV-Zm7">
-                                        <rect key="frame" x="83" y="276" width="4" height="3"/>
+                                        <rect key="frame" x="83" y="283" width="4" height="3"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="0C4-oJ-d1c">
-                                        <rect key="frame" x="83" y="276" width="4" height="3"/>
+                                        <rect key="frame" x="83" y="283" width="4" height="3"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="ByM-5L-mav">
-                                        <rect key="frame" x="83" y="276" width="5" height="4"/>
+                                        <rect key="frame" x="83" y="283" width="5" height="4"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="gZq-a1-rDR">
-                                        <rect key="frame" x="83" y="276" width="3" height="2"/>
+                                        <rect key="frame" x="83" y="283" width="3" height="2"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_pipes_movable" translatesAutoresizingMaskIntoConstraints="NO" id="xnw-U4-mqy">
-                                        <rect key="frame" x="75" y="263" width="142" height="27"/>
+                                        <rect key="frame" x="75" y="270" width="142" height="27"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="uBs-du-KmL">
-                                        <rect key="frame" x="242" y="298" width="3" height="2"/>
+                                        <rect key="frame" x="242" y="305" width="3" height="2"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud" translatesAutoresizingMaskIntoConstraints="NO" id="EpG-Bk-xha">
-                                        <rect key="frame" x="242" y="298" width="4" height="3"/>
+                                        <rect key="frame" x="242" y="305" width="4" height="3"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="Fqu-mz-sGg">
-                                        <rect key="frame" x="242" y="298" width="5" height="4"/>
+                                        <rect key="frame" x="242" y="305" width="5" height="4"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="UbT-r1-5QW">
-                                        <rect key="frame" x="242" y="298" width="4" height="3"/>
+                                        <rect key="frame" x="242" y="305" width="4" height="3"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_pipes_movable" translatesAutoresizingMaskIntoConstraints="NO" id="hlR-1g-c39">
-                                        <rect key="frame" x="234" y="286" width="142" height="27"/>
+                                        <rect key="frame" x="234" y="293" width="142" height="27"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_orange_backlight_part" translatesAutoresizingMaskIntoConstraints="NO" id="c8c-1L-h1z">
-                                        <rect key="frame" x="99" y="170" width="24" height="20"/>
+                                        <rect key="frame" x="99" y="177" width="24" height="20"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_front_orange_light_part" translatesAutoresizingMaskIntoConstraints="NO" id="dFn-V8-kWt">
-                                        <rect key="frame" x="428" y="55" width="25" height="20"/>
+                                        <rect key="frame" x="428" y="62" width="25" height="20"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cxK-B5-5TB">
-                                        <rect key="frame" x="-1" y="341" width="700" height="2"/>
+                                        <rect key="frame" x="-1" y="348" width="700" height="2"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="eJE-E8-63W">
@@ -1270,24 +1270,24 @@ Go to bibika.katyaskvo.com</string>
                                         </subviews>
                                     </view>
                                     <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8J-VK-dus">
-                                        <rect key="frame" x="-160" y="-198" width="1024" height="768"/>
+                                        <rect key="frame" x="-160" y="-209" width="1023" height="767"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.39718205670000001" blue="0.84589149750000003" alpha="0.51468321920000004" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="motorcycle_back_light_01" translatesAutoresizingMaskIntoConstraints="NO" id="tBg-0Z-kxS">
-                                        <rect key="frame" x="27.5" y="167" width="52" height="47"/>
+                                        <rect key="frame" x="27.5" y="174" width="52" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="motorcycle_orange_backlight01" translatesAutoresizingMaskIntoConstraints="NO" id="zTo-gd-a3i">
-                                        <rect key="frame" x="91" y="166" width="14" height="28"/>
+                                        <rect key="frame" x="91" y="173" width="14" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="motorcycle_front_orange_light01" translatesAutoresizingMaskIntoConstraints="NO" id="LIw-LY-k62">
-                                        <rect key="frame" x="442" y="49" width="19" height="31"/>
+                                        <rect key="frame" x="442" y="56" width="19" height="31"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-T4-kYP">
-                                        <rect key="frame" x="504" y="29" width="257" height="140"/>
+                                        <rect key="frame" x="504" y="36" width="257" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mb-OY-VVx">
@@ -1495,12 +1495,12 @@ Go to bibika.katyaskvo.com</string>
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iJd-I6-ByO"/>
-        <segue reference="eAs-q5-aYq"/>
-        <segue reference="nYK-5n-H5w"/>
-        <segue reference="v2T-s6-0b7"/>
-        <segue reference="31R-Pj-w8V"/>
-        <segue reference="NWe-BV-uvs"/>
+        <segue reference="BzD-GJ-YjH"/>
         <segue reference="aIo-Mp-qjr"/>
+        <segue reference="XbO-Bq-ASr"/>
+        <segue reference="TIf-N3-4A5"/>
+        <segue reference="v2T-s6-0b7"/>
+        <segue reference="nYK-5n-H5w"/>
+        <segue reference="eAs-q5-aYq"/>
     </inferredMetricsTieBreakers>
 </document>

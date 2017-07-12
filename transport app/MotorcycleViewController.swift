@@ -154,13 +154,13 @@ class MotorcycleViewController: UIViewController {
         
         
         let cloudPath = UIBezierPath()
-        cloudPath.move(to: CGPoint(x: 83,y: 276))
-        cloudPath.addCurve(to: CGPoint(x: -42, y: 222), controlPoint1: CGPoint(x: 32, y: 276), controlPoint2: CGPoint(x: -42, y: 222))
+        cloudPath.move(to: CGPoint(x: 83,y: 283))
+        cloudPath.addCurve(to: CGPoint(x: -42, y: 229), controlPoint1: CGPoint(x: 32, y: 283), controlPoint2: CGPoint(x: -42, y: 229))
         
         
         let cloud2Path = UIBezierPath()
-        cloud2Path.move(to: CGPoint(x: 242,y: 298))
-        cloud2Path.addCurve(to: CGPoint(x: 118, y: 241), controlPoint1: CGPoint(x: 48, y: 298), controlPoint2: CGPoint(x: 118, y: 241))
+        cloud2Path.move(to: CGPoint(x: 242,y: 305))
+        cloud2Path.addCurve(to: CGPoint(x: 118, y: 248), controlPoint1: CGPoint(x: 48, y: 305), controlPoint2: CGPoint(x: 118, y: 248))
 
         
         let cloudScaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
