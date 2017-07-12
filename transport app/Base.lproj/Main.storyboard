@@ -580,7 +580,7 @@ Go to bibika.katyaskvo.com</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-XJ-VMn" userLabel="tractor">
-                                <rect key="frame" x="324" y="215" width="700" height="325"/>
+                                <rect key="frame" x="161" y="222" width="700" height="325"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="body" translatesAutoresizingMaskIntoConstraints="NO" id="zjp-9I-jbD">
@@ -644,7 +644,7 @@ Go to bibika.katyaskvo.com</string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZi-Lv-CXW">
-                                        <rect key="frame" x="0.0" y="322" width="698" height="2"/>
+                                        <rect key="frame" x="2" y="321" width="697" height="2"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="1Fy-JJ-Utr">
@@ -715,7 +715,7 @@ Go to bibika.katyaskvo.com</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSh-cR-CgX" userLabel="clouds">
-                                <rect key="frame" x="0.0" y="120" width="1024" height="648"/>
+                                <rect key="frame" x="0.0" y="60" width="1024" height="648"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="Xte-dM-S1H">
@@ -774,7 +774,7 @@ Go to bibika.katyaskvo.com</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cxw-dl-n5Y" userLabel="helicopter">
-                                <rect key="frame" x="120" y="204" width="904" height="345"/>
+                                <rect key="frame" x="58" y="213" width="904" height="345"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="helicopter_helix_still" translatesAutoresizingMaskIntoConstraints="NO" id="DAI-Fe-IjQ">
@@ -900,7 +900,7 @@ Go to bibika.katyaskvo.com</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFx-gz-usA" userLabel="firetruck">
-                                <rect key="frame" x="134" y="243" width="890" height="301"/>
+                                <rect key="frame" x="65" y="235" width="890" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OY2-hT-B20">
@@ -1034,7 +1034,7 @@ Go to bibika.katyaskvo.com</string>
                                         </subviews>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdt-2K-nG7">
-                                        <rect key="frame" x="25" y="20" width="840" height="280"/>
+                                        <rect key="frame" x="24" y="19" width="841" height="281"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="playSoundButton" destination="980-jK-LUk" eventType="touchUpInside" id="Qtb-i2-jb3"/>
@@ -1497,10 +1497,10 @@ Go to bibika.katyaskvo.com</string>
     <inferredMetricsTieBreakers>
         <segue reference="eAs-q5-aYq"/>
         <segue reference="nYK-5n-H5w"/>
-        <segue reference="0Vj-FM-jc3"/>
-        <segue reference="TIf-N3-4A5"/>
-        <segue reference="vgW-N1-GXF"/>
+        <segue reference="v2T-s6-0b7"/>
+        <segue reference="31R-Pj-w8V"/>
+        <segue reference="nqZ-dB-v3P"/>
         <segue reference="BzD-GJ-YjH"/>
-        <segue reference="Mnz-ED-BsI"/>
+        <segue reference="q8u-3C-dbN"/>
     </inferredMetricsTieBreakers>
 </document>
