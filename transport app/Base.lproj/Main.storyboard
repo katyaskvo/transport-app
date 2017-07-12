@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eYz-ct-G7b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eYz-ct-G7b">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -715,7 +715,7 @@ Go to bibika.katyaskvo.com</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSh-cR-CgX" userLabel="clouds">
-                                <rect key="frame" x="0.0" y="61" width="1024" height="648"/>
+                                <rect key="frame" x="0.0" y="120" width="1024" height="648"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="Xte-dM-S1H">
@@ -774,7 +774,7 @@ Go to bibika.katyaskvo.com</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cxw-dl-n5Y" userLabel="helicopter">
-                                <rect key="frame" x="59" y="204" width="904" height="345"/>
+                                <rect key="frame" x="120" y="204" width="904" height="345"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="helicopter_helix_still" translatesAutoresizingMaskIntoConstraints="NO" id="DAI-Fe-IjQ">
@@ -895,11 +895,12 @@ Go to bibika.katyaskvo.com</string>
                                 <rect key="frame" x="482" y="641" width="61" height="61"/>
                                 <state key="normal" backgroundImage="playButton"/>
                                 <connections>
+                                    <action selector="playMechanicalSoundButton" destination="980-jK-LUk" eventType="touchUpInside" id="3Wb-tu-Q5w"/>
                                     <action selector="startAnimation" destination="980-jK-LUk" eventType="touchUpInside" id="NX7-Qc-veF"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFx-gz-usA" userLabel="firetruck">
-                                <rect key="frame" x="66" y="243" width="890" height="301"/>
+                                <rect key="frame" x="134" y="243" width="890" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OY2-hT-B20">
@@ -1119,7 +1120,7 @@ Go to bibika.katyaskvo.com</string>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1Z-d3-lIb" userLabel="motorcycle">
-                                <rect key="frame" x="160" y="198" width="700" height="350"/>
+                                <rect key="frame" x="324" y="198" width="700" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_body" translatesAutoresizingMaskIntoConstraints="NO" id="1f2-V5-Wma">
@@ -1494,12 +1495,12 @@ Go to bibika.katyaskvo.com</string>
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BzD-GJ-YjH"/>
-        <segue reference="vgW-N1-GXF"/>
-        <segue reference="TIf-N3-4A5"/>
-        <segue reference="nqZ-dB-v3P"/>
-        <segue reference="nYK-5n-H5w"/>
-        <segue reference="v2T-s6-0b7"/>
         <segue reference="eAs-q5-aYq"/>
+        <segue reference="nYK-5n-H5w"/>
+        <segue reference="0Vj-FM-jc3"/>
+        <segue reference="TIf-N3-4A5"/>
+        <segue reference="vgW-N1-GXF"/>
+        <segue reference="BzD-GJ-YjH"/>
+        <segue reference="Mnz-ED-BsI"/>
     </inferredMetricsTieBreakers>
 </document>

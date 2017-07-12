@@ -73,9 +73,11 @@ class FiretruckViewController: UIViewController {
     
     
     var audioPlayer: AVAudioPlayer!
+    var audio2Player: AVAudioPlayer!
     
     override func viewDidDisappear(_ animated: Bool) {
         self.audioPlayer.stop()
+        self.audio2Player.stop()
     }
     
 
@@ -148,6 +150,20 @@ class FiretruckViewController: UIViewController {
             print("filePath is empty!")
         }
         
+        if let file2Path = Bundle.main.path(forResource: "firetruck_mechanical", ofType: "mp3", inDirectory: "") {
+            // Good, got a file
+            let filePath2Url = NSURL.fileURL(withPath: file2Path)
+            
+            // Try to instantiate the audio player
+            do {
+                self.audio2Player = try AVAudioPlayer(contentsOf: filePath2Url)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("filePath is empty!")
+        }
+        
         sliderSoundView.showsRouteButton = false
         sliderSoundView.setVolumeThumbImage(UIImage(named:"volume"), for: UIControlState.normal)
         sliderSoundView.setMaximumVolumeSliderImage(UIImage(named:"min_volume"), for: UIControlState.normal)
@@ -185,6 +201,10 @@ class FiretruckViewController: UIViewController {
     }
     func enableSyrenSwitchButton() {
         self.syrenSwitchButton.isEnabled = true
+    }
+
+    @IBAction func playMechanicalSoundButton() {
+        self.audio2Player.play()
     }
     
     @IBAction func playSoundButton() {

@@ -12,6 +12,7 @@
 		002788DE1E8A3C3400B26632 /* tractor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002788DA1E8A3C3400B26632 /* tractor.mp3 */; };
 		002788DF1E8A3C3400B26632 /* motorcycle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002788DB1E8A3C3400B26632 /* motorcycle.mp3 */; };
 		002788E01E8A3C3400B26632 /* beetle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002788DC1E8A3C3400B26632 /* beetle.mp3 */; };
+		00284BB41F1639AC0042DF8C /* firetruck_mechanical.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00284BB31F1639AC0042DF8C /* firetruck_mechanical.mp3 */; };
 		002C0C791DD329360005AA2C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002C0C781DD329360005AA2C /* UIViewExtensions.swift */; };
 		0039A6E71E544BB00084F4C5 /* helicopter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0039A6E61E544BB00084F4C5 /* helicopter.mp3 */; };
 		00AA0F6C1D36B115005BEF28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA0F6B1D36B115005BEF28 /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 		002788DA1E8A3C3400B26632 /* tractor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tractor.mp3; sourceTree = "<group>"; };
 		002788DB1E8A3C3400B26632 /* motorcycle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = motorcycle.mp3; sourceTree = "<group>"; };
 		002788DC1E8A3C3400B26632 /* beetle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beetle.mp3; sourceTree = "<group>"; };
+		00284BB31F1639AC0042DF8C /* firetruck_mechanical.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = firetruck_mechanical.mp3; sourceTree = "<group>"; };
 		002C0C781DD329360005AA2C /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		0039A6E61E544BB00084F4C5 /* helicopter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = helicopter.mp3; sourceTree = "<group>"; };
 		00AA0F681D36B115005BEF28 /* transport app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transport app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +173,7 @@
 		00BD286A1E4AD4C200CD132B /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				00284BB31F1639AC0042DF8C /* firetruck_mechanical.mp3 */,
 				00FDE5411F0E50F3000DA6B6 /* bug_beep.mp3 */,
 				00FDE5421F0E50F3000DA6B6 /* bug_mechanical.mp3 */,
 				00FDE53F1F0E413E000DA6B6 /* bike_mechanical.mp3 */,
@@ -303,6 +306,7 @@
 				002788DF1E8A3C3400B26632 /* motorcycle.mp3 in Resources */,
 				00FDE5401F0E413E000DA6B6 /* bike_mechanical.mp3 in Resources */,
 				0039A6E71E544BB00084F4C5 /* helicopter.mp3 in Resources */,
+				00284BB41F1639AC0042DF8C /* firetruck_mechanical.mp3 in Resources */,
 				00AA0F751D36B115005BEF28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
