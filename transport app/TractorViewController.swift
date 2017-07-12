@@ -117,8 +117,8 @@ class TractorViewController: UIViewController {
 //        cloudPath.move(to: CGPoint(x: 424,y: 253))
 //        cloudPath.addCurve(to: CGPoint(x: 240, y: 0), controlPoint1: CGPoint(x: 490, y: 260), controlPoint2: CGPoint(x: 560, y: 0))
         let cloudPath = UIBezierPath()
-        cloudPath.move(to: CGPoint(x: 424,y: 36))
-        cloudPath.addCurve(to: CGPoint(x: 240, y: -217), controlPoint1: CGPoint(x: 490, y: 43), controlPoint2: CGPoint(x: 560, y: -217))
+        cloudPath.move(to: CGPoint(x: 424,y: 59))
+        cloudPath.addCurve(to: CGPoint(x: 240, y: -193), controlPoint1: CGPoint(x: 490, y: 66), controlPoint2: CGPoint(x: 560, y: -193))
         
         let cloudScaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
         cloudScaleAnimation.duration = cloudAnimationDuration
