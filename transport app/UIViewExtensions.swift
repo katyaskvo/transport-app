@@ -147,8 +147,8 @@ extension UIView {
         fadeInanOutAnimation.duration = animationDuration
         fadeInanOutAnimation.keyPath = "opacity"
         fadeInanOutAnimation.repeatCount = repeatCount
-        fadeInanOutAnimation.keyTimes = [0, 0.02, 0.98, 1]
-        fadeInanOutAnimation.values = [0, 1, 1, 0]
+        fadeInanOutAnimation.keyTimes = keytimes
+        fadeInanOutAnimation.values = values
         
         
         animatedImageView.layer.add(fadeInanOutAnimation, forKey: "move")

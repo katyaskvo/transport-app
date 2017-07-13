@@ -94,6 +94,13 @@ class HelicopterViewController: UIViewController {
     }
     
     @IBAction func showClouds(_ sender: Any) {
+        self.frontCloud1.fadeInanOut(values: [0, 0.6, 0.6, 0], animatedImageView: frontCloud1, keytimes: [0, 0.2,0.8, 1], duration: 10, animationDuration: self.animationDuration)
+        self.frontCloud2.fadeInanOut(values: [0, 0.7, 0.7, 0], animatedImageView: frontCloud2, keytimes: [0, 0.2,0.8, 1], duration: 10, animationDuration: self.animationDuration)
+        self.frontCloud3.fadeInanOut(values: [0, 0.8, 0.8, 0], animatedImageView: frontCloud3, keytimes: [0, 0.2,0.8, 1], duration: 10, animationDuration: self.animationDuration)
+        self.frontCloud4.fadeInanOut(values: [0, 0.9, 0.9, 0], animatedImageView: frontCloud4, keytimes: [0, 0.2,0.8, 1], duration: 10, animationDuration: self.animationDuration)
+        self.frontCloud5.fadeInanOut(values: [0, 0.8, 0.8, 0], animatedImageView: frontCloud5, keytimes: [0, 0.2,0.8, 1], duration: 10, animationDuration: self.animationDuration)
+        self.frontCloud6.fadeInanOut(values: [0, 0.7, 0.7, 0], animatedImageView: frontCloud6, keytimes: [0, 0.2,0.8, 1], duration: 10, animationDuration: self.animationDuration)
+        
         self.frontCloudsView.moveClouds(mainView: self.frontCloudsView, cloud1View: self.frontCloud1, cloud1AView: self.frontCloud2, cloud2View: self.frontCloud3, cloud2AView: self.frontCloud4, cloud3View: self.frontCloud5, cloud3AView: self.frontCloud6, duration: 10, animationDuration: self.animationDuration)
     }
     
