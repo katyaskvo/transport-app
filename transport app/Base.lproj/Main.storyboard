@@ -587,6 +587,10 @@ Go to bibika.katyaskvo.com</string>
                                         <rect key="frame" x="146" y="25" width="435" height="265"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="orange_body" translatesAutoresizingMaskIntoConstraints="NO" id="8j1-L5-jk4">
+                                        <rect key="frame" x="162" y="26" width="403" height="264"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="big-wheel" translatesAutoresizingMaskIntoConstraints="NO" id="4Kf-Mq-Ny2">
                                         <rect key="frame" x="102" y="134" width="214" height="215"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -657,6 +661,22 @@ Go to bibika.katyaskvo.com</string>
                                             </imageView>
                                         </subviews>
                                     </view>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="orange_fender_back" translatesAutoresizingMaskIntoConstraints="NO" id="9Bf-Tk-LfW">
+                                        <rect key="frame" x="133" y="119" width="208" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="orange_fender_front" translatesAutoresizingMaskIntoConstraints="NO" id="ukR-27-B4d">
+                                        <rect key="frame" x="434" y="169" width="105" height="93"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="orange_back_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Wds-J2-o1c">
+                                        <rect key="frame" x="147" y="180" width="124" height="124"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="orange_front_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="DXb-zX-RiD">
+                                        <rect key="frame" x="487" y="218" width="91" height="91"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                 </subviews>
                             </view>
                         </subviews>
@@ -1475,6 +1495,11 @@ Go to bibika.katyaskvo.com</string>
         <image name="motorcycle_wheel_reflection" width="151" height="153"/>
         <image name="navigation_board" width="1024" height="768"/>
         <image name="navigation_button" width="44" height="44"/>
+        <image name="orange_back_wheel" width="124" height="124"/>
+        <image name="orange_body" width="403" height="264"/>
+        <image name="orange_fender_back" width="208" height="115"/>
+        <image name="orange_fender_front" width="105" height="93"/>
+        <image name="orange_front_wheel" width="91" height="91"/>
         <image name="pedal" width="26" height="12"/>
         <image name="pedal_shaft" width="40" height="43"/>
         <image name="pimpochka" width="14" height="11"/>
@@ -1495,12 +1520,12 @@ Go to bibika.katyaskvo.com</string>
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BzD-GJ-YjH"/>
-        <segue reference="vgW-N1-GXF"/>
-        <segue reference="TIf-N3-4A5"/>
         <segue reference="0Vj-FM-jc3"/>
-        <segue reference="Mnz-ED-BsI"/>
-        <segue reference="nYK-5n-H5w"/>
+        <segue reference="TIf-N3-4A5"/>
+        <segue reference="vgW-N1-GXF"/>
         <segue reference="eAs-q5-aYq"/>
+        <segue reference="jyw-zy-5b2"/>
+        <segue reference="di2-K5-DPJ"/>
+        <segue reference="iJd-I6-ByO"/>
     </inferredMetricsTieBreakers>
 </document>
