@@ -670,10 +670,10 @@ Go to bibika.katyaskvo.com</string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="orange_back_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Wds-J2-o1c">
-                                        <rect key="frame" x="147" y="180" width="124" height="124"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                        <rect key="frame" x="147" y="179.5" width="124" height="124"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="orange_front_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="DXb-zX-RiD">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="orange_front_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Z1A-9T-cFT">
                                         <rect key="frame" x="487" y="218" width="91" height="91"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
@@ -707,6 +707,11 @@ Go to bibika.katyaskvo.com</string>
                         <outlet property="exhaustPipeView" destination="xK9-ra-E2w" id="uCr-zw-jMF"/>
                         <outlet property="fenderBackView" destination="SQF-ui-Ruw" id="5ro-4W-nhs"/>
                         <outlet property="fenderFrontView" destination="IV6-JT-HYT" id="oq8-rI-dBt"/>
+                        <outlet property="orangeBackWheelView" destination="Wds-J2-o1c" id="oQX-0k-ohO"/>
+                        <outlet property="orangeBodyView" destination="8j1-L5-jk4" id="uJ6-di-9YU"/>
+                        <outlet property="orangeFenderBackView" destination="9Bf-Tk-LfW" id="bSK-r1-pJz"/>
+                        <outlet property="orangeFenderFrontView" destination="ukR-27-B4d" id="ik3-S4-d5C"/>
+                        <outlet property="orangeFrontWheelView" destination="Z1A-9T-cFT" id="6RB-6i-z4S"/>
                         <outlet property="reflectionBackWheelView" destination="Ya9-UP-dpd" id="2vK-LZ-IZx"/>
                         <outlet property="reflectionFrontWheelView" destination="Ulk-FD-C30" id="AYx-2t-qwp"/>
                         <outlet property="road1View" destination="1Fy-JJ-Utr" id="w0k-pn-wbn"/>
