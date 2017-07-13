@@ -27,8 +27,9 @@ class HelicopterViewController: UIViewController {
     @IBOutlet var cloudsFrameView: UIView!
     
     @IBOutlet var frontCloudsView: UIView!
-    @IBOutlet var showCloudsButton: UIButton!
+
     //front clouds
+    @IBOutlet var showCloudsButton: UIButton!
     @IBOutlet var frontCloud1: UIImageView!
     @IBOutlet var frontCloud2: UIImageView!
     @IBOutlet var frontCloud3: UIImageView!
@@ -88,12 +89,19 @@ class HelicopterViewController: UIViewController {
     func enableButton() {
         self.buttonPlay.isEnabled = true
     }
+    func enableCloudsButton() {
+        self.showCloudsButton.isEnabled = true
+    }
     
     @IBAction func playSoundButton() {
         self.audioPlayer.play()
     }
     
-    @IBAction func showClouds(_ sender: Any) {
+    @IBAction func showClouds() {
+        self.showCloudsButton.isEnabled = false
+        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(enableCloudsButton), userInfo: nil, repeats: false)
+        
+        
         self.frontCloud1.fadeInanOut(values: [0, 0.6, 0.6, 0], animatedImageView: frontCloud1, keytimes: [0, 0.2,0.8, 1], duration: 10, animationDuration: self.animationDuration)
         self.frontCloud2.fadeInanOut(values: [0, 0.7, 0.7, 0], animatedImageView: frontCloud2, keytimes: [0, 0.2,0.8, 1], duration: 10, animationDuration: self.animationDuration)
         self.frontCloud3.fadeInanOut(values: [0, 0.8, 0.8, 0], animatedImageView: frontCloud3, keytimes: [0, 0.2,0.8, 1], duration: 10, animationDuration: self.animationDuration)

@@ -870,11 +870,11 @@ Go to bibika.katyaskvo.com</string>
                                                 <rect key="frame" x="1292.5" y="166.5" width="236" height="108"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjw-Tp-ZOx">
-                                                <rect key="frame" x="110.5" y="153.5" width="800.5" height="340"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2a-at-Q97">
+                                                <rect key="frame" x="110.25925925710908" y="170.66666666686433" width="800" height="320.00000000000045"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
-                                                    <action selector="showClouds:" destination="4se-pa-4cI" eventType="touchUpInside" id="QxK-6m-hew"/>
+                                                    <action selector="showClouds" destination="4se-pa-4cI" eventType="touchUpInside" id="bWB-YT-Uxw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -928,7 +928,7 @@ Go to bibika.katyaskvo.com</string>
                         <outlet property="pimpochkaView" destination="bx0-Xv-Gwr" id="NOp-5N-G0y"/>
                         <outlet property="reflectionFrontView" destination="xgu-RL-sib" id="Okn-ar-zAS"/>
                         <outlet property="reflectionSideView" destination="QeR-i8-DK9" id="3pI-3E-hav"/>
-                        <outlet property="showCloudsButton" destination="xjw-Tp-ZOx" id="Jiu-tU-fsh"/>
+                        <outlet property="showCloudsButton" destination="I2a-at-Q97" id="LDF-Bg-8U0"/>
                         <outlet property="sliderSoundView" destination="HaQ-3c-J4i" id="lRh-dg-wyB"/>
                     </connections>
                 </viewController>
