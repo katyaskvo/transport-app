@@ -747,36 +747,6 @@ Go to bibika.katyaskvo.com</string>
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSh-cR-CgX" userLabel="clouds">
-                                <rect key="frame" x="0.0" y="61" width="1024" height="648"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="Xte-dM-S1H">
-                                        <rect key="frame" x="430" y="342" width="280" height="240"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud3" translatesAutoresizingMaskIntoConstraints="NO" id="Wpa-qo-bNU">
-                                        <rect key="frame" x="76" y="160" width="169" height="93"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="lIc-XW-f1M">
-                                        <rect key="frame" x="1694" y="22" width="191" height="86"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="oZo-Qs-tBl">
-                                        <rect key="frame" x="1454" y="342" width="280" height="240"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud3" translatesAutoresizingMaskIntoConstraints="NO" id="D7U-zI-z05">
-                                        <rect key="frame" x="1100" y="160" width="169" height="93"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="gPj-NX-ZTn">
-                                        <rect key="frame" x="670" y="22" width="191" height="86"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WL-Jn-pJU" userLabel="Button Back">
                                 <rect key="frame" x="20" y="650" width="44" height="44"/>
                                 <state key="normal" image="arrow-left"/>
@@ -810,6 +780,36 @@ Go to bibika.katyaskvo.com</string>
                                 <rect key="frame" x="59.5" y="213" width="904" height="345"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSh-cR-CgX" userLabel="clouds">
+                                        <rect key="frame" x="-60.5" y="-151" width="1024" height="648"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="Xte-dM-S1H">
+                                                <rect key="frame" x="430" y="342" width="280" height="240"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud3" translatesAutoresizingMaskIntoConstraints="NO" id="Wpa-qo-bNU">
+                                                <rect key="frame" x="76" y="160" width="169" height="93"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="lIc-XW-f1M">
+                                                <rect key="frame" x="1694" y="22" width="191" height="86"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="oZo-Qs-tBl">
+                                                <rect key="frame" x="1454" y="342" width="280" height="240"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud3" translatesAutoresizingMaskIntoConstraints="NO" id="D7U-zI-z05">
+                                                <rect key="frame" x="1100" y="160" width="169" height="93"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="gPj-NX-ZTn">
+                                                <rect key="frame" x="670" y="22" width="191" height="86"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="helicopter_helix_still" translatesAutoresizingMaskIntoConstraints="NO" id="DAI-Fe-IjQ">
                                         <rect key="frame" x="217" y="42" width="655" height="14"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -842,6 +842,36 @@ Go to bibika.katyaskvo.com</string>
                                         <rect key="frame" x="37" y="58" width="186" height="188"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fN-UJ-O68">
+                                        <rect key="frame" x="-60" y="-150.5" width="1024" height="648"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" image="white_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="5r1-3n-dEK">
+                                                <rect key="frame" x="352" y="306" width="213" height="96"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" image="white_cloud3" translatesAutoresizingMaskIntoConstraints="NO" id="hbh-gR-3WU">
+                                                <rect key="frame" x="769" y="167" width="236" height="108"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleAspectFit" fixedFrame="YES" image="white_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="nmH-VP-Yws">
+                                                <rect key="frame" x="523" y="291" width="411" height="274"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleAspectFit" fixedFrame="YES" image="white_cloud3" translatesAutoresizingMaskIntoConstraints="NO" id="noh-9p-IEx">
+                                                <rect key="frame" x="300" y="63" width="402" height="193"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleAspectFit" fixedFrame="YES" image="white_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="4LW-17-1oi">
+                                                <rect key="frame" x="20" y="291" width="361" height="241"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" image="white_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="Ug0-f7-SaE">
+                                                <rect key="frame" x="55" y="183" width="175" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HaQ-3c-J4i" customClass="MPVolumeView">
@@ -1433,6 +1463,19 @@ Go to bibika.katyaskvo.com</string>
             </objects>
             <point key="canvasLocation" x="5953.7109375" y="575.78125"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="hci-ra-AJu">
+            <objects>
+                <viewController id="bMI-Cf-ctM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hhE-55-nKr">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zqS-Un-6HK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow-left" width="44" height="44"/>
@@ -1530,6 +1573,9 @@ Go to bibika.katyaskvo.com</string>
         <image name="truba" width="25" height="88"/>
         <image name="wheel_back" width="192" height="192"/>
         <image name="wheel_front" width="192" height="192"/>
+        <image name="white_cloud1" width="100" height="55"/>
+        <image name="white_cloud2" width="100" height="55"/>
+        <image name="white_cloud3" width="100" height="46"/>
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
