@@ -587,7 +587,7 @@ Go to bibika.katyaskvo.com</string>
                                         <rect key="frame" x="146" y="25" width="435" height="265"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="orange_body" translatesAutoresizingMaskIntoConstraints="NO" id="8j1-L5-jk4">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="orange_body" translatesAutoresizingMaskIntoConstraints="NO" id="8j1-L5-jk4">
                                         <rect key="frame" x="162" y="26" width="403" height="264"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
@@ -661,22 +661,29 @@ Go to bibika.katyaskvo.com</string>
                                             </imageView>
                                         </subviews>
                                     </view>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="orange_fender_back" translatesAutoresizingMaskIntoConstraints="NO" id="9Bf-Tk-LfW">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="orange_fender_back" translatesAutoresizingMaskIntoConstraints="NO" id="9Bf-Tk-LfW">
                                         <rect key="frame" x="133" y="119" width="208" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="orange_fender_front" translatesAutoresizingMaskIntoConstraints="NO" id="ukR-27-B4d">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="orange_fender_front" translatesAutoresizingMaskIntoConstraints="NO" id="ukR-27-B4d">
                                         <rect key="frame" x="434" y="169" width="105" height="93"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="orange_back_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Wds-J2-o1c">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="orange_back_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Wds-J2-o1c">
                                         <rect key="frame" x="147" y="179.5" width="124" height="124"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="orange_front_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Z1A-9T-cFT">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="orange_front_wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Z1A-9T-cFT">
                                         <rect key="frame" x="487" y="218" width="91" height="91"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjS-bI-SEF">
+                                        <rect key="frame" x="79.193548387109331" y="20" width="540" height="329.99999999999989"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="changeTractorColor:" destination="BDY-SG-CIy" eventType="touchUpInside" id="zTg-zI-Yyj"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </view>
                         </subviews>
@@ -698,6 +705,7 @@ Go to bibika.katyaskvo.com</string>
                     <connections>
                         <outlet property="bigWheelView" destination="4Kf-Mq-Ny2" id="wbl-ow-8pe"/>
                         <outlet property="buttonPlay" destination="UpD-Iu-Sf1" id="qau-si-Ht1"/>
+                        <outlet property="changeColor" destination="zjS-bI-SEF" id="mS0-Ho-niW"/>
                         <outlet property="cloud1View" destination="Rm6-lX-vTx" id="3QH-Qv-wuJ"/>
                         <outlet property="cloud2View" destination="xSO-P8-PY9" id="1Q1-mL-CpQ"/>
                         <outlet property="cloud3View" destination="8SU-7e-O40" id="fPZ-6C-u25"/>
@@ -1528,9 +1536,9 @@ Go to bibika.katyaskvo.com</string>
         <segue reference="0Vj-FM-jc3"/>
         <segue reference="TIf-N3-4A5"/>
         <segue reference="vgW-N1-GXF"/>
+        <segue reference="Mnz-ED-BsI"/>
         <segue reference="eAs-q5-aYq"/>
         <segue reference="jyw-zy-5b2"/>
-        <segue reference="di2-K5-DPJ"/>
         <segue reference="iJd-I6-ByO"/>
     </inferredMetricsTieBreakers>
 </document>

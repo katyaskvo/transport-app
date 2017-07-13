@@ -19,6 +19,7 @@ class TractorViewController: UIViewController {
     @IBOutlet var tractorBodyView: UIImageView!
     
     
+    @IBOutlet var changeColor: UIButton!
     //orange parts
     @IBOutlet var orangeBodyView: UIImageView!
     @IBOutlet var orangeFenderBackView: UIImageView!
@@ -93,6 +94,16 @@ class TractorViewController: UIViewController {
     @IBAction func playSoundButton() {
         self.audioPlayer.play()
     }
+    
+    @IBAction func changeTractorColor(_ sender: Any) {
+        let colorCangeDuration = 10
+        self.orangeBodyView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.orangeBodyView, keytimes: [0, 0.05, 0.95, 1], duration: CFTimeInterval(colorCangeDuration), animationDuration: CFTimeInterval(colorCangeDuration))
+        self.orangeBackWheelView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.orangeBackWheelView, keytimes: [0, 0.05, 0.95, 1], duration: CFTimeInterval(colorCangeDuration), animationDuration: CFTimeInterval(colorCangeDuration))
+        self.orangeFrontWheelView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.orangeFrontWheelView, keytimes: [0, 0.05, 0.95, 1], duration: CFTimeInterval(colorCangeDuration), animationDuration: CFTimeInterval(colorCangeDuration))
+        self.orangeFenderBackView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.orangeFenderBackView, keytimes: [0, 0.05, 0.95, 1], duration: CFTimeInterval(colorCangeDuration), animationDuration: CFTimeInterval(colorCangeDuration))
+        self.orangeFenderFrontView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.orangeFenderFrontView, keytimes: [0, 0.05, 0.95, 1], duration: CFTimeInterval(colorCangeDuration), animationDuration: CFTimeInterval(colorCangeDuration))
+    }
+    
 
     @IBAction func startAnimation() {
         self.buttonPlay.isEnabled = false
