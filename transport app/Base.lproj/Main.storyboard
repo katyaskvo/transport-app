@@ -748,7 +748,7 @@ Go to bibika.katyaskvo.com</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSh-cR-CgX" userLabel="clouds">
-                                <rect key="frame" x="0.0" y="120" width="1024" height="648"/>
+                                <rect key="frame" x="0.0" y="61" width="1024" height="648"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="Xte-dM-S1H">
@@ -807,7 +807,7 @@ Go to bibika.katyaskvo.com</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cxw-dl-n5Y" userLabel="helicopter">
-                                <rect key="frame" x="120" y="213" width="904" height="345"/>
+                                <rect key="frame" x="59.5" y="213" width="904" height="345"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="helicopter_helix_still" translatesAutoresizingMaskIntoConstraints="NO" id="DAI-Fe-IjQ">
@@ -1535,10 +1535,10 @@ Go to bibika.katyaskvo.com</string>
     <inferredMetricsTieBreakers>
         <segue reference="0Vj-FM-jc3"/>
         <segue reference="TIf-N3-4A5"/>
-        <segue reference="vgW-N1-GXF"/>
-        <segue reference="Mnz-ED-BsI"/>
-        <segue reference="eAs-q5-aYq"/>
-        <segue reference="jyw-zy-5b2"/>
+        <segue reference="q8u-3C-dbN"/>
         <segue reference="iJd-I6-ByO"/>
+        <segue reference="VjF-JU-9aB"/>
+        <segue reference="jyw-zy-5b2"/>
+        <segue reference="9hi-BS-FVC"/>
     </inferredMetricsTieBreakers>
 </document>
