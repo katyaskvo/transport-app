@@ -26,6 +26,15 @@ class HelicopterViewController: UIViewController {
     @IBOutlet var mainView: UIView!
     @IBOutlet var cloudsFrameView: UIView!
     
+    //front clouds
+    @IBOutlet var frontCloud1: UIImageView!
+    @IBOutlet var frontCloud2: UIImageView!
+    @IBOutlet var frontCloud3: UIImageView!
+    @IBOutlet var frontCloud4: UIImageView!
+    @IBOutlet var frontCloud5: UIImageView!
+    @IBOutlet var frontCloud6: UIImageView!
+    
+    
     let animationDuration = CFTimeInterval(10.0)
     var helixImages: [UIImage]!
     var animatedHelix: UIImage!
