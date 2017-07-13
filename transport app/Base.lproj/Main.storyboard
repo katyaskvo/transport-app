@@ -873,7 +873,9 @@ Go to bibika.katyaskvo.com</string>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjw-Tp-ZOx">
                                                 <rect key="frame" x="110.5" y="153.5" width="800.5" height="340"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="showClouds:" destination="4se-pa-4cI" eventType="touchUpInside" id="QxK-6m-hew"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </view>
@@ -916,6 +918,7 @@ Go to bibika.katyaskvo.com</string>
                         <outlet property="frontCloud4" destination="5r1-3n-dEK" id="K6N-z4-fxA"/>
                         <outlet property="frontCloud5" destination="nmH-VP-Yws" id="WFq-Fo-vyE"/>
                         <outlet property="frontCloud6" destination="hbh-gR-3WU" id="VWv-q1-eba"/>
+                        <outlet property="frontCloudsView" destination="1fN-UJ-O68" id="b96-jW-Mx7"/>
                         <outlet property="heliTailRotatingView" destination="fkk-uP-do3" id="aLE-Mn-ra5"/>
                         <outlet property="heliTailView" destination="v2V-sd-zmY" id="laX-Yf-8Iq"/>
                         <outlet property="helicopterBodyView" destination="rnz-zz-Dxn" id="Tgw-rq-8Fl"/>

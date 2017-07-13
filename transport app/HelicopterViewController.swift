@@ -26,6 +26,8 @@ class HelicopterViewController: UIViewController {
     @IBOutlet var mainView: UIView!
     @IBOutlet var cloudsFrameView: UIView!
     
+    @IBOutlet var frontCloudsView: UIView!
+    @IBOutlet var showCloudsButton: UIButton!
     //front clouds
     @IBOutlet var frontCloud1: UIImageView!
     @IBOutlet var frontCloud2: UIImageView!
@@ -89,6 +91,10 @@ class HelicopterViewController: UIViewController {
     
     @IBAction func playSoundButton() {
         self.audioPlayer.play()
+    }
+    
+    @IBAction func showClouds(_ sender: Any) {
+        self.frontCloudsView.moveClouds(mainView: self.frontCloudsView, cloud1View: self.frontCloud1, cloud1AView: self.frontCloud2, cloud2View: self.frontCloud3, cloud2AView: self.frontCloud4, cloud3View: self.frontCloud5, cloud3AView: self.frontCloud6, duration: 10, animationDuration: self.animationDuration)
     }
     
     @IBAction func startAnimation() {
