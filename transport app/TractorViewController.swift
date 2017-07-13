@@ -91,12 +91,20 @@ class TractorViewController: UIViewController {
     func enableButton() {
         self.buttonPlay.isEnabled = true
     }
+    
+    func enableChangeColorButton() {
+        self.changeColor.isEnabled = true
+    }
     @IBAction func playSoundButton() {
         self.audioPlayer.play()
     }
     
     @IBAction func changeTractorColor(_ sender: Any) {
         let colorCangeDuration = 10
+        self.changeColor.isEnabled = false
+        Timer.scheduledTimer(timeInterval: TimeInterval(colorCangeDuration), target: self, selector: #selector(enableChangeColorButton), userInfo: nil, repeats: false)
+        
+
         self.orangeBodyView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.orangeBodyView, keytimes: [0, 0.05, 0.95, 1], duration: CFTimeInterval(colorCangeDuration), animationDuration: CFTimeInterval(colorCangeDuration))
         self.orangeBackWheelView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.orangeBackWheelView, keytimes: [0, 0.05, 0.95, 1], duration: CFTimeInterval(colorCangeDuration), animationDuration: CFTimeInterval(colorCangeDuration))
         self.orangeFrontWheelView.fadeInanOut(values: [0, 1, 1, 0], animatedImageView: self.orangeFrontWheelView, keytimes: [0, 0.05, 0.95, 1], duration: CFTimeInterval(colorCangeDuration), animationDuration: CFTimeInterval(colorCangeDuration))
