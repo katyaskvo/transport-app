@@ -15,6 +15,11 @@
 		00284BB41F1639AC0042DF8C /* firetruck_mechanical.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00284BB31F1639AC0042DF8C /* firetruck_mechanical.mp3 */; };
 		002C0C791DD329360005AA2C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002C0C781DD329360005AA2C /* UIViewExtensions.swift */; };
 		0039A6E71E544BB00084F4C5 /* helicopter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0039A6E61E544BB00084F4C5 /* helicopter.mp3 */; };
+		003F75651F18BC8E006E8C42 /* icon_causeEffect.json in Resources */ = {isa = PBXBuildFile; fileRef = 003F75611F18BC8E006E8C42 /* icon_causeEffect.json */; };
+		003F75661F18BC8E006E8C42 /* icon_fineMotor.json in Resources */ = {isa = PBXBuildFile; fileRef = 003F75621F18BC8E006E8C42 /* icon_fineMotor.json */; };
+		003F75671F18BC8E006E8C42 /* icon_handEye.json in Resources */ = {isa = PBXBuildFile; fileRef = 003F75631F18BC8E006E8C42 /* icon_handEye.json */; };
+		003F75681F18BC8E006E8C42 /* icon_momBaby.json in Resources */ = {isa = PBXBuildFile; fileRef = 003F75641F18BC8E006E8C42 /* icon_momBaby.json */; };
+		009A36A61F18B8DB007F9CA9 /* InfoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A36A51F18B8DB007F9CA9 /* InfoScreenViewController.swift */; };
 		00AA0F6C1D36B115005BEF28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA0F6B1D36B115005BEF28 /* AppDelegate.swift */; };
 		00AA0F6E1D36B115005BEF28 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA0F6D1D36B115005BEF28 /* RootViewController.swift */; };
 		00AA0F701D36B115005BEF28 /* BicycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA0F6F1D36B115005BEF28 /* BicycleViewController.swift */; };
@@ -32,6 +37,7 @@
 		4B2831561D382A0200377A83 /* TractorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2831551D382A0200377A83 /* TractorViewController.swift */; };
 		4B2831581D38337D00377A83 /* HelicopterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2831571D38337D00377A83 /* HelicopterViewController.swift */; };
 		4B8D68CB1D8C7B8C00C7F9A1 /* FiretruckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D68CA1D8C7B8C00C7F9A1 /* FiretruckViewController.swift */; };
+		DF37B710A074B1B719CB21B1 /* Pods_transport_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD54016217CD7390F3FEEBE3 /* Pods_transport_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +66,11 @@
 		00284BB31F1639AC0042DF8C /* firetruck_mechanical.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = firetruck_mechanical.mp3; sourceTree = "<group>"; };
 		002C0C781DD329360005AA2C /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		0039A6E61E544BB00084F4C5 /* helicopter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = helicopter.mp3; sourceTree = "<group>"; };
+		003F75611F18BC8E006E8C42 /* icon_causeEffect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icon_causeEffect.json; sourceTree = "<group>"; };
+		003F75621F18BC8E006E8C42 /* icon_fineMotor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icon_fineMotor.json; sourceTree = "<group>"; };
+		003F75631F18BC8E006E8C42 /* icon_handEye.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icon_handEye.json; sourceTree = "<group>"; };
+		003F75641F18BC8E006E8C42 /* icon_momBaby.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icon_momBaby.json; sourceTree = "<group>"; };
+		009A36A51F18B8DB007F9CA9 /* InfoScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenViewController.swift; sourceTree = "<group>"; };
 		00AA0F681D36B115005BEF28 /* transport app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transport app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AA0F6B1D36B115005BEF28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00AA0F6D1D36B115005BEF28 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -80,9 +91,12 @@
 		00FDE53F1F0E413E000DA6B6 /* bike_mechanical.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bike_mechanical.mp3; sourceTree = "<group>"; };
 		00FDE5411F0E50F3000DA6B6 /* bug_beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bug_beep.mp3; sourceTree = "<group>"; };
 		00FDE5421F0E50F3000DA6B6 /* bug_mechanical.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bug_mechanical.mp3; sourceTree = "<group>"; };
+		4514D791D057D1E3C930F5A5 /* Pods-transport app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-transport app.release.xcconfig"; path = "Pods/Target Support Files/Pods-transport app/Pods-transport app.release.xcconfig"; sourceTree = "<group>"; };
 		4B2831551D382A0200377A83 /* TractorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TractorViewController.swift; sourceTree = "<group>"; };
 		4B2831571D38337D00377A83 /* HelicopterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelicopterViewController.swift; sourceTree = "<group>"; };
 		4B8D68CA1D8C7B8C00C7F9A1 /* FiretruckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiretruckViewController.swift; sourceTree = "<group>"; };
+		641F6127051AEB9591E227FE /* Pods-transport app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-transport app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-transport app/Pods-transport app.debug.xcconfig"; sourceTree = "<group>"; };
+		FD54016217CD7390F3FEEBE3 /* Pods_transport_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_transport_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF37B710A074B1B719CB21B1 /* Pods_transport_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +125,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		003F75691F18BCC0006E8C42 /* lottie-animations */ = {
+			isa = PBXGroup;
+			children = (
+				003F75611F18BC8E006E8C42 /* icon_causeEffect.json */,
+				003F75621F18BC8E006E8C42 /* icon_fineMotor.json */,
+				003F75631F18BC8E006E8C42 /* icon_handEye.json */,
+				003F75641F18BC8E006E8C42 /* icon_momBaby.json */,
+			);
+			name = "lottie-animations";
+			sourceTree = "<group>";
+		};
 		00AA0F5F1D36B115005BEF28 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +143,8 @@
 				00AA0F831D36B115005BEF28 /* transport appTests */,
 				00AA0F8E1D36B115005BEF28 /* transport appUITests */,
 				00AA0F691D36B115005BEF28 /* Products */,
+				580AC0DFB22D48D607B7A764 /* Pods */,
+				D07BD9ABA1DED8E6E641015C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +161,7 @@
 		00AA0F6A1D36B115005BEF28 /* transport app */ = {
 			isa = PBXGroup;
 			children = (
+				003F75691F18BCC0006E8C42 /* lottie-animations */,
 				00BD286A1E4AD4C200CD132B /* sounds */,
 				00AA0F6B1D36B115005BEF28 /* AppDelegate.swift */,
 				00AA0F6F1D36B115005BEF28 /* BicycleViewController.swift */,
@@ -148,6 +177,7 @@
 				00AA0F7B1D36B115005BEF28 /* Info.plist */,
 				002C0C781DD329360005AA2C /* UIViewExtensions.swift */,
 				0005A9D71E6010890027EC73 /* MotorcycleViewController.swift */,
+				009A36A51F18B8DB007F9CA9 /* InfoScreenViewController.swift */,
 			);
 			path = "transport app";
 			sourceTree = "<group>";
@@ -187,6 +217,23 @@
 			name = sounds;
 			sourceTree = "<group>";
 		};
+		580AC0DFB22D48D607B7A764 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				641F6127051AEB9591E227FE /* Pods-transport app.debug.xcconfig */,
+				4514D791D057D1E3C930F5A5 /* Pods-transport app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D07BD9ABA1DED8E6E641015C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD54016217CD7390F3FEEBE3 /* Pods_transport_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00AA0F941D36B115005BEF28 /* Build configuration list for PBXNativeTarget "transport app" */;
 			buildPhases = (
+				470FF13D878AACA28C451C8F /* [CP] Check Pods Manifest.lock */,
 				00AA0F641D36B115005BEF28 /* Sources */,
 				00AA0F651D36B115005BEF28 /* Frameworks */,
 				00AA0F661D36B115005BEF28 /* Resources */,
+				0CBEB26852FA75E74A95EC28 /* [CP] Embed Pods Frameworks */,
+				351BCB03734BDCFFB4086AE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,17 +347,21 @@
 			files = (
 				00FDE5431F0E50F3000DA6B6 /* bug_beep.mp3 in Resources */,
 				002788E01E8A3C3400B26632 /* beetle.mp3 in Resources */,
+				003F75661F18BC8E006E8C42 /* icon_fineMotor.json in Resources */,
 				00FDE53E1F0E412F000DA6B6 /* bike_bell.mp3 in Resources */,
 				00BD28821E4AECB900CD132B /* firetruck.mp3 in Resources */,
+				003F75681F18BC8E006E8C42 /* icon_momBaby.json in Resources */,
 				00AA0F7A1D36B115005BEF28 /* LaunchScreen.storyboard in Resources */,
 				002788DE1E8A3C3400B26632 /* tractor.mp3 in Resources */,
 				00FDE5441F0E50F3000DA6B6 /* bug_mechanical.mp3 in Resources */,
+				003F75651F18BC8E006E8C42 /* icon_causeEffect.json in Resources */,
 				00AA0F771D36B115005BEF28 /* Assets.xcassets in Resources */,
 				002788DF1E8A3C3400B26632 /* motorcycle.mp3 in Resources */,
 				00FDE5401F0E413E000DA6B6 /* bike_mechanical.mp3 in Resources */,
 				0039A6E71E544BB00084F4C5 /* helicopter.mp3 in Resources */,
 				00284BB41F1639AC0042DF8C /* firetruck_mechanical.mp3 in Resources */,
 				00AA0F751D36B115005BEF28 /* Main.storyboard in Resources */,
+				003F75671F18BC8E006E8C42 /* icon_handEye.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,12 +381,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CBEB26852FA75E74A95EC28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-transport app/Pods-transport app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		351BCB03734BDCFFB4086AE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-transport app/Pods-transport app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		470FF13D878AACA28C451C8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		00AA0F641D36B115005BEF28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				00AA0F6E1D36B115005BEF28 /* RootViewController.swift in Sources */,
+				009A36A61F18B8DB007F9CA9 /* InfoScreenViewController.swift in Sources */,
 				4B2831581D38337D00377A83 /* HelicopterViewController.swift in Sources */,
 				002C0C791DD329360005AA2C /* UIViewExtensions.swift in Sources */,
 				4B8D68CB1D8C7B8C00C7F9A1 /* FiretruckViewController.swift in Sources */,
@@ -488,6 +591,7 @@
 		};
 		00AA0F951D36B115005BEF28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 641F6127051AEB9591E227FE /* Pods-transport app.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -506,6 +610,7 @@
 		};
 		00AA0F961D36B115005BEF28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4514D791D057D1E3C930F5A5 /* Pods-transport app.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
