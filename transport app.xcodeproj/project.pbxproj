@@ -15,6 +15,8 @@
 		00284BB41F1639AC0042DF8C /* firetruck_mechanical.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00284BB31F1639AC0042DF8C /* firetruck_mechanical.mp3 */; };
 		002C0C791DD329360005AA2C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002C0C781DD329360005AA2C /* UIViewExtensions.swift */; };
 		0039A6E71E544BB00084F4C5 /* helicopter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0039A6E61E544BB00084F4C5 /* helicopter.mp3 */; };
+		004E05931F29F39700320DDF /* icon_book.json in Resources */ = {isa = PBXBuildFile; fileRef = 004E05911F29F39700320DDF /* icon_book.json */; };
+		004E05941F29F39700320DDF /* icon_age.json in Resources */ = {isa = PBXBuildFile; fileRef = 004E05921F29F39700320DDF /* icon_age.json */; };
 		00810C4F1F19669400DB460E /* icon_causeEffect.json in Resources */ = {isa = PBXBuildFile; fileRef = 00810C4B1F19669400DB460E /* icon_causeEffect.json */; };
 		00810C501F19669400DB460E /* icon_fineMotor.json in Resources */ = {isa = PBXBuildFile; fileRef = 00810C4C1F19669400DB460E /* icon_fineMotor.json */; };
 		00810C511F19669400DB460E /* icon_handEye.json in Resources */ = {isa = PBXBuildFile; fileRef = 00810C4D1F19669400DB460E /* icon_handEye.json */; };
@@ -37,7 +39,7 @@
 		4B2831561D382A0200377A83 /* TractorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2831551D382A0200377A83 /* TractorViewController.swift */; };
 		4B2831581D38337D00377A83 /* HelicopterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2831571D38337D00377A83 /* HelicopterViewController.swift */; };
 		4B8D68CB1D8C7B8C00C7F9A1 /* FiretruckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D68CA1D8C7B8C00C7F9A1 /* FiretruckViewController.swift */; };
-		DF37B710A074B1B719CB21B1 /* Pods_transport_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD54016217CD7390F3FEEBE3 /* Pods_transport_app.framework */; };
+		DF37B710A074B1B719CB21B1 /* Pods_transport_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD54016217CD7390F3FEEBE3 /* Pods_transport_app.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		00284BB31F1639AC0042DF8C /* firetruck_mechanical.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = firetruck_mechanical.mp3; sourceTree = "<group>"; };
 		002C0C781DD329360005AA2C /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		0039A6E61E544BB00084F4C5 /* helicopter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = helicopter.mp3; sourceTree = "<group>"; };
+		004E05911F29F39700320DDF /* icon_book.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icon_book.json; sourceTree = "<group>"; };
+		004E05921F29F39700320DDF /* icon_age.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icon_age.json; sourceTree = "<group>"; };
 		00810C4B1F19669400DB460E /* icon_causeEffect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icon_causeEffect.json; sourceTree = "<group>"; };
 		00810C4C1F19669400DB460E /* icon_fineMotor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icon_fineMotor.json; sourceTree = "<group>"; };
 		00810C4D1F19669400DB460E /* icon_handEye.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icon_handEye.json; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 		003F75691F18BCC0006E8C42 /* lottie-animations */ = {
 			isa = PBXGroup;
 			children = (
+				004E05911F29F39700320DDF /* icon_book.json */,
+				004E05921F29F39700320DDF /* icon_age.json */,
 				00810C4B1F19669400DB460E /* icon_causeEffect.json */,
 				00810C4C1F19669400DB460E /* icon_fineMotor.json */,
 				00810C4D1F19669400DB460E /* icon_handEye.json */,
@@ -232,7 +238,7 @@
 				FD54016217CD7390F3FEEBE3 /* Pods_transport_app.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -345,6 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004E05941F29F39700320DDF /* icon_age.json in Resources */,
 				00FDE5431F0E50F3000DA6B6 /* bug_beep.mp3 in Resources */,
 				002788E01E8A3C3400B26632 /* beetle.mp3 in Resources */,
 				00810C501F19669400DB460E /* icon_fineMotor.json in Resources */,
@@ -358,6 +365,7 @@
 				00AA0F771D36B115005BEF28 /* Assets.xcassets in Resources */,
 				002788DF1E8A3C3400B26632 /* motorcycle.mp3 in Resources */,
 				00FDE5401F0E413E000DA6B6 /* bike_mechanical.mp3 in Resources */,
+				004E05931F29F39700320DDF /* icon_book.json in Resources */,
 				0039A6E71E544BB00084F4C5 /* helicopter.mp3 in Resources */,
 				00284BB41F1639AC0042DF8C /* firetruck_mechanical.mp3 in Resources */,
 				00AA0F751D36B115005BEF28 /* Main.storyboard in Resources */,

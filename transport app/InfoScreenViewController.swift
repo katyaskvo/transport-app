@@ -4,9 +4,11 @@ import Lottie
 
 class InfoScreenViewController: UIViewController {
     @IBOutlet var iconMomBabyView: UIImageView!
-    @IBOutlet weak var iconCauseEffectView: UIImageView!
-    @IBOutlet weak var iconHandEyeView: UIImageView!
-    @IBOutlet weak var iconFineMotorView: UIImageView!
+    @IBOutlet var iconCauseEffectView: UIImageView!
+    @IBOutlet var iconHandEyeView: UIImageView!
+    @IBOutlet var iconFineMotorView: UIImageView!
+    @IBOutlet var iconAge: UIImageView!
+    @IBOutlet var iconBook: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,6 +41,21 @@ class InfoScreenViewController: UIViewController {
         animationHandEyeView.contentMode = .scaleAspectFill
         self.iconFineMotorView.addSubview(animationHandEyeView)
         animationHandEyeView.play()
+
+        let animationAgeView = LOTAnimationView(name: "icon_age")
+        animationAgeView.frame = CGRect(x:0, y: 0, width: iconSize, height: iconSize)
+        animationAgeView.loopAnimation = true
+        animationAgeView.contentMode = .scaleAspectFill
+        self.iconAge.addSubview(animationAgeView)
+        animationAgeView.play()
+
+        let animationBookView = LOTAnimationView(name: "icon_book")
+        animationBookView.frame = CGRect(x:0, y: 0, width: iconSize, height: iconSize)
+        animationBookView.loopAnimation = true
+        animationBookView.contentMode = .scaleAspectFill
+        self.iconBook.addSubview(animationBookView)
+        animationBookView.play()
+        
 
     }
     
