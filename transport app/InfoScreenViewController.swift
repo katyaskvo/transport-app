@@ -12,7 +12,7 @@ class InfoScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let iconSize = 120
+        let iconSize = iconMomBabyView.frame.width
         
         let animationMomBabyView = LOTAnimationView(name: "icon_momBaby")
         animationMomBabyView.frame = CGRect(x:0, y: 0, width: iconSize, height: iconSize)

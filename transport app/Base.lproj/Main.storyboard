@@ -383,70 +383,87 @@
                                     <segue destination="eYz-ct-G7b" kind="show" id="dIa-WD-A1C"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="stamp_rotated" translatesAutoresizingMaskIntoConstraints="NO" id="z2l-Hg-P83">
-                                <rect key="frame" x="560" y="500" width="156" height="156"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" ambiguous="YES" misplaced="YES" image="stamp_rotated" translatesAutoresizingMaskIntoConstraints="NO" id="z2l-Hg-P83">
+                                <rect key="frame" x="557" y="490" width="156" height="156"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jf8-Yw-dHW">
-                                <rect key="frame" x="314" y="269" width="399" height="187"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jf8-Yw-dHW">
+                                <rect key="frame" x="332" y="269" width="360" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="for more info visit bibika.katyaskvo.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vrX-1U-SHE">
-                                        <rect key="frame" x="73" y="270" width="250" height="49.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="f6I-wW-pjS"/>
-                                        </constraints>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Explore Together" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dm8-Cq-lHM">
+                                        <rect key="frame" x="260" y="100" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Cause &amp; Effect" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m4D-8i-04F">
+                                        <rect key="frame" x="0.0" y="250" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Fine Motor Skills" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NEb-v1-NPd">
+                                        <rect key="frame" x="260" y="250" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55c-L5-rij">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XEX-K8-9ls">
+                                        <rect key="frame" x="130" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Age Group" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ryr-yF-7Pz">
+                                        <rect key="frame" x="130" y="100" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCV-JZ-jno">
+                                        <rect key="frame" x="260" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RV6-Rh-dgm">
+                                        <rect key="frame" x="0.0" y="150" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMM-aK-NWX" userLabel="Icon Hand Eye View">
+                                        <rect key="frame" x="130" y="150" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GKA-O4-pLN" userLabel="Icon Fine Motor View">
+                                        <rect key="frame" x="260" y="150" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Interactive Book" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zQG-22-HyM">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Hand Eye coordination" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Duy-ZX-HKr">
+                                        <rect key="frame" x="130" y="250" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="for more info please visit bibika.katyaskvo.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vrX-1U-SHE">
+                                        <rect key="frame" x="80" y="312" width="200" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <inset key="scrollIndicatorInsets" minX="0.0" minY="270" maxX="0.0" maxY="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oWG-6P-gkU">
-                                        <rect key="frame" x="73" y="0.0" width="250" height="380"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GKA-O4-pLN" userLabel="Icon Fine Motor View">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMM-aK-NWX" userLabel="Icon Hand Eye View">
-                                                <rect key="frame" x="130" y="0.0" width="120" height="120"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCV-JZ-jno">
-                                                <rect key="frame" x="130" y="130" width="120" height="120"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RV6-Rh-dgm">
-                                                <rect key="frame" x="0.0" y="130" width="120" height="120"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XEX-K8-9ls">
-                                                <rect key="frame" x="0.0" y="260" width="120" height="120"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55c-L5-rij">
-                                                <rect key="frame" x="130" y="260" width="120" height="120"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                    </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="oWG-6P-gkU" firstAttribute="top" secondItem="jf8-Yw-dHW" secondAttribute="top" id="JJj-nU-BSE"/>
-                                    <constraint firstItem="vrX-1U-SHE" firstAttribute="trailing" secondItem="oWG-6P-gkU" secondAttribute="trailing" id="RI6-s9-O28"/>
-                                    <constraint firstItem="vrX-1U-SHE" firstAttribute="top" secondItem="jf8-Yw-dHW" secondAttribute="top" constant="270" id="UP5-ZC-I0I"/>
-                                    <constraint firstItem="vrX-1U-SHE" firstAttribute="top" secondItem="oWG-6P-gkU" secondAttribute="bottom" constant="20" id="oFb-Oc-mvH"/>
-                                    <constraint firstItem="vrX-1U-SHE" firstAttribute="leading" secondItem="oWG-6P-gkU" secondAttribute="leading" id="qaf-pm-XBj"/>
-                                    <constraint firstItem="vrX-1U-SHE" firstAttribute="centerX" secondItem="jf8-Yw-dHW" secondAttribute="centerX" constant="-1.5" id="vsX-Qh-MZY"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.90980392156862744" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="jf8-Yw-dHW" firstAttribute="top" secondItem="ede-BV-2hO" secondAttribute="bottom" multiplier="0.35" id="6Mv-tA-ptC"/>
                             <constraint firstItem="slu-gd-Z1X" firstAttribute="top" secondItem="uQ5-aa-EcQ" secondAttribute="bottom" constant="66" id="8sz-aX-1TX"/>
-                            <constraint firstItem="jf8-Yw-dHW" firstAttribute="centerX" secondItem="ede-BV-2hO" secondAttribute="centerX" constant="1" id="Ddd-Oj-G8E"/>
-                            <constraint firstAttribute="bottom" secondItem="jf8-Yw-dHW" secondAttribute="bottom" constant="312" id="abn-C0-ovO"/>
-                            <constraint firstItem="z2l-Hg-P83" firstAttribute="top" secondItem="jf8-Yw-dHW" secondAttribute="bottom" constant="44" id="ikD-9A-EBS"/>
                             <constraint firstItem="uQ5-aa-EcQ" firstAttribute="centerX" secondItem="ede-BV-2hO" secondAttribute="centerX" id="nDM-xK-8eU"/>
-                            <constraint firstItem="jf8-Yw-dHW" firstAttribute="width" secondItem="ede-BV-2hO" secondAttribute="width" multiplier="0.39" id="na7-03-fMC"/>
                             <constraint firstAttribute="trailing" secondItem="z2l-Hg-P83" secondAttribute="trailing" constant="308" id="yRk-Qm-cIx"/>
                         </constraints>
                     </view>
@@ -1614,12 +1631,12 @@
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XbO-Bq-ASr"/>
+        <segue reference="dIa-WD-A1C"/>
+        <segue reference="mj3-V3-DeW"/>
+        <segue reference="jyw-zy-5b2"/>
+        <segue reference="BzD-GJ-YjH"/>
         <segue reference="vgW-N1-GXF"/>
         <segue reference="TIf-N3-4A5"/>
         <segue reference="0Vj-FM-jc3"/>
-        <segue reference="BzD-GJ-YjH"/>
-        <segue reference="mj3-V3-DeW"/>
-        <segue reference="jyw-zy-5b2"/>
     </inferredMetricsTieBreakers>
 </document>
