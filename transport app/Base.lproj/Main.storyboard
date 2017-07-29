@@ -389,88 +389,125 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jf8-Yw-dHW">
                                 <rect key="frame" x="332" y="262" width="360" height="360"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Explore Together" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dm8-Cq-lHM">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Interactive Book" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zQG-22-HyM">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="YKS-nd-3z1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Age Group" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ryr-yF-7Pz">
+                                        <rect key="frame" x="130" y="100" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="DuS-87-jwV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Explore Together" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dm8-Cq-lHM">
                                         <rect key="frame" x="260" y="100" width="100" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="LzR-72-WTl"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Cause &amp; Effect" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m4D-8i-04F">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Cause &amp; Effect" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m4D-8i-04F">
                                         <rect key="frame" x="0.0" y="250" width="100" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="vbx-xo-I6R"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Fine Motor Skills" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NEb-v1-NPd">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Fine Motor Skills" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NEb-v1-NPd">
+                                        <rect key="frame" x="130" y="250" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="wHb-Ws-g7g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hand Eye coordination" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Duy-ZX-HKr">
                                         <rect key="frame" x="260" y="250" width="100" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="GYT-gY-VN8"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="55c-L5-rij">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <color key="backgroundColor" red="1" green="0.25295799713472822" blue="0.4805323154398573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XEX-K8-9ls">
                                         <rect key="frame" x="130" y="0.0" width="100" height="100"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Age Group" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ryr-yF-7Pz">
-                                        <rect key="frame" x="130" y="100" width="100" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XCV-JZ-jno">
                                         <rect key="frame" x="260" y="0.0" width="100" height="100"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RV6-Rh-dgm">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RV6-Rh-dgm">
                                         <rect key="frame" x="0.0" y="150" width="100" height="100"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMM-aK-NWX" userLabel="Icon Hand Eye View">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gMM-aK-NWX" userLabel="Icon Hand Eye View">
                                         <rect key="frame" x="130" y="150" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GKA-O4-pLN" userLabel="Icon Fine Motor View">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GKA-O4-pLN" userLabel="Icon Fine Motor View">
                                         <rect key="frame" x="260" y="150" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Interactive Book" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zQG-22-HyM">
-                                        <rect key="frame" x="0.0" y="100" width="100" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Hand Eye coordination" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Duy-ZX-HKr">
-                                        <rect key="frame" x="130" y="250" width="100" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="for more info please visit bibika.katyaskvo.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vrX-1U-SHE">
-                                        <rect key="frame" x="80" y="312" width="200" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="for more info please visit bibika.katyaskvo.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vrX-1U-SHE">
+                                        <rect key="frame" x="90.5" y="310.5" width="180" height="49.5"/>
                                         <inset key="scrollIndicatorInsets" minX="0.0" minY="270" maxX="0.0" maxY="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.6477537656678003" green="1" blue="0.50205507844093011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vrX-1U-SHE" secondAttribute="bottom" id="0ME-zG-g5d"/>
                                     <constraint firstItem="55c-L5-rij" firstAttribute="top" secondItem="jf8-Yw-dHW" secondAttribute="top" id="1C8-Qk-sHU"/>
                                     <constraint firstItem="55c-L5-rij" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" multiplier="0.277778" id="3qc-Rf-scj"/>
+                                    <constraint firstItem="Duy-ZX-HKr" firstAttribute="top" secondItem="GKA-O4-pLN" secondAttribute="bottom" id="3rl-Yp-pxG"/>
+                                    <constraint firstItem="vrX-1U-SHE" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.5" id="4Qd-X4-B3h"/>
                                     <constraint firstItem="XCV-JZ-jno" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.277778" id="5px-Dh-2ff"/>
+                                    <constraint firstItem="zQG-22-HyM" firstAttribute="top" secondItem="55c-L5-rij" secondAttribute="bottom" id="ANx-W9-ClX"/>
+                                    <constraint firstItem="gMM-aK-NWX" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.277778" id="DDa-8b-8Hl"/>
                                     <constraint firstItem="XEX-K8-9ls" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" multiplier="0.277778" id="F5H-7A-x0l"/>
                                     <constraint firstItem="55c-L5-rij" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.277778" id="GBb-ab-4ax"/>
+                                    <constraint firstItem="RV6-Rh-dgm" firstAttribute="top" secondItem="55c-L5-rij" secondAttribute="bottom" multiplier="1.5" id="HhG-Ts-fTG"/>
                                     <constraint firstItem="XCV-JZ-jno" firstAttribute="top" secondItem="jf8-Yw-dHW" secondAttribute="top" id="JnO-u9-XiB"/>
+                                    <constraint firstItem="GKA-O4-pLN" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" multiplier="0.277778" id="KqF-RV-zbx"/>
+                                    <constraint firstItem="dm8-Cq-lHM" firstAttribute="width" secondItem="XCV-JZ-jno" secondAttribute="width" id="M3n-BC-OhO"/>
                                     <constraint firstAttribute="trailing" secondItem="XCV-JZ-jno" secondAttribute="trailing" id="NJN-XJ-5Qz"/>
+                                    <constraint firstAttribute="trailing" secondItem="dm8-Cq-lHM" secondAttribute="trailing" id="O1x-vx-m5y"/>
                                     <constraint firstItem="XEX-K8-9ls" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.277778" id="Svu-7Y-CkV"/>
+                                    <constraint firstItem="m4D-8i-04F" firstAttribute="leading" secondItem="jf8-Yw-dHW" secondAttribute="leading" id="TKX-pb-MTR"/>
+                                    <constraint firstItem="gMM-aK-NWX" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" multiplier="0.277778" id="Tgn-9a-EDo"/>
                                     <constraint firstItem="RV6-Rh-dgm" firstAttribute="leading" secondItem="jf8-Yw-dHW" secondAttribute="leading" id="Tva-kx-7hW"/>
                                     <constraint firstItem="XCV-JZ-jno" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" multiplier="0.277778" id="V4e-wX-bWP"/>
+                                    <constraint firstItem="GKA-O4-pLN" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.277778" id="VHg-cL-VtP"/>
                                     <constraint firstItem="RV6-Rh-dgm" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.277778" id="VzX-d8-WSO"/>
+                                    <constraint firstAttribute="trailing" secondItem="GKA-O4-pLN" secondAttribute="trailing" id="XMg-Fu-LQJ"/>
+                                    <constraint firstItem="NEb-v1-NPd" firstAttribute="width" secondItem="gMM-aK-NWX" secondAttribute="width" id="bZd-vb-GiF"/>
+                                    <constraint firstItem="gMM-aK-NWX" firstAttribute="top" secondItem="XEX-K8-9ls" secondAttribute="bottom" multiplier="1.5" id="bf6-Ov-fKI"/>
+                                    <constraint firstItem="NEb-v1-NPd" firstAttribute="centerX" secondItem="jf8-Yw-dHW" secondAttribute="centerX" id="bqb-pb-b9X"/>
+                                    <constraint firstItem="Duy-ZX-HKr" firstAttribute="width" secondItem="GKA-O4-pLN" secondAttribute="width" id="dKO-Bv-7uU"/>
+                                    <constraint firstItem="Ryr-yF-7Pz" firstAttribute="width" secondItem="XEX-K8-9ls" secondAttribute="width" id="gBS-eT-nhu"/>
                                     <constraint firstItem="XEX-K8-9ls" firstAttribute="centerX" secondItem="jf8-Yw-dHW" secondAttribute="centerX" id="iIV-ow-cd8"/>
+                                    <constraint firstItem="NEb-v1-NPd" firstAttribute="top" secondItem="gMM-aK-NWX" secondAttribute="bottom" id="ioX-yz-mKs"/>
+                                    <constraint firstItem="Ryr-yF-7Pz" firstAttribute="top" secondItem="XEX-K8-9ls" secondAttribute="bottom" id="k3W-cI-o7x"/>
+                                    <constraint firstItem="zQG-22-HyM" firstAttribute="leading" secondItem="jf8-Yw-dHW" secondAttribute="leading" id="l9i-oh-V8a"/>
                                     <constraint firstItem="XEX-K8-9ls" firstAttribute="top" secondItem="jf8-Yw-dHW" secondAttribute="top" id="lqr-Qe-fCH"/>
+                                    <constraint firstItem="m4D-8i-04F" firstAttribute="top" secondItem="RV6-Rh-dgm" secondAttribute="bottom" id="mNB-dK-Bdm"/>
+                                    <constraint firstItem="Ryr-yF-7Pz" firstAttribute="centerX" secondItem="jf8-Yw-dHW" secondAttribute="centerX" id="ndo-Ow-Udn"/>
+                                    <constraint firstItem="m4D-8i-04F" firstAttribute="width" secondItem="RV6-Rh-dgm" secondAttribute="width" id="r6V-aA-y9l"/>
+                                    <constraint firstItem="vrX-1U-SHE" firstAttribute="centerX" secondItem="jf8-Yw-dHW" secondAttribute="centerX" id="rGg-gP-VqV"/>
+                                    <constraint firstItem="zQG-22-HyM" firstAttribute="width" secondItem="55c-L5-rij" secondAttribute="width" id="sTm-1q-6E2"/>
+                                    <constraint firstItem="gMM-aK-NWX" firstAttribute="centerX" secondItem="jf8-Yw-dHW" secondAttribute="centerX" id="sXK-bU-gUN"/>
+                                    <constraint firstItem="GKA-O4-pLN" firstAttribute="top" secondItem="XCV-JZ-jno" secondAttribute="bottom" multiplier="1.5" id="sZB-Od-Kst"/>
+                                    <constraint firstAttribute="trailing" secondItem="Duy-ZX-HKr" secondAttribute="trailing" id="suM-2D-0vH"/>
                                     <constraint firstItem="55c-L5-rij" firstAttribute="leading" secondItem="jf8-Yw-dHW" secondAttribute="leading" id="wDs-gv-SdQ"/>
                                     <constraint firstItem="RV6-Rh-dgm" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" multiplier="0.277778" id="yLX-3A-szn"/>
+                                    <constraint firstItem="dm8-Cq-lHM" firstAttribute="top" secondItem="XCV-JZ-jno" secondAttribute="bottom" id="yp9-pB-llw"/>
                                 </constraints>
                             </view>
                         </subviews>
