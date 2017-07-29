@@ -387,14 +387,14 @@
                                 <rect key="frame" x="557" y="490" width="156" height="156"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jf8-Yw-dHW">
-                                <rect key="frame" x="332" y="262" width="360" height="360"/>
+                                <rect key="frame" x="332" y="277.5" width="360" height="360"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Interactive Book" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zQG-22-HyM">
                                         <rect key="frame" x="0.0" y="100" width="100" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="YKS-nd-3z1"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Age Group" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ryr-yF-7Pz">
@@ -402,7 +402,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="DuS-87-jwV"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Explore Together" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dm8-Cq-lHM">
@@ -410,7 +410,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="LzR-72-WTl"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Cause &amp; Effect" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m4D-8i-04F">
@@ -418,7 +418,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="vbx-xo-I6R"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Fine Motor Skills" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NEb-v1-NPd">
@@ -426,7 +426,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="wHb-Ws-g7g"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hand Eye coordination" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Duy-ZX-HKr">
@@ -434,7 +434,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="GYT-gY-VN8"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="55c-L5-rij">
@@ -517,7 +517,7 @@
                             <constraint firstItem="jf8-Yw-dHW" firstAttribute="height" secondItem="ede-BV-2hO" secondAttribute="height" multiplier="0.46875" id="PZy-Uv-90x"/>
                             <constraint firstItem="jf8-Yw-dHW" firstAttribute="centerX" secondItem="ede-BV-2hO" secondAttribute="centerX" id="QyM-rL-ukQ"/>
                             <constraint firstItem="jf8-Yw-dHW" firstAttribute="width" secondItem="ede-BV-2hO" secondAttribute="width" multiplier="0.351562" id="SVa-1G-gWe"/>
-                            <constraint firstItem="jf8-Yw-dHW" firstAttribute="bottom" secondItem="ede-BV-2hO" secondAttribute="bottom" multiplier="0.81" id="jqU-uF-jhI"/>
+                            <constraint firstItem="jf8-Yw-dHW" firstAttribute="bottom" secondItem="ede-BV-2hO" secondAttribute="bottom" multiplier="0.83" id="jqU-uF-jhI"/>
                             <constraint firstItem="uQ5-aa-EcQ" firstAttribute="centerX" secondItem="ede-BV-2hO" secondAttribute="centerX" id="nDM-xK-8eU"/>
                             <constraint firstAttribute="trailing" secondItem="z2l-Hg-P83" secondAttribute="trailing" constant="308" id="yRk-Qm-cIx"/>
                         </constraints>
