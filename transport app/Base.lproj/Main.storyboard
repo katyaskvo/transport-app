@@ -407,13 +407,12 @@
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55c-L5-rij">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="55c-L5-rij">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.25295799713472822" blue="0.4805323154398573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XEX-K8-9ls">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XEX-K8-9ls">
                                         <rect key="frame" x="130" y="0.0" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Age Group" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ryr-yF-7Pz">
                                         <rect key="frame" x="130" y="100" width="100" height="40"/>
@@ -421,13 +420,11 @@
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCV-JZ-jno">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XCV-JZ-jno">
                                         <rect key="frame" x="260" y="0.0" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RV6-Rh-dgm">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RV6-Rh-dgm">
                                         <rect key="frame" x="0.0" y="150" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMM-aK-NWX" userLabel="Icon Hand Eye View">
                                         <rect key="frame" x="130" y="150" width="100" height="100"/>
@@ -458,6 +455,23 @@
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.6477537656678003" green="1" blue="0.50205507844093011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="55c-L5-rij" firstAttribute="top" secondItem="jf8-Yw-dHW" secondAttribute="top" id="1C8-Qk-sHU"/>
+                                    <constraint firstItem="55c-L5-rij" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" multiplier="0.277778" id="3qc-Rf-scj"/>
+                                    <constraint firstItem="XCV-JZ-jno" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.277778" id="5px-Dh-2ff"/>
+                                    <constraint firstItem="XEX-K8-9ls" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" multiplier="0.277778" id="F5H-7A-x0l"/>
+                                    <constraint firstItem="55c-L5-rij" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.277778" id="GBb-ab-4ax"/>
+                                    <constraint firstItem="XCV-JZ-jno" firstAttribute="top" secondItem="jf8-Yw-dHW" secondAttribute="top" id="JnO-u9-XiB"/>
+                                    <constraint firstAttribute="trailing" secondItem="XCV-JZ-jno" secondAttribute="trailing" id="NJN-XJ-5Qz"/>
+                                    <constraint firstItem="XEX-K8-9ls" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.277778" id="Svu-7Y-CkV"/>
+                                    <constraint firstItem="RV6-Rh-dgm" firstAttribute="leading" secondItem="jf8-Yw-dHW" secondAttribute="leading" id="Tva-kx-7hW"/>
+                                    <constraint firstItem="XCV-JZ-jno" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" multiplier="0.277778" id="V4e-wX-bWP"/>
+                                    <constraint firstItem="RV6-Rh-dgm" firstAttribute="width" secondItem="jf8-Yw-dHW" secondAttribute="width" multiplier="0.277778" id="VzX-d8-WSO"/>
+                                    <constraint firstItem="XEX-K8-9ls" firstAttribute="centerX" secondItem="jf8-Yw-dHW" secondAttribute="centerX" id="iIV-ow-cd8"/>
+                                    <constraint firstItem="XEX-K8-9ls" firstAttribute="top" secondItem="jf8-Yw-dHW" secondAttribute="top" id="lqr-Qe-fCH"/>
+                                    <constraint firstItem="55c-L5-rij" firstAttribute="leading" secondItem="jf8-Yw-dHW" secondAttribute="leading" id="wDs-gv-SdQ"/>
+                                    <constraint firstItem="RV6-Rh-dgm" firstAttribute="height" secondItem="jf8-Yw-dHW" secondAttribute="height" multiplier="0.277778" id="yLX-3A-szn"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.90980392156862744" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>

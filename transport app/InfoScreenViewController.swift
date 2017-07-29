@@ -11,8 +11,14 @@ class InfoScreenViewController: UIViewController {
     @IBOutlet var iconBook: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.setNeedsLayout()
+        self.view.layoutIfNeeded()
         
-        let iconSize = iconMomBabyView.frame.width
+        let iconSize = iconBook.frame.size.height
+        print(iconSize)
+        print(iconBook.frame.size.height)
+        print(self.iconBook.frame.width)
+        
         
         let animationMomBabyView = LOTAnimationView(name: "icon_momBaby")
         animationMomBabyView.frame = CGRect(x:0, y: 0, width: iconSize, height: iconSize)
