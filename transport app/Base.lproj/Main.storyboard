@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5U8-sd-m2j" userLabel="bike">
-                                <rect key="frame" x="324" y="210" width="700" height="350"/>
+                                <rect key="frame" x="160" y="210" width="700" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHt-o4-2gV">
@@ -132,7 +132,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBs-Gl-Mz8">
-                                        <rect key="frame" x="85" y="21" width="541" height="337"/>
+                                        <rect key="frame" x="84.5" y="20.5" width="541" height="337"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="playBellSoundAndAnimation" destination="S4R-Ja-viH" eventType="touchUpInside" id="SEH-Gh-yEP"/>
@@ -227,7 +227,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hvt-Cr-cZF" userLabel="beetle">
-                                <rect key="frame" x="34" y="210" width="990" height="350"/>
+                                <rect key="frame" x="16.5" y="210" width="990" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="small_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="ehK-Zg-JAT">
@@ -685,7 +685,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-XJ-VMn" userLabel="tractor">
-                                <rect key="frame" x="324" y="210" width="700" height="350"/>
+                                <rect key="frame" x="161.5" y="210" width="700" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="body" translatesAutoresizingMaskIntoConstraints="NO" id="zjp-9I-jbD">
@@ -753,7 +753,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZi-Lv-CXW">
-                                        <rect key="frame" x="0.0" y="347.5" width="697.5" height="1.5"/>
+                                        <rect key="frame" x="2.5" y="348" width="696.5" height="2"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="1Fy-JJ-Utr">
@@ -882,11 +882,11 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cxw-dl-n5Y" userLabel="helicopter">
-                                <rect key="frame" x="120" y="213" width="904" height="345"/>
+                                <rect key="frame" x="59" y="213" width="904" height="345"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSh-cR-CgX" userLabel="clouds">
-                                        <rect key="frame" x="-61.5" y="-150.5" width="1023" height="647.5"/>
+                                        <rect key="frame" x="-60" y="-150" width="1022" height="648.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="Xte-dM-S1H">
@@ -948,7 +948,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fN-UJ-O68">
-                                        <rect key="frame" x="-60" y="-149" width="1023" height="647.5"/>
+                                        <rect key="frame" x="-60" y="-150" width="1022" height="648.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="white_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="Ug0-f7-SaE">
@@ -964,7 +964,7 @@
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="white_cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="5r1-3n-dEK">
-                                                <rect key="frame" x="873.5" y="305" width="214.5" height="95.5"/>
+                                                <rect key="frame" x="872" y="304.5" width="214.5" height="96"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="white_cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="nmH-VP-Yws">
@@ -1083,7 +1083,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFx-gz-usA" userLabel="firetruck">
-                                <rect key="frame" x="134" y="210" width="890" height="350"/>
+                                <rect key="frame" x="65" y="210" width="890" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OY2-hT-B20">
@@ -1217,7 +1217,7 @@
                                         </subviews>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdt-2K-nG7">
-                                        <rect key="frame" x="22.5" y="65" width="841" height="289.5"/>
+                                        <rect key="frame" x="22" y="64.5" width="840.5" height="289.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="playSoundButton" destination="980-jK-LUk" eventType="touchUpInside" id="Qtb-i2-jb3"/>
@@ -1303,7 +1303,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1Z-d3-lIb" userLabel="motorcycle">
-                                <rect key="frame" x="324" y="210" width="700" height="350"/>
+                                <rect key="frame" x="160" y="210" width="700" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="motorcycle_body" translatesAutoresizingMaskIntoConstraints="NO" id="1f2-V5-Wma">
@@ -1453,7 +1453,7 @@
                                         </subviews>
                                     </view>
                                     <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8J-VK-dus">
-                                        <rect key="frame" x="-160" y="-210" width="1026" height="770"/>
+                                        <rect key="frame" x="-160.5" y="-210" width="1025.5" height="769.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.39718205670000001" blue="0.84589149750000003" alpha="0.51468321920000004" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
@@ -1680,18 +1680,18 @@
         <image name="truba" width="25" height="88"/>
         <image name="wheel_back" width="192" height="192"/>
         <image name="wheel_front" width="192" height="192"/>
-        <image name="white_cloud1" width="100" height="55"/>
-        <image name="white_cloud2" width="100" height="55"/>
-        <image name="white_cloud3" width="100" height="46"/>
+        <image name="white_cloud1" width="400" height="220"/>
+        <image name="white_cloud2" width="401" height="220"/>
+        <image name="white_cloud3" width="400" height="185"/>
         <image name="window-reflections" width="103" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dIa-WD-A1C"/>
-        <segue reference="mj3-V3-DeW"/>
+        <segue reference="di2-K5-DPJ"/>
+        <segue reference="VjF-JU-9aB"/>
+        <segue reference="iJd-I6-ByO"/>
         <segue reference="jyw-zy-5b2"/>
-        <segue reference="BzD-GJ-YjH"/>
-        <segue reference="vgW-N1-GXF"/>
-        <segue reference="TIf-N3-4A5"/>
         <segue reference="0Vj-FM-jc3"/>
+        <segue reference="TIf-N3-4A5"/>
+        <segue reference="vgW-N1-GXF"/>
     </inferredMetricsTieBreakers>
 </document>
